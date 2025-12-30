@@ -1,0 +1,160 @@
+
+/* Container für alle Buttons */
+.buttons-container {
+  position: fixed;
+  top: 13px;
+  right: 25px;
+  z-index: 100;
+  display: flex;
+  gap: 10px;
+  margin: 0;
+}
+
+
+.pause-button {
+  z-index: 100;
+  cursor: not-allowed;
+  background: #f0f;
+  transition: 0.0s ease;
+  border-radius: 8px;
+  padding: 2px 10px; 
+}
+
+.portal-button {
+  z-index: 100;
+  cursor: pointer;
+  background: #f0f;
+  transition: 0.0s ease;
+  border-radius: 8px;
+  padding: 2px 10px; 
+}
+
+/* Hover / Fokus für besseres Feedback */
+.pause-button:hover,
+.portal-button:hover {
+  background: #c0c;
+  transition: 0.0s ease;
+}
+
+.pause-button:active,
+.portal-button:active {
+  transform: translateY(0);
+}
+
+
+
+
+
+
+.theme-toggle {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+  padding: 10px;
+  gap: 10px;
+  background: #ff0;
+  border-radius: 8px;
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  z-index: 100;
+}
+
+
+
+
+
+/* Buttons */
+.theme-option {
+  width: 20px;
+  height: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 2px solid #000;
+}
+
+.theme-option.light {
+  background-color: white;
+}
+
+.theme-option.dark {
+  background-color: black;
+}
+
+.theme-option.active {
+  border-color: #00f;
+}
+
+
+
+/* Farbegbung der Links */
+[data-theme="light"] a {
+    color: #00f;
+}
+
+[data-theme="light"] a:visited {
+    color: rgb(33, 0, 154);
+    text-decoration: underline;
+}
+
+[data-theme="dark"] a {
+    color: #75e8ff;
+}
+
+[data-theme="dark"] a:visited {
+    color: #22acc8;
+    text-decoration: underline;
+}
+
+
+
+
+
+/* Sortierbuttons */
+[data-theme="dark"] .sort-btn {
+    background-color: #1e1e1e;
+    color: #fff;
+    border-color: #7b6f6f;
+}
+
+[data-theme="dark"] .sort-btn.active {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    border-color: #fff !important;
+}
+
+
+
+
+/* Themes */
+:root[data-theme='light'] {
+  --bg-color: #ffffff;
+  --text-color: #000;
+  --accent-color: #000;
+  --highlight-text: #3c3c44;
+}
+
+:root[data-theme='dark'] {
+  --bg-color: #1e1e1e;
+  --text-color: #ebebeb;
+  --accent-color: #000000;
+  --highlight-text: #ffffff;
+}
+
+
+
+
+/* Anwenden der Variablen */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+h2 {
+  color: var(--accent-color);
+}
+
+::selection {
+  background-color: var(--highlight-text);
+  color: var(--bg-color);  
+}

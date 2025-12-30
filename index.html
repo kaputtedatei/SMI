@@ -5,11 +5,12 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Social Media Index</title>
+  <title>Social Media Index</title>  
+  <link rel="stylesheet" href="about.html">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="bar.css">
   <link rel="stylesheet" href="farbmodus-switch.css">
   <link rel="stylesheet" href="portal-switch.css">
+  <link rel="stylesheet" href="buttons.css">
 
   <link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Sans&display=swap" rel="stylesheet">
@@ -275,15 +276,15 @@
     <!-- Detailspalte -->
     <div class="column detail-column" id="detail">
       <div class="detail-header">
-        <h2 id="detail-title">Detail</h2>
-        <div class="detail-filters">
-          <button class="sort-btn filter-btn active" data-filter="all">alles</button>
-          <button class="sort-btn filter-btn" data-filter="image">Bild</button>
-          <button class="sort-btn filter-btn" data-filter="text">Text</button>
-        </div>
-        <button class="close-btn" id="detail-close">X</button>
+        <button class="close-btn" id="detail-close"> <h1>X</h1></button>
+        <h1 id="detail-title">Detail</h1>
       </div>
       <div class="column-content" id="detail-content">
+      </div>
+      <div class="detail-filters">
+        <button class="sort-btn filter-btn active" data-filter="all">alles</button>
+        <button class="sort-btn filter-btn" data-filter="image">Bild</button>
+        <button class="sort-btn filter-btn" data-filter="text">Text</button>
       </div>
     </div>
   </div>
@@ -2503,7 +2504,7 @@ const timelineData = [
       
       // Reset Detail-Filter auf "alles"
       const defaultFilter = 'all';
-      document.querySelectorAll('.detail-header .filter-btn').forEach(b => {
+      document.querySelectorAll('.detail-filters .filter-btn').forEach(b => {
         b.classList.toggle('active', b.dataset.filter === defaultFilter);
       });
       applyDetailFilter(defaultFilter);
@@ -2516,7 +2517,7 @@ const timelineData = [
     }
 
     // --- Detail-Header Filter (Bild / Text / alles) ---
-    const detailFilterBtns = document.querySelectorAll('.detail-header .filter-btn');
+    const detailFilterBtns = document.querySelectorAll('.detail-filters .filter-btn');
 
     detailFilterBtns.forEach(btn => {
       btn.addEventListener('click', () => {
@@ -2548,47 +2549,50 @@ const timelineData = [
 
 
 
-  <!-- Farbmodus Switch -->
-  <div class="theme-toggle">
-    <div class="theme-option light" data-theme="light"></div>
-    <div class="theme-option dark" data-theme="dark"></div>
-  </div>
-
+  <!-- Theme initialisieren -->
   <script>
-    // Script für Theme-Wechsel
-    const root = document.documentElement;
-    const options = document.querySelectorAll('.theme-option');
-
-    options.forEach(option => {
-      option.addEventListener('click', () => {
-        const theme = option.dataset.theme;
-        root.setAttribute('data-theme', theme);
-
-        // Auswahl markieren
-        options.forEach(o => o.classList.remove('active'));
-        option.classList.add('active');
-
-        // Auswahl speichern (bleibt nach Neuladen)
-        localStorage.setItem('theme', theme);
-      });
-    });
-
     // Letztes Theme wiederherstellen
+    const root = document.documentElement;
     const savedTheme = localStorage.getItem('theme') || 'light';
     root.setAttribute('data-theme', savedTheme);
-    document.querySelector(`[data-theme="${savedTheme}"]`).classList.add('active');
   </script>
   <div class="bar-bottom"></div>
 
 
 
- <!-- Portal Switch -->
-<div class="portal-toggle">
-  <p style="color: #000;">Pause</p>
-</div>
+  <div class="buttons-container">
+    <div class="portal-button" id="portal-button">
+      <h1 id="portal-text">dark</h1>
+    </div>
+    <div class="pause-button">
+      <h1>pause</h1>
+    </div>
+  </div>
 
-
-
+  <script>
+    // Portal-Button Text je nach Theme aktualisieren
+    function updatePortalButtonText() {
+      const currentTheme = document.documentElement.getAttribute('data-theme');
+      const portalText = document.getElementById('portal-text');
+      if (portalText) {
+        portalText.textContent = currentTheme === 'dark' ? 'light' : 'dark';
+      }
+    }
+    
+    // Theme wechseln beim Klick auf portal-button
+    document.getElementById('portal-button').addEventListener('click', function() {
+      const root = document.documentElement;
+      const currentTheme = root.getAttribute('data-theme');
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      
+      root.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+      updatePortalButtonText();
+    });
+    
+    // Initial setzen
+    updatePortalButtonText();
+  </script> 
 
 
 

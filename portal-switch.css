@@ -1,4 +1,4 @@
-/* Anzeige Buttons */
+/* Anzeige Buttons 
 .portal-toggle {
   display: flex;
   flex-direction: row;
@@ -20,7 +20,7 @@
   color: #000;
 }
 
-/* Hover / Fokus für besseres Feedback */
+Hover / Fokus für besseres Feedback
 .portal-toggle:hover {
   background: rgb(255, 124, 255);
 }
