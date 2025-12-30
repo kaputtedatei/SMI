@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <title>Brainrot-Pause</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+    :root{
+      --bg-from: #ffffff;
+      --bg-to: #0b0a1a;
+    }
+    html,body{height:100%;margin:0;overflow:hidden}
+    body{
+      background: var(--bg-from);
+      transition: background-color 2s ease;
+      position:relative;
+      font-family: sans-serif;
+    }
+
+    /* Container für fliegende Bilder */
+    .fly-container{position: absolute; inset:0; pointer-events:none; overflow:hidden}
+
+    .fly {
+      position: absolute;
+      will-change: transform, opacity;
+      max-width: 160px;
+      max-height: 160px;
+      opacity: 0;
+      transform: translate3d(0,0,0) scale(0.8);
+      filter: drop-shadow(0 8px 18px rgba(0,0,0,0.6));
+      transition: opacity 0.3s ease;
+    }
+
+    /* Keyframes: erzeugen grobe Flugbahn (start -> curve -> end) */
+    @keyframes flyAcross {
+      0%   { transform: translate(var(--sx), var(--sy)) rotate(var(--sr)); opacity:0; }
+      10%  { opacity:1; }
+      50%  { transform: translate(var(--mx), var(--my)) rotate(calc(var(--sr) + 90deg)); opacity:0.95; }
+      100% { transform: translate(var(--ex), var(--ey)) rotate(calc(var(--sr) + 180deg)); opacity:0; }
+    }
+
+    /* Return-Button */
+    .back {
+      position: fixed;
+      left: 16px;
+      top: 16px;
+      z-index: 50;
+      background: rgba(255,255,255,0.08);
+      color: #fff;
+      border: 1px solid rgba(255,255,255,0.12);
+      padding: 8px 12px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight:600;
+      backdrop-filter: blur(4px);
+    }
+
+    /* kleine Info */
+    .hint {
+      position: fixed;
+      right: 16px;
+      top: 16px;
+      color: rgba(255,255,255,0.85);
+      z-index:50;
+      font-size:14px;
+      opacity:0.9;
+    }
+  </style>
+</head>
+<body>
+  <a class="back" href="index.html">← Zurück</a>
+  <div class="hint">Portal aktiv — Klick ← um zurück</div>
+  <div class="fly-container" id="flyContainer"></div>
+
+  <script>
+    // Lade IDs aus localStorage (Fallback-Liste)
+    const ids = JSON.parse(localStorage.getItem('portal-image-ids') || '[]');
+    const container = document.getElementById('flyContainer');
+
+    // Fallback: wenn keine IDs vorhanden, benutze Beispielbilder (falls vorhanden)
+    const fallback = ['facebook','instagram','twitter','youtube','whatsapp','tiktok'];
+    const imageIds = ids.length ? ids : fallback;
+
+    // Setze Hintergrund-Farben (optional vom index gespeichert)
+    const savedBg = JSON.parse(localStorage.getItem('portal-bg') || 'null');
+    if (savedBg && savedBg.to) {
+      // Übergang: erst kurz warten, dann zum Ziel wechseln
+      setTimeout(()=> document.body.style.backgroundColor = savedBg.to, 80);
+    } else {
+      // Beispielwechsel
+      setTimeout(()=> document.body.style.backgroundColor = 'linear-gradient(90deg,#12002b,#2b0036)' , 80);
+      // Fallback simpler solid
+      setTimeout(()=> document.body.style.backgroundColor = '#12002b', 100);
+    }
+
+    // Hilfs: zufällige Werte in einem Bereich
+    function rand(min, max){ return Math.random()*(max-min)+min; }
+
+    // Erzeuge fliegende Bilder mit zufälliger Flugbahn
+    imageIds.forEach((id, idx) => {
+      const img = document.createElement('img');
+      img.className = 'fly';
+      img.alt = id;
+      // versuche png, ansonsten jpg via onerror
+      img.src = `bilder/${id}.png`;
+      img.onerror = ()=> { if (!img._triedJpg){ img._triedJpg = true; img.src = `bilder/${id}.jpg`; } };
+
+      // zufällige Start/Control/End-Positionen (in px)
+      const sx = rand(-30, 20) + 'vw';
+      const sy = rand(100, 140) + 'vh'; // startet unterhalb des viewports
+      const ex = rand(-30, 110) + 'vw';
+      const ey = rand(-30, -40) + 'vh'; // endet über dem viewport
+      const mx = rand(10, 50) + 'vw';
+      const my = rand(20, 60) + 'vh';
+      const sr = rand(-45,45) + 'deg';
+
+      // Speichere CSS-Variablen für Keyframes
+      img.style.setProperty('--sx', sx);
+      img.style.setProperty('--sy', sy);
+      img.style.setProperty('--ex', ex);
+      img.style.setProperty('--ey', ey);
+      img.style.setProperty('--mx', mx);
+      img.style.setProperty('--my', my);
+      img.style.setProperty('--sr', sr);
+
+      // zufällige Größe
+      const scale = rand(0.5, 1.1);
+      img.style.width = Math.round(120 * scale) + 'px';
+
+      container.appendChild(img);
+
+      // Starte Animation leicht gestaffelt
+      const delay = idx * 300 + rand(0,800);
+      const duration = rand(3000, 8000);
+
+      // setze animation
+      img.style.animation = `flyAcross ${duration}ms cubic-bezier(.2,.8,.2,1) ${delay}ms forwards`;
+      // nach Animation entfernen (oder wiederholen falls gewünscht)
+      img.addEventListener('animationend', () => {
+        // entferne oder wiederhole
+        // container.removeChild(img);
+        // Für loop: starte erneut mit neuen Parametern (optional)
+        setTimeout(()=>{
+          // neu positionieren und erneut animieren
+          img.style.setProperty('--sx', rand(-30, 20) + 'vw');
+          img.style.setProperty('--sy', rand(100, 140) + 'vh');
+          img.style.setProperty('--ex', rand(-30, 110) + 'vw');
+          img.style.setProperty('--ey', rand(-30, -40) + 'vh');
+          img.style.setProperty('--mx', rand(10, 50) + 'vw');
+          img.style.setProperty('--my', rand(20, 60) + 'vh');
+          const dur = rand(3000, 8000);
+          const del = rand(200, 2000);
+          img.style.animation = `none`;
+          // force reflow
+          void img.offsetWidth;
+          img.style.animation = `flyAcross ${dur}ms cubic-bezier(.2,.8,.2,1) ${del}ms forwards`;
+        }, rand(800,3000));
+      });
+    });
+
+    // optional: Escape Taste zurück zur Startseite
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') location.href = 'index.html';
+    });
+  </script>
+</body>
+</html>
