@@ -30,7 +30,7 @@
 .theme-button {
   z-index: 100;
   cursor: pointer;
-  background: rgb(255, 145, 255);
+  background: #f0f;
   transition: 0.0s ease;
   border-radius: 8px;
   padding: 2px 10px; 
@@ -40,8 +40,9 @@
 /* Hover / Fokus für besseres Feedback */
 .pause-button:hover,
 .theme-button:hover {
-  background: #c0c;
+  background: rgb(0, 0, 0);
   transition: 0.0s ease;
+  color: #fff !important;
 }
 
 .pause-button:active,
@@ -49,7 +50,16 @@
   transform: translateY(0);
 }
 
-
+.zurück-index-button {
+  z-index: 100;
+  cursor: pointer;
+  background: rgb(255, 255, 255);
+  transition: 0.0s ease;
+  border-radius: 8px;
+  padding: 2px 10px;
+  text-decoration: none;
+  color: #000 !important;
+}
 
 
 
