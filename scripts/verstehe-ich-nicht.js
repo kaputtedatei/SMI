@@ -69,6 +69,7 @@ const timelineData = [
     { id: "jappy", year: 2001, users: 1500000, alphabet: 24, value: 999, continent: "europe" },
     { id: "kik", year: 2012, users: 300000000, alphabet: 25, value: 999, continent: "canada" },
     { id: "kuaishou", year: 2011, users: 700000000, alphabet: 26, value: 999, continent: "asia" },
+    { id: "lapse", year: 2021, users: 1200000, alphabet: 27, value: 999, continent: "europe" },
     { id: "lastfm", year: 2002, users: 40000000, alphabet: 27, value: 999, continent: "europe" },
     { id: "line", year: 2011, users: 178000000, alphabet: 28, value: 999, continent: "asia" },
     { id: "linkedin", year: 2003, users: 900000000, alphabet: 29, value: 999, continent: "us" },
@@ -77,7 +78,7 @@ const timelineData = [
     { id: "medium", year: 2013, users: 100000000, alphabet: 32, value: 999, continent: "us" },
     { id: "musically", year: 2014, users: 200000000, alphabet: 33, value: 999, continent: "us" },
     { id: "myspace", year: 2003, users: 115000000, alphabet: 34, value: 999, continent: "us" },
-    { id: "nospace", year: 2021, users: 1000000, alphabet: 35, value: 999, continent: "europe" },
+    { id: "noplace", year: 2021, users: 1000000, alphabet: 35, value: 999, continent: "europe" },
     { id: "orkut", year: 2004, users: 100000000, alphabet: 36, value: 999, continent: "us" },
     { id: "parler", year: 2019, users: 20000000, alphabet: 37, value: 999, continent: "us" },
     { id: "periscope", year: 2015, users: 10000000, alphabet: 38, value: 999, continent: "us" },
@@ -92,6 +93,7 @@ const timelineData = [
     { id: "soundcloud", year: 2007, users: 130000000, alphabet: 47, value: 999, continent: "europe" },
     { id: "spacehey", year: 2020, users: 2000000, alphabet: 48, value: 999, continent: "europe" },
     { id: "telegram", year: 2012, users: 900000000, alphabet: 49, value: 999, continent: "europe" },
+    { id: "tenten", year: 2024, users: 12000000, alphabet: 49.5, value: 999, continent: "europe" },
     { id: "threads", year: 2017, users: 150000000, alphabet: 50, value: 999, continent: "us" },
     { id: "tiktok", year: 2013, users: 1500000000, alphabet: 51, value: 2, continent: "asia" },
     { id: "tripadvisor", year: 2000, users: 490000000, alphabet: 52, value: 999, continent: "us" },
@@ -344,3 +346,48 @@ const timelineData = [
     const root = document.documentElement;
     const savedTheme = localStorage.getItem('theme') || 'light';
     root.setAttribute('data-theme', savedTheme);
+
+
+    // --- Session-basiertes Link-Tracking ---
+    // Links werden nur innerhalb der aktuellen Session als "besucht" markiert
+    // (sessionStorage wird bei Browser-Refresh oder Tab-Schließen gelöscht)
+    
+    function getVisitedLinks() {
+      const stored = sessionStorage.getItem('visitedLinks');
+      return stored ? JSON.parse(stored) : [];
+    }
+
+    function markLinkAsVisited(href) {
+      const visited = getVisitedLinks();
+      if (!visited.includes(href)) {
+        visited.push(href);
+        sessionStorage.setItem('visitedLinks', JSON.stringify(visited));
+      }
+    }
+
+    function applyVisitedStyles() {
+      const visited = getVisitedLinks();
+      document.querySelectorAll('a').forEach(link => {
+        if (visited.includes(link.href)) {
+          link.classList.add('visited');
+        }
+      });
+    }
+
+    // Beim Laden der Seite: vorhandene visited-Klassen anwenden
+    applyVisitedStyles();
+
+    // Links beim Klicken als besucht markieren
+    document.addEventListener('click', (e) => {
+      const link = e.target.closest('a');
+      if (link && link.href) {
+        markLinkAsVisited(link.href);
+        link.classList.add('visited');
+      }
+    });
+
+    // MutationObserver für dynamisch hinzugefügte Links (z.B. in Detailansicht)
+    const linkObserver = new MutationObserver(() => {
+      applyVisitedStyles();
+    });
+    linkObserver.observe(document.body, { childList: true, subtree: true });

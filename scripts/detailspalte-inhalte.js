@@ -657,7 +657,7 @@ const DETAILS = {
             </div>
 
             <figcaption style="">
-              Meta Headquarters, Menlo Park, Kalifornien.
+              Meta Headquarters, San José, USA.
             </figcaption>
 
 
@@ -950,8 +950,8 @@ const DETAILS = {
               </iframe>
             </div>
 
-            <figcaption style="">
-              Meta Headquarters, Menlo Park, Kalifornien.
+            <figcaption>
+              Meta Headquarters, Menlo Park, USA.
             </figcaption>
 
               </div>`
@@ -1125,7 +1125,7 @@ const DETAILS = {
             </div>
 
             <figcaption style="">
-              Meta Headquarters, Menlo Park, Kalifornien.
+              Meta Headquarters, Menlo Park, USA.
             </figcaption>
 
 
@@ -1320,7 +1320,7 @@ const DETAILS = {
             </div>
 
             <figcaption style="">
-              SoundCloud, Berlin.
+              SoundCloud, Berlin, Deutschland.
             </figcaption>
 
               </div>`
@@ -1368,7 +1368,7 @@ const DETAILS = {
             </div>
 
             <figcaption style="">
-              Meta Headquarters, Menlo Park, Kalifornien.
+              Meta Headquarters, Menlo Park, USA.
             </figcaption>
 
               </div>`
@@ -1400,7 +1400,7 @@ const DETAILS = {
             </div>
 
             <figcaption style="">
-              Shenzhen Tencent Binhai Gebäude, Shenzen, Guangdong, China.
+              Shenzhen Tencent Binhai Gebäude, Guangdong, China.
             </figcaption>
 
               </div>`
@@ -1500,11 +1500,6 @@ const DETAILS = {
               CC BY 4.0
               </a>
               </figcaption>
-
-
-              <p class="top">
-              Lol.
-              </p>
 
               </div>`
       },
@@ -1629,126 +1624,11 @@ const DETAILS = {
               </a></div>`
       },
 
-      'bereal': {
-        title: 'BeReal (2020) Frankreich',
-        html: `<div class="index-detail">
-              <a class="sm" href="https://bereal.com/" target="_blank" rel="noopener noreferrer">
-              🡒https://bereal.com/
-              </a></div>`
-      },
-
-      'spacehey': {
-        title: 'SpaceHey (2020) Deutschland',
-        html: `<div class="index-detail">
-              <a class="sm" href="https://spacehey.com/" target="_blank" rel="noopener noreferrer">
-              🡒https://spacehey.com/
-              </a>
-              
-              <img class="top" src="bilder/spacehey1.png" style="width: 100%; ">
-
-              <figcaption style="text-align: left;">
-              Screenshot der SpaceHey Website, Dezember 2025.
-              <br>
-              </a> —
-              <a href="https://bsky.app/" target="_blank" rel="noopener noreferrer">
-              Quelle
-              </a>
-              </figcaption>
-
-              <p class="top">
-              Lol.
-              </p>
-
-              </div>`
-      },
-
-      'truthsocial': {
-        title: 'Truth Social (2021) USA',
-        html: `<div class="index-detail">
-              <a class="sm" href="https://truthsocial.com/" target="_blank" rel="noopener noreferrer">
-              🡒https://truthsocial.com/
-              </a>
-
-              <img class="top" src="bilder/truthsocial1.jpg" style="width: 100%; ">
-              <figcaption>
-              Screenshot der Truth Social Website, Dezember 2025.
-              <br>
-              </a> —
-              <a href="https://truthsocial.com/" target="_blank" rel="noopener noreferrer">
-              Quelle
-              </a>
-              </figcaption>
-
-              <img class="top" src="bilder/truthsocial2.png" style="width: 100%; ">
-              <figcaption>
-              Screenshot der Truth Social Website, Dezember 2025.
-              <br>
-              </a> —
-              <a href="https://truthsocial.com/" target="_blank" rel="noopener noreferrer">
-              Quelle
-              </a>
-              </figcaption>
-
-              <img class="top" src="bilder/truthsocial3.png" style="width: 100%; ">
-              <figcaption>
-              Screenshot der Truth Social Website, Dezember 2025.
-              <br>
-              </a> —
-              <a href="https://truthsocial.com/" target="_blank" rel="noopener noreferrer">
-              Quelle
-              </a>
-              </figcaption>
-
-
-
-              </div>`
-      },
-
-      'bluesky': {
-        title: 'Bluesky (2022) USA',
-        html: `<div class="index-detail">
-              <a class="sm" href="https://bsky.app/" target="_blank" rel="noopener noreferrer">
-              🡒https://bsky.app/
-              </a>
-
-              <img class="top" src="bilder/bluesky1.png" style="width: 100%; ">
-              <figcaption>
-              Screenshot der BLuesky Website, Dezember 2025.
-              <br>
-              </a> —
-              <a href="https://bsky.app/" target="_blank" rel="noopener noreferrer">
-              Quelle
-              </a>
-              </figcaption>
-
-              <img class="top" src="bilder/bluesky2.png" style="width: 100%; ">
-              <figcaption>
-              Screenshot der BLuesky Website, Dezember 2025.
-              <br>
-              </a> —
-              <a href="https://bsky.app/" target="_blank" rel="noopener noreferrer">
-              Quelle
-              </a>
-              </figcaption>
-
-              <img class="top" src="bilder/bluesky3.png" style="width: 100%; ">
-              <figcaption>
-              Screenshot der BLuesky Website, Dezember 2025.
-              <br>
-              </a> —
-              <a href="https://bsky.app/" target="_blank" rel="noopener noreferrer">
-              Quelle
-              </a>
-              </figcaption>
-
-              </div>`
-      },
-
       'bondee': {
         title: 'Bondee (2019) Singapur',
         html: `<div class="index-detail">
-              <a class="sm" href="https://bondee.app/" target="_blank" rel="noopener noreferrer">
-              🡒https://bondee.app/
+              <a class="sm" href="https://bondee.com/main" target="_blank" rel="noopener noreferrer">
+              🡒https://bondee.com/main
               </a>
 
               <img class="top" src="bilder/bondee3.png" style="width: 100%; ">
@@ -1817,11 +1697,283 @@ const DETAILS = {
               </div>`
       },
 
-      'nospace': {
-        title: 'Nospace (2021) Deutschland',
+      'bereal': {
+        title: 'BeReal (2020) Frankreich',
         html: `<div class="index-detail">
-              <a class="sm" href="https://nospace.app/" target="_blank" rel="noopener noreferrer">
-              🡒https://nospace.app/
-              </a></div>`
+              <a class="sm" href="https://bereal.com/" target="_blank" rel="noopener noreferrer">
+              🡒https://bereal.com/
+              </a>
+              
+              
+              <div style="width: 100%; height: 600px; margin-top: 2em; margin-bottom: 1em; overflow: hidden; position: relative;">
+              <iframe
+                src="https://maps.google.com/maps?q=48.8611647,2.3500219&t=k&z=18&output=embed"
+                style="position: relative; top: -120px; left: 0; width: 100%; height: 800px; border: 0;"
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+              </div>
+
+              <figcaption>
+              Bereal Headquarters, Paris, Frankreich.
+              </figcaption>
+              
+            
+            
+            </div>`
       },
+
+      'spacehey': {
+        title: 'SpaceHey (2020) Deutschland',
+        html: `<div class="index-detail">
+              <a class="sm" href="https://spacehey.com/" target="_blank" rel="noopener noreferrer">
+              🡒https://spacehey.com/
+              </a>
+              
+              <img class="top" src="bilder/spacehey1.png" style="width: 100%; ">
+
+              <figcaption style="text-align: left;">
+              Screenshot der SpaceHey Website, Dezember 2025.
+              <br>
+              </a> —
+              <a href="https://bsky.app/" target="_blank" rel="noopener noreferrer">
+              Quelle
+              </a>
+              </figcaption>
+
+              <p class="top">
+              Lol.
+              </p>
+
+              </div>`
+      },
+
+      'truthsocial': {
+        title: 'Truth Social (2021) USA',
+        html: `<div class="index-detail">
+              <a class="sm" href="https://truthsocial.com/" target="_blank" rel="noopener noreferrer">
+              🡒https://truthsocial.com/
+              </a>
+
+              <img class="top" src="bilder/truthsocial1.jpg" style="width: 100%; ">
+              <figcaption>
+              Screenshot der Truth Social Website, Dezember 2025.
+              <br>
+              </a> —
+              <a href="https://truthsocial.com/" target="_blank" rel="noopener noreferrer">
+              Quelle
+              </a>
+              </figcaption>
+
+              <img class="top" src="bilder/truthsocial2.png" style="width: 100%; ">
+              <figcaption>
+              Screenshot der Truth Social Website, Dezember 2025.
+              <br>
+              </a> —
+              <a href="https://truthsocial.com/" target="_blank" rel="noopener noreferrer">
+              Quelle
+              </a>
+              </figcaption>
+
+              <img class="top" src="bilder/truthsocial3.png" style="width: 100%; ">
+              <figcaption>
+              Screenshot der Truth Social Website, Dezember 2025.
+              <br>
+              </a> —
+              <a href="https://truthsocial.com/" target="_blank" rel="noopener noreferrer">
+              Quelle
+              </a>
+              </figcaption>
+
+              <div style="width: 100%; height: 600px; margin-top: 2em; margin-bottom: 1em; overflow: hidden; position: relative;">
+              <iframe
+                src="https://maps.google.com/maps?q=27.3424693,-82.4504533&t=k&z=20&output=embed"
+                style="position: relative; top: -120px; left: 0; width: 100%; height: 800px; border: 0;"
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+              </div>
+
+              <figcaption>
+              Trump Media & Technology Group Headquarters, Sarasota, USA.
+              </figcaption>
+
+              </div>`
+      },
+
+      'noplace': {
+        title: 'Noplace (2021) Deutschland',
+        html: `<div class="index-detail">
+              <a class="sm" href="https://www.thenoplace.com/" target="_blank" rel="noopener noreferrer">
+              🡒https://www.thenoplace.com/
+              </a>
+              
+              <img class="top" src="bilder/noplace1.png" style="width: 100%; ">
+              <figcaption>
+              Screenshot der Noplace Website, Januar 2026.
+              <br>
+              </a> —
+              <a href="https://www.thenoplace.com/" target="_blank" rel="noopener noreferrer">
+              Quelle
+              </a>
+              </figcaption>
+
+              <div class="info-box">
+                <p>Launch:</strong></p><p>2021</p>
+                <p>Verfügbarkeit:</strong></p><p>mobile</p>
+                <p>Nutzer*innen:</strong></p><p>zirka 1.000.000</p>
+                <p>Besonders beliebt in:</strong></p><p>?</p>
+                <p>Firmensitz:</strong></p><p>San Francisco, USA</p>
+                <p>Ads:</strong></p><p>?</p>
+              </div>
+              
+              <p class="top"> 
+              What is Noplace? <br> <br>
+              "Noplace is the place to express urself and connect with others who have similar interests!
+              Gain levels, earn badges, and make friends, all while using ur completely customizable profile to share what u r doing, 
+              watching, listening to, eating, and more. it's whatever u want it to be, go crazy (just don't be a jerk)!"
+              </p>
+
+
+
+              <img class="top" src="bilder/noplace2.png" style="width: 100%; ">
+              <figcaption>
+              Auzug aus Noplace Media Kit, Januar 2026.
+              <br>
+              </a> —
+              <a href="https://drive.google.com/drive/folders/1yWr86IDgxznt9Z_iQtk7xl4MFPOR_hHB" target="_blank" rel="noopener noreferrer">
+              Quelle
+              </a>
+              </figcaption>
+
+              <img class="top" src="bilder/noplace3.png" style="width: 100%; ">
+              <figcaption>
+              Auzug aus Noplace Media Kit, Januar 2026.
+              <br>
+              </a> —
+              <a href="https://drive.google.com/drive/folders/1yWr86IDgxznt9Z_iQtk7xl4MFPOR_hHB" target="_blank" rel="noopener noreferrer">
+              Quelle
+              </a>
+              </figcaption>
+
+              <img class="top" src="bilder/noplace4.png" style="width: 100%; ">
+              <figcaption>
+              Auzug aus Noplace Media Kit, Januar 2026.
+              <br>
+              </a> —
+              <a href="https://drive.google.com/drive/folders/1yWr86IDgxznt9Z_iQtk7xl4MFPOR_hHB" target="_blank" rel="noopener noreferrer">
+              Quelle
+              </a>
+              </figcaption>
+
+              <img class="top" src="bilder/noplace5.png" style="width: 100%; ">
+              <figcaption>
+              Auzug aus Noplace Media Kit, Januar 2026.
+              <br>
+              </a> —
+              <a href="https://drive.google.com/drive/folders/1yWr86IDgxznt9Z_iQtk7xl4MFPOR_hHB" target="_blank" rel="noopener noreferrer">
+              Quelle
+              </a>
+              </figcaption>
+
+              </div>`
+      },
+      
+      'bluesky': {
+        title: 'Bluesky (2022) USA',
+        html: `<div class="index-detail">
+              <a class="sm" href="https://bsky.app/" target="_blank" rel="noopener noreferrer">
+              🡒https://bsky.app/
+              </a>
+
+              <img class="top" src="bilder/bluesky1.png" style="width: 100%; ">
+              <figcaption>
+              Screenshot der BLuesky Website, Dezember 2025.
+              <br>
+              </a> —
+              <a href="https://bsky.app/" target="_blank" rel="noopener noreferrer">
+              Quelle
+              </a>
+              </figcaption>
+
+              <img class="top" src="bilder/bluesky2.png" style="width: 100%; ">
+              <figcaption>
+              Screenshot der BLuesky Website, Dezember 2025.
+              <br>
+              </a> —
+              <a href="https://bsky.app/" target="_blank" rel="noopener noreferrer">
+              Quelle
+              </a>
+              </figcaption>
+
+              <img class="top" src="bilder/bluesky3.png" style="width: 100%; ">
+              <figcaption>
+              Screenshot der BLuesky Website, Dezember 2025.
+              <br>
+              </a> —
+              <a href="https://bsky.app/" target="_blank" rel="noopener noreferrer">
+              Quelle
+              </a>
+              </figcaption>
+
+              </div>`
+      },
+
+      'tenten': {
+        title: 'Ten Ten (2024) Frankreich',
+        html: `<div class="index-detail">
+              <a class="sm" href="https://tenten.app" target="_blank" rel="noopener noreferrer">
+              🡒https://tenten.app
+              </a>
+
+              <img class="top" src="bilder/tenten1.png" style="width: 100%; ">
+              <figcaption>
+              Screenshot der Ten Ten Website, Januar 2026.
+              <br>
+              </a> —
+              <a href="https://tenten.app" target="_blank" rel="noopener noreferrer">
+              Quelle
+              </a>
+              </figcaption>
+
+              <p>
+              "Ten Ten turns your phone into a live walkie-talkie with your best friends anywhere, anytime.
+              Sing it, shout it or whisper it... Your friends will hear you live on their phone, even when their screen is locked."
+              </p>
+
+
+              <div style="width: 100%; height: 600px; margin-top: 2em; margin-bottom: 1em; overflow: hidden; position: relative;">
+              <iframe
+                src="https://maps.google.com/maps?q=48.862725,2.336020&t=k&z=17&output=embed"
+                style="position: relative; top: -120px; left: 0; width: 100%; height: 800px; border: 0;"
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+
+            <figcaption>
+              Ten Ten Headquarters, Paris, Frankreich.
+            </figcaption>
+
+
+              </div>`
+      },
+
+      'lapse': {
+        title: 'Lapse (2021) Großbritannien',
+        html: `<div class="index-detail">
+              <a class="sm" href="https://lapse.com/" target="_blank" rel="noopener noreferrer">
+              🡒https://lapse.com/
+              </a>
+
+              <img class="top" src="bilder/lapse1.png" style="width: 100%; ">
+              <figcaption>
+              Screenshot der Lapse Website, Januar 2026.
+              <br>
+              </a> —
+              <a href="https://lapse.com/" target="_blank" rel="noopener noreferrer">
+              Quelle
+              </a>
+              </figcaption>
+
+              </div>`
+      },
+
     };
