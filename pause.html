@@ -1,141 +1,288 @@
 <!DOCTYPE html>
-<html lang="de" data-theme="dark">
+<html lang="de" data-theme="light">
 <head>
   <meta charset="UTF-8">
-  <title>Social Media Index</title>  
-  <link rel="stylesheet" href="pause.html">
+  <title>Social Media Index - Pause</title>  
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="buttons.css">
-
+  <link rel="stylesheet" href="pause.css">
   <link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Sans&display=swap" rel="stylesheet">
 </head>
 
-
-  <style>
-    html,body{height:100%;margin:0;overflow:hidden}
-    body{
-      background-color: #f0f;
-      position: relative;
-      font-family: sans-serif;
-    }
-
-    /* Container für fliegende Bilder */
-    .fly-container{position: absolute; inset:0; pointer-events:none; overflow:hidden}
-
-
-    .fly {
-      position: absolute;
-      will-change: transform, opacity;
-      max-width: 400px;
-      max-height: 400px;
-      opacity: 0;
-      transform: translate3d(0,0,0) scale(3);
-      transition: opacity 0.3s ease;
-      /* mix-blend-mode: difference; */
-    }
-
-    /* Keyframes: erzeugen grobe Flugbahn (start -> curve -> end) */
-    @keyframes flyAcross {
-      0%   { transform: translate(var(--sx), var(--sy)) rotate(var(--sr)); opacity:0; }
-      10%  { opacity:1; }
-      50%  { transform: translate(var(--mx), var(--my)) rotate(calc(var(--sr) + 90deg)); opacity:0.95; }
-      100% { transform: translate(var(--ex), var(--ey)) rotate(calc(var(--sr) + 180deg)); opacity:0; }
-    }
-  </style>
-</head>
-
-
-
 <body>
-  <div class="fly-container" id="flyContainer"></div>
 
+  <!-- Cursor Trail Canvas -->
+  <canvas id="cursorTrail"></canvas>
+
+  <!-- Header -->
+  <div class="pause-header">
+    <h2>Pause</h2>
+
+  
     <div class="buttons-container">
-    <a href="index.html" class="zurück-index-button">
-      <h1>← zurück zum Index</h1>
-    </a>
+      <a href="index.html" class="zurück-index-button">
+        <h1>← zurück zum Index</h1>
+      </a>
     </div>
+  </div>
 
+  <!-- Bild-Container -->
+  <div class="pause-content" id="pauseContent">
+    <!-- Bilder werden per JS eingefügt -->
+  </div>
+
+  <!-- Detail-Spalte -->
+  <div class="pause-detail" id="pauseDetail">
+    <div class="pause-detail-header">
+      <button class="close-btn" id="closeDetail"><h1>X</h1></button>
+      <h3 id="detailTitle">Bildtitel</h3>
+    </div>
+    <div class="pause-detail-content">
+      <img id="detailImage" src="" alt="">
+      <p id="detailDescription"></p>
+    </div>
+  </div>
 
   <script>
-    // Lade IDs aus localStorage (Fallback-Liste)
-    const ids = JSON.parse(localStorage.getItem('portal-image-ids') || '[]');
-    const container = document.getElementById('flyContainer');
+    // Bilderliste aus /bilder Ordner
+    const imageData = [
+      { id: 'bbs', title: 'BBS', desc: 'Bulletin Board System – Einer der ersten Online-Kommunikationswege vor dem World Wide Web.' },
+      { id: 'bereal1', title: 'BeReal', desc: 'Eine App, die Nutzer auffordert, authentische Momente zu teilen – ohne Filter.' },
+      { id: 'bluesky', title: 'Bluesky', desc: 'Dezentrales soziales Netzwerk, gegründet als Alternative zu Twitter.' },
+      { id: 'bondee', title: 'Bondee', desc: 'Virtueller sozialer Raum mit Avatar-Interaktionen.' },
+      { id: 'classmates', title: 'Classmates', desc: 'Eines der ersten sozialen Netzwerke, um ehemalige Schulkameraden zu finden.' },
+      { id: 'clubhouse', title: 'Clubhouse', desc: 'Audio-basiertes soziales Netzwerk für Live-Gespräche.' },
+      { id: 'facebook', title: 'Facebook', desc: 'Das weltweit größte soziale Netzwerk, gegründet 2004 von Mark Zuckerberg.' },
+      { id: 'friendster', title: 'Friendster', desc: 'Pionier der sozialen Netzwerke, gestartet 2002.' },
+      { id: 'geocities', title: 'GeoCities', desc: 'Webhosting-Dienst, der die frühe persönliche Webseiten-Kultur prägte.' },
+      { id: 'habbo', title: 'Habbo', desc: 'Virtuelles Hotel und soziales Netzwerk für Jugendliche.' },
+      { id: 'lapse', title: 'Lapse', desc: 'Foto-App mit verzögerter Entwicklung – wie analoge Fotografie.' },
+      { id: 'lastfm', title: 'Last.fm', desc: 'Musik-Tracking und Empfehlungsplattform seit 2002.' },
+      { id: 'linkedin', title: 'LinkedIn', desc: 'Professionelles Netzwerk für Karriere und Geschäftskontakte.' },
+      { id: 'livejournal', title: 'LiveJournal', desc: 'Frühe Blogging-Plattform mit starker Community-Kultur.' },
+      { id: 'mastodon', title: 'Mastodon', desc: 'Dezentrales Open-Source soziales Netzwerk.' },
+      { id: 'myspace', title: 'MySpace', desc: 'Dominantes soziales Netzwerk der 2000er, bekannt für Musik und Individualisierung.' },
+      { id: 'nospace', title: 'NoPlace', desc: 'Moderne Social-Media-App mit Retro-Ästhetik.' },
+      { id: 'orkut', title: 'Orkut', desc: 'Googles soziales Netzwerk, besonders populär in Brasilien und Indien.' },
+      { id: 'parler', title: 'Parler', desc: 'Alternatives soziales Netzwerk mit Fokus auf Redefreiheit.' },
+      { id: 'qq', title: 'QQ', desc: 'Chinesischer Messaging-Dienst mit über 800 Millionen Nutzern.' },
+      { id: 'soundcloud', title: 'SoundCloud', desc: 'Musik-Streaming-Plattform für unabhängige Künstler.' },
+      { id: 'spacehey', title: 'SpaceHey', desc: 'Nostalgische Neuauflage von MySpace.' },
+      { id: 'tripadvisor', title: 'TripAdvisor', desc: 'Reise-Community mit Bewertungen und Empfehlungen.' },
+      { id: 'truthsocial', title: 'Truth Social', desc: 'Soziales Netzwerk gegründet von Donald Trump.' },
+      { id: 'x', title: 'X (Twitter)', desc: 'Mikroblogging-Plattform, 2023 in X umbenannt.' }
+    ];
 
-    // Fallback: wenn keine IDs vorhanden, benutze Beispielbilder (falls vorhanden)
-    const fallback = ['facebook','myspace','habbo','bbs','clubhouse'];
-    const imageIds = ids.length ? ids : fallback;
+    const content = document.getElementById('pauseContent');
+    const detail = document.getElementById('pauseDetail');
+    const detailTitle = document.getElementById('detailTitle');
+    const detailImage = document.getElementById('detailImage');
+    const detailDescription = document.getElementById('detailDescription');
+    const closeBtn = document.getElementById('closeDetail');
 
+    // Zufällige Position
+    function randomPos(max) {
+      return Math.random() * max;
+    }
 
-    // Hilfs: zufällige Werte in einem Bereich
-    function rand(min, max){ return Math.random()*(max-min)+min; }
+    // Bilder auf dem Screen verteilen
+    imageData.forEach((img, idx) => {
+      const div = document.createElement('div');
+      div.className = 'pause-image';
+      
+      // Zufällige Position (mit Abstand vom Rand)
+      const x = 5 + randomPos(85);
+      const y = 10 + randomPos(80);
+      div.style.left = x + '%';
+      div.style.top = y + '%';
+      
+      const imgEl = document.createElement('img');
+      imgEl.src = `bilder/${img.id}.png`;
+      imgEl.alt = img.title;
+      imgEl.onerror = () => { imgEl.src = `bilder/${img.id}.jpg`; };
+      
+      div.appendChild(imgEl);
+      content.appendChild(div);
 
-    // Erzeuge fliegende Bilder mit zufälliger Flugbahn
-    imageIds.forEach((id, idx) => {
-      const img = document.createElement('img');
-      img.className = 'fly';
-      img.alt = id;
-      // versuche png, ansonsten jpg via onerror
-      img.src = `bilder/${id}.png`;
-      img.onerror = ()=> { if (!img._triedJpg){ img._triedJpg = true; img.src = `bilder/${id}.jpg`; } };
-
-      // zufällige Start/Control/End-Positionen (in px)
-      const sx = rand(-30, 20) + 'vw';
-      const sy = rand(100, 140) + 'vh'; // startet unterhalb des viewports
-      const ex = rand(-30, 110) + 'vw';
-      const ey = rand(-30, -40) + 'vh'; // endet über dem viewport
-      const mx = rand(10, 50) + 'vw';
-      const my = rand(20, 60) + 'vh';
-      const sr = rand(-45,45) + 'deg';
-
-      // Speichere CSS-Variablen für Keyframes
-      img.style.setProperty('--sx', sx);
-      img.style.setProperty('--sy', sy);
-      img.style.setProperty('--ex', ex);
-      img.style.setProperty('--ey', ey);
-      img.style.setProperty('--mx', mx);
-      img.style.setProperty('--my', my);
-      img.style.setProperty('--sr', sr);
-
-      // zufällige Größe
-      const scale = rand(0.5, 1.1);
-      img.style.width = Math.round(1200 * scale) + 'px';
-
-      container.appendChild(img);
-
-      // Starte Animation leicht gestaffelt
-      const delay = idx * 300 + rand(0,800);
-      const duration = rand(3000, 8000);
-
-      // setze animation
-      img.style.animation = `flyAcross ${duration}ms cubic-bezier(.2,.8,.2,1) ${delay}ms forwards`;
-      // nach Animation entfernen (oder wiederholen falls gewünscht)
-      img.addEventListener('animationend', () => {
-        // entferne oder wiederhole
-        // container.removeChild(img);
-        // Für loop: starte erneut mit neuen Parametern (optional)
-        setTimeout(()=>{
-          // neu positionieren und erneut animieren
-          img.style.setProperty('--sx', rand(-30, 20) + 'vw');
-          img.style.setProperty('--sy', rand(100, 140) + 'vh');
-          img.style.setProperty('--ex', rand(-30, 110) + 'vw');
-          img.style.setProperty('--ey', rand(-30, -40) + 'vh');
-          img.style.setProperty('--mx', rand(10, 50) + 'vw');
-          img.style.setProperty('--my', rand(20, 60) + 'vh');
-          const dur = rand(3000, 8000);
-          const del = rand(200, 2000);
-          img.style.animation = `none`;
-          // force reflow
-          void img.offsetWidth;
-          img.style.animation = `flyAcross ${dur}ms cubic-bezier(.2,.8,.2,1) ${del}ms forwards`;
-        }, rand(800,3000));
+      // Speichere Referenz für Proximity-Check
+      div._imgData = img;
+      div._imgEl = imgEl;
+      
+      // Direkter Hover öffnet auch sofort
+      div.addEventListener('mouseenter', (e) => {
+        if (!enlargedImages.has(div)) {
+          div.classList.add('enlarged');
+          enlargedImages.set(div, { x: e.clientX, y: e.clientY });
+        }
       });
     });
 
-    // optional: Escape Taste zurück zur Startseite
-    window.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape') location.href = 'index.html';
+    // Proximity-basiertes Hover (mehrere Bilder gleichzeitig möglich)
+    const openDistance = 30;
+    const closeDistance = 20;
+    const enlargedImages = new Map(); // Speichert Startposition pro Bild
+
+    document.addEventListener('mousemove', (e) => {
+      const mouseX = e.clientX;
+      const mouseY = e.clientY;
+      
+      const pauseImages = document.querySelectorAll('.pause-image');
+      
+      for (const div of pauseImages) {
+        const rect = div.getBoundingClientRect();
+        const centerX = rect.left + rect.width / 2;
+        const centerY = rect.top + rect.height / 2;
+        
+        // Prüfe ob dieses Bild offen ist und geschlossen werden soll
+        if (enlargedImages.has(div)) {
+          const startPos = enlargedImages.get(div);
+          const dx = mouseX - startPos.x;
+          const dy = mouseY - startPos.y;
+          const distance = Math.sqrt(dx * dx + dy * dy);
+          
+          if (distance > closeDistance) {
+            div.classList.remove('enlarged');
+            enlargedImages.delete(div);
+          }
+        } else {
+          // Prüfe ob Bild geöffnet werden soll
+          const dx = mouseX - centerX;
+          const dy = mouseY - centerY;
+          const distance = Math.sqrt(dx * dx + dy * dy);
+          
+          if (distance <= openDistance) {
+            div.classList.add('enlarged');
+            enlargedImages.set(div, { x: mouseX, y: mouseY });
+          }
+        }
+      }
     });
+
+    // Klick öffnet Detail
+    document.querySelectorAll('.pause-image').forEach(div => {
+      div.addEventListener('click', () => {
+        const img = div._imgData;
+        const imgEl = div._imgEl;
+        detailTitle.textContent = img.title;
+        detailImage.src = imgEl.src;
+        detailImage.alt = img.title;
+        detailDescription.textContent = img.desc;
+        detail.classList.add('active');
+      });
+    });
+
+    // Detail schließen
+    closeBtn.addEventListener('click', () => {
+      detail.classList.remove('active');
+    });
+
+    // Escape schließt Detail oder geht zurück
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        if (detail.classList.contains('active')) {
+          detail.classList.remove('active');
+        } else {
+          location.href = 'index.html';
+        }
+      }
+    });
+
+
+
+    // === Cursor Trail Effect ===
+    const canvas = document.getElementById('cursorTrail');
+    const ctx = canvas.getContext('2d');
+    
+    // Canvas auf volle Größe setzen
+    function resizeCanvas() {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    }
+    resizeCanvas();
+    window.addEventListener('resize', resizeCanvas);
+
+
+    
+    // Trail-Punkte speichern
+    const trail = [];
+    const maxTrailLength = 50;
+
+    document.addEventListener('mousemove', (e) => {
+      trail.push({
+        x: e.clientX,
+        y: e.clientY,
+        time: Date.now()
+      });
+      
+      // Alte Punkte entfernen
+      if (trail.length > maxTrailLength) {
+        trail.shift();
+      }
+    });
+
+    // Animation Loop
+    function drawTrail() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      
+      if (trail.length < 2) {
+        requestAnimationFrame(drawTrail);
+        return;
+      }
+
+      const now = Date.now();
+      const fadeTime = 800; // ms bis zum Ausblenden
+
+      ctx.lineCap = 'round';
+      ctx.lineJoin = 'round';
+      ctx.lineWidth = 8;
+
+      // Filtere gültige Punkte
+      const validPoints = trail.filter(p => now - p.time <= fadeTime);
+      
+      if (validPoints.length < 2) {
+        // Alte Punkte entfernen
+        while (trail.length > 0 && now - trail[0].time > fadeTime) {
+          trail.shift();
+        }
+        requestAnimationFrame(drawTrail);
+        return;
+      }
+
+      // Berechne Bounding Box für Gradient
+      const firstPoint = validPoints[0];
+      const lastPoint = validPoints[validPoints.length - 1];
+      
+      // Gradient vom ältesten zum neuesten Punkt
+      const gradient = ctx.createLinearGradient(firstPoint.x, firstPoint.y, lastPoint.x, lastPoint.y);
+      
+      // Alpha basierend auf Alter
+      const alphaStart = Math.max(0, 1 - (now - firstPoint.time) / fadeTime);
+      const alphaEnd = Math.max(0, 1 - (now - lastPoint.time) / fadeTime);
+      
+      gradient.addColorStop(0, `rgba(0, 0, 255, ${alphaStart})`);
+      gradient.addColorStop(1, `rgba(0, 0, 255, ${alphaEnd})`);
+
+      // Eine durchgehende Linie zeichnen
+      ctx.beginPath();
+      ctx.moveTo(validPoints[0].x, validPoints[0].y);
+      
+      for (let i = 1; i < validPoints.length; i++) {
+        ctx.lineTo(validPoints[i].x, validPoints[i].y);
+      }
+      
+      ctx.strokeStyle = gradient;
+      ctx.stroke();
+
+      // Alte Punkte entfernen basierend auf Zeit
+      while (trail.length > 0 && now - trail[0].time > fadeTime) {
+        trail.shift();
+      }
+
+      requestAnimationFrame(drawTrail);
+    }
+    
+    drawTrail();
   </script>
 </body>
 </html>

@@ -7,6 +7,7 @@
     const col2 = document.getElementById('col2');
     const col3 = document.getElementById('col3');
     const dynamicImage = document.getElementById('dynamicImage');
+    const gridContainer = document.getElementById('grid-container');
 
 
 
@@ -14,6 +15,7 @@
 // --- Sortierlogik Index-Items ---
 const sortButtons = document.querySelectorAll('#sortBar .sort-btn');
 let yearSortAscending = false; // Track year sort direction
+let currentContinentFilter = null; // Track current continent filter
 
 sortButtons.forEach(button => {
   button.addEventListener('click', () => {
@@ -23,9 +25,14 @@ sortButtons.forEach(button => {
     if (sortBy === 'year') {
       yearSortAscending = !yearSortAscending;
       button.classList.toggle('desc');
+      currentContinentFilter = null; // Reset continent filter
+    } else if (sortBy === 'european' || sortBy === 'asian' || sortBy === 'us-american') {
+      // Continent filter
+      currentContinentFilter = sortBy;
     } else {
       // For other sorts, remove active state from year button
       document.querySelector('[data-sort="year"]').classList.remove('active');
+      currentContinentFilter = null; // Reset continent filter
     }
     
     sortButtons.forEach(btn => btn.classList.remove('active'));
@@ -127,6 +134,7 @@ const timelineData = [
       const data = timelineData.find(d => d.id === id);
       return {
         li,
+        id,
         year: data ? data.year : 9999,
         users: data ? data.users : 0,
         alphabet: data ? data.alphabet : 9999,
@@ -158,6 +166,9 @@ const timelineData = [
         }
       });
 
+      // Grid-Items: passende bleiben normal, andere werden blasser
+      applyGridContinentFilter(key);
+
     } else {
       // Bei normalen Sortierungen: alle Items wieder sichtbar machen und wie gewohnt sortieren
       enriched.sort((a, b) => {
@@ -174,7 +185,53 @@ const timelineData = [
         e.li.style.display = ''; // sicherstellen, dass sichtbar
         timelineList.appendChild(e.li);
       });
+
+      // Grid-Items: Filter entfernen, alle normal anzeigen
+      removeGridContinentFilter();
     }
+
+    // Grid-Items in gleicher Reihenfolge sortieren
+    sortGridItems(enriched.map(e => e.id));
+  }
+
+  // Funktion zum Sortieren der Grid-Items
+  function sortGridItems(orderedIds) {
+    if (!gridContainer) return;
+    
+    const gridItems = Array.from(gridContainer.querySelectorAll('.grid-item'));
+    
+    // Sortiere Grid-Items nach der Reihenfolge der IDs
+    orderedIds.forEach(id => {
+      const gridItem = gridItems.find(item => item.getAttribute('data-id') === id);
+      if (gridItem) {
+        gridContainer.appendChild(gridItem);
+      }
+    });
+  }
+
+  // Funktion für Kontinentfilter auf Grid-Items
+  function applyGridContinentFilter(continent) {
+    if (!gridContainer) return;
+    
+    const gridItems = gridContainer.querySelectorAll('.grid-item');
+    gridItems.forEach(item => {
+      const itemContinent = item.getAttribute('data-continent');
+      if (itemContinent === continent) {
+        item.classList.remove('faded');
+      } else {
+        item.classList.add('faded');
+      }
+    });
+  }
+
+  // Funktion zum Entfernen des Kontinentfilters von Grid-Items
+  function removeGridContinentFilter() {
+    if (!gridContainer) return;
+    
+    const gridItems = gridContainer.querySelectorAll('.grid-item');
+    gridItems.forEach(item => {
+      item.classList.remove('faded');
+    });
   }
 
 
@@ -200,6 +257,19 @@ const timelineData = [
       const id = btn.getAttribute('data-id');
       showDetail(id, btn.textContent.trim());
     });
+
+    // Handle click events for grid items
+    if (gridContainer) {
+      gridContainer.addEventListener('click', (e) => {
+        const gridItem = e.target.closest('.grid-item');
+        if (!gridItem) return;
+        const id = gridItem.getAttribute('data-id');
+        // Finde den passenden Timeline-Button für den Fallback-Titel
+        const timelineBtn = document.querySelector(`.timeline-item[data-id="${id}"]`);
+        const fallbackTitle = timelineBtn ? timelineBtn.textContent.trim() : id;
+        showDetail(id, fallbackTitle);
+      });
+    }
 
     detailClose.addEventListener('click', hideDetail);
 
@@ -298,6 +368,11 @@ const timelineData = [
       if (savedSortBy) {
         yearSortAscending = savedYearAsc;
         
+        // Track continent filter state
+        if (savedSortBy === 'european' || savedSortBy === 'asian' || savedSortBy === 'us-american') {
+          currentContinentFilter = savedSortBy;
+        }
+        
         // Aktiven Button setzen (nur im sortBar)
         document.querySelectorAll('#sortBar .sort-btn').forEach(btn => btn.classList.remove('active'));
         const activeBtn = document.querySelector('#sortBar [data-sort="' + savedSortBy + '"]');
@@ -310,6 +385,9 @@ const timelineData = [
         
         // Sortierung anwenden
         sortTimeline(savedSortBy, savedYearAsc);
+      } else {
+        // Initiale Sortierung (chronologisch absteigend) anwenden
+        sortTimeline('year', false);
       }
       
       // Aktiven Detaileintrag wiederherstellen
@@ -391,3 +469,87 @@ const timelineData = [
       applyVisitedStyles();
     });
     linkObserver.observe(document.body, { childList: true, subtree: true });
+
+
+        // Wiggle Animation für callme-button jede Minute
+    const pauseButtonElement = document.querySelector('.pause-button');
+    if (pauseButtonElement) {
+      setInterval(() => {
+        pauseButtonElement.classList.add('wiggle');
+        setTimeout(() => {
+          pauseButtonElement.classList.remove('wiggle');
+        }, 400);
+      }, 20000); // 60000ms = 1 Minute
+    }
+
+
+
+    // --- Resize Divider Logik ---
+    (function initResizeDivider() {
+      const container = document.querySelector('.container');
+      const resizeDivider = document.getElementById('resize-divider');
+      const col1 = document.getElementById('col1');
+      const col2 = document.getElementById('col2'); 
+      if (!resizeDivider || !container || !col1 || !col2) return;
+      let isResizing = false;
+      let startX = 0;
+      let startCol1Width = 0;
+      
+      // Standard-Breite (400px) setzen
+      updateGridColumns(500);
+      
+      resizeDivider.addEventListener('mousedown', (e) => {
+        isResizing = true;
+        startX = e.clientX;
+        startCol1Width = col1.getBoundingClientRect().width;
+        
+        document.body.classList.add('resizing');
+        resizeDivider.classList.add('active');
+        
+        e.preventDefault();
+      });
+      
+      document.addEventListener('mousemove', (e) => {
+        if (!isResizing) return;
+        
+        const containerWidth = container.getBoundingClientRect().width;
+        const dividerWidth = resizeDivider.getBoundingClientRect().width;
+        const deltaX = e.clientX - startX;
+        let newCol1Width = startCol1Width + deltaX;
+        
+        // Mindest- und Maximalbreiten
+        const minWidth = 400;
+        const maxWidth = containerWidth - dividerWidth - 450;
+        
+        newCol1Width = Math.max(minWidth, Math.min(maxWidth, newCol1Width));
+        
+        updateGridColumns(newCol1Width);
+      });
+      
+      document.addEventListener('mouseup', () => {
+        if (isResizing) {
+          isResizing = false;
+          document.body.classList.remove('resizing');
+          resizeDivider.classList.remove('active');
+        }
+      });
+      
+      function updateGridColumns(col1Width) {
+        const containerWidth = container.getBoundingClientRect().width;
+        const dividerWidth = 1;
+        const col2TotalWidth = containerWidth - col1Width - dividerWidth;
+        
+        container.style.gridTemplateColumns = 
+          `${col1Width}px ${dividerWidth}px ${col2TotalWidth}px`;
+        
+        // Timeline-Layout basierend auf col2-Breite anpassen
+        const timeline = document.getElementById('timeline');
+        if (timeline) {
+          if (col2TotalWidth < 1000) {
+            timeline.classList.add('timeline-flow');
+          } else {
+            timeline.classList.remove('timeline-flow');
+          }
+        }
+      }
+    })();

@@ -1,0 +1,75 @@
+    html,body{height:100%;margin:0;overflow-y: auto;}
+
+    .glossar-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 30px;
+      height: 60px;
+      border-bottom: 2px solid rgb(255, 255, 255);
+      position: sticky;
+      top: 0;
+      background-color: #00f;
+      z-index: 100;
+    }
+
+    .glossar-header h3 {
+      font-family: Hedvig Letters Sans;
+      margin: 0;
+      font-size: 24px;
+      font-weight: 500;
+      text-transform: uppercase;
+      color: rgb(255, 255, 255);
+    }
+
+    .glossar-content {
+      padding: 25px;
+      background-color: #00f;
+      min-height: calc(100vh - 62px);
+    }
+
+    .glossar-items {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+      align-content: flex-start;
+    }
+
+    .glossar-term {
+      font-family: Hedvig Letters Sans;
+      font-size: 24px;
+      line-height: 32px;
+      font-weight: 500;
+      background: rgb(255, 255, 255);
+      color: #00f;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.4s ease;
+      padding: 0 8px;
+    }
+
+    .glossar-term:hover {
+      background: #00f;
+      transition: 0.0s ease;
+      color: #fff;
+    }
+
+    .glossar-term.active {
+      background: rgb(0, 0, 0);
+      color: #fff;
+    }
+
+    .glossar-description-inline {
+      width: 100%;
+      flex-basis: 100%;
+      padding: 15px 0;
+    }
+
+    .glossar-description-inline p {
+      color: rgb(255, 255, 255);
+      margin: 0;
+      padding: 15px 20px;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 8px;
+    }

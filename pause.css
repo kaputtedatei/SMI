@@ -1,0 +1,153 @@
+
+body {
+  background-color: #ff0;
+  position: relative;
+  font-family: Hedvig Letters Sans;
+}
+
+/* Canvas für Cursor-Trail */
+#cursorTrail {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+.pause-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  height: 60px;
+  border-bottom: 2px solid #000;
+  position: sticky;
+  top: 0;
+  background-color: #ff0;
+  z-index: 100;
+}
+
+.pause-header h2 {
+  font-family: Hedvig Letters Sans;
+  margin: 0;
+  font-size: 24px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  color: #000 !important;
+}
+
+
+/* Content-Bereich mit verteilten Bildern */
+.pause-content {
+  position: fixed;
+  top: 62px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+
+/* Kleine Bilder */
+.pause-image {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  cursor: pointer;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), z-index 0s;
+  z-index: 1;
+  transform-origin: center center;
+}
+
+.pause-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pause-image.enlarged {
+  transform: scale(30);
+  z-index: 50;
+}
+
+.pause-image.enlarged img {
+  border-radius: 0;
+}
+
+/* Detail-Spalte */
+.pause-detail {
+  position: fixed;
+  top: 0;
+  right: -500px;
+  width: 500px;
+  height: 100vh;
+  background-color: #fff;
+  border-left: 2px solid #000;
+  z-index: 200;
+  display: flex;
+  flex-direction: column;
+}
+
+.pause-detail.active {
+  right: 0;
+}
+
+.pause-detail-header {
+  display: flex;
+  align-items: center;
+  padding: 0 25px;
+  height: 60px;
+  border-bottom: 2px solid #000;
+  background-color: #ff0;
+  flex-shrink: 0;
+}
+
+.pause-detail-header h3 {
+  font-family: Hedvig Letters Sans;
+  margin: 0;
+  font-size: 24px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.pause-detail-header .close-btn {
+  top: 10px;
+  background: #f0f;
+  color: rgb(255, 255, 255) !important;
+  border: none;
+  cursor: w-resize;
+  justify-self: flex-start;
+  margin: 0 15px 0 0;
+  border-radius: 8px;
+  padding: 4px 10px; 
+}
+
+.pause-detail-header .close-btn:hover {
+  background: #000;
+  color: #fff;
+}
+
+.pause-detail-content {
+  padding: 25px;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.pause-detail-content img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 4px;
+}
+
+.pause-detail-content p {
+  font-family: Hedvig Letters Sans;
+  font-size: 22px;
+  line-height: 30px;
+  margin: 0;
+  color: #000;
+}

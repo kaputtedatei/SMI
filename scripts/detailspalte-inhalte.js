@@ -1805,24 +1805,14 @@ const DETAILS = {
               <a class="sm" href="https://www.thenoplace.com/" target="_blank" rel="noopener noreferrer">
               🡒https://www.thenoplace.com/
               </a>
-              
-              <img class="top" src="bilder/noplace1.png" style="width: 100%; ">
-              <figcaption>
-              Screenshot der Noplace Website, Januar 2026.
-              <br>
-              </a> —
-              <a href="https://www.thenoplace.com/" target="_blank" rel="noopener noreferrer">
-              Quelle
-              </a>
-              </figcaption>
 
               <div class="info-box">
-                <p>Launch:</strong></p><p>2021</p>
-                <p>Verfügbarkeit:</strong></p><p>mobile</p>
-                <p>Nutzer*innen:</strong></p><p>zirka 1.000.000</p>
-                <p>Besonders beliebt in:</strong></p><p>?</p>
-                <p>Firmensitz:</strong></p><p>San Francisco, USA</p>
-                <p>Ads:</strong></p><p>?</p>
+                <p>Launch:</p><p>2021</p>
+                <p>Verfügbarkeit:</p><p>mobile</p>
+                <p>Nutzer*innen:</p><p>ca. 1 Mio</p>
+                <p>Besonders beliebt in:</p><p>Deutschland</p>
+                <p>Firmensitz:</p><p>San Francisco, USA</p>
+                <p>Ads:</p><p>ja</p>
               </div>
               
               <p class="top"> 
@@ -1843,6 +1833,18 @@ const DETAILS = {
               Quelle
               </a>
               </figcaption>
+
+
+              <img class="top" src="bilder/noplace1.png" style="width: 100%; ">
+              <figcaption>
+              Screenshot der Noplace Website, Januar 2026.
+              <br>
+              </a> —
+              <a href="https://www.thenoplace.com/" target="_blank" rel="noopener noreferrer">
+              Quelle
+              </a>
+              </figcaption>
+
 
               <img class="top" src="bilder/noplace3.png" style="width: 100%; ">
               <figcaption>
