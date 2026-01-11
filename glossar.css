@@ -61,7 +61,6 @@
     }
 
     .glossar-description-inline {
-      width: 100%;
       flex-basis: 100%;
       padding: 15px 0;
     }
@@ -69,7 +68,94 @@
     .glossar-description-inline p {
       color: rgb(255, 255, 255);
       margin: 0;
-      padding: 15px 20px;
+      padding: 50px 30px;
       background-color: rgba(255, 255, 255, 0.1);
       border-radius: 8px;
+      width: 40em;
+    }
+
+    /* Kategorie-Punkte */
+    .glossar-term {
+      position: relative;
+      padding-left: 20px;
+    }
+
+    .glossar-term[data-category="psychologie"]::before {
+      content: '';
+      position: absolute;
+      left: 6px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: #f0f;
+    }
+
+    .glossar-term[data-category="slang"]::before {
+      content: '';
+      position: absolute;
+      left: 6px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: #000;
+    }
+
+    /* Keine Kategorie - kein extra Padding */
+    .glossar-term:not([data-category]) {
+      padding-left: 8px;
+    }
+
+    /* Verblasste Begriffe bei Filter */
+    .glossar-term.faded {
+      opacity: 0.2;
+    }
+
+    /* Filter-Container */
+    .glossar-filter {
+      position: fixed;
+      bottom: 25px;
+      left: 25px;
+      display: flex;
+      gap: 8px;
+      z-index: 100;
+    }
+
+    .filter-btn {
+      font-family: 'Hedvig Letters Sans';
+      font-size: 16px;
+      padding: 2px 10px;
+      border: 2px solid #fff;
+      border-radius: 8px;
+      cursor: pointer;
+      background-color: #00f;
+      color: #fff;
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+
+    .filter-btn.active {
+      background-color: #fff;
+      color: #00f;
+    }
+
+    .filter-btn::before {
+      content: '';
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+    }
+
+    .filter-btn[data-filter="psychologie"]::before {
+      background-color: #f0f;
+    }
+
+    .filter-btn[data-filter="slang"]::before {
+      background-color: #000;
     }

@@ -6,14 +6,12 @@
 <head>
   <meta charset="UTF-8">
   <title>Social Media Index</title>  
-  <link rel="stylesheet" href="pause.html">
+  <link rel="stylesheet" href="hof.html">
   <link rel="stylesheet" href="glossar.html">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="buttons.css">
-
   <script src="scripts/detailspalte-inhalte.js" defer></script>
   <script src="scripts/verstehe-ich-nicht.js" defer></script>
-
   <link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Sans&display=swap" rel="stylesheet">
 </head>
@@ -28,6 +26,9 @@
     <div class="column" id="col1">
       <div class="column-header" id="header1">
         <h2>Index</h2>
+        <div class="theme-button" id="theme-button-col1">
+          <h1 id="theme-text-col1">dark</h1>
+        </div>
       </div>
     <div class="column-content">
         <ul class="timeline" id="timeline">
@@ -78,9 +79,9 @@
           <li><button class="timeline-item" data-id="tiktok">TikTok/Douyin</button></li>
           <li><button class="timeline-item" data-id="medium">Musical.ly</button></li>
           <!-- <li><button class="timeline-item" data-id="ello">Ello</button></li> -->
-          <li><button class="timeline-item" data-id="periscope">Periscope</button></li>
+          <!-- <li><button class="timeline-item" data-id="periscope">Periscope</button></li> -->
           <li><button class="timeline-item" data-id="mastodon">Mastodon</button></li>
-          <li><button class="timeline-item" data-id="houseparty">Houseparty</button></li>
+          <!-- <li><button class="timeline-item" data-id="houseparty">Houseparty</button></li> -->
           <!-- <li><button class="timeline-item" data-id="byte">Byte</button></li> -->
           <li><button class="timeline-item" data-id="threads">Threads</button></li>
           <li><button class="timeline-item" data-id="clubhouse">Clubhouse</button></li>
@@ -96,20 +97,20 @@
         </ul>
 
         
-    <!-- Sortierleiste -->
-    <div id="sortBar">
-          <!--<span class="sort-label">Sortieren nach:</span> -->
-          <button class="sort-btn active" data-sort="year">chronologisch <span class="sort-arrow">↑</span></button>
-          <button class="sort-btn" data-sort="users">höchste Nutzerzahl</button>
-          <button class="sort-btn" data-sort="alphabet">alphabetisch</button>
-          <!-- <button class="sort-btn" data-sort="value">aktueller Marktwert</button> -->
-          <button class="sort-btn" data-sort="european">europäisch</button>
-          <button class="sort-btn" data-sort="asian">asiatisch</button>
-          <button class="sort-btn" data-sort="us-american">us-amerikanisch</button>
-        </div>
+      <!-- Sortierleiste -->
+      <div id="sortBar">
+            <!--<span class="sort-label">Sortieren nach:</span> -->
+            <button class="sort-btn" data-sort="year">chronologisch <span class="sort-arrow">↑</span></button>
+            <button class="sort-btn" data-sort="users">höchste Nutzerzahl</button>
+            <!-- <button class="sort-btn" data-sort="value">aktueller Marktwert</button> -->
+            <button class="sort-btn" data-sort="european">europäisch</button>
+            <button class="sort-btn" data-sort="asian">asiatisch</button>
+            <button class="sort-btn" data-sort="us-american">us-amerikanisch</button>
+          </div>
 
+      </div>
     </div>
-    </div>
+    
 
     <!-- Resize Divider -->
     <div class="resize-divider" id="resize-divider"></div>
@@ -277,28 +278,20 @@
             <img class="dynamic-image hover-image" src="bilder/telegram2.png" alt="Telegram">
           </div>
           <div class="grid-item" data-id="discord" data-continent="us">
-            <img class="dynamic-image" src="bilder/discord1.jpg" alt="Discord">
-            <img class="dynamic-image hover-image" src="bilder/discord2.png" alt="Discord">
+            <img class="dynamic-image" src="bilder/discord1.png" alt="Discord">
+            <img class="dynamic-image hover-image" src="bilder/discord1.png" alt="Discord">
           </div>
           <div class="grid-item" data-id="tiktok" data-continent="asia">
-            <img class="dynamic-image" src="bilder/tiktok1.jpg" alt="TikTok">
-            <img class="dynamic-image hover-image" src="bilder/tiktok2.png" alt="TikTok">
+            <img class="dynamic-image" src="bilder/tiktok3.jpg" alt="TikTok">
+            <img class="dynamic-image hover-image" src="bilder/tiktok1.jpg" alt="TikTok">
           </div>
           <div class="grid-item" data-id="medium" data-continent="us">
             <img class="dynamic-image" src="bilder/musically1.jpg" alt="Musical.ly">
             <img class="dynamic-image hover-image" src="bilder/musically2.png" alt="Musical.ly">
           </div>
-          <div class="grid-item" data-id="periscope" data-continent="us">
-            <img class="dynamic-image" src="bilder/periscope1.jpg" alt="Periscope">
-            <img class="dynamic-image hover-image" src="bilder/periscope2.png" alt="Periscope">
-          </div>
           <div class="grid-item" data-id="mastodon" data-continent="europe">
-            <img class="dynamic-image" src="bilder/mastodon1.jpg" alt="Mastodon">
-            <img class="dynamic-image hover-image" src="bilder/mastodon2.png" alt="Mastodon">
-          </div>
-          <div class="grid-item" data-id="houseparty" data-continent="us">
-            <img class="dynamic-image" src="bilder/houseparty1.jpg" alt="Houseparty">
-            <img class="dynamic-image hover-image" src="bilder/houseparty2.png" alt="Houseparty">
+            <img class="dynamic-image" src="bilder/mastodon1.png" alt="Mastodon">
+            <img class="dynamic-image hover-image" src="bilder/mastodon1.png" alt="Mastodon">
           </div>
           <div class="grid-item" data-id="threads" data-continent="us">
             <img class="dynamic-image" src="bilder/threads1.jpg" alt="Threads">
@@ -318,7 +311,7 @@
           </div>
           <div class="grid-item" data-id="bereal" data-continent="europe">
             <img class="dynamic-image" src="bilder/bereal1.png" alt="BeReal">
-            <img class="dynamic-image hover-image" src="bilder/bereal3.png" alt="BeReal">
+            <img class="dynamic-image hover-image" src="bilder/bereal1.png" alt="BeReal">
           </div>
           <div class="grid-item" data-id="spacehey" data-continent="europe">
             <img class="dynamic-image" src="bilder/spacehey2.png" alt="SpaceHey">
@@ -330,7 +323,7 @@
           </div>
           <div class="grid-item" data-id="lapse" data-continent="europe">
             <img class="dynamic-image" src="bilder/lapse.png" alt="Lapse">
-            <img class="dynamic-image hover-image" src="bilder/lapse2.png" alt="Lapse">
+            <img class="dynamic-image hover-image" src="bilder/lapse.png" alt="Lapse">
           </div>
           <div class="grid-item" data-id="noplace" data-continent="europe">
             <img class="dynamic-image" src="bilder/noplace2.png" alt="Noplace">
@@ -342,7 +335,7 @@
           </div>
           <div class="grid-item" data-id="tenten" data-continent="europe">
             <img class="dynamic-image" src="bilder/tenten1.png" alt="Ten Ten">
-            <img class="dynamic-image hover-image" src="bilder/tenten2.png" alt="Ten Ten">
+            <img class="dynamic-image hover-image" src="bilder/tenten1.png" alt="Ten Ten">
           </div>
       </div> 
     </div>
@@ -494,16 +487,12 @@
 
 
 
-
-
-
-  <div class="bar-bottom"></div>
   <div class="buttons-container">
     <div class="theme-button" id="theme-button">
       <h1 id="theme-text">dark</h1>
     </div>
-    <a href="pause.html" class="pause-button">
-      <h1>Pause</h1>
+    <a href="hof.html" class="hof-button">
+      <h1>HOF</h1>
     </a>
     <a href="glossar.html" class="glossar-button">
       <h1>Glossar</h1>
@@ -523,13 +512,19 @@
     function updateThemeButtonText() {
       const currentTheme = document.documentElement.getAttribute('data-theme');
       const themeText = document.getElementById('theme-text');
+      const themeTextCol1 = document.getElementById('theme-text-col1');
+      const newText = currentTheme === 'dark' ? 'light' : 'dark';
+      
       if (themeText) {
-        themeText.textContent = currentTheme === 'dark' ? 'light' : 'dark';
+        themeText.textContent = newText;
+      }
+      if (themeTextCol1) {
+        themeTextCol1.textContent = newText;
       }
     }
     
-    // Theme wechseln beim Klick auf theme-button
-    document.getElementById('theme-button').addEventListener('click', function() {
+    // Theme wechseln Funktion
+    function toggleTheme() {
       const root = document.documentElement;
       const currentTheme = root.getAttribute('data-theme');
       const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
@@ -537,15 +532,19 @@
       root.setAttribute('data-theme', newTheme);
       localStorage.setItem('theme', newTheme);
       updateThemeButtonText();
-    });
+    }
+    
+    // Theme wechseln beim Klick auf theme-button (beide Buttons)
+    document.getElementById('theme-button').addEventListener('click', toggleTheme);
+    document.getElementById('theme-button-col1').addEventListener('click', toggleTheme);
     
     // Initial setzen
     updateThemeButtonText();
 
-      // Pause Button: gehe zu pause.html
-      if (pauseButton) {
-        pauseButton.addEventListener('click', () => {
-          window.location.href = 'pause.html';
+      // HOF Button: gehe zu hof.html
+      if (hofButton) {
+        hofButton.addEventListener('click', () => {
+          window.location.href = 'hof.html';
         });
       }
       </script>

@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <title>Social Media Index - Hall of Fame</title>  
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="buttons.css">
+  <link rel="stylesheet" href="hof.css">
+  <link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Sans&display=swap" rel="stylesheet">
+  <script src="scripts/hof-inhalte.js"></script>
+</head>
+
+<body>
+
+  <!-- Cursor Trail Canvas -->
+  <canvas id="cursorTrail"></canvas>
+
+  <!-- Header -->
+  <div class="hof-header">
+    <h2>Hall of Fame</h2>
+  </div>
+
+  <!-- Bild-Container -->
+  <div class="hof-content" id="hofContent">
+    <!-- Bilder werden per JS eingefügt -->
+    
+    <!-- Zeitleiste am unteren Rand -->
+    <div class="timeline-axis" id="timelineAxis">
+      <!-- Wird per JS gefüllt -->
+    </div>
+  </div>
+
+  <!-- Detail-Spalte -->
+  <div class="hof-detail" id="hofDetail">
+    <div class="hof-detail-header">
+      <button class="close-btn" id="closeDetail"><h1>X</h1></button>
+      <h3 id="detailTitle">Bildtitel</h3>
+    </div>
+    <div class="hof-detail-content">
+      <img id="detailImage" src="" alt="">
+      <p id="detailLink"><a href="" target="_blank" rel="noopener noreferrer"></a></p>
+      <p id="detailDescription"></p>
+    </div>
+  </div>
+
+  <div class="buttons-container">
+    <a href="index.html" class="index-button">
+      <h1>← Index</h1>
+    </a>
+    <a href="glossar.html" class="glossar-button">
+      <h1>Glossar</h1>
+    </a>
+  </div>
+
+  <script>
+
+
+    // Zeitleisten-Konstanten
+    const startYear = 1995;
+    const endYear = 2028;
+    const contentWidth = window.innerWidth;
+    const padding = 50; // Abstand vom Rand
+    const yearWidth = (contentWidth - padding * 2) / (endYear - startYear);
+
+    // Zeitleiste erstellen
+    const timelineAxis = document.getElementById('timelineAxis');
+    
+    // Ticks ab 1990
+    for (let year = 1990; year <= endYear; year += 10) {
+      const tick = document.createElement('div');
+      tick.className = 'timeline-tick';
+      tick.style.left = (padding + (year - startYear) * yearWidth) + 'px';
+      tick.innerHTML = `<span>${year}</span>`;
+      timelineAxis.appendChild(tick);
+    }
+
+    const content = document.getElementById('hofContent');
+    const detail = document.getElementById('hofDetail');
+    const detailTitle = document.getElementById('detailTitle');
+    const detailImage = document.getElementById('detailImage');
+    const detailDescription = document.getElementById('detailDescription');
+    const closeBtn = document.getElementById('closeDetail');
+
+    // Zufällige Position
+    function randomPos(max) {
+      return Math.random() * max;
+    }
+
+    // Proximity-basiertes Hover (nur ein Bild gleichzeitig)
+    const openDistance = 30;
+    const closeDistance = 20;
+    const enlargedImages = new Map(); // Speichert Startposition pro Bild
+
+    // Bilder auf dem Screen verteilen (basierend auf Jahreszahl)
+    HOF_DATA.forEach((platform) => {
+      // Für jede Plattform alle Bilder anzeigen
+      platform.images.forEach((imageName, imgIdx) => {
+        const div = document.createElement('div');
+        div.className = 'hof-image';
+        
+        // X-Position basierend auf Jahr mit leichter Variation
+        let baseX;
+        if (platform.year < 1990) {
+          baseX = padding + (Math.random() * 20);
+        } else {
+          baseX = padding + (platform.year - startYear) * yearWidth;
+        }
+        const xOffset = (Math.random() - 0.5) * 60 + (imgIdx * 30); // Versetze mehrere Bilder leicht
+        div.dataset.xOffset = xOffset;
+        const x = baseX + xOffset;
+        
+        // Y-Position zufällig verteilt
+        const y = 10 + randomPos(65);
+        div.style.left = x + 'px';
+        div.style.top = y + '%';
+        
+        const imgEl = document.createElement('img');
+        imgEl.src = `bilder/hof/${platform.id}/${imageName}`;
+        imgEl.alt = platform.title;
+        
+        div.appendChild(imgEl);
+        content.appendChild(div);
+
+        // Speichere Referenz für Proximity-Check
+        div._hofData = platform;
+        div._imgEl = imgEl;
+        
+        // Direkter Hover öffnet (nur eins gleichzeitig)
+        div.addEventListener('mouseenter', (e) => {
+          if (!enlargedImages.has(div)) {
+          // Schließe alle anderen Bilder
+          enlargedImages.forEach((pos, otherDiv) => {
+            otherDiv.classList.remove('enlarged');
+          });
+          enlargedImages.clear();
+          
+          div.classList.add('enlarged');
+          enlargedImages.set(div, { x: e.clientX, y: e.clientY });
+        }
+      });
+    });
+    });
+
+    document.addEventListener('mousemove', (e) => {
+      const mouseX = e.clientX;
+      const mouseY = e.clientY;
+      
+      const hofImages = document.querySelectorAll('.hof-image');
+      
+      // Prüfe zuerst ob aktuelles Bild geschlossen werden soll
+      for (const [div, startPos] of enlargedImages) {
+        const dx = mouseX - startPos.x;
+        const dy = mouseY - startPos.y;
+        const distance = Math.sqrt(dx * dx + dy * dy);
+        
+        if (distance > closeDistance) {
+          div.classList.remove('enlarged');
+          enlargedImages.delete(div);
+        }
+      }
+      
+      // Nur neues Bild öffnen wenn keins offen ist
+      if (enlargedImages.size === 0) {
+        for (const div of hofImages) {
+          const rect = div.getBoundingClientRect();
+          const centerX = rect.left + rect.width / 2;
+          const centerY = rect.top + rect.height / 2;
+          
+          const dx = mouseX - centerX;
+          const dy = mouseY - centerY;
+          const distance = Math.sqrt(dx * dx + dy * dy);
+          
+          if (distance <= openDistance) {
+            div.classList.add('enlarged');
+            enlargedImages.set(div, { x: mouseX, y: mouseY });
+            break; // Nur ein Bild öffnen
+          }
+        }
+      }
+    });
+
+    // Funktion zum Aktualisieren der Positionen
+    function updatePositions(compressed) {
+      const availableWidth = compressed ? window.innerWidth - 500 : window.innerWidth;
+      const newYearWidth = (availableWidth - padding * 2) / (endYear - startYear);
+      
+      // Ticks aktualisieren
+      const ticks = document.querySelectorAll('.timeline-tick');
+      let tickYear = 1990;
+      ticks.forEach(tick => {
+        tick.style.left = (padding + (tickYear - startYear) * newYearWidth) + 'px';
+        tickYear += 10;
+      });
+      
+      // Bilder aktualisieren
+      document.querySelectorAll('.hof-image').forEach(div => {
+        const platform = div._hofData;
+        let baseX;
+        if (platform.year < 1990) {
+          baseX = padding + (Math.random() * 20);
+        } else {
+          baseX = padding + (platform.year - startYear) * newYearWidth;
+        }
+        const xOffset = parseFloat(div.dataset.xOffset) || 0;
+        div.style.left = (baseX + xOffset) + 'px';
+      });
+    }
+
+    const hofHeader = document.querySelector('.hof-header');
+
+    // Klick öffnet Detail
+    document.querySelectorAll('.hof-image').forEach(div => {
+      div.addEventListener('click', () => {
+        const platform = div._hofData;
+        const imgEl = div._imgEl;
+        detailTitle.textContent = platform.title;
+        detailImage.src = imgEl.src;
+        detailImage.alt = platform.title;
+        
+        // Link setzen
+        const detailLink = document.getElementById('detailLink');
+        const linkEl = detailLink.querySelector('a');
+        if (platform.link) {
+          linkEl.href = platform.link;
+          linkEl.textContent = ' — Original ansehen';
+          detailLink.style.display = '';
+        } else {
+          detailLink.style.display = 'none';
+        }
+        
+        detailDescription.textContent = platform.desc;
+        detail.classList.add('active');
+        content.classList.add('compressed');
+        hofHeader.classList.add('compressed');
+        updatePositions(true);
+      });
+    });
+
+    // Detail schließen
+    closeBtn.addEventListener('click', () => {
+      detail.classList.remove('active');
+      content.classList.remove('compressed');
+      hofHeader.classList.remove('compressed');
+      updatePositions(false);
+    });
+
+    // Escape schließt Detail oder geht zurück
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        if (detail.classList.contains('active')) {
+          detail.classList.remove('active');
+          content.classList.remove('compressed');
+          hofHeader.classList.remove('compressed');
+          updatePositions(false);
+        } else {
+          location.href = 'index.html';
+        }
+      }
+    });
+
+
+
+    // === Zufällige Wiggle-Parameter für HOF-Bilder ===
+    (function initRandomWiggle() {
+      const hofImages = document.querySelectorAll('.hof-image');
+      
+      hofImages.forEach(img => {
+        // Zufällige Dauer zwischen 1.5s und 3.5s
+        const duration = 1.5 + Math.random() * 2;
+        // Zufällige Verzögerung zwischen 0s und 2s
+        const delay = Math.random() * 2;
+        
+        img.style.setProperty('--wiggle-duration', duration + 's');
+        img.style.setProperty('--wiggle-delay', delay + 's');
+      });
+    })();
+
+
+    // === Cursor Trail Effect ===
+    const canvas = document.getElementById('cursorTrail');
+    const ctx = canvas.getContext('2d');
+    
+    // Canvas auf volle Größe setzen
+    function resizeCanvas() {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    }
+    resizeCanvas();
+    window.addEventListener('resize', resizeCanvas);
+
+
+    
+    // Trail-Punkte speichern
+    const trail = [];
+    const maxTrailLength = 800; // Mehr Punkte für flüssigere Linie
+
+    document.addEventListener('mousemove', (e) => {
+      trail.push({
+        x: e.clientX,
+        y: e.clientY,
+        time: Date.now()
+      });
+      
+      // Alte Punkte entfernen
+      if (trail.length > maxTrailLength) {
+        trail.shift();
+      }
+    });
+
+    // Animation Loop
+    function drawTrail() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      
+      if (trail.length < 2) {
+        requestAnimationFrame(drawTrail);
+        return;
+      }
+
+      const now = Date.now();
+      const fadeTime = 1000; // Kürzere Fade-Zeit für flüssigere Animation
+
+      ctx.lineCap = 'round';
+      ctx.lineJoin = 'round';
+      ctx.lineWidth = 6;
+
+      // Filtere gültige Punkte
+      const validPoints = trail.filter(p => now - p.time <= fadeTime);
+      
+      if (validPoints.length < 2) {
+        // Alte Punkte entfernen
+        while (trail.length > 0 && now - trail[0].time > fadeTime) {
+          trail.shift();
+        }
+        requestAnimationFrame(drawTrail);
+        return;
+      }
+
+      // Berechne Bounding Box für Gradient
+      const firstPoint = validPoints[0];
+      const lastPoint = validPoints[validPoints.length - 1];
+      
+      // Gradient vom ältesten zum neuesten Punkt
+      const gradient = ctx.createLinearGradient(firstPoint.x, firstPoint.y, lastPoint.x, lastPoint.y);
+      
+      // Alpha basierend auf Alter
+      const alphaStart = Math.max(0, 1 - (now - firstPoint.time) / fadeTime);
+      const alphaEnd = Math.max(0, 1 - (now - lastPoint.time) / fadeTime);
+      
+      gradient.addColorStop(0, `rgba(255, 0, 255, ${alphaStart})`);
+      gradient.addColorStop(1, `rgba(255, 0, 255, ${alphaEnd})`);
+
+      // Eine durchgehende Linie zeichnen
+      ctx.beginPath();
+      ctx.moveTo(validPoints[0].x, validPoints[0].y);
+      
+      for (let i = 1; i < validPoints.length; i++) {
+        ctx.lineTo(validPoints[i].x, validPoints[i].y);
+      }
+      
+      ctx.strokeStyle = gradient;
+      ctx.stroke();
+
+      // Alte Punkte entfernen basierend auf Zeit
+      while (trail.length > 0 && now - trail[0].time > fadeTime) {
+        trail.shift();
+      }
+
+      requestAnimationFrame(drawTrail);
+    }
+    
+    drawTrail();
+  </script>
+</body>
+</html>

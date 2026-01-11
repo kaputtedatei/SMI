@@ -7,13 +7,40 @@
   z-index: 100;
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
   margin: 0;
   height: 60px;
 }
 
-/* Buttons ausblenden wenn Detailspalte aktiv ist */
+/* Buttons-Container wenn in #col1 */
+.buttons-container.in-col1 {
+  position: static;
+  height: auto;
+  margin-left: auto;
+}
+
+/* Buttons ausblenden wenn Detailspalte aktiv ist - außer theme-button */
 body:has(.detail-column.active) .buttons-container {
+  display: none;
+}
+
+/* Theme-button in col1 standardmäßig versteckt */
+#theme-button-col1 {
+  display: none;
+}
+
+/* Theme-button in col1 anzeigen wenn col1 größer ist */
+#theme-button-col1.visible {
+  display: flex;
+}
+
+/* Theme-button soll in #col1 erscheinen wenn Detailspalte aktiv */
+body:has(.detail-column.active) #theme-button-col1 {
+  display: flex;
+}
+
+/* Theme-button im buttons-container verstecken wenn Detailspalte aktiv */
+body:has(.detail-column.active) #theme-button {
   display: none;
 }
 
@@ -50,14 +77,14 @@ body:has(.detail-column.active) .buttons-container {
 }
 
 .glossar-button:hover {
-  background: #00f;
+  background: rgb(84, 84, 255);
   transition: 0.0s ease;
 }
 
-.pause-button {
+.hof-button {
   z-index: 100;
   cursor: not-allowed;
-  background: #faf;
+  background: #ff8;
   transition: 0.0s ease;
   border-radius: 8px;
   padding: 4px 10px;
@@ -65,12 +92,12 @@ body:has(.detail-column.active) .buttons-container {
   color: rgb(0, 0, 0) !important;
 }
 
-.pause-button:hover {
-  background: #f0f;
+.hof-button:hover {
+  background: #ff0;
   transition: 0.0s ease;
 }
 
-.zurück-index-button {
+.index-button {
   z-index: 100;
   cursor: pointer;
   background: rgb(255, 255, 255);
@@ -81,7 +108,11 @@ body:has(.detail-column.active) .buttons-container {
   color: #000 !important;
 }
 
-
+.index-button:hover {
+  background: rgb(0, 0, 0);
+  transition: 0.0s ease;
+  color: #fff !important;
+}
 
 
 /* Wiggle Animation */
@@ -102,7 +133,7 @@ body:has(.detail-column.active) .buttons-container {
 }
 
 
-.pause-button:active,
+.hof-button:active,
 .theme-button:active
 .glossar-button-active {
   transform: translateY(0);
@@ -146,7 +177,7 @@ body:has(.detail-column.active) .buttons-container {
     color: #00f;
 }
 
-[data-theme="light"] a.visited:not(.pause-button):not(.glossar-button) {
+[data-theme="light"] a.visited:not(.hof-button):not(.glossar-button) {
     color: rgb(35, 0, 162);
     text-decoration: underline;
 }
@@ -160,7 +191,7 @@ body:has(.detail-column.active) .buttons-container {
     color: #75e8ff;
 }
 
-[data-theme="dark"] a.visited:not(.pause-button):not(.glossar-button) {
+[data-theme="dark"] a.visited:not(.hof-button):not(.glossar-button) {
     color: #22acc8;
     text-decoration: underline;
 }

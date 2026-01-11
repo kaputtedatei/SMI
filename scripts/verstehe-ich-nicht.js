@@ -10,28 +10,103 @@
     const gridContainer = document.getElementById('grid-container');
 
 
+// --- Inaktivitäts-Hinweis für Resizer ---
+(function() {
+  const resizer = document.getElementById('resize-divider');
+  if (!resizer) return;
+  
+  let inactivityTimer = null;
+  const INACTIVITY_DELAY = 5000; // 5 Sekunden Inaktivität
+  
+  function showResizerHint() {
+    if (!resizer.classList.contains('hint-animation')) {
+      resizer.classList.add('hint-animation');
+      // Animation-Klasse nach Ende entfernen
+      setTimeout(() => {
+        resizer.classList.remove('hint-animation');
+      }, 1000);
+    }
+  }
+  
+  function resetInactivityTimer() {
+    clearTimeout(inactivityTimer);
+    inactivityTimer = setTimeout(showResizerHint, INACTIVITY_DELAY);
+  }
+  
+  // Cursor-Bewegung erkennen
+  document.addEventListener('mousemove', resetInactivityTimer);
+  document.addEventListener('mousedown', resetInactivityTimer);
+  document.addEventListener('keydown', resetInactivityTimer);
+  document.addEventListener('scroll', resetInactivityTimer, true);
+  
+  // Timer initial starten
+  resetInactivityTimer();
+})();
 
 
 // --- Sortierlogik Index-Items ---
 const sortButtons = document.querySelectorAll('#sortBar .sort-btn');
 let yearSortAscending = false; // Track year sort direction
+let yearClickCount = 0; // Track clicks on year button
 let currentContinentFilter = null; // Track current continent filter
 
 sortButtons.forEach(button => {
   button.addEventListener('click', () => {
     const sortBy = button.getAttribute('data-sort');
+    const isActive = button.classList.contains('active');
     
-    // Special handling for year sort - toggle direction
+    // Special handling for year sort - toggle direction, deselect on third click
     if (sortBy === 'year') {
-      yearSortAscending = !yearSortAscending;
-      button.classList.toggle('desc');
-      currentContinentFilter = null; // Reset continent filter
-    } else if (sortBy === 'european' || sortBy === 'asian' || sortBy === 'us-american') {
+      if (isActive) {
+        yearClickCount++;
+        if (yearClickCount >= 2) {
+          // Third click (2 toggles done): deselect and return to alphabetical
+          sortButtons.forEach(btn => btn.classList.remove('active'));
+          button.classList.remove('desc');
+          yearClickCount = 0;
+          yearSortAscending = false;
+          currentContinentFilter = null;
+          sortTimeline('alphabet', false);
+          localStorage.setItem('sortBy', 'alphabet');
+          return;
+        }
+        // Second click: toggle direction
+        yearSortAscending = !yearSortAscending;
+        button.classList.toggle('desc');
+      } else {
+        // First click: activate with descending
+        yearClickCount = 0;
+        yearSortAscending = false;
+        button.classList.remove('desc');
+      }
+      currentContinentFilter = null;
+      sortButtons.forEach(btn => btn.classList.remove('active'));
+      button.classList.add('active');
+      sortTimeline(sortBy, yearSortAscending);
+      localStorage.setItem('sortBy', sortBy);
+      localStorage.setItem('yearSortAscending', yearSortAscending);
+      return;
+    }
+    
+    // Toggle behavior for other buttons: if already active, deselect and return to alphabetical
+    if (isActive) {
+      sortButtons.forEach(btn => btn.classList.remove('active'));
+      currentContinentFilter = null;
+      sortTimeline('alphabet', false);
+      localStorage.setItem('sortBy', 'alphabet');
+      return;
+    }
+    
+    // Reset year click count when switching to other buttons
+    yearClickCount = 0;
+    
+    if (sortBy === 'european' || sortBy === 'asian' || sortBy === 'us-american') {
       // Continent filter
       currentContinentFilter = sortBy;
     } else {
       // For other sorts, remove active state from year button
-      document.querySelector('[data-sort="year"]').classList.remove('active');
+      const yearBtn = document.querySelector('[data-sort="year"]');
+      if (yearBtn) yearBtn.classList.remove('active');
       currentContinentFilter = null; // Reset continent filter
     }
     
@@ -156,13 +231,14 @@ const timelineData = [
         return b.year - a.year;
       });
 
-      // Zeige nur passende Einträge, andere ausblenden
+      // Zeige passende Einträge normal, andere blasser
       enriched.forEach(e => {
         if (e.continent === key) {
-          e.li.style.display = ''; // sichtbar
+          e.li.classList.remove('faded');
           timelineList.appendChild(e.li);
         } else {
-          e.li.style.display = 'none'; // ausblenden
+          e.li.classList.add('faded');
+          timelineList.appendChild(e.li);
         }
       });
 
@@ -182,7 +258,7 @@ const timelineData = [
       });
 
       enriched.forEach(e => {
-        e.li.style.display = ''; // sicherstellen, dass sichtbar
+        e.li.classList.remove('faded'); // faded-Klasse entfernen
         timelineList.appendChild(e.li);
       });
 
@@ -365,7 +441,7 @@ const timelineData = [
       const savedSortBy = localStorage.getItem('sortBy');
       const savedYearAsc = localStorage.getItem('yearSortAscending') === 'true';
       
-      if (savedSortBy) {
+      if (savedSortBy && savedSortBy !== 'alphabet') {
         yearSortAscending = savedYearAsc;
         
         // Track continent filter state
@@ -386,8 +462,9 @@ const timelineData = [
         // Sortierung anwenden
         sortTimeline(savedSortBy, savedYearAsc);
       } else {
-        // Initiale Sortierung (chronologisch absteigend) anwenden
-        sortTimeline('year', false);
+        // Initiale Sortierung: alphabetisch (kein Button aktiv)
+        document.querySelectorAll('#sortBar .sort-btn').forEach(btn => btn.classList.remove('active'));
+        sortTimeline('alphabet', false);
       }
       
       // Aktiven Detaileintrag wiederherstellen
@@ -478,7 +555,7 @@ const timelineData = [
         pauseButtonElement.classList.add('wiggle');
         setTimeout(() => {
           pauseButtonElement.classList.remove('wiggle');
-        }, 400);
+        }, 250);
       }, 20000); // 60000ms = 1 Minute
     }
 
@@ -495,8 +572,8 @@ const timelineData = [
       let startX = 0;
       let startCol1Width = 0;
       
-      // Standard-Breite (400px) setzen
-      updateGridColumns(500);
+      // Standard-Breite setzen
+      updateGridColumns(400);
       
       resizeDivider.addEventListener('mousedown', (e) => {
         isResizing = true;
@@ -542,14 +619,37 @@ const timelineData = [
         container.style.gridTemplateColumns = 
           `${col1Width}px ${dividerWidth}px ${col2TotalWidth}px`;
         
+        // Theme-Button Sichtbarkeit basierend auf Spaltenbreiten
+        const themeButton = document.getElementById('theme-button');
+        const themeButtonCol1 = document.getElementById('theme-button-col1');
+        if (themeButton && themeButtonCol1) {
+          if (col1Width > col2TotalWidth) {
+            // col1 ist breiter - Theme-Button in col1 anzeigen, anderen verstecken
+            themeButtonCol1.classList.add('visible');
+            themeButton.style.display = 'none';
+          } else {
+            // col2 ist breiter - Theme-Button in buttons-container anzeigen
+            themeButtonCol1.classList.remove('visible');
+            themeButton.style.display = '';
+          }
+        }
+        
         // Timeline-Layout basierend auf col2-Breite anpassen
         const timeline = document.getElementById('timeline');
         if (timeline) {
-          if (col2TotalWidth < 1000) {
+          if (col2TotalWidth < 1100) {
             timeline.classList.add('timeline-flow');
           } else {
             timeline.classList.remove('timeline-flow');
           }
         }
+        
+        // Jahreszahlen dauerhaft anzeigen wenn col1 >= 800px
+        if (col1Width >= 800) {
+          timeline.classList.add('show-years');
+        } else {
+          timeline.classList.remove('show-years');
+        }
+        
       }
     })();

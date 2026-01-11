@@ -592,14 +592,90 @@ const DETAILS = {
       },
 
       'friendster': {
-        title: 'Friendster (2001) USA',
+        title: 'Friendster (2002) USA',
         html: `<div class="index-detail">
               <a class="sm" href="https://friendster.com/" target="_blank" rel="noopener noreferrer">
               🡒https://friendster.com/
               </a>
 
-              <img class="top" src="bilder/friendster3.jpg" style="width: 100%; ">
+              <img class="top" src="bilder/friendster1.jpg" style="width: 100%; ">
+              <figcaption>
+              <!-- Bildunterschrift ergänzen -->
+              </figcaption>
 
+              <p class="top">
+              Friendster war eines der ersten großen sozialen Netzwerke und gilt als Wegbereiter für spätere Plattformen
+              wie MySpace und Facebook. Die Plattform wurde 2002 von Jonathan Abrams in Mountain View, Kalifornien, gegründet
+              und ging im März 2003 offiziell online. Das Konzept basierte auf der Idee der „Circle of Friends" – Nutzer*innen
+              konnten Profile erstellen, Freundschaften schließen und über Freundesfreunde neue Kontakte knüpfen. Damit
+              etablierte Friendster das Prinzip der sozialen Graphen, das später zum Fundament aller großen Netzwerke wurde.
+              <a href="https://www.britannica.com/topic/Friendster" target="_blank" rel="noopener noreferrer">🡒Britannica</a>
+              </p>
+
+              <p class="indent">
+              Technisch war Friendster eine webbasierte Plattform mit Benutzerprofilen, Freundeslisten, Testimonials
+              (Bewertungen durch Freunde) und einem Nachrichtensystem. Die Plattform nutzte Algorithmen, um Verbindungen
+              zwischen Nutzer*innen sichtbar zu machen – ein Vorläufer der späteren „People You May Know"-Funktionen.
+              Allerdings litt Friendster unter massiven technischen Problemen: Die Server waren der schnell wachsenden
+              Nutzerzahl nicht gewachsen, was zu langen Ladezeiten und häufigen Ausfällen führte.
+              <a href="https://mashable.com/archive/friendster-social-network" target="_blank" rel="noopener noreferrer">🡒Mashable</a>
+              </p>
+
+              <img src="bilder/friendster4.jpg" style="width: 100%; ">
+              <figcaption>
+              <!-- Bildunterschrift ergänzen -->
+              </figcaption>
+
+              <p>
+              In der Anfangsphase wuchs Friendster explosionsartig: Bereits wenige Monate nach dem Start zählte die Plattform
+              über drei Millionen registrierte Nutzer*innen. Google bot 2003 angeblich 30 Millionen US-Dollar für die Übernahme,
+              was Abrams ablehnte – eine Entscheidung, die später als einer der größten Fehler der Internetgeschichte gilt.
+              Friendster erreichte seinen Höhepunkt mit über 115 Millionen registrierten Nutzer*innen, verlor jedoch ab 2004
+              zunehmend Marktanteile an MySpace und später Facebook.
+              <a href="https://techcrunch.com/2011/06/29/friendster-the-original-social-network-founder-jonathan-abrams-tells-all/" target="_blank" rel="noopener noreferrer">🡒TechCrunch</a>
+              </p>
+
+              <p class="indent">
+              Kulturell prägte Friendster das Verständnis von Online-Identität und digitaler Freundschaft. Die Plattform
+              führte Konzepte ein, die heute selbstverständlich sind: das persönliche Profil als digitale Visitenkarte,
+              die öffentliche Freundesliste als soziales Kapital und die Vernetzung über gemeinsame Kontakte. Gleichzeitig
+              entstanden auf Friendster frühe Formen des „Catfishing" – gefälschte Profile wurden zu einem wachsenden Problem.
+              Die Plattform reagierte mit strikten Löschungen, was viele Nutzer*innen vergrätzte.
+              <a href="https://www.theguardian.com/technology/2018/jun/25/social-media-friendster-death-myspace-facebook" target="_blank" rel="noopener noreferrer">🡒The Guardian</a>
+              </p>
+
+              <img src="bilder/friendster3.jpg" style="width: 100%; ">
+              <figcaption>
+              Foto von <a href="https://www.flickr.com/photos/ari/" target="_blank" rel="noopener noreferrer">
+              Steve Rhodes
+              </a> —
+              <a href="https://www.flickr.com/photos/ari/2442662171/in/photostream/" target="_blank" rel="noopener noreferrer">
+              Quelle
+              </a>,
+              <a href="https://creativecommons.org/licenses/by-nc-sa/2.0/deed.de" target="_blank" rel="license noopener noreferrer">
+              CC BY-NC-SA 2.0
+              </a>
+              </figcaption>
+
+              <p>
+              Der Niedergang von Friendster begann Mitte der 2000er-Jahre. Technische Probleme, eine restriktive Moderationspolitik
+              und die Konkurrenz durch MySpace führten zu einem massiven Nutzerschwund in den USA. Interessanterweise erlebte
+              Friendster in Südostasien – besonders auf den Philippinen, in Malaysia und Indonesien – eine zweite Blüte und
+              blieb dort bis Ende der 2000er-Jahre populär. 2009 wurde die Plattform von der malaysischen Firma MOL Global
+              übernommen und 2011 in eine Social-Gaming-Plattform umgewandelt. 2015 wurde Friendster endgültig eingestellt.
+              <a href="https://www.wired.com/2013/02/friendster-autopsy/" target="_blank" rel="noopener noreferrer">🡒Wired</a>
+              </p>
+
+              <p class="indent">
+              Trotz seines Scheiterns legte Friendster den Grundstein für die Social-Media-Revolution. Konzepte wie das
+              Freundesnetzwerk, die Profilseite und die algorithmische Kontaktvorschläge wurden von späteren Plattformen
+              übernommen und perfektioniert. Jonathan Abrams' Idee, reale soziale Beziehungen digital abzubilden, veränderte
+              das Internet nachhaltig. Friendster gilt heute als Mahnmal für technisches Versagen und verpasste Chancen –
+              aber auch als Pionier einer neuen Ära digitaler Kommunikation.
+              <a href="https://www.forbes.com/sites/davidewalt/2011/04/26/friendster-jonathan-abrams-interview/" target="_blank" rel="noopener noreferrer">🡒Forbes</a>
+              </p>
+
+              <img src="bilder/friendster5.png" style="width: 100%; ">
               <figcaption>
               Foto von <a href="https://www.flickr.com/photos/ari/" target="_blank" rel="noopener noreferrer">
               Steve Rhodes
@@ -624,11 +700,80 @@ const DETAILS = {
       },
 
       'fotolog': {
-        title: 'Fotolog (2002) Chile',
+        title: 'Fotolog (2002) USA',
         html: `<div class="index-detail">
               <a class="sm" href="https://web.archive.org/web/20151201024940/http://www.fotolog.com/" target="_blank" rel="noopener noreferrer">
               🡒https://web.archive.org/web/20151201024940/http://www.fotolog.com/
-              </a></div>`
+              </a>
+
+              <img class="top" src="bilder/fotolog1.jpg" style="width: 100%; ">
+              <figcaption>
+              <!-- Bildunterschrift ergänzen -->
+              </figcaption>
+
+              <p class="top">
+              Fotolog war eine der ersten Plattformen für das Teilen von Fotos im Internet und gilt als wichtiger Vorläufer
+              von Instagram und Flickr. Die Plattform wurde im Mai 2002 von Scott Heiferman und Adam Seifer in New York City
+              gegründet – ursprünglich als einfaches Werkzeug, um täglich ein Foto mit einer kurzen Beschreibung zu posten.
+              Das minimalistische Konzept „Ein Foto pro Tag" unterschied Fotolog von aufwändigeren Fotogalerien und machte
+              das Teilen von Bildern niedrigschwellig und alltäglich.
+              <a href="https://www.nytimes.com/2004/11/11/technology/circuits/photoblogs-give-a-personal-view-of-life-sometimes.html" target="_blank" rel="noopener noreferrer">🡒New York Times</a>
+              </p>
+
+              <p class="indent">
+              Technisch war Fotolog bewusst einfach gehalten: Nutzer*innen konnten ein Foto hochladen, eine Bildunterschrift
+              hinzufügen und Kommentare von anderen empfangen. Die kostenlose Version erlaubte nur ein Foto pro Tag und
+              begrenzte Speicherkapazität – für mehr Funktionen gab es „Gold Camera"-Accounts. Diese Beschränkung erwies
+              sich als Stärke: Sie förderte bewusstes Fotografieren und tägliche Routinen, die später Instagram prägen sollten.
+              <a href="https://mashable.com/archive/fotolog-photo-sharing" target="_blank" rel="noopener noreferrer">🡒Mashable</a>
+              </p>
+
+              <img src="bilder/fotolog2.jpg" style="width: 100%; ">
+              <figcaption>
+              <!-- Bildunterschrift ergänzen -->
+              </figcaption>
+
+              <p>
+              Fotolog erlebte seinen größten Erfolg in Lateinamerika, besonders in Argentinien, Brasilien und Chile, wo die
+              Plattform zu einem kulturellen Phänomen wurde. Auf dem Höhepunkt zählte Fotolog über 20 Millionen registrierte
+              Nutzer*innen weltweit, wobei der Großteil aus spanisch- und portugiesischsprachigen Ländern stammte. In
+              Argentinien entwickelte sich um Fotolog eine eigene Jugendkultur: Die „Floggers" – benannt nach der Plattform –
+              wurden zu einer erkennbaren Subkultur mit eigenem Modestil, Musik und Treffpunkten.
+              <a href="https://www.theguardian.com/world/2008/oct/12/argentina-fashion" target="_blank" rel="noopener noreferrer">🡒The Guardian</a>
+              </p>
+
+              <p class="indent">
+              Die Flogger-Bewegung in Argentinien zeigte erstmals, wie eine Online-Plattform eine komplette Jugendsubkultur
+              prägen konnte. Floggers erkannte man an bunten Skinny Jeans, Neon-Farben, asymmetrischen Frisuren und Turnschuhen.
+              Sie trafen sich an öffentlichen Plätzen wie dem Abasto-Einkaufszentrum in Buenos Aires, um sich zu fotografieren
+              und ihre Fotolog-Profile zu promoten. Die Subkultur wurde in Medien kontrovers diskutiert und führte sogar zu
+              Konflikten mit anderen Jugendgruppen.
+              <a href="https://www.bbc.com/mundo/cultura_sociedad/2008/12/081205_floggers_cumbieros_jg" target="_blank" rel="noopener noreferrer">🡒BBC Mundo</a>
+              </p>
+
+              <img src="bilder/fotolog3.jpg" style="width: 100%; ">
+              <figcaption>
+              <!-- Bildunterschrift ergänzen -->
+              </figcaption>
+
+              <p>
+              2007 wurde Fotolog von der französischen Firma Hi-Media für 90 Millionen US-Dollar übernommen. Trotz der hohen
+              Nutzerzahlen in Lateinamerika konnte die Plattform nicht mit dem Aufstieg von Facebook, Flickr und später
+              Instagram mithalten. Die einfache Struktur, die anfangs eine Stärke war, wurde zum Nachteil, als Konkurrenten
+              mehr Funktionen und bessere mobile Apps anboten. Ab 2010 ging die Nutzung kontinuierlich zurück.
+              <a href="https://techcrunch.com/2007/12/05/fotolog-acquired-for-90-million/" target="_blank" rel="noopener noreferrer">🡒TechCrunch</a>
+              </p>
+
+              <p class="indent">
+              Fotolog durchlief mehrere Besitzerwechsel und wurde 2016 vorübergehend eingestellt, bevor es 2018 als reine
+              Archiv-Seite wiederbelebt wurde. Die Plattform hinterließ ein bedeutendes kulturelles Erbe: Sie etablierte
+              das tägliche Foto-Sharing als soziale Praxis, inspirierte die Flogger-Subkultur und zeigte, dass visuelle
+              Kommunikation eine universelle Sprache sein konnte. Viele der Grundprinzipien von Fotolog – ein Bild, eine
+              Geschichte, eine Community – leben in Instagram und ähnlichen Plattformen weiter.
+              <a href="https://www.lanacion.com.ar/tecnologia/fotolog-la-red-social-que-marco-a-toda-una-generacion-nid2177611/" target="_blank" rel="noopener noreferrer">🡒La Nación</a>
+              </p>
+
+              </div>`
       },
 
       'lastfm': {
@@ -636,7 +781,88 @@ const DETAILS = {
         html: `<div class="index-detail">
               <a class="sm" href="https://www.last.fm/de/" target="_blank" rel="noopener noreferrer">
               🡒https://www.last.fm/de/
-              </a></div>`
+              </a>
+
+              <img class="top" src="bilder/last.fm.png" style="width: 100%; ">
+              <figcaption>
+              <!-- Bildunterschrift ergänzen -->
+              </figcaption>
+
+              <p class="top">
+              Last.fm ist ein Musik-Streaming-Dienst und soziales Netzwerk, das 2002 in London von Felix Miller, Martin
+              Stiksel, Michael Breidenbrücker und Thomas Willomitzer gegründet wurde. Die Plattform revolutionierte die
+              Art, wie Menschen Musik entdecken, indem sie das Hörverhalten der Nutzer*innen analysierte und darauf
+              basierend personalisierte Empfehlungen generierte. Das Kernkonzept „Scrobbling" – das automatische Erfassen
+              und Protokollieren gehörter Musik – machte Last.fm zum Pionier des datenbasierten Musikempfehlungssystems.
+              <a href="https://www.theguardian.com/technology/2009/mar/30/last-fm-radio-streaming" target="_blank" rel="noopener noreferrer">🡒The Guardian</a>
+              </p>
+
+              <p class="indent">
+              Technisch basierte Last.fm auf einem ausgeklügelten Algorithmus namens „Audioscrobbler", der ursprünglich
+              2002 als separates Projekt von Richard Jones entwickelt und 2003 mit Last.fm fusioniert wurde. Die Software
+              erfasste automatisch, welche Songs Nutzer*innen in ihrem Mediaplayer (iTunes, Winamp, Spotify etc.) hörten,
+              und erstellte daraus ein detailliertes Hörprofil. Basierend auf diesen Daten generierte Last.fm personalisierte
+              Radiostationen und Empfehlungen – ein Konzept, das später von Spotify und Apple Music übernommen wurde.
+              <a href="https://www.wired.com/2006/04/lastfm/" target="_blank" rel="noopener noreferrer">🡒Wired</a>
+              </p>
+
+              <img src="bilder/last.fm1.png" style="width: 100%; ">
+              <figcaption>
+              Screenshot der aktuellen Last.fm Website, Januar 2026.
+              <br>
+              </a> —
+              <a href="https://www.last.fm/de/" target="_blank" rel="noopener noreferrer">
+              Quelle
+              </a>
+              </figcaption>
+
+              <p>
+              Last.fm wuchs schnell zu einer der wichtigsten Musikplattformen des Web 2.0. 2007 wurde das Unternehmen
+              von CBS Interactive für 280 Millionen US-Dollar übernommen – zu diesem Zeitpunkt hatte die Plattform
+              über 40 Millionen aktive Nutzer*innen. Last.fm bot nicht nur Musikempfehlungen, sondern auch ein
+              vollwertiges soziales Netzwerk: Nutzer*innen konnten Profile erstellen, Freundschaften schließen,
+              Konzertbesuche planen und sich in Gruppen über Musik austauschen.
+              <a href="https://techcrunch.com/2007/05/30/cbs-acquires-lastfm-for-280m/" target="_blank" rel="noopener noreferrer">🡒TechCrunch</a>
+              </p>
+
+              <p class="indent">
+              Das Besondere an Last.fm war die Kombination aus passiver Datensammlung und aktiver Community. Während
+              Nutzer*innen einfach Musik hörten, sammelte die Plattform im Hintergrund Daten und erstellte visuelle
+              Statistiken: Wochen-, Monats- und Jahres-Charts, „Kompatibilitäts-Scores" mit anderen Nutzer*innen und
+              detaillierte Hörhistorien. Diese Daten wurden zu einer Art musikalischer Identität, die Nutzer*innen
+              stolz in ihren Profilen präsentierten.
+              <a href="https://www.last.fm/about" target="_blank" rel="noopener noreferrer">🡒Last.fm About</a>
+              </p>
+
+              <img src="bilder/last.fm2.png" style="width: 100%; ">
+              <figcaption>
+              Screenshot der aktuellen Last.fm Website, Januar 2026.
+              <br>
+              </a> —
+              <a href="https://www.last.fm/de/" target="_blank" rel="noopener noreferrer">
+              Quelle
+              </a>
+              </figcaption>
+
+              <p>
+              Ab 2009 begann der Wandel der Plattform: Der kostenlose Streaming-Dienst wurde in vielen Ländern eingestellt
+              oder kostenpflichtig gemacht, was zu einem Nutzerschwund führte. Mit dem Aufstieg von Spotify, das 2008
+              startete und viele Last.fm-Konzepte integrierte, verlor die Plattform weiter an Relevanz als primärer
+              Musikdienst. Dennoch blieb Last.fm als Scrobbling-Plattform und Musikdatenbank relevant – viele Spotify-
+              und Apple-Music-Nutzer*innen verwenden Last.fm bis heute parallel, um ihre Hörstatistiken zu erfassen.
+              <a href="https://www.rollingstone.com/music/music-news/last-fm-scales-back-its-free-music-streaming-service-243893/" target="_blank" rel="noopener noreferrer">🡒Rolling Stone</a>
+              </p>
+
+              <p class="indent">
+              Kulturell hat Last.fm das Verständnis von Musikkonsum nachhaltig verändert. Die Plattform machte Hördaten
+              sichtbar und messbar – eine Entwicklung, die heute in „Spotify Wrapped" und ähnlichen Features gipfelt.
+              Last.fm etablierte auch das Konzept der algorithmischen Musikempfehlung, das zum Standard aller modernen
+              Streaming-Dienste wurde. Die Plattform existiert bis heute und hat eine treue Community von Musik-Enthusiasten,
+              die ihre Hörgewohnheiten dokumentieren und analysieren möchten.
+              <a href="https://www.theverge.com/2015/4/24/8489529/last-fm-online-music-history" target="_blank" rel="noopener noreferrer">🡒The Verge</a>
+              </p>
+
+              </div>`
       },
 
       'linkedin': {
@@ -646,10 +872,79 @@ const DETAILS = {
               🡒https://www.linkedin.com/
               </a>
 
+              <img class="top" src="bilder/linkedin1.jpg" style="width: 100%; ">
+              <figcaption>
+              <!-- Bildunterschrift ergänzen -->
+              </figcaption>
+
+              <p class="top">
+              LinkedIn ist das weltweit größte berufliche Netzwerk und wurde am 5. Mai 2003 von Reid Hoffman und einem
+              Team aus ehemaligen PayPal- und Socialnet-Mitarbeitern in Mountain View, Kalifornien, gestartet. Die
+              Plattform verfolgte von Beginn an ein klares Ziel: professionelle Kontakte digital abzubilden und
+              Karrieremöglichkeiten zu vernetzen. Anders als Facebook oder MySpace, die auf Freundschaften und
+              Unterhaltung setzten, fokussierte LinkedIn konsequent auf den beruflichen Kontext.
+              <a href="https://www.britannica.com/topic/LinkedIn" target="_blank" rel="noopener noreferrer">🡒Britannica</a>
+              </p>
+
+              <p class="indent">
+              Technisch basierte LinkedIn auf dem Prinzip der „Six Degrees of Separation" – der Idee, dass jeder Mensch
+              über maximal sechs Kontakte mit jedem anderen verbunden ist. Nutzer*innen erstellten berufliche Profile
+              mit Lebenslauf, Fähigkeiten und Empfehlungen und bauten ein Netzwerk aus Kolleg*innen, Geschäftspartner*innen
+              und Branchenkontakten auf. Die Plattform führte Funktionen wie „Connections", „Endorsements" und später
+              „InMail" ein, um professionelle Kommunikation zu ermöglichen.
+              <a href="https://www.wired.com/2012/03/linkedin-reid-hoffman/" target="_blank" rel="noopener noreferrer">🡒Wired</a>
+              </p>
+
+              <img src="bilder/linkedin2.jpg" style="width: 100%; ">
+              <figcaption>
+              <!-- Bildunterschrift ergänzen -->
+              </figcaption>
+
+              <p>
+              LinkedIn wuchs kontinuierlich und erreichte bereits 2004 eine Million Mitglieder. Der Börsengang 2011
+              war ein Meilenstein: Die Aktie verdoppelte sich am ersten Handelstag und machte LinkedIn zu einem der
+              erfolgreichsten Tech-IPOs der Dotcom-Ära. 2016 wurde das Unternehmen von Microsoft für 26,2 Milliarden
+              US-Dollar übernommen – die bis dahin größte Akquisition des Softwarekonzerns. Heute zählt LinkedIn
+              über 900 Millionen Mitglieder in mehr als 200 Ländern.
+              <a href="https://news.microsoft.com/2016/06/13/microsoft-to-acquire-linkedin/" target="_blank" rel="noopener noreferrer">🡒Microsoft News</a>
+              </p>
+
+              <p class="indent">
+              Die Plattform entwickelte sich von einem reinen Kontaktnetzwerk zu einem umfassenden Karriere-Ökosystem.
+              LinkedIn Jobs wurde zur führenden Plattform für Stellenausschreibungen, LinkedIn Learning (ehemals Lynda.com)
+              bietet Weiterbildungskurse, und der News-Feed entwickelte sich zu einem wichtigen Kanal für
+              Branchennachrichten und Thought Leadership. Recruiter*innen nutzen LinkedIn als primäres Werkzeug für
+              die Talentsuche, was die Plattform zum unverzichtbaren Bestandteil des modernen Arbeitsmarkts machte.
+              <a href="https://www.forbes.com/sites/forbestechcouncil/2021/05/05/how-linkedin-changed-the-job-market/" target="_blank" rel="noopener noreferrer">🡒Forbes</a>
+              </p>
+
+              <img src="bilder/linkedin3.jpg" style="width: 100%; ">
+              <figcaption>
+              <!-- Bildunterschrift ergänzen -->
+              </figcaption>
+
+              <p>
+              Kulturell hat LinkedIn das Verständnis von beruflicher Identität fundamental verändert. Das digitale
+              Profil wurde zur erweiterten Visitenkarte, öffentliche Empfehlungen ersetzten teilweise klassische
+              Arbeitszeugnisse, und „Networking" wandelte sich von physischen Veranstaltungen zu einer permanenten
+              Online-Aktivität. Gleichzeitig entwickelte sich eine eigene LinkedIn-Kultur: Der anfangs nüchterne Ton
+              wich zunehmend persönlicheren Posts, viralen „Broetry"-Beiträgen und öffentlichen Diskussionen über
+              Karriere und Arbeitsleben.
+              <a href="https://www.theatlantic.com/technology/archive/2020/06/linkedin-social-network-business-culture/612831/" target="_blank" rel="noopener noreferrer">🡒The Atlantic</a>
+              </p>
+
+              <p class="indent">
+              LinkedIn steht auch für Kritik am modernen Arbeitsmarkt: Die Plattform fördert eine Kultur der permanenten
+              Selbstoptimierung und macht Karrierewege öffentlich vergleichbar. Datenschutzbedenken, die algorithmische
+              Verstärkung bestimmter Inhalte und die Kommerzialisierung beruflicher Beziehungen werden regelmäßig
+              diskutiert. Dennoch bleibt LinkedIn das dominierende professionelle Netzwerk und hat gezeigt, dass
+              Social Media nicht nur für Unterhaltung, sondern auch für ernsthafte berufliche Zwecke funktioniert.
+              <a href="https://www.nytimes.com/2021/09/02/technology/linkedin-problems.html" target="_blank" rel="noopener noreferrer">🡒New York Times</a>
+              </p>
 
               <div style="width: 100%; height: 600px; margin-top: 2em; margin-bottom: 1em; overflow: hidden; position: relative;">
               <iframe
-                src="https://maps.google.com/maps?q=37.3928502,-122.0419830&t=k&z=18&output=embed"
+                src="https://maps.google.com/maps?q=37.423,-122.071&t=k&z=18&output=embed"
                 style="position: relative; top: -120px; left: 0; width: 100%; height: 800px; border: 0;"
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade">
@@ -657,9 +952,8 @@ const DETAILS = {
             </div>
 
             <figcaption style="">
-              Meta Headquarters, San José, USA.
+              LinkedIn Headquarters, Sunnyvale, Kalifornien, USA.
             </figcaption>
-
 
               </div>`
       },
@@ -1514,10 +1808,7 @@ const DETAILS = {
 
       'musically': {
         title: 'Musical.ly (2014) USA',
-        html: `<div class="index-detail">
-              <a class="sm" href="https://www.musically.com/" target="_blank" rel="noopener noreferrer">
-              🡒https://www.musically.com/
-              </a></div>`
+        html: `<div class="index-detail"></div>`
       },
 
       'ello': {
@@ -1525,14 +1816,6 @@ const DETAILS = {
         html: `<div class="index-detail">
               <a class="sm" href="https://ello.co/" target="_blank" rel="noopener noreferrer">
               🡒https://ello.co/
-              </a></div>`
-      },
-
-      'periscope': {
-        title: 'Periscope (2015) USA',
-        html: `<div class="index-detail">
-              <a class="sm" href="https://www.periscope.tv/" target="_blank" rel="noopener noreferrer">
-              🡒https://www.periscope.tv/
               </a></div>`
       },
 

@@ -1,8 +1,13 @@
+html, body {
+  margin: 0;
+  height: 100%;
+}
 
 body {
   background-color: #ff0;
   position: relative;
   font-family: Hedvig Letters Sans;
+  overflow: hidden;
 }
 
 /* Canvas für Cursor-Trail */
@@ -16,7 +21,7 @@ body {
   z-index: 9999;
 }
 
-.pause-header {
+.hof-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -25,11 +30,10 @@ body {
   border-bottom: 2px solid #000;
   position: sticky;
   top: 0;
-  background-color: #ff0;
   z-index: 100;
 }
 
-.pause-header h2 {
+.hof-header h2 {
   font-family: Hedvig Letters Sans;
   margin: 0;
   font-size: 24px;
@@ -42,43 +46,85 @@ body {
 
 
 /* Content-Bereich mit verteilten Bildern */
-.pause-content {
+.hof-content {
   position: fixed;
   top: 62px;
-  left: 0;
+  left: 20px;
   right: 0;
   bottom: 0;
   overflow: hidden;
 }
 
-/* Kleine Bilder */
-.pause-image {
+/* Zeitleiste am unteren Rand */
+.timeline-axis {
   position: absolute;
-  width: 14px;
-  height: 14px;
-  cursor: pointer;
-  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), z-index 0s;
-  z-index: 1;
-  transform-origin: center center;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  pointer-events: none;
 }
 
-.pause-image img {
+.timeline-tick {
+  position: absolute;
+  bottom: 0;
+  width: 2px;
+  height: 20px;
+  background-color: #000;
+  transition: left 0.3s ease;
+}
+
+.timeline-tick span {
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: Hedvig Letters Sans;
+  font-size: 22px;
+  color: #000;
+  white-space: nowrap;
+}
+
+
+/* Kleine Bilder */
+.hof-image {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  z-index: 1;
+  transform-origin: center center;
+  animation: hof-wiggle var(--wiggle-duration, 2s) ease-in-out infinite;
+  animation-delay: var(--wiggle-delay, 0s);
+}
+
+.hof-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.pause-image.enlarged {
-  transform: scale(30);
+.hof-image.enlarged {
+  transform: scale(25);
   z-index: 50;
+  animation: none;
+  transition: transform 0.2s ease-out;
 }
 
-.pause-image.enlarged img {
+.hof-image.enlarged img {
   border-radius: 0;
 }
 
+/* Wiggle Animation für HOF-Bilder */
+@keyframes hof-wiggle {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(-5deg); }
+  50% { transform: rotate(0deg); }
+  75% { transform: rotate(5deg); }
+}
+
 /* Detail-Spalte */
-.pause-detail {
+.hof-detail {
   position: fixed;
   top: 0;
   right: -500px;
@@ -89,13 +135,25 @@ body {
   z-index: 200;
   display: flex;
   flex-direction: column;
+  transition: right 0.3s ease;
 }
 
-.pause-detail.active {
+.hof-detail.active {
   right: 0;
 }
 
-.pause-detail-header {
+/* Komprimierter Zustand wenn Detail offen */
+.hof-content.compressed {
+  right: 500px;
+}
+
+/* Buttons-Container nach links wenn Detail offen */
+body:has(.hof-detail.active) .buttons-container {
+  right: 525px;
+  transition: none;
+}
+
+.hof-detail-header {
   display: flex;
   align-items: center;
   padding: 0 25px;
@@ -105,7 +163,7 @@ body {
   flex-shrink: 0;
 }
 
-.pause-detail-header h3 {
+.hof-detail-header h3 {
   font-family: Hedvig Letters Sans;
   margin: 0;
   font-size: 24px;
@@ -114,7 +172,7 @@ body {
   color: #000;
 }
 
-.pause-detail-header .close-btn {
+.hof-detail-header .close-btn {
   top: 10px;
   background: #f0f;
   color: rgb(255, 255, 255) !important;
@@ -126,28 +184,32 @@ body {
   padding: 4px 10px; 
 }
 
-.pause-detail-header .close-btn:hover {
+.hof-detail-header .close-btn:hover {
   background: #000;
   color: #fff;
 }
 
-.pause-detail-content {
+.hof-detail-content {
   padding: 25px;
   overflow-y: auto;
   flex: 1;
 }
 
-.pause-detail-content img {
+.hof-detail-content img {
   width: 100%;
   height: auto;
   margin-bottom: 20px;
   border-radius: 4px;
 }
 
-.pause-detail-content p {
+.hof-detail-content p {
   font-family: Hedvig Letters Sans;
   font-size: 22px;
   line-height: 30px;
   margin: 0;
   color: #000;
+}
+
+#detailLink {
+  margin-bottom: 1em;
 }
