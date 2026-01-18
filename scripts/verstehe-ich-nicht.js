@@ -113,7 +113,18 @@ sortButtons.forEach(button => {
     sortButtons.forEach(btn => btn.classList.remove('active'));
     button.classList.add('active');
     sortTimeline(sortBy, yearSortAscending);
-    
+    // Scroll-Reset nach dem DOM-Update asynchron ausführen
+    setTimeout(() => {
+      if (col1) col1.scrollTop = 0;
+      if (col2) col2.scrollTop = 0;
+      const col1Content = col1 && col1.querySelector('.column-content');
+      if (col1Content) col1Content.scrollTop = 0;
+      const col2Content = col2 && col2.querySelector('.column-content');
+      if (col2Content) col2Content.scrollTop = 0;
+      const timeline = document.getElementById('timeline');
+      if (timeline) timeline.scrollTop = 0;
+      if (gridContainer) gridContainer.scrollTop = 0;
+    }, 0);
     // Sortierung im localStorage speichern
     localStorage.setItem('sortBy', sortBy);
     localStorage.setItem('yearSortAscending', yearSortAscending);
@@ -127,66 +138,61 @@ sortButtons.forEach(button => {
 const timelineData = [
     { id: "4chan", year: 2003, users: 20000000, alphabet: 1, value: 999, continent: "us" },
     { id: "bbs", year: 1978, users: 0, alphabet: 2, value: 999, continent: "us" },
-    { id: "bebo", year: 2005, users: 40000000, alphabet: 3, value: 999, continent: "us" },
-    { id: "bereal", year: 2020, users: 50000000, alphabet: 4, value: 999, continent: "europe" },
-    { id: "bondee", year: 2019, users: 5000000, alphabet: 5, value: 999, continent: "asia" },
-    { id: "bluesky", year: 2022, users: 7000000, alphabet: 6, value: 999, continent: "us" },
+    { id: "bebo", year: 2005, users: 0, alphabet: 3, value: 999, continent: "us" },
+    { id: "bereal", year: 2020, users: 40000000, alphabet: 4, value: 999, continent: "europe" },
+    { id: "bluesky", year: 2023, users: 10000000, alphabet: 5, value: 999, continent: "us" },
+    { id: "bondee", year: 2023, users: 5000000, alphabet: 6, value: 999, continent: "asia" },
     { id: "byte", year: 2016, users: 2000000, alphabet: 7, value: 999, continent: "us" },
     { id: "classmates", year: 1995, users: 50000000, alphabet: 8, value: 999, continent: "us" },
-    { id: "clubhouse", year: 2018, users: 10000000, alphabet: 9, value: 999, continent: "us" },
-    { id: "dailymotion", year: 2006, users: 300000000, alphabet: 10, value: 999, continent: "europe" },
-    { id: "delicious", year: 2005, users: 5000000, alphabet: 11, value: 999, continent: "us" },
-    { id: "discord", year: 2013, users: 200000000, alphabet: 12, value: 999, continent: "us" },
-    { id: "ello", year: 2014, users: 4000000, alphabet: 13, value: 999, continent: "us" },
-    { id: "facebook", year: 2004, users: 2900000000, alphabet: 14, value: 1, continent: "us" },
-    { id: "flickr", year: 2004, users: 90000000, alphabet: 15, value: 999, continent: "us" },
-    { id: "fotolog", year: 2002, users: 20000000, alphabet: 16, value: 999, continent: "south-america" },
-    { id: "foursquare", year: 2009, users: 55000000, alphabet: 17, value: 999, continent: "us" },
-    { id: "friendster", year: 2001, users: 115000000, alphabet: 18, value: 999, continent: "us" },
-    { id: "geocities", year: 1994, users: 38000000, alphabet: 19, value: 999, continent: "us" },
-    { id: "habbo", year: 2000, users: 310000000, alphabet: 20, value: 999, continent: "europe" },
-    { id: "hi5", year: 2003, users: 70000000, alphabet: 21, value: 999, continent: "us" },
-    { id: "houseparty", year: 2016, users: 50000000, alphabet: 22, value: 999, continent: "us" },
-    { id: "instagram", year: 2010, users: 2000000000, alphabet: 23, value: 1, continent: "us" },
-    { id: "jappy", year: 2001, users: 1500000, alphabet: 24, value: 999, continent: "europe" },
-    { id: "kik", year: 2012, users: 300000000, alphabet: 25, value: 999, continent: "canada" },
-    { id: "kuaishou", year: 2011, users: 700000000, alphabet: 26, value: 999, continent: "asia" },
-    { id: "lapse", year: 2021, users: 1200000, alphabet: 27, value: 999, continent: "europe" },
-    { id: "lastfm", year: 2002, users: 40000000, alphabet: 27, value: 999, continent: "europe" },
-    { id: "line", year: 2011, users: 178000000, alphabet: 28, value: 999, continent: "asia" },
-    { id: "linkedin", year: 2003, users: 900000000, alphabet: 29, value: 999, continent: "us" },
-    { id: "livejournal", year: 1998, users: 18000000, alphabet: 30, value: 999, continent: "us" },
-    { id: "mastodon", year: 2016, users: 15000000, alphabet: 31, value: 999, continent: "europe" },
-    { id: "medium", year: 2013, users: 100000000, alphabet: 32, value: 999, continent: "us" },
-    { id: "musically", year: 2014, users: 200000000, alphabet: 33, value: 999, continent: "us" },
-    { id: "myspace", year: 2003, users: 115000000, alphabet: 34, value: 999, continent: "us" },
-    { id: "noplace", year: 2021, users: 1000000, alphabet: 35, value: 999, continent: "europe" },
-    { id: "orkut", year: 2004, users: 100000000, alphabet: 36, value: 999, continent: "us" },
-    { id: "parler", year: 2019, users: 20000000, alphabet: 37, value: 999, continent: "us" },
-    { id: "periscope", year: 2015, users: 10000000, alphabet: 38, value: 999, continent: "us" },
-    { id: "pinterest", year: 2009, users: 480000000, alphabet: 39, value: 999, continent: "us" },
-    { id: "qq", year: 1999, users: 600000000, alphabet: 40, value: 3, continent: "asia" },
-    { id: "qzone", year: 2005, users: 600000000, alphabet: 41, value: 3, continent: "asia" },
-    { id: "reddit", year: 2005, users: 430000000, alphabet: 42, value: 999, continent: "us" },
-    { id: "sinaweibo2010", year: 2010, users: 600000000, alphabet: 43, value: 999, continent: "asia" },
-    { id: "sixdegrees", year: 1997, users: 3500000, alphabet: 44, value: 999, continent: "us" },
-    { id: "skype", year: 2003, users: 660000000, alphabet: 45, value: 999, continent: "europe" },
-    { id: "snapchat", year: 2011, users: 600000000, alphabet: 46, value: 999, continent: "us" },
-    { id: "soundcloud", year: 2007, users: 130000000, alphabet: 47, value: 999, continent: "europe" },
-    { id: "spacehey", year: 2020, users: 2000000, alphabet: 48, value: 999, continent: "europe" },
-    { id: "telegram", year: 2012, users: 900000000, alphabet: 49, value: 999, continent: "europe" },
-    { id: "tenten", year: 2024, users: 12000000, alphabet: 49.5, value: 999, continent: "europe" },
-    { id: "threads", year: 2017, users: 150000000, alphabet: 50, value: 999, continent: "us" },
-    { id: "tiktok", year: 2013, users: 1500000000, alphabet: 51, value: 2, continent: "asia" },
-    { id: "tripadvisor", year: 2000, users: 490000000, alphabet: 52, value: 999, continent: "us" },
-    { id: "truthsocial", year: 2021, users: 3000000, alphabet: 53, value: 999, continent: "us" },
-    { id: "tumblr", year: 2007, users: 135000000, alphabet: 54, value: 999, continent: "us" },
-    { id: "vimeo", year: 2004, users: 200000000, alphabet: 53, value: 999, continent: "europe" },
-    { id: "vine", year: 2012, users: 200000000, alphabet: 54, value: 999, continent: "us" },
+    { id: "clubhouse", year: 2020, users: 10000000, alphabet: 9, value: 999, continent: "us" },
+    { id: "dailymotion", year: 2005, users: 0, alphabet: 10, value: 999, continent: "europe" },
+    { id: "discord", year: 2013, users: 200000000, alphabet: 11, value: 999, continent: "us" },
+    { id: "facebook", year: 2004, users: 3000000000, alphabet: 12, value: 1, continent: "us" },
+    { id: "flickr", year: 2004, users: 60000000, alphabet: 13, value: 999, continent: "us" },
+    { id: "fotolog", year: 2002, users: 20000000, alphabet: 14, value: 999, continent: "south-america" },
+    { id: "foursquare", year: 2009, users: 0, alphabet: 15, value: 999, continent: "us" },
+    { id: "friendster", year: 2002, users: 115000000, alphabet: 16, value: 999, continent: "us" },
+    { id: "geocities", year: 1994, users: 38000000, alphabet: 17, value: 999, continent: "us" },
+    { id: "habbo", year: 2000, users: 10000000, alphabet: 18, value: 999, continent: "europe" },
+    { id: "hi5", year: 2003, users: 70000000, alphabet: 19, value: 999, continent: "us" },
+    { id: "houseparty", year: 2016, users: 50000000, alphabet: 20, value: 999, continent: "us" },
+    { id: "instagram", year: 2010, users: 2000000000, alphabet: 21, value: 1, continent: "us" },
+    { id: "kik", year: 2010, users: 300000000, alphabet: 22, value: 999, continent: "canada" },
+    { id: "kuaishou", year: 2011, users: 700000000, alphabet: 23, value: 999, continent: "asia" },
+    { id: "lapse", year: 2021, users: 1200000, alphabet: 24, value: 999, continent: "europe" },
+    { id: "lastfm", year: 2003, users: 30000000, alphabet: 25, value: 999, continent: "europe" },
+    { id: "line", year: 2011, users: 200000000, alphabet: 26, value: 999, continent: "asia" },
+    { id: "linkedin", year: 2003, users: 1000000000, alphabet: 27, value: 999, continent: "us" },
+    { id: "livejournal", year: 1999, users: 10000000, alphabet: 28, value: 999, continent: "us" },
+    { id: "mastodon", year: 2016, users: 2000000, alphabet: 29, value: 999, continent: "europe" },
+    { id: "musically", year: 2014, users: 0, alphabet: 31, value: 999, continent: "us" },
+    { id: "myspace", year: 2003, users: 115000000, alphabet: 32, value: 999, continent: "us" },
+    { id: "noplace", year: 2021, users: 1000000, alphabet: 33, value: 999, continent: "europe" },
+    { id: "onlyfans", year: 2016, users: 200000000, alphabet: 34, value: 999, continent: "europe" },
+    { id: "orkut", year: 2004, users: 0, alphabet: 35, value: 999, continent: "us" },
+    { id: "parler", year: 2018, users: 3000000, alphabet: 36, value: 999, continent: "us" },
+    { id: "pinterest", year: 2010, users: 450000000, alphabet: 37, value: 999, continent: "us" },
+    { id: "qq", year: 1999, users: 800000000, alphabet: 38, value: 3, continent: "asia" },
+    { id: "reddit", year: 2005, users: 430000000, alphabet: 39, value: 999, continent: "us" },
+    { id: "sinaweibo2010", year: 2010, users: 600000000, alphabet: 40, value: 999, continent: "asia" },
+    { id: "skype", year: 2003, users: 0, alphabet: 41, value: 999, continent: "europe" },
+    { id: "snapchat", year: 2011, users: 750000000, alphabet: 42, value: 999, continent: "us" },
+    { id: "soundcloud", year: 2007, users: 75000000, alphabet: 43, value: 999, continent: "europe" },
+    { id: "spacehey", year: 2020, users: 500000, alphabet: 44, value: 999, continent: "europe" },
+    { id: "telegram", year: 2013, users: 800000000, alphabet: 45, value: 999, continent: "europe" },
+    { id: "tenten", year: 2024, users: 6000000, alphabet: 46, value: 999, continent: "europe" },
+    { id: "threads", year: 2023, users: 300000000, alphabet: 47, value: 999, continent: "us" },
+    { id: "tinder", year: 2012, users: 75000000, alphabet: 48, value: 2, continent: "us" },
+    { id: "tiktok", year: 2018, users: 1500000000, alphabet: 49, value: 2, continent: "asia" },
+    { id: "tripadvisor", year: 2000, users: 450000000, alphabet: 50, value: 999, continent: "us" },
+    { id: "truthsocial", year: 2022, users: 5000000, alphabet: 51, value: 999, continent: "us" },
+    { id: "tumblr", year: 2007, users: 135000000, alphabet: 52, value: 999, continent: "us" },
+    { id: "vimeo", year: 2004, users: 260000000, alphabet: 53, value: 999, continent: "europe" },
+    { id: "vine", year: 2013, users: 0, alphabet: 54, value: 999, continent: "us" },
     { id: "wechat", year: 2011, users: 1300000000, alphabet: 55, value: 3, continent: "asia" },
-    { id: "weibo2009", year: 2009, users: 600000000, alphabet: 56, value: 999, continent: "asia" },
-    { id: "whatsapp", year: 2008, users: 2500000000, alphabet: 57, value: 1, continent: "us" },
-    { id: "x", year: 2006, users: 400000000, alphabet: 58, value: 999, continent: "us" },
+    { id: "weibo", year: 2009, users: 580000000, alphabet: 56, value: 999, continent: "asia" },
+    { id: "whatsapp", year: 2009, users: 2000000000, alphabet: 57, value: 1, continent: "us" },
+    { id: "x", year: 2006, users: 500000000, alphabet: 58, value: 999, continent: "us" },
     { id: "yelp", year: 2004, users: 180000000, alphabet: 59, value: 999, continent: "us" },
     { id: "youtube", year: 2005, users: 2500000000, alphabet: 60, value: 999, continent: "us" },
   ];
@@ -330,6 +336,10 @@ const timelineData = [
     timeline.addEventListener('click', (e) => {
       const btn = e.target.closest('.timeline-item');
       if (!btn) return;
+      // Entferne .active-detail von allen Timeline-Items
+      document.querySelectorAll('.timeline-item.active-detail').forEach(el => el.classList.remove('active-detail'));
+      // Füge dem geklickten Button .active-detail hinzu
+      btn.classList.add('active-detail');
       const id = btn.getAttribute('data-id');
       showDetail(id, btn.textContent.trim());
     });
@@ -396,7 +406,8 @@ const timelineData = [
       detail.classList.remove('active');
       col2.classList.remove('col-hide');
       col3.classList.remove('col-hide');
-      
+      // Entferne .active-detail von allen Timeline-Items
+      document.querySelectorAll('.timeline-item.active-detail').forEach(el => el.classList.remove('active-detail'));
       // Detaileintrag aus localStorage entfernen
       localStorage.removeItem('activeDetailId');
       localStorage.removeItem('activeDetailTitle');
@@ -572,8 +583,13 @@ const timelineData = [
       let startX = 0;
       let startCol1Width = 0;
       
-      // Standard-Breite setzen
-      updateGridColumns(400);
+      // Gespeicherte Spaltenbreite (Pixel) wiederherstellen oder Standard-Breite setzen
+      const savedCol1Px = localStorage.getItem('col1WidthPx');
+      if (savedCol1Px) {
+        updateGridColumns(parseFloat(savedCol1Px));
+      } else {
+        updateGridColumns(400);
+      }
       
       resizeDivider.addEventListener('mousedown', (e) => {
         isResizing = true;
@@ -608,6 +624,9 @@ const timelineData = [
           isResizing = false;
           document.body.classList.remove('resizing');
           resizeDivider.classList.remove('active');
+          // Spaltenbreite als exakten Pixelwert speichern
+          const col1Width = col1.getBoundingClientRect().width;
+          localStorage.setItem('col1WidthPx', col1Width);
         }
       });
       
@@ -616,8 +635,23 @@ const timelineData = [
         const dividerWidth = 1;
         const col2TotalWidth = containerWidth - col1Width - dividerWidth;
         
+        // Berechne Prozentsätze für zoom-unabhängiges Layout
+        const col1Percent = (col1Width / containerWidth) * 100;
+        
+        applyGridColumnsPercent(col1Percent);
+      }
+      
+      function applyGridColumnsPercent(col1Percent) {
+        const dividerWidth = 1;
+        const col2Percent = 100 - col1Percent;
+        
         container.style.gridTemplateColumns = 
-          `${col1Width}px ${dividerWidth}px ${col2TotalWidth}px`;
+          `${col1Percent}% ${dividerWidth}px calc(${col2Percent}% - ${dividerWidth}px)`;
+        
+        // Aktuelle Pixelwerte für Logik berechnen
+        const containerWidth = container.getBoundingClientRect().width;
+        const col1Width = (col1Percent / 100) * containerWidth;
+        const col2TotalWidth = (col2Percent / 100) * containerWidth;
         
         // Theme-Button Sichtbarkeit basierend auf Spaltenbreiten
         const themeButton = document.getElementById('theme-button');

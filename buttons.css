@@ -200,17 +200,71 @@ body:has(.detail-column.active) #theme-button {
 
 
 
-/* Sortierbuttons */
+/* Sortierbuttons Index */
+#sortBar {
+  position: sticky;
+  bottom: 0;
+  width: calc(100% + calc(var(--column-padding) * 2));
+  padding: 0px var(--column-padding);
+  box-sizing: border-box;
+  z-index: 50;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 5px;
+  flex-wrap: wrap;
+  padding: 0px 25px 15px 25px;
+  background: #fff;
+}
+
+[data-theme="dark"] #sortBar {
+  background: #000;
+}
+
+
+.sort-btn {
+  font-family: 'Hedvig Letters Sans';
+  font-size: 16px;
+  color: #fff;
+  padding: 3px 10px;
+  border-radius: 8px;
+  border: 0px;
+  cursor: pointer;
+  background-color: #000000;
+  transition: all 0.3s ease;
+  position: sticky;
+}
+
+/* Hover-Effekt */
+.sort-btn:hover {
+  background-color: #f0f !important;
+  color: #000 !important;
+}
+
+/* Aktiver Button */
+.sort-btn.active {
+  background-color: #f0f !important;
+  color: #000 !important;
+}
+
+.sort-arrow {
+  display: inline-block;
+  margin-left: 5px;
+  font-size: 14px;
+  transition: transform 0.3s ease;
+}
+
+.sort-btn[data-sort="year"].desc .sort-arrow {
+  transform: rotate(180deg);
+}
 [data-theme="dark"] .sort-btn {
-    background-color: #1e1e1e;
-    color: #fff;
-    border-color: #7b6f6f;
+    background-color: #fff;
+    color: #000;
 }
 
 [data-theme="dark"] .sort-btn.active {
-    background-color: #ffffff !important;
+    background-color: #f0f !important;
     color: #000000 !important;
-    border-color: #fff !important;
 }
 
 

@@ -1,7 +1,17 @@
 const DETAILS = {
       'bbs': {
-        title: 'Bulletin Board Systems (1978) ',
+        title: 'Bulletin Board Systems',
         html: `<div class="index-detail">
+
+
+              <div class="info-box">
+                <p>Launch:</p><p>?</p>
+                <p>Verfügbarkeit:</p><p>web</p>
+                <p>Nutzer*innen:</p><p>?</p>
+                <p>Beliebt in:</p><p>weltweit</p>
+                <p>Firmensitz:</p><p>?</p>
+                <p>Ads:</p><p>?</p>
+              </div>
 
               <img src="bilder/bbs2.jpg" style="width: 100%; ">
               <figcaption style="">
@@ -117,11 +127,19 @@ const DETAILS = {
       },
 
       'geocities': {
-        title: 'GeoCities (1994) USA',
+        title: 'GeoCities',
         html: `<div class="index-detail">
 
               <a class="sm" href="https://geocities.restorativland.org/" target="_blank" rel="noopener noreferrer">🡒https://geocities.restorativland.org/</a>
-
+              
+              <div class="info-box">
+                <p>Launch:</p><p>1994</p>
+                <p>Verfügbarkeit:</p><p>web</p>
+                <p>Nutzer*innen:</p><p>?</p>
+                <p>Beliebt in:</p><p>weltweit</p>
+                <p>Firmensitz:</p><p>USA</p>
+                <p>Ads:</p><p>ja</p>
+              </div>
 
               <p class="top">
               GeoCities war eine der ersten großen Plattformen, die es Internetnutzer*innen ab Mitte der 1990er-Jahre
@@ -249,11 +267,21 @@ const DETAILS = {
       },
 
       'classmates': {
-        title: 'Classmates.com (1995) USA',
+        title: 'Classmates.com',
         html: `<div class="index-detail">
 
     
               <a class="sm" href="https://www.classmates.com/" target="_blank" rel="noopener noreferrer">🡒https://www.classmates.com/</a>
+
+              
+              <div class="info-box">
+                <p>Launch:</p><p>1995</p>
+                <p>Verfügbarkeit:</p><p>web</p>
+                <p>Nutzer*innen:</p><p>über 50 Mio (historisch)</p>
+                <p>Beliebt in:</p><p>USA</p>
+                <p>Firmensitz:</p><p>USA</p>
+                <p>Ads:</p><p>ja</p>
+              </div>
 
 
               <p class="top">
@@ -333,40 +361,20 @@ const DETAILS = {
               </div>`
       },
 
-      'sixdegrees': {
-        title: 'SixDegrees.com (1997) USA',
-        html: `<div class="index-detail"><p>
-              SixDegrees.com, 1997 von Andrew Weinreich gegründet, war einer der ersten Versuche, die soziale Struktur der realen Welt
-              direkt in eine Web-Plattform zu übersetzen. Die Site orientierte sich an der Idee der „six degrees of separation“ und
-              erlaubte Nutzern, Profile anzulegen, Kontakte als „Friends“ zu speichern und das Netzwerk über Freunde‑von‑Freunden
-              zu durchforsten — Funktionen, die später als „Social Graph“ bekannt wurden. Technisch bot SixDegrees ein frühes Profil-, 
-              Netzwerk- und Nachrichtenmodell: Nutzer konnten Fotos hochladen, Freundeslisten
-              pflegen und Nachrichten austauschen. Ökonomisch und infrastrukturell war das Web Ende der 1990er-Jahre jedoch noch nicht
-              so reif wie ein Jahrzehnt später.
-              <a href="https://www.computerhistory.org/timeline/1997/" target="_blank" rel="noopener noreferrer">🡒Computer History Museum</a>
-              <a href="https://www.theguardian.com/technology/2010/jul/25/facebook-six-degrees-of-separation" target="_blank" rel="noopener noreferrer">🡒The Guardian</a>
-              </p>
-
-              <p class="indent">
-               Trotz wachsender Nutzerzahlen gelang es nicht, ein nachhaltiges Geschäftsmodell zu etablieren;
-              2000 wurde der Dienst eingestellt. Die Bedeutung von SixDegrees liegt weniger in kommerziellem Erfolg als in den
-              konzeptuellen Grundlagen, die später Plattformen wie Friendster, MySpace und Facebook weiterentwickelten.
-              <a href="https://www.historyofinformation.com/detail.php?id=3511" target="_blank" rel="noopener noreferrer">🡒History of Information</a>
-              </p><p style="">
-              Gesellschaftlich zeigte SixDegrees erstmals breite Nachfrage danach, reale soziale Verbindungen online zu modellieren.
-              Es war ein früher Beleg dafür, dass Nutzer reale Identitäten und Beziehungen ernsthaft in digitalen Räumen verwalten wollten.
-              Die Plattform ist deshalb als Blaupause des Social Graph wichtig — auch wenn die praktische Umsetzung und Monetarisierung
-              erst Jahre später gelang.
-              </p>
-
-              </div>`
-      },
-
       'livejournal': {
-        title: 'LiveJournal (1998) USA/Russland',
+        title: 'LiveJournal',
         html: `<div class="index-detail">
 
               <a class="sm" href="https://www.livejournal.com/" target="_blank" rel="noopener noreferrer">🡒https://www.livejournal.com/</a>
+
+              <div class="info-box">
+                <p>Launch:</p><p>1999</p>
+                <p>Verfügbarkeit:</p><p>web</p>
+                <p>Nutzer*innen:</p><p>über 10 Mio</p>
+                <p>Beliebt in:</p><p>Russland, USA</p>
+                <p>Firmensitz:</p><p>San Francisco, USA</p>
+                <p>Ads:</p><p>ja</p>
+              </div>
 
               <p class="top">
               LiveJournal wurde 1999 von Brad Fitzpatrick gestartet (als frühes Blog- und Tagebuchsystem) und verschmolz individuell geführte
@@ -409,11 +417,19 @@ const DETAILS = {
       },
 
       'qq': {
-        title: 'QQ (1999) China',
+        title: 'QQ',
         html: `<div class="index-detail">
 
               <a class="sm" href="https://im.qq.com/index/" target="_blank" rel="noopener noreferrer">🡒https://www.qq.com/</a>
 
+              <div class="info-box">
+                <p>Launch:</p><p>1999</p>
+                <p>Verfügbarkeit:</p><p>mobile & web</p>
+                <p>Nutzer*innen:</p><p>über 800 Mio</p>
+                <p>Beliebt in:</p><p>China</p>
+                <p>Firmensitz:</p><p>Shenzhen, China</p>
+                <p>Ads:</p><p>ja</p>
+              </div>
 
               <p class="top">
               QQ (Tencent QQ) startete 1999 als chinesischer Instant‑Messaging‑Dienst und wuchs schnell zu einem multifunktionalen Ökosystem:
@@ -475,10 +491,18 @@ const DETAILS = {
       },
 
       'tripadvisor': {
-        title: 'TripAdvisor (2000) USA',
+        title: 'TripAdvisor',
         html: `<div class="index-detail">
               <a class="sm" href="https://www.tripadvisor.de/" target="_blank" rel="noopener noreferrer">🡒https://www.tripadvisor.de/</a>
 
+              <div class="info-box">
+                <p>Launch:</p><p>2000</p>
+                <p>Verfügbarkeit:</p><p>mobile & web</p>
+                <p>Nutzer*innen:</p><p>über 450 Mio</p>
+                <p>Beliebt in:</p><p>weltweit</p>
+                <p>Firmensitz:</p><p>Needham, USA</p>
+                <p>Ads:</p><p>ja</p>
+              </div>
 
               <p class="top">
               TripAdvisor wurde 2000 von Stephen Kaufer und Team gegründet und verwandelte Reiseentscheidungen durch User‑Generated Reviews. Anstelle
@@ -512,11 +536,21 @@ const DETAILS = {
       },
 
       'habbo': {
-        title: 'Habbo (2000) Finnland',
+        title: 'Habbo',
         html: `<div class="index-detail">
               <a class="sm" href="https://www.habbo.de/" target="_blank" rel="noopener noreferrer">
               🡒https://www.habbo.de/
               </a>
+
+              
+              <div class="info-box">
+                <p>Launch:</p><p>2000</p>
+                <p>Verfügbarkeit:</p><p>mobile & web</p>
+                <p>Nutzer*innen:</p><p>über 10 Mio</p>
+                <p>Beliebt in:</p><p>Europa</p>
+                <p>Firmensitz:</p><p>Finnland</p>
+                <p>Ads:</p><p>ja</p>
+              </div>
 
               <p class="top"> 
               Habbo ist eine virtuelle Online-Community, in der Nutzer*innen seit 2000 als personalisierbare 
@@ -592,11 +626,20 @@ const DETAILS = {
       },
 
       'friendster': {
-        title: 'Friendster (2002) USA',
+        title: 'Friendster',
         html: `<div class="index-detail">
               <a class="sm" href="https://friendster.com/" target="_blank" rel="noopener noreferrer">
               🡒https://friendster.com/
               </a>
+
+              <div class="info-box">
+                <p>Launch:</p><p>2002</p>
+                <p>Verfügbarkeit:</p><p>web</p>
+                <p>Nutzer*innen:</p><p>über 100 Mio (historisch)</p>
+                <p>Beliebt in:</p><p>USA, Asien</p>
+                <p>Firmensitz:</p><p>Kuala Lumpur, Malaysia</p>
+                <p>Ads:</p><p>ja</p>
+              </div>
 
               <img class="top" src="bilder/friendster1.jpg" style="width: 100%; ">
               <figcaption>
@@ -691,20 +734,21 @@ const DETAILS = {
               </div>`
       },
 
-      'jappy': {
-        title: 'Jappy (2001) Deutschland',
-        html: `<div class="index-detail">
-              <a class="sm" href="https://www.jappy.com/" target="_blank" rel="noopener noreferrer">
-              🡒https://www.jappy.com/
-              </a></div>`
-      },
-
       'fotolog': {
-        title: 'Fotolog (2002) USA',
+        title: 'Fotolog',
         html: `<div class="index-detail">
               <a class="sm" href="https://web.archive.org/web/20151201024940/http://www.fotolog.com/" target="_blank" rel="noopener noreferrer">
               🡒https://web.archive.org/web/20151201024940/http://www.fotolog.com/
               </a>
+
+              <div class="info-box">
+                <p>Launch:</p><p>2002</p>
+                <p>Verfügbarkeit:</p><p>web</p>
+                <p>Nutzer*innen:</p><p>über 20 Mio (historisch)</p>
+                <p>Beliebt in:</p><p>Lateinamerika</p>
+                <p>Firmensitz:</p><p>USA</p>
+                <p>Ads:</p><p>ja</p>
+              </div>
 
               <img class="top" src="bilder/fotolog1.jpg" style="width: 100%; ">
               <figcaption>
@@ -777,11 +821,22 @@ const DETAILS = {
       },
 
       'lastfm': {
-        title: 'Last.fm (2002) UK',
+        title: 'Last.fm',
         html: `<div class="index-detail">
               <a class="sm" href="https://www.last.fm/de/" target="_blank" rel="noopener noreferrer">
               🡒https://www.last.fm/de/
               </a>
+
+              
+              <div class="info-box">
+                <p>Launch:</p><p>2003</p>
+                <p>Verfügbarkeit:</p><p>mobile & web</p>
+                <p>Nutzer*innen:</p><p>über 30 Mio</p>
+                <p>Beliebt in:</p><p>UK, Deutschland</p>
+                <p>Firmensitz:</p><p>London, UK</p>
+                <p>Ads:</p><p>ja</p>
+              </div>
+
 
               <img class="top" src="bilder/last.fm.png" style="width: 100%; ">
               <figcaption>
@@ -866,11 +921,21 @@ const DETAILS = {
       },
 
       'linkedin': {
-        title: 'LinkedIn (2003) USA',
+        title: 'LinkedIn',
         html: `<div class="index-detail">
               <a class="sm" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
               🡒https://www.linkedin.com/
               </a>
+
+              <div class="info-box">
+                <p>Launch:</p><p>2003</p>
+                <p>Verfügbarkeit:</p><p>mobile & web</p>
+                <p>Nutzer*innen:</p><p>über 1 Mrd</p>
+                <p>Beliebt in:</p><p>weltweit</p>
+                <p>Firmensitz:</p><p>Sunnyvale, USA</p>
+                <p>Ads:</p><p>ja</p>
+              </div>
+
 
               <img class="top" src="bilder/linkedin1.jpg" style="width: 100%; ">
               <figcaption>
@@ -959,11 +1024,20 @@ const DETAILS = {
       },
 
       'myspace': {
-        title: 'MySpace (2003) USA',
+        title: 'MySpace',
         html: `<div class="index-detail">
               <a class="sm" href="https://myspace.com/" target="_blank" rel="noopener noreferrer">
               🡒https://myspace.com/
               </a>
+
+              <div class="info-box">
+                <p>Launch:</p><p>2003</p>
+                <p>Verfügbarkeit:</p><p>web</p>
+                <p>Nutzer*innen:</p><p>über 100 Mio (historisch)</p>
+                <p>Beliebt in:</p><p>USA</p>
+                <p>Firmensitz:</p><p>Los Angeles, USA</p>
+                <p>Ads:</p><p>ja</p>
+              </div>
 
               <img class="top"src="bilder/myspace3.jpg" style="width: 100%; ">
               <figcaption>
@@ -1114,35 +1188,80 @@ const DETAILS = {
       },
 
       'hi5': {
-        title: 'Hi5 (2003) USA',
+        title: 'Hi5',
         html: `<div class="index-detail">
               <a class="sm" href="https://hi5.com/" target="_blank" rel="noopener noreferrer">
               🡒https://hi5.com/
-              </a></div>`
+              </a>
+              
+              <div class="info-box">
+                <p>Launch:</p><p>2003</p>
+                <p>Verfügbarkeit:</p><p>web</p>
+                <p>Nutzer*innen:</p><p>?</p>
+                <p>Beliebt in:</p><p>USA</p>
+                <p>Firmensitz:</p><p>San Francisco, USA</p>
+                <p>Ads:</p><p>ja</p>
+              </div>
+              
+              </div>`
       },
 
       '4chan': {
-        title: '4chan (2003) USA',
+        title: '4chan',
         html: `<div class="index-detail">
-              <p class="top">2003 * 4chan</p>
+        
+              <a class="sm" href="https://www.4chan.org" target="_blank" rel="noopener noreferrer">
+              🡒https://www.4chan.org
+              </a>
+
+              <div class="info-box">
+                <p>Launch:</p><p>2003</p>
+                <p>Verfügbarkeit:</p><p>web</p>
+                <p>Nutzer*innen:</p><p>?</p>
+                <p>Beliebt in:</p><p>USA</p>
+                <p>Firmensitz:</p><p>USA</p>
+                <p>Ads:</p><p>/</p>
+              </div>
+               
 
               </div>`
       },
 
       'skype': {
-        title: 'Skype (2003) USA',
+        title: 'Skype',
         html: `<div class="index-detail">
-                <p class="top">2003 * Skype † 2011</p>
+ 
+               <div class="info-box">
+                <p>Launch:</p><p>2003</p>
+                <p>Shutdown:</p><p>2011</p>
+                <p>Verfügbarkeit:</p><p>mobile & web</p>
+                <p>Nutzer*innen:</p><p>über 300 Mio (historisch)</p>
+                <p>Beliebt in:</p><p>weltweit</p>
+                <p>Firmensitz:</p><p>Redmond, USA (Microsoft)</p>
+                <p>Ads:</p><p>ja</p>
+              </div>
+
+
               </div>`
       },
 
       'facebook': {
-        title: 'Facebook (2004) USA',
+        title: 'Facebook',
         html: `<div class="index-detail">
 
               <a class="sm" href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
               🡒https://www.facebook.com
               </a>
+
+              
+              <div class="info-box">
+                <p>Launch:</p><p>2004</p>
+                <p>Verfügbarkeit:</p><p>mobile & web</p>
+                <p>Nutzer*innen:</p><p>über 3 Mrd</p>
+                <p>Beliebt in:</p><p>weltweit</p>
+                <p>Firmensitz:</p><p>Menlo Park, USA (Meta)</p>
+                <p>Ads:</p><p>ja</p>
+              </div>
 
               <img class="top" src="bilder/facebook7.jpg" style="width: 100%; ">
 
@@ -1240,6 +1359,7 @@ const DETAILS = {
               <iframe
                 src="https://maps.google.com/maps?q=37.48476,-122.14837&t=k&z=17&output=embed"
                 style="position: relative; top: -120px; left: 0; width: 100%; height: 800px; border: 0;"
+                loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade">
               </iframe>
             </div>
@@ -1252,19 +1372,41 @@ const DETAILS = {
       },
 
       'flickr': {
-        title: 'Flickr (2004) USA',
+        title: 'Flickr',
         html: `<div class="index-detail">
               <a class="sm" href="https://www.flickr.com/" target="_blank" rel="noopener noreferrer">
               🡒https://www.flickr.com/
-              </a></div>`
+              </a>
+              
+              <div class="info-box">
+                <p>Launch:</p><p>2004</p>
+                <p>Verfügbarkeit:</p><p>mobile & web</p>
+                <p>Nutzer*innen:</p><p>über 60 Mio</p>
+                <p>Beliebt in:</p><p>USA, Europa</p>
+                <p>Firmensitz:</p><p>San Francisco, USA</p>
+                <p>Ads:</p><p>ja</p>
+              </div>
+              
+              </div>`
       },
-
+      
       'orkut': {
-        title: 'Orkut (2004) USA',
+        title: 'Orkut',
         html: `<div class="index-detail">
               <a class="sm" href="https://www.orkut.com/" target="_blank" rel="noopener noreferrer">
               🡒https://www.orkut.com/
-              </a><figcaption style="text-align: right;">
+              </a>
+              
+              <div class="info-box">
+                <p>Launch:</p><p>2004</p>
+                <p>Verfügbarkeit:</p><p>web</p>
+                <p>Nutzer*innen:</p><p>über 300 Mio (vor Shutdown)</p>
+                <p>Beliebt in:</p><p>Brasilien, Indien</p>
+                <p>Firmensitz:</p><p>Mountain View, USA (Google)</p>
+                <p>Ads:</p><p>ja</p>
+              </div>
+              
+              <figcaption style="text-align: right;">
               <a href="qbUrTQ4ya2bgUghZ9z2ymwZ2nQqOWUVL1T28AksdXnuDUAKNtzKfVuUnvpgEWctFPOv8xrDQQMuGWTQmhwz1NdneYiiIXsZGkzDlErJQUTe0korWdaSsPC84sktzjNqIMBE2WUn1UopHS4y2VG0SiKVkoWl3N0SWgcmA1AI0vBxZxnlwJIhGYYl0i34UVijk4TYI1l" target="_blank" rel="noopener noreferrer">
               Quelle
               </a>,
@@ -1307,29 +1449,61 @@ const DETAILS = {
       },
 
       'yelp': {
-        title: 'Yelp (2004) USA',
+        title: 'Yelp',
         html: `<div class="index-detail">
               <a class="sm" href="https://www.yelp.de/" target="_blank" rel="noopener noreferrer">
               🡒https://www.yelp.de/
-              </a></div>`
+              </a>
+              
+              <div class="info-box">
+                <p>Launch:</p><p>2004</p>
+                <p>Verfügbarkeit:</p><p>mobile & web</p>
+                <p>Nutzer*innen:</p><p>über 180 Mio</p>
+                <p>Beliebt in:</p><p>USA</p>
+                <p>Firmensitz:</p><p>San Francisco, USA</p>
+                <p>Ads:</p><p>ja</p>
+              </div>
+
+              </div>`
       },
 
       'vimeo': {
-        title: 'Vimeo (2004) USA',
+        title: 'Vimeo',
         html: `<div class="index-detail">
               <a class="sm" href="https://vimeo.com/" target="_blank" rel="noopener noreferrer">
               🡒https://vimeo.com/
-              </a></div>`
+              </a>
+              
+              <div class="info-box">
+                <p>Launch:</p><p>2004</p>
+                <p>Verfügbarkeit:</p><p>mobile & web</p>
+                <p>Nutzer*innen:</p><p>über 260 Mio</p>
+                <p>Beliebt in:</p><p>USA, Europa</p>
+                <p>Firmensitz:</p><p>New York City, USA</p>
+                <p>Ads:</p><p>ja</p>
+              </div>
+              
+              </div>`
       },
      
       'whatsapp': {
-        title: 'WhatsApp (2008) USA',
+        title: 'WhatsApp',
         html: `<div class="index-detail">
 
               <a class="sm" href="https://www.whatsapp.com" target="_blank" rel="noopener noreferrer">
-              🡒https://www.whatsapp.com
-              </a><img src="bilder/whatsapp2.jpg" style="width: 100%; ">
+              🡒https://www.whatsapp.com </a>
 
+              
+              <div class="info-box">
+                <p>Launch:</p><p>2009</p>
+                <p>Verfügbarkeit:</p><p>mobile & web</p>
+                <p>Nutzer*innen:</p><p>über 2 Mrd</p>
+                <p>Beliebt in:</p><p>weltweit</p>
+                <p>Firmensitz:</p><p>Menlo Park, USA (Meta)</p>
+                <p>Ads:</p><p>/</p>
+              </div>
+
+              <img src="bilder/whatsapp2.jpg" style="width: 100%; ">
               <figcaption>
               WhatsApp Interface
               <br>
@@ -1427,12 +1601,21 @@ const DETAILS = {
       },
 
       'youtube': {
-        title: 'YouTube (2005) USA',
+        title: 'YouTube',
         html: `<div class="index-detail">
 
                <a class="sm" href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
                🡒https://www.youtube.com
               </a><img src="bilder/youtube2.jpg" style="width: 100%; ">
+
+              <div class="info-box">
+                <p>Launch:</p><p>2005</p>
+                <p>Verfügbarkeit:</p><p>mobile & web</p>
+                <p>Nutzer*innen:</p><p>über 2,5 Mrd</p>
+                <p>Beliebt in:</p><p>weltweit</p>
+                <p>Firmensitz:</p><p>San Bruno, USA (Google)</p>
+                <p>Ads:</p><p>ja</p>
+              </div>
 
               <figcaption>
               YouTube Headquarters
@@ -1530,69 +1713,118 @@ const DETAILS = {
       },
 
       'reddit': {
-        title: 'Reddit (2005) USA',
+        title: 'Reddit',
         html: `<div class="index-detail">
               <a class="sm" href="https://www.reddit.com/" target="_blank" rel="noopener noreferrer">
               🡒https://www.reddit.com/
-              </a></div>`
+              </a>
+              
+              
+              <div class="info-box">
+                <p>Launch:</p><p>2005</p>
+                <p>Verfügbarkeit:</p><p>mobile & web</p>
+                <p>Nutzer*innen:</p><p>über 430 Mio</p>
+                <p>Beliebt in:</p><p>USA, Europa</p>
+                <p>Firmensitz:</p><p>San Francisco, USA</p>
+                <p>Ads:</p><p>ja</p>
+              </div>
+              
+              </div>`
       },
       
       'bebo': {
-        title: 'Bebo (2005) USA',
+        title: 'Bebo',
         html: `<div class="index-detail">
               <a class="sm" href="https://www.bebo.com/" target="_blank" rel="noopener noreferrer">
               🡒https://www.bebo.com/
-              </a></div>`
-      },
-
-      'delicious': {
-        title: 'del.icio.us (2005) USA',
-        html: `<div class="index-detail">
-              <a class="sm" href="https://del.icio.us/" target="_blank" rel="noopener noreferrer">
-              🡒https://del.icio.us/
-              </a></div>`
-      },
-
-      'qzone': {
-        title: 'Qzone (2005)',
-        html: `<div class="index-detail">
-              <a class="sm" href="https://qzone.qq.com/" target="_blank" rel="noopener noreferrer">
-              🡒https://qzone.qq.com/
-              </a></div>`
+              </a>
+              
+              <div class="info-box">
+                <p>Launch:</p><p>2005</p>
+                <p>Verfügbarkeit:</p><p>web</p>
+                <p>Nutzer*innen:</p><p>?</p>
+                <p>Beliebt in:</p><p>USA, UK</p>
+                <p>Firmensitz:</p><p>San Francisco, USA</p>
+                <p>Ads:</p><p>/</p>
+              </div>
+              
+              </div>`
       },
 
       'x': {
-        title: 'X (2006) USA',
+        title: 'X',
         html: `<div class="index-detail">
               <a class="sm" href="https://x.com/" target="_blank" rel="noopener noreferrer">
               🡒https://x.com/
-              </a></div>`
+              </a>
+              
+              <div class="info-box">
+                <p>Launch:</p><p>2006</p>
+                <p>Verfügbarkeit:</p><p>mobile & web</p>
+                <p>Nutzer*innen:</p><p>über 500 Mio</p>
+                <p>Beliebt in:</p><p>weltweit</p>
+                <p>Firmensitz:</p><p>San Francisco, USA</p>
+                <p>Ads:</p><p>ja</p>
+              </div>
+
+              </div>`
       },
 
       'dailymotion': {
-        title: 'DailyMotion (2006) Frankreich',
+        title: 'DailyMotion',
         html: `<div class="index-detail">
               <a class="sm" href="https://www.dailymotion.com/" target="_blank" rel="noopener noreferrer">
               🡒https://www.dailymotion.com/
-              </a></div>`
+              </a>
+              
+              <div class="info-box">
+                <p>Launch:</p><p>2005</p>
+                <p>Verfügbarkeit:</p><p>mobile & web</p>
+                <p>Nutzer*innen:</p><p>?</p>
+                <p>Beliebt in:</p><p>USA</p>
+                <p>Firmensitz:</p><p>San Francisco, USA</p>
+                <p>Ads:</p><p>ja</p>
+              </div>
+
+</div>`
       },
 
       'tumblr': {
-        title: 'Tumblr (2007) USA',
+        title: 'Tumblr',
         html: `<div class="index-detail">
               <a class="sm" href="https://www.tumblr.com/" target="_blank" rel="noopener noreferrer">
               🡒https://www.tumblr.com/
-              </a></div>`
+              </a>
+              
+              <div class="info-box">
+                <p>Launch:</p><p>2007</p>
+                <p>Verfügbarkeit:</p><p>mobile & web</p>
+                <p>Nutzer*innen:</p><p>135 Mio</p>
+                <p>Beliebt in:</p><p>USA</p>
+                <p>Firmensitz:</p><p>New York City, USA</p>
+                <p>Ads:</p><p>ja</p>
+              </div>
+
+</div>`
       },
 
       'soundcloud': {
-        title: 'SoundCloud (2007) Deutschland',
+        title: 'SoundCloud',
         html: `<div class="index-detail">
               <a class="sm" href="https://soundcloud.com/" target="_blank" rel="noopener noreferrer">
               🡒https://soundcloud.com/
               </a>
 
-              <img class="top" src="bilder/soundcloud2.png" style="width: 100%; ">
+              <div class="info-box">
+                <p>Launch:</p><p>2007</p>
+                <p>Verfügbarkeit:</p><p>mobile & web</p>
+                <p>Nutzer*innen:</p><p>über 75 Mio</p>
+                <p>Beliebt in:</p><p>USA, Europa</p>
+                <p>Firmensitz:</p><p>Berlin, Deutschland</p>
+                <p>Ads:</p><p>ja</p>
+              </div>
+
+              <img src="bilder/soundcloud2.png" style="width: 100%; ">
 
               <figcaption style="text-align: left;">
               Screenshot aus Soundcloud Desktop Version, Dezember 2025.
@@ -1620,37 +1852,59 @@ const DETAILS = {
               </div>`
       },
 
-      'weibo2009': {
-        title: 'Weibo (2009) China',
-        html: `<div class="index-detail">
-              <a class="sm" href="https://weibo.com/" target="_blank" rel="noopener noreferrer">
-              🡒https://weibo.com/
-              </a></div>`
-      },
-
       'pinterest': {
-        title: 'Pinterest (2009) USA',
+        title: 'Pinterest',
         html: `<div class="index-detail">
               <a class="sm" href="https://www.pinterest.com/" target="_blank" rel="noopener noreferrer">
               🡒https://www.pinterest.com/
-              </a></div>`
+              </a>
+              
+              <div class="info-box">
+                <p>Launch:</p><p>2010</p>
+                <p>Verfügbarkeit:</p><p>mobile & web</p>
+                <p>Nutzer*innen:</p><p>über 450 Mio</p>
+                <p>Beliebt in:</p><p>USA, Europa</p>
+                <p>Firmensitz:</p><p>San Francisco, USA</p>
+                <p>Ads:</p><p>ja</p>
+              </div>
+
+</div>`
       },
 
       'foursquare': {
-        title: 'Foursquare (2009) USA',
+        title: 'Foursquare',
         html: `<div class="index-detail">
               <a class="sm" href="https://foursquare.com/" target="_blank" rel="noopener noreferrer">
               🡒https://foursquare.com/
-              </a></div>`
+              </a>
+              
+              <div class="info-box">
+                <p>Launch:</p><p>2009</p>
+                <p>Verfügbarkeit:</p><p>mobile & web</p>
+                <p>Nutzer*innen:</p><p>?</p>
+                <p>Beliebt in:</p><p>USA</p>
+                <p>Firmensitz:</p><p>New York City, USA</p>
+                <p>Ads:</p><p>ja</p>
+              </div>
+
+</div>`
       },
 
       'instagram': {
-        title: 'Instagram (2010) USA',
+        title: 'Instagram',
         html: `<div class="index-detail">
               <a class="sm" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
               🡒https://www.instagram.com/
               </a>
 
+              <div class="info-box">
+                <p>Launch:</p><p>2010</p>
+                <p>Verfügbarkeit:</p><p>mobile & web</p>
+                <p>Nutzer*innen:</p><p>über 2 Mrd</p>
+                <p>Beliebt in:</p><p>weltweit</p>
+                <p>Firmensitz:</p><p>Menlo Park, USA</p>
+                <p>Ads:</p><p>ja</p>
+              </div>
 
               <div style="width: 100%; height: 600px; margin-top: 2em; margin-bottom: 1em; overflow: hidden; position: relative;">
               <iframe
@@ -1668,20 +1922,40 @@ const DETAILS = {
               </div>`
       },
 
-      'sinaweibo2010': {
-        title: 'Sina Weibo (2010) China',
+      'weibo': {
+        title: 'Sina Weibo',
         html: `<div class="index-detail">
               <a class="sm" href="https://www.weibo.com/" target="_blank" rel="noopener noreferrer">
               🡒https://www.weibo.com/
-              </a></div>`
+              </a>
+              <div class="info-box">
+                <p>Launch:</p><p>2009</p>
+                <p>Verfügbarkeit:</p><p>mobile & web</p>
+                <p>Nutzer*innen:</p><p>über 580 Mio</p>
+                <p>Beliebt in:</p><p>China</p>
+                <p>Firmensitz:</p><p>Peking, China</p>
+                <p>Ads:</p><p>ja</p>
+              </div>
+
+</div>`
       },
 
       'wechat': {
-        title: 'WeChat (2011) China',
+        title: 'WeChat',
         html: `<div class="index-detail">
               <a class="sm" href="https://www.wechat.com/" target="_blank" rel="noopener noreferrer">
               🡒https://www.wechat.com/
               </a>
+
+
+              <div class="info-box">
+                <p>Launch:</p><p>2011</p>
+                <p>Verfügbarkeit:</p><p>mobile & web</p>
+                <p>Nutzer*innen:</p><p>über 1,3 Mrd</p>
+                <p>Beliebt in:</p><p>China</p>
+                <p>Firmensitz:</p><p>Shenzhen, China</p>
+                <p>Ads:</p><p>ja</p>
+              </div>
 
 
               <div style="width: 100%; height: 600px; margin-top: 2em; margin-bottom: 1em; overflow: hidden; position: relative;">
@@ -1701,52 +1975,158 @@ const DETAILS = {
       },
 
       'snapchat': {
-        title: 'Snapchat (2011) USA',
+        title: 'Snapchat',
         html: `<div class="index-detail">
               <a class="sm" href="https://www.snapchat.com/" target="_blank" rel="noopener noreferrer">
               🡒https://www.snapchat.com/
-              </a></div>`
+              </a>
+              
+              <div class="info-box">
+                <p>Launch:</p><p>2011</p>
+                <p>Verfügbarkeit:</p><p>mobile & web</p>
+                <p>Nutzer*innen:</p><p>über 750 Mio</p>
+                <p>Beliebt in:</p><p>USA, Europa</p>
+                <p>Firmensitz:</p><p>Santa Monica, USA</p>
+                <p>Ads:</p><p>ja</p>
+              </div>
+
+</div>`
       },
 
       'kuaishou': {
-        title: 'Kuaishou (2011) China',
+        title: 'Kuaishou',
         html: `<div class="index-detail">
               <a class="sm" href="https://www.kuaishou.com/" target="_blank" rel="noopener noreferrer">
               🡒https://www.kuaishou.com/
-              </a></div>`
+              </a>
+              
+              <div class="info-box">
+                <p>Launch:</p><p>2011</p>
+                <p>Verfügbarkeit:</p><p>mobile & web</p>
+                <p>Nutzer*innen:</p><p>über 700 Mio</p>
+                <p>Beliebt in:</p><p>China</p>
+                <p>Firmensitz:</p><p>Peking, China</p>
+                <p>Ads:</p><p>ja</p>
+              </div>
+
+
+              <img src="bilder/kuaishou2.jpg" style="width: 100%; ">
+              <figcaption>
+              Kuaishou im App Store, Januar 2026. <br>
+              </a> — <a href="https://apps.apple.com/us/app/%E5%BF%AB%E6%89%8B/id440948110" target="_blank" rel="noopener noreferrer"> Quelle </a>
+              </figcaption>
+
+              <img src="bilder/kuaishou1.jpg" style="width: 100%; ">
+              <figcaption>
+              Kuaishou im App Store, Januar 2026. <br>
+              </a> — <a href="https://apps.apple.com/us/app/%E5%BF%AB%E6%89%8B/id440948110" target="_blank" rel="noopener noreferrer"> Quelle </a>
+              </figcaption>
+
+              <img src="bilder/kuaishou5.png" style="width: 100%; ">
+              <figcaption>
+              Screenshot der chinesischen Kuaishou Website, Januar 2026. <br>
+              </a> — <a href="https://www.kuaishou.com/new-reco" target="_blank" rel="noopener noreferrer"> Quelle </a>
+              </figcaption>
+
+              <img src="bilder/kuaishou3.png" style="width: 100%; ">
+              <figcaption>
+              Screenshot der chinesischen Kuaishou Website, Januar 2026. <br>
+              </a> — <a href="https://www.kuaishou.com/new-reco" target="_blank" rel="noopener noreferrer"> Quelle </a>
+              </figcaption>
+
+</div>`
+
       },
 
       'line': {
-        title: 'Line (2011) Japan',
+        title: 'Line',
         html: `<div class="index-detail">
               <a class="sm" href="https://line.me/" target="_blank" rel="noopener noreferrer">
               🡒https://line.me/
-              </a></div>`
+              </a>
+              
+              <div class="info-box">
+                <p>Launch:</p><p>2011</p>
+                <p>Verfügbarkeit:</p><p>mobile & web</p>
+                <p>Nutzer*innen:</p><p>über 200 Mio</p>
+                <p>Beliebt in:</p><p>Japan, Thailand</p>
+                <p>Firmensitz:</p><p>Tokio, Japan</p>
+                <p>Ads:</p><p>ja</p>
+              </div>
+
+</div>`
+
       },
 
       'vine': {
-        title: 'Vine (2012) USA',
+        title: 'Vine',
         html: `<div class="index-detail">
               <a class="sm" href="https://vine.co/" target="_blank" rel="noopener noreferrer">
               🡒https://vine.co/
-              </a></div>`
+              </a>
+
+              <div class="info-box">
+                <p>Launch:</p><p>2013</p>
+                <p>Verfügbarkeit:</p><p>mobile & web</p>
+                <p>Nutzer*innen:</p><p>über 100 Mio (vor Shutdown)</p>
+                <p>Beliebt in:</p><p>USA</p>
+                <p>Firmensitz:</p><p>San Francisco, USA</p>
+                <p>Ads:</p><p>/</p>
+              </div>
+
+              <img src="bilder/vine2.jpg" style="width: 100%; ">
+              <figcaption>
+              Vine, Twitter <br>
+              Foto von </a><a href="https://www.flickr.com/photos/esthervargasc/"> Esther Vargas </a>
+              </a> — <a href="https://www.flickr.com/photos/esthervargasc/8427904491/in/photostream/"> Quelle </a>,
+              <a href="https://creativecommons.org/licenses/by-sa/2.0/deed.de" target="_blank" rel="license noopener noreferrer"> CC BY-SA 2.0 </a>
+              </figcaption>
+
+              <img src="bilder/vine2.jpg" style="width: 100%; ">
+              <figcaption>
+              Vine Logo <br>
+              Foto von Esther Vargas
+              <a href="https://www.flickr.com/photos/esthervargasc/8427904491/in/photostream/" target="_blank" rel="license noopener noreferrer"></a>
+              </figcaption>
+
+              </div>`
+              
       },
 
       'kik': {
-        title: 'Kik (2012) Kanada',
+        title: 'Kik',
         html: `<div class="index-detail">
               <a class="sm" href="https://www.kik.com/" target="_blank" rel="noopener noreferrer">
               🡒https://www.kik.com/
-              </a></div>`
+              </a>
+              
+              <div class="info-box">
+                <p>Launch:</p><p>2010</p>
+                <p>Verfügbarkeit:</p><p>mobile</p>
+                <p>Nutzer*innen:</p><p>über 300 Mio (historisch)</p>
+                <p>Beliebt in:</p><p>USA</p>
+                <p>Firmensitz:</p><p>Los Angeles, USA</p>
+                <p>Ads:</p><p>ja</p>
+              </div>
+
+              </div>`
       },
 
       'telegram': {
-        title: 'Telegram (2012) Russland/Dubai',
+        title: 'Telegram',
         html: `<div class="index-detail">
               <a class="sm" href="https://telegram.org/" target="_blank" rel="noopener noreferrer">
               🡒https://telegram.org/
               </a>
 
+              <div class="info-box">
+                <p>Launch:</p><p>2013</p>
+                <p>Verfügbarkeit:</p><p>mobile & web</p>
+                <p>Nutzer*innen:</p><p>über 800 Mio</p>
+                <p>Beliebt in:</p><p>weltweit</p>
+                <p>Firmensitz:</p><p>Dubai, VAE</p>
+                <p>Ads:</p><p>ja</p>
+              </div>
 
               <div style="width: 100%; height: 600px; margin-top: 2em; margin-bottom: 1em; overflow: hidden; position: relative;">
               <iframe
@@ -1765,22 +2145,56 @@ const DETAILS = {
       },
 
       'discord': {
-        title: 'Discord (2013) USA',
+        title: 'Discord',
         html: `<div class="index-detail">
               <a class="sm" href="https://discord.com/" target="_blank" rel="noopener noreferrer">
               🡒https://discord.com/
-              </a></div>`
+              </a>
+              
+              <div class="info-box">
+                <p>Launch:</p><p>2015</p>
+                <p>Verfügbarkeit:</p><p>mobile & web</p>
+                <p>Nutzer*innen:</p><p>über 200 Mio</p>
+                <p>Beliebt in:</p><p>USA</p>
+                <p>Firmensitz:</p><p>San Francisco, USA</p>
+                <p>Ads:</p><p>ja</p>
+              </div>
+
+              <img src="bilder/discord4.png" style="width: 100%; ">
+              <figcaption>
+              Discord im Miscrosoft Store, Januar 2026. <br>
+              </a> — <a href="https://apps.microsoft.com/detail/xpdc2rh70k22mn?hl=de-DE&gl=DE" target="_blank" rel="noopener noreferrer"> Quelle </a>
+              </figcaption>
+
+              <img src="bilder/discord3.png" style="width: 100%; ">
+              <figcaption>
+              Discord im Miscrosoft Store, Januar 2026. <br>
+              </a> — <a href="https://apps.microsoft.com/detail/xpdc2rh70k22mn?hl=de-DE&gl=DE" target="_blank" rel="noopener noreferrer"> Quelle </a>
+              </figcaption>
+
+</div>`
+
+
       },
 
       'tiktok': {
-        title: 'TikTok / Douyin (2013) China',
+        title: 'TikTok / Douyin',
         html: `<div class="index-detail">
               <a class="sm" href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer">
               🡒https://www.tiktok.com/
               </a>
 
+              <div class="info-box">
+                <p>Launch:</p><p>2018</p>
+                <p>Verfügbarkeit:</p><p>mobile & web</p>
+                <p>Nutzer*innen:</p><p>über 1,5 Mrd</p>
+                <p>Beliebt in:</p><p>China, USA</p>
+                <p>Firmensitz:</p><p>Beijing, China</p>
+                <p>Ads:</p><p>ja</p>
+              </div>
 
-              <img class="top" src="bilder/tiktok1.jpg" style="width: 100%; ">
+
+              <img src="bilder/tiktok1.jpg" style="width: 100%; ">
 
               <figcaption>
               TikTok CEO Shou Zi Chew at European Commission.
@@ -1798,68 +2212,115 @@ const DETAILS = {
               </div>`
       },
 
-      'medium': {
-        title: 'Medium (2013) USA',
-        html: `<div class="index-detail">
-              <a class="sm" href="https://medium.com/" target="_blank" rel="noopener noreferrer">
-              🡒https://medium.com/
-              </a></div>`
-      },
-
       'musically': {
-        title: 'Musical.ly (2014) USA',
-        html: `<div class="index-detail"></div>`
-      },
-
-      'ello': {
-        title: 'Ello (2014) USA',
+        title: 'Musical.ly',
         html: `<div class="index-detail">
-              <a class="sm" href="https://ello.co/" target="_blank" rel="noopener noreferrer">
-              🡒https://ello.co/
-              </a></div>`
+        
+        <div class="info-box">
+          <p>Launch:</p><p>2014</p>
+          <p>Verfügbarkeit:</p><p>mobile</p>
+          <p>Nutzer*innen:</p><p>über 200 Mio</p>
+          <p>Beliebt in:</p><p>USA, China</p>
+          <p>Firmensitz:</p><p>China</p>
+          <p>Ads:</p><p>ja</p>
+        </div>
+
+        <img src="bilder/musically1.jpg" style="width: 100%; ">
+        <figcaption>
+        Musical.ly Logo <br>
+        </figcaption>
+
+</div>`
       },
 
       'mastodon': {
-        title: 'Mastodon (2016) Deutschland',
+        title: 'Mastodon',
         html: `<div class="index-detail">
               <a class="sm" href="https://mastodon.social/" target="_blank" rel="noopener noreferrer">
               🡒https://mastodon.social/
-              </a></div>`
-      },
+              </a>
 
-      'houseparty': {
-        title: 'Houseparty (2016) USA',
-        html: `<div class="index-detail">
-              <a class="sm" href="https://www.houseparty.com/" target="_blank" rel="noopener noreferrer">
-              🡒https://www.houseparty.com/
-              </a></div>`
-      },
+              <div class="info-box">
+                <p>Launch:</p><p>2016</p>
+                <p>Verfügbarkeit:</p><p>web & mobile</p>
+                <p>Nutzer*innen:</p><p>ca. 2 Mio</p>
+                <p>Beliebt in:</p><p>Europa</p>
+                <p>Firmensitz:</p><p>Deutschland (dezentral)</p>
+                <p>Ads:</p><p>/</p>
+              </div>
 
-      'byte': {
-        title: 'Byte (2016) USA',
-        html: `<div class="index-detail">
-              <a class="sm" href="https://www.byte.co/" target="_blank" rel="noopener noreferrer">
-              🡒https://www.byte.co/
-              </a></div>`
+              <img src="bilder/mastodon2.jpg" style="width: 100%; ">
+              <figcaption>
+              Mastodon im PLaystore, Januar 2026. <br>
+              </a> — <a href="https://play.google.com/store/apps/details?id=org.joinmastodon.android" target="_blank" rel="noopener noreferrer"> Quelle </a>
+              </figcaption>
+
+              <img src="bilder/mastodon3.jpg" style="width: 100%; ">
+              <figcaption>
+              Mastodon im PLaystore, Januar 2026. <br>
+              </a> — <a href="https://play.google.com/store/apps/details?id=org.joinmastodon.android" target="_blank" rel="noopener noreferrer"> Quelle </a>
+              </figcaption>
+
+
+              </div>`
       },
 
       'threads': {
-        title: 'Threads (2017) USA',
+        title: 'Threads',
         html: `<div class="index-detail">
               <a class="sm" href="https://www.threads.net/" target="_blank" rel="noopener noreferrer">
               🡒https://www.threads.net/
-              </a></div>`
+              </a>
+              
+              <div class="info-box">
+                <p>Launch:</p><p>2023</p>
+                <p>Verfügbarkeit:</p><p>mobile & web</p>
+                <p>Nutzer*innen:</p><p>über 300 Mio</p>
+                <p>Beliebt in:</p><p>USA</p>
+                <p>Firmensitz:</p><p>Menlo Park, USA</p>
+                <p>Ads:</p><p>ja</p>
+              </div>
+
+              <img src="bilder/threads5.png" style="width: 100%; ">
+              <figcaption>
+              Threads bei Playstore, Januar 2026.
+              <br>
+              </a> —
+              <a href="https://tenten.app" target="_blank" rel="noopener noreferrer">
+              Quelle
+              </a>
+              </figcaption>
+
+              <img src="bilder/threads2.png" style="width: 100%; ">
+              <figcaption>
+              Threads im Playstore, Januar 2026.
+              <br>
+              </a> —
+              <a href="https://tenten.app" target="_blank" rel="noopener noreferrer">
+              Quelle
+              </a>
+              </figcaption>
+
+</div>`
       },
 
       'clubhouse': {
-        title: 'Clubhouse (2018) USA',
+        title: 'Clubhouse',
         html: `<div class="index-detail">
               <a class="sm" href="https://www.joinclubhouse.com/" target="_blank" rel="noopener noreferrer">
               🡒https://www.joinclubhouse.com/
               </a>
 
+              <div class="info-box">
+                <p>Launch:</p><p>2020</p>
+                <p>Verfügbarkeit:</p><p>mobile</p>
+                <p>Nutzer*innen:</p><p>ca. 10 Mio</p>
+                <p>Beliebt in:</p><p>USA, global</p>
+                <p>Firmensitz:</p><p>San Francisco, USA</p>
+                <p>Ads:</p><p>/</p>
+              </div>
 
-              <img class="top" src="bilder/clubhouse1.png" style="width: 100%; ">
+              <img src="bilder/clubhouse1.png" style="width: 100%; ">
               <figcaption>
               Screenshot der Clubhouse Website, Dezember 2025.
               <br>
@@ -1868,6 +2329,19 @@ const DETAILS = {
               Quelle
               </a>
               </figcaption>
+
+              <img src="bilder/clubhouse3.jpg" style="width: 100%; ">
+              <figcaption>
+              Clubhouse im App Store, Januar 2026. <br>
+              </a> — <a href="https://apps.apple.com/us/app/clubhouse/id1503133294" target="_blank" rel="noopener noreferrer"> Quelle </a>
+              </figcaption>
+
+              <img src="bilder/clubhouse4.jpg" style="width: 100%; ">
+              <figcaption>
+              Clubhouse im App Store, Januar 2026. <br>
+              </a> — <a href="https://apps.apple.com/us/app/clubhouse/id1503133294" target="_blank" rel="noopener noreferrer"> Quelle </a>
+              </figcaption>
+
 
               <img class="top" src="bilder/clubhouse2.jpg" style="width: 100%; ">
               <figcaption>
@@ -1891,7 +2365,7 @@ const DETAILS = {
               </iframe>
               </div>
 
-            <figcaption style="">
+            <figcaption>
               Clubhouse Headquarters, San Francisco.
             </figcaption>
 
@@ -1900,27 +2374,71 @@ const DETAILS = {
       },
 
       'parler': {
-        title: 'Parler (2019) USA',
+        title: 'Parler',
         html: `<div class="index-detail">
               <a class="sm" href="https://parler.com/" target="_blank" rel="noopener noreferrer">
               🡒https://parler.com/
-              </a></div>`
+              </a>
+              
+              <div class="info-box">
+                <p>Launch:</p><p>2018</p>
+                <p>Verfügbarkeit:</p><p>mobile & web</p>
+                <p>Nutzer*innen:</p><p>ca. 2-5 Mio</p>
+                <p>Beliebt in:</p><p>USA</p>
+                <p>Firmensitz:</p><p>Henderson, USA</p>
+                <p>Ads:</p><p>ja</p>
+              </div>
+
+              <img src="bilder/parler5.png" style="width: 100%; ">
+              <figcaption>
+              Parler im Playstore, Januar 2026. <br>
+              </a> — <a href="https://play.google.com/store/search?q=parler&c=apps&hl=de" target="_blank" rel="noopener noreferrer"> Quelle </a>
+              </figcaption>
+
+              <img src="bilder/parler4.jpg" style="width: 100%; ">
+              <figcaption>
+              Parler im Playstore, Januar 2026. <br>
+              </a> — <a href="https://play.google.com/store/search?q=parler&c=apps&hl=de" target="_blank" rel="noopener noreferrer"> Quelle </a>
+              </figcaption>
+
+              <img src="bilder/parler3.png" style="width: 100%; ">
+              <figcaption>
+              Screenshot der Parler Website, Januar 2026. <br>
+              </a> — <a href="https://www.parler.com/" target="_blank" rel="noopener noreferrer"> Quelle </a>
+              </figcaption>
+
+              <img src="bilder/parler2.png" style="width: 100%; ">
+              <figcaption>
+              Screenshot der Parler Website, Januar 2026. <br>
+              </a> — <a href="https://www.parler.com/" target="_blank" rel="noopener noreferrer"> Quelle </a>
+              </figcaption>
+
+</div>`
       },
 
       'bondee': {
-        title: 'Bondee (2019) Singapur',
+        title: 'Bondee',
         html: `<div class="index-detail">
               <a class="sm" href="https://bondee.com/main" target="_blank" rel="noopener noreferrer">
               🡒https://bondee.com/main
               </a>
 
-              <img class="top" src="bilder/bondee3.png" style="width: 100%; ">
+              <div class="info-box">
+                <p>Launch:</p><p>2023</p>
+                <p>Verfügbarkeit:</p><p>mobile</p>
+                <p>Nutzer*innen:</p><p>über 5 Mio</p>
+                <p>Beliebt in:</p><p>Asien (Singapur, Japan, Korea)</p>
+                <p>Firmensitz:</p><p>Singapur</p>
+                <p>Ads:</p><p>ja</p>
+              </div>
 
+
+              <img src="bilder/bondee3.png" style="width: 100%; ">
               <figcaption style="text-align: left;">
               Screenshot der Bondee Website, Dezember 2025.
               <br>
               </a> —
-              <a href="https://bsky.app/" target="_blank" rel="noopener noreferrer">
+              <a href="https://bondee.com" target="_blank" rel="noopener noreferrer">
               Quelle
               </a>
               </figcaption>
@@ -1969,6 +2487,19 @@ const DETAILS = {
               </a> — <a href="https://bondee.com/main" target="_blank" rel="noopener noreferrer"> Quelle </a>
               </figcaption>
 
+              <img src="bilder/bondee9.png" style="width: 100%; ">
+              <figcaption style="">
+              Bondee im Playstore, Januar 2026. <br>
+              </a> — <a href="https://bondee.com/main" target="_blank" rel="noopener noreferrer"> Quelle </a>
+              </figcaption>
+
+              <img src="bilder/bondee10.jpg" style="width: 100%; ">
+              <figcaption style="">
+              Bondee im Playstore, Januar 2026. <br>
+              </a> — <a href="https://bondee.com/main" target="_blank" rel="noopener noreferrer"> Quelle </a>
+              </figcaption>
+
+
 
               <img src="bilder/bondee1.png" style="width: 100%; ">
               <figcaption style="">
@@ -1981,13 +2512,33 @@ const DETAILS = {
       },
 
       'bereal': {
-        title: 'BeReal (2020) Frankreich',
+        title: 'BeReal',
         html: `<div class="index-detail">
               <a class="sm" href="https://bereal.com/" target="_blank" rel="noopener noreferrer">
               🡒https://bereal.com/
               </a>
               
-              
+              <div class="info-box">
+                <p>Launch:</p><p>2020</p>
+                <p>Verfügbarkeit:</p><p>mobile</p>
+                <p>Nutzer*innen:</p><p>über 40 Mio</p>
+                <p>Beliebt in:</p><p>Frankreich, USA</p>
+                <p>Firmensitz:</p><p>Paris, Frankreich</p>
+                <p>Ads:</p><p>ja</p>
+              </div>
+
+              <img src="bilder/bereal7.jpg" style="width: 100%; ">
+              <figcaption>
+              BeReal im Playstore, Januar 2026. <br>
+              </a> — <a href="https://play.google.com/store/apps/details?id=com.bereal.ft&hl=de" target="_blank" rel="noopener noreferrer"> Quelle </a>
+              </figcaption>
+
+              <img src="bilder/bereal6.jpg" style="width: 100%; ">
+              <figcaption>
+              BeReal im Playstore, Januar 2026. <br>
+              </a> — <a href="https://play.google.com/store/apps/details?id=com.bereal.ft&hl=de" target="_blank" rel="noopener noreferrer"> Quelle </a>
+              </figcaption>
+
               <div style="width: 100%; height: 600px; margin-top: 2em; margin-bottom: 1em; overflow: hidden; position: relative;">
               <iframe
                 src="https://maps.google.com/maps?q=48.8611647,2.3500219&t=k&z=18&output=embed"
@@ -2006,22 +2557,42 @@ const DETAILS = {
       },
 
       'spacehey': {
-        title: 'SpaceHey (2020) Deutschland',
+        title: 'SpaceHey',
         html: `<div class="index-detail">
               <a class="sm" href="https://spacehey.com/" target="_blank" rel="noopener noreferrer">
               🡒https://spacehey.com/
               </a>
-              
-              <img class="top" src="bilder/spacehey1.png" style="width: 100%; ">
+           
+              <div class="info-box">
+                <p>Launch:</p><p>2020</p>
+                <p>Verfügbarkeit:</p><p>web</p>
+                <p>Nutzer*innen:</p><p>ca. 500 Tsd</p>
+                <p>Beliebt in:</p><p>USA, Europa</p>
+                <p>Firmensitz:</p><p>Niederlande</p>
+                <p>Ads:</p><p>/</p>
+              </div>             
 
+              <img src="bilder/spacehey1.png" style="width: 100%; ">
               <figcaption style="text-align: left;">
               Screenshot der SpaceHey Website, Dezember 2025.
               <br>
               </a> —
-              <a href="https://bsky.app/" target="_blank" rel="noopener noreferrer">
+              <a href="https://spacehey.com/" target="_blank" rel="noopener noreferrer">
               Quelle
               </a>
               </figcaption>
+
+              <img src="bilder/spacehey3.png" style="width: 100%; ">
+              <figcaption style="text-align: left;">
+              Screenshot der SpaceHey Website, Dezember 2025.
+              <br>
+              </a> —
+              <a href="https://spacehey.com/mobile" target="_blank" rel="noopener noreferrer">
+              Quelle
+              </a>
+              </figcaption>
+
+
 
               <p class="top">
               Lol.
@@ -2031,13 +2602,22 @@ const DETAILS = {
       },
 
       'truthsocial': {
-        title: 'Truth Social (2021) USA',
+        title: 'Truth Social',
         html: `<div class="index-detail">
               <a class="sm" href="https://truthsocial.com/" target="_blank" rel="noopener noreferrer">
               🡒https://truthsocial.com/
               </a>
 
-              <img class="top" src="bilder/truthsocial1.jpg" style="width: 100%; ">
+              <div class="info-box">
+                <p>Launch:</p><p>2022</p>
+                <p>Verfügbarkeit:</p><p>mobile & web</p>
+                <p>Nutzer*innen:</p><p>ca. 5 Mio</p>
+                <p>Beliebt in:</p><p>USA</p>
+                <p>Firmensitz:</p><p>USA (Florida)</p>
+                <p>Ads:</p><p>ja</p>
+              </div>
+
+              <img src="bilder/truthsocial1.jpg" style="width: 100%; ">
               <figcaption>
               Screenshot der Truth Social Website, Dezember 2025.
               <br>
@@ -2047,7 +2627,13 @@ const DETAILS = {
               </a>
               </figcaption>
 
-              <img class="top" src="bilder/truthsocial2.png" style="width: 100%; ">
+              <img src="bilder/truthsocial9.jpg" style="width: 100%; ">
+              <figcaption>
+              Truth Social im Playstore, Januar 2026. <br>
+              </a> — <a href="https://play.google.com/store/search?q=truth%20social&c=apps&hl=de" target="_blank" rel="noopener noreferrer"> Quelle </a>
+              </figcaption>
+
+              <img src="bilder/truthsocial2.png" style="width: 100%; ">
               <figcaption>
               Screenshot der Truth Social Website, Dezember 2025.
               <br>
@@ -2057,7 +2643,7 @@ const DETAILS = {
               </a>
               </figcaption>
 
-              <img class="top" src="bilder/truthsocial3.png" style="width: 100%; ">
+              <img src="bilder/truthsocial3.png" style="width: 100%; ">
               <figcaption>
               Screenshot der Truth Social Website, Dezember 2025.
               <br>
@@ -2083,7 +2669,7 @@ const DETAILS = {
       },
 
       'noplace': {
-        title: 'Noplace (2021) Deutschland',
+        title: 'Noplace',
         html: `<div class="index-detail">
               <a class="sm" href="https://www.thenoplace.com/" target="_blank" rel="noopener noreferrer">
               🡒https://www.thenoplace.com/
@@ -2093,21 +2679,13 @@ const DETAILS = {
                 <p>Launch:</p><p>2021</p>
                 <p>Verfügbarkeit:</p><p>mobile</p>
                 <p>Nutzer*innen:</p><p>ca. 1 Mio</p>
-                <p>Besonders beliebt in:</p><p>Deutschland</p>
+                <p>Beliebt in:</p><p>Deutschland</p>
                 <p>Firmensitz:</p><p>San Francisco, USA</p>
                 <p>Ads:</p><p>ja</p>
               </div>
               
-              <p class="top"> 
-              What is Noplace? <br> <br>
-              "Noplace is the place to express urself and connect with others who have similar interests!
-              Gain levels, earn badges, and make friends, all while using ur completely customizable profile to share what u r doing, 
-              watching, listening to, eating, and more. it's whatever u want it to be, go crazy (just don't be a jerk)!"
-              </p>
 
-
-
-              <img class="top" src="bilder/noplace2.png" style="width: 100%; ">
+              <img src="bilder/noplace2.png" style="width: 100%; ">
               <figcaption>
               Auzug aus Noplace Media Kit, Januar 2026.
               <br>
@@ -2117,8 +2695,16 @@ const DETAILS = {
               </a>
               </figcaption>
 
+                            <p class="top"> 
+              What is Noplace? <br> <br>
+              "Noplace is the place to express urself and connect with others who have similar interests!
+              Gain levels, earn badges, and make friends, all while using ur completely customizable profile to share what u r doing, 
+              watching, listening to, eating, and more. it's whatever u want it to be, go crazy (just don't be a jerk)!"
+              </p>
 
-              <img class="top" src="bilder/noplace1.png" style="width: 100%; ">
+
+
+              <img src="bilder/noplace1.png" style="width: 100%; ">
               <figcaption>
               Screenshot der Noplace Website, Januar 2026.
               <br>
@@ -2129,7 +2715,7 @@ const DETAILS = {
               </figcaption>
 
 
-              <img class="top" src="bilder/noplace3.png" style="width: 100%; ">
+              <img src="bilder/noplace3.png" style="width: 100%; ">
               <figcaption>
               Auzug aus Noplace Media Kit, Januar 2026.
               <br>
@@ -2139,7 +2725,7 @@ const DETAILS = {
               </a>
               </figcaption>
 
-              <img class="top" src="bilder/noplace4.png" style="width: 100%; ">
+              <img src="bilder/noplace4.png" style="width: 100%; ">
               <figcaption>
               Auzug aus Noplace Media Kit, Januar 2026.
               <br>
@@ -2149,7 +2735,7 @@ const DETAILS = {
               </a>
               </figcaption>
 
-              <img class="top" src="bilder/noplace5.png" style="width: 100%; ">
+              <img src="bilder/noplace5.png" style="width: 100%; ">
               <figcaption>
               Auzug aus Noplace Media Kit, Januar 2026.
               <br>
@@ -2163,13 +2749,22 @@ const DETAILS = {
       },
       
       'bluesky': {
-        title: 'Bluesky (2022) USA',
+        title: 'Bluesky',
         html: `<div class="index-detail">
               <a class="sm" href="https://bsky.app/" target="_blank" rel="noopener noreferrer">
               🡒https://bsky.app/
               </a>
 
-              <img class="top" src="bilder/bluesky1.png" style="width: 100%; ">
+              <div class="info-box">
+                <p>Launch:</p><p>2023</p>
+                <p>Verfügbarkeit:</p><p>mobile & web</p>
+                <p>Nutzer*innen:</p><p>über 10 Mio</p>
+                <p>Beliebt in:</p><p>USA</p>
+                <p>Firmensitz:</p><p>Seattle, USA</p>
+                <p>Ads:</p><p>zukünftig</p>
+              </div>
+
+              <img src="bilder/bluesky1.png" style="width: 100%; ">
               <figcaption>
               Screenshot der BLuesky Website, Dezember 2025.
               <br>
@@ -2179,7 +2774,7 @@ const DETAILS = {
               </a>
               </figcaption>
 
-              <img class="top" src="bilder/bluesky2.png" style="width: 100%; ">
+              <img src="bilder/bluesky2.png" style="width: 100%; ">
               <figcaption>
               Screenshot der BLuesky Website, Dezember 2025.
               <br>
@@ -2189,7 +2784,18 @@ const DETAILS = {
               </a>
               </figcaption>
 
-              <img class="top" src="bilder/bluesky3.png" style="width: 100%; ">
+              <img src="bilder/bluesky5.jpg" style="width: 100%; ">
+              <figcaption>
+              Bluesky im Playstore, Januar 2026.
+              <br>
+              </a> —
+              <a href="https://bsky.app/" target="_blank" rel="noopener noreferrer">
+              Quelle
+              </a>
+              </figcaption>
+
+
+              <img src="bilder/bluesky3.png" style="width: 100%; ">
               <figcaption>
               Screenshot der BLuesky Website, Dezember 2025.
               <br>
@@ -2203,15 +2809,36 @@ const DETAILS = {
       },
 
       'tenten': {
-        title: 'Ten Ten (2024) Frankreich',
+        title: 'Ten Ten',
         html: `<div class="index-detail">
               <a class="sm" href="https://tenten.app" target="_blank" rel="noopener noreferrer">
               🡒https://tenten.app
               </a>
 
-              <img class="top" src="bilder/tenten1.png" style="width: 100%; ">
+
+              <div class="info-box">
+                <p>Launch:</p><p>2024</p>
+                <p>Verfügbarkeit:</p><p>mobile</p>
+                <p>Nutzer*innen:</p><p>?</p>
+                <p>Beliebt in:</p><p>UAE, Indien</p>
+                <p>Firmensitz:</p><p>?</p>
+                <p>Ads:</p><p>ja</p>
+              </div>
+
+
+              <img src="bilder/tenten1.png" style="width: 100%; ">
               <figcaption>
               Screenshot der Ten Ten Website, Januar 2026.
+              <br>
+              </a> —
+              <a href="https://tenten.app" target="_blank" rel="noopener noreferrer">
+              Quelle
+              </a>
+              </figcaption>
+
+              <img src="bilder/tenten5.jpg" style="width: 100%; ">
+              <figcaption>
+              Collage der Ten Ten Playstore Bilder, Januar 2026.
               <br>
               </a> —
               <a href="https://tenten.app" target="_blank" rel="noopener noreferrer">
@@ -2242,13 +2869,23 @@ const DETAILS = {
       },
 
       'lapse': {
-        title: 'Lapse (2021) Großbritannien',
+        title: 'Lapse',
         html: `<div class="index-detail">
               <a class="sm" href="https://lapse.com/" target="_blank" rel="noopener noreferrer">
               🡒https://lapse.com/
               </a>
 
-              <img class="top" src="bilder/lapse1.png" style="width: 100%; ">
+              <div class="info-box">
+                <p>Launch:</p><p>2021</p>
+                <p>Verfügbarkeit:</p><p>mobile, iOS</p>
+                <p>Nutzer*innen:</p><p>ca. 1,2 Mio</p>
+                <p>Beliebt in:</p><p>USA</p>
+                <p>Firmensitz:</p><p>San Francisco, USA</p>
+                <p>Ads:</p><p>/</p>
+              </div>
+
+
+              <img src="bilder/lapse1.png" style="width: 100%; ">
               <figcaption>
               Screenshot der Lapse Website, Januar 2026.
               <br>
@@ -2258,7 +2895,83 @@ const DETAILS = {
               </a>
               </figcaption>
 
+              <img src="bilder/lapse3.jpg" style="width: 100%; ">
+              <figcaption style="">
+              Lapse im App Store, Januar 2026. <br>
+              </a> — <a href="https://apps.apple.com/us/app/lapse-disposable-camera/id1636699256" target="_blank" rel="noopener noreferrer"> Quelle </a>
+              </figcaption>
+
+              <img src="bilder/lapse2.jpg" style="width: 100%; ">
+              <figcaption style="">
+              Lapse im App Store, Januar 2026. <br>
+              </a> — <a href="https://apps.apple.com/us/app/lapse-disposable-camera/id1636699256" target="_blank" rel="noopener noreferrer"> Quelle </a>
+              </figcaption>
+
+
+
               </div>`
       },
+
+      'tinder': {
+        title: 'Tinder',
+        html: `<div class="index-detail">
+              <a class="sm" href="https://tinder.com/" target="_blank" rel="noopener noreferrer">
+              🡒https://tinder.com/
+              </a>
+
+              <div class="info-box">
+                <p>Launch:</p><p>2012</p>
+                <p>Verfügbarkeit:</p><p>mobile & web</p>
+                <p>Nutzer*innen:</p><p>über 75 Mio</p>
+                <p>Beliebt in:</p><p>weltweit</p>
+                <p>Firmensitz:</p><p>Los Angeles, USA</p>
+                <p>Ads:</p><p>ja</p>
+              </div>
+
+              <img src="bilder/tinder6.png" style="width: 100%; ">
+              <figcaption>
+              Tinder im PLaystore, Januar 2026. <br>
+              </a> — <a href="https://play.google.com/store/search?q=tinder&c=apps" target="_blank" rel="noopener noreferrer"> Quelle </a>
+              </figcaption>
+
+              
+              <img src="bilder/tinder7.jpg" style="width: 100%; ">
+              <figcaption>
+              Tinder im PLaystore, Januar 2026. <br>
+              </a> — <a href="https://play.google.com/store/search?q=tinder&c=apps" target="_blank" rel="noopener noreferrer"> Quelle </a>
+              </figcaption>
+
+              </div>`
+      },
+
+      'onlyfans': {
+        title: 'OnlyFans',
+        html: `<div class="index-detail">
+              <a class="sm" href="https://onlyfans.com/" target="_blank" rel="noopener noreferrer">
+              🡒https://onlyfans.com/
+              </a>
+
+              <div class="info-box">
+                <p>Launch:</p><p>2016</p>
+                <p>Verfügbarkeit:</p><p>web & mobile</p>
+                <p>Nutzer*innen:</p><p>über 200 Mio</p>
+                <p>Beliebt in:</p><p>USA, UK</p>
+                <p>Firmensitz:</p><p>London, UK</p>
+                <p>Ads:</p><p>/</p>
+              </div>
+
+              <img class="top" src="bilder/onlyfans2.jpg" style="width: 100%; ">
+              <figcaption>
+              OnlyFans im Playstore, Januar 2026.
+              <br>
+              </a> —
+              <a href="https://onlyfans.com/" target="_blank" rel="noopener noreferrer">
+              Quelle
+              </a>
+              </figcaption>
+
+              </div>`
+      },
+
 
     };

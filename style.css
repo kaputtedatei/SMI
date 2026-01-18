@@ -1,6 +1,9 @@
+html,
 body {
   margin: 0;
   height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
   font-family: Hedvig Letters Sans;
   color: #000000;
 }
@@ -10,7 +13,23 @@ body {
   grid-template-columns: 3fr 2px 0fr 0px 6fr;
   gap: 0;
   height: 100vh;
+  width: 100vw;
+  max-width: 100%;
   transition: grid-template-columns 0.3s ease;
+}
+
+.column-content {
+  padding: 25px; 
+  overflow-y: scroll;
+}
+
+.column-header {
+  background-color: #000000;
+  padding: 10px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  margin: 0;
 }
 
 .resize-divider {
@@ -33,8 +52,11 @@ body {
 
 
 
-/* Schrift */
 
+
+
+
+/* Schrift */
 h1 {
   font-family: Hedvig Letters Sans;
   margin: 0;
@@ -55,30 +77,25 @@ h2 {
   color: #fff!important;
 }
 
-
 p {
   font-family: Hedvig Letters Sans;
   font-size: 22px;
   line-height: 30px;
   margin: 0;
-  /* color: #444; */
 }
 
 .index-detail a.sm{
   font-size: 21px;
  } 
   
-/* Abstand zwischen Paragraphen */
 .gap {
     height: 1em;
 }
 
-/* Textfeld in Index Detailansicht nicht volle Breite Zeile */
 .index-detail p {
   max-width: 70ch;
 }
 
-/* Einheitliche Abstände in der Detailspalte */
 .index-detail img {
   margin-top: 0;
   margin-bottom: 0.5em;
@@ -93,22 +110,25 @@ p {
   margin-bottom: 2em;
 }
 
-/* Info-Box mit 2 Spalten */
 .index-detail .info-box {
   display: grid;
   grid-template-columns: auto 1fr;
-  gap: 0.2em 10em;
+  gap: 0.2em 10%;
   margin: 2em 0;
   padding-bottom: 2em;
-  padding-top: 2em;
+  padding-top: 1em;
   border-bottom: 2px solid #000;
-  border-top: 2px solid #000;
-  width: 100vw;
   margin-left: calc(-25px);
+  margin-right: calc(-25px);
   padding-left: 25px;
   padding-right: 25px;
   box-sizing: border-box;
   color: #000 !important;
+}
+
+[data-theme="dark"] .index-detail .info-box {
+  color: #fff !important;
+  border-bottom: 2px solid #fff !important;
 }
 
 .index-detail .info-box p {
@@ -116,10 +136,6 @@ p {
   font-size: 22px;
   line-height: 31px;
 }
-
-
-
-
 
 /* Erstes Element nach a.sm: mehr Abstand nach oben */
 .index-detail .top {
@@ -152,26 +168,126 @@ figcaption {
 
 
 
-/* Columns */
-.column-content {
-  padding: 25px;
-}
 
-.column#col1 {
-  overflow-y: auto;
+
+
+
+
+/* 1. Spalte */
+#col1 {
+  display: flex;
+  flex-direction: column;
+  height: 100% !important;
 }
 
 #col1 .column-content {
+  flex: 1 1 auto;
+  overflow-y: auto;
+  overscroll-behavior-y: contain;
   display: flex;
   flex-direction: column;
-  min-height: 100%;
-  justify-content: space-between;
+  scrollbar-width: none;
 }
 
-#col1 .timeline {
-  flex: 0 0 auto;
+/* Index */
+.timeline {
+  list-style: none;
+  padding: 0;
 }
 
+.timeline.timeline-flow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.timeline.timeline-flow li {
+  margin: 0;
+}
+
+.timeline-item {
+  display: flex;
+  padding: 0 8px;
+  border-radius: 8px; 
+  background: rgb(232, 232, 232);
+  cursor: crosshair;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+  color: inherit;
+  transition: 0.4s ease;
+  border: none;
+}
+
+
+.timeline-item:hover,
+.timeline-item.active-detail {
+  background: rgb(127, 127, 127);
+  transition: 0.0s ease;
+  color: #ffffff;
+}
+
+/* line-height nur ändern wenn Items untereinander stehen (nicht im flow-Modus) */
+.timeline:not(.timeline-flow) .timeline-item:hover,
+.timeline:not(.timeline-flow) .timeline-item.active-detail {
+  line-height: 40px;
+}
+
+/* Jahreszahl nur anzeigen wenn Items untereinander stehen (nicht im flow-Modus) */
+.timeline:not(.timeline-flow) .timeline-item[data-year]:hover::after,
+.timeline:not(.timeline-flow) .timeline-item.active-detail[data-year]::after {
+  content: attr(data-year);
+  margin-left: 0.5em;
+  color: rgb(0, 0, 0);
+}
+
+/* Jahreszahlen dauerhaft anzeigen wenn col1 >= 800px */
+.timeline.show-years .timeline-item[data-year]::after {
+  content: attr(data-year);
+  margin-left: 0.5em;
+  color: #f0f;
+}
+
+[data-theme="dark"] .timeline-item {
+  background: rgb(40, 40, 40);
+}
+
+[data-theme="dark"] .timeline-item:hover,
+[data-theme="dark"] .timeline-item.active-detail {
+  background: rgb(113, 113, 113);
+  color: #000;
+}
+
+[data-theme="dark"] .timeline:not(.timeline-flow) .timeline-item[data-year]:hover::after,
+[data-theme="dark"] .timeline:not(.timeline-flow) .timeline-item.active-detail[data-year]::after {
+  color: rgb(255, 255, 255);
+}
+
+[data-theme="dark"] .timeline.show-years .timeline-item[data-year]::after {
+  color: #f0f;
+}
+
+/* Faded-Zustand für gefilterte Timeline-Items */
+#timeline li.faded .timeline-item {
+  opacity: 0.15;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 2. Spalte */
 #col2 .column-content {
   padding: 0px !important;
   display: grid;
@@ -179,6 +295,23 @@ figcaption {
   grid-auto-rows: 250px;
   box-sizing: border-box;
   background-color: #fff;
+}
+
+
+
+
+/* Grid Bilder */
+.dynamic-image {
+  opacity: 0;
+  max-width: 100%;
+  height: 0;
+  display: block;
+}
+
+.dynamic-image.visible {
+  opacity: 1;
+  height: auto;
+  margin-bottom: 10px;
 }
 
 .grid-item {
@@ -217,7 +350,6 @@ figcaption {
   opacity: 1;
 }
 
-/* Faded state for grid items when continent filter is active */
 .grid-item.faded {
   opacity: 0.25;
   filter: grayscale(80%);
@@ -234,14 +366,14 @@ figcaption {
 
 
 
-.column-header {
-  background-color: #000000;
-  padding: 10px 30px;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  margin: 0;
-}
+
+
+
+
+
+
+
+
 
 /* Header1 flexbox für theme-button Positionierung */
 #header1 {
@@ -289,102 +421,10 @@ figcaption {
 
 
 
-/* Index */
-.timeline {
-  list-style: none;
-  padding: 0;
-}
-
-.timeline.timeline-flow {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 4px;
-}
-
-.timeline.timeline-flow li {
-  margin: 0;
-}
-
-.timeline-item {
-  display: flex;
-  padding: 0 8px;
-  border-radius: 8px; 
-  background: rgb(232, 232, 232);
-  cursor: crosshair;
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 30px;
-  color: inherit;
-  transition: 0.4s ease;
-  border: none;
-}
-
-.timeline-item:hover {
-  background: rgb(127, 127, 127);
-  transition: 0.0s ease;
-  color: #ffffff;
-}
-
-/* line-height nur ändern wenn Items untereinander stehen (nicht im flow-Modus) */
-.timeline:not(.timeline-flow) .timeline-item:hover {
-  line-height: 40px;
-}
-
-/* Jahreszahl nur anzeigen wenn Items untereinander stehen (nicht im flow-Modus) */
-.timeline:not(.timeline-flow) .timeline-item[data-year]:hover::after {
-  content: attr(data-year);
-  margin-left: 0.5em;
-  color: rgb(0, 0, 0);
-}
-
-/* Jahreszahlen dauerhaft anzeigen wenn col1 >= 800px */
-.timeline.show-years .timeline-item[data-year]::after {
-  content: attr(data-year);
-  margin-left: 0.5em;
-  color: #f0f;
-}
-
-[data-theme="dark"] .timeline-item {
-  background: rgb(40, 40, 40);
-}
-
-[data-theme="dark"] .timeline-item:hover {
-  background: rgb(113, 113, 113);
-  color: #000;
-}
-
-[data-theme="dark"] .timeline:not(.timeline-flow) .timeline-item[data-year]:hover::after {
-  color: rgb(255, 255, 255);
-}
-
-[data-theme="dark"] .timeline.show-years .timeline-item[data-year]::after {
-  color: #f0f;
-}
-
-/* Faded-Zustand für gefilterte Timeline-Items */
-#timeline li.faded .timeline-item {
-  opacity: 0.15;
-}
 
 
 
 
-
-
-/* Bild */
-.dynamic-image {
-  opacity: 0;
-  max-width: 100%;
-  height: 0;
-  display: block;
-}
-
-.dynamic-image.visible {
-  opacity: 1;
-  height: auto;
-  margin-bottom: 10px;
-}
 
 
 
@@ -465,7 +505,7 @@ scrollbar-width: none;
 
 .detail-filters {
   position: sticky;
-  bottom: 5px;
+  bottom: 15px;
   margin: 0 -25px;
   width: 100%;
   box-sizing: border-box;
@@ -486,62 +526,14 @@ scrollbar-width: none;
 
 
 
+
+
 /* Index Sortierfunktion */
 #col1,
 .column-content {
   --column-padding: 25px;
 }
 
-#sortBar {
-  position: sticky;
-  bottom: 10px;
-  width: calc(100% + calc(var(--column-padding) * 2));
-  margin-left: calc(-1 * var(--column-padding));
-  padding: 5px var(--column-padding);
-  box-sizing: border-box;
-  z-index: 50;
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  gap: 6px;
-  flex-wrap: wrap;
-}
-
-
-/* Sortier-Buttons */
-.sort-btn {
-  font-family: 'Hedvig Letters Sans';
-  font-size: 16px;
-  padding: 2px 10px;
-  border: 2px solid #000;
-  border-radius: 8px;
-  cursor: pointer;
-  background-color: #ffffff;
-  transition: all 0.3s ease;
-}
-
-/* Hover-Effekt */
-.sort-btn:hover {
-  background-color: rgb(255, 255, 255) !important;
-  color: #000 !important;
-}
-
-/* Aktiver Button */
-.sort-btn.active {
-  background-color: #000 !important;
-  color: #fff !important;
-}
-
-.sort-arrow {
-  display: inline-block;
-  margin-left: 5px;
-  font-size: 14px;
-  transition: transform 0.3s ease;
-}
-
-.sort-btn[data-sort="year"].desc .sort-arrow {
-  transform: rotate(180deg);
-}
 
 
 
@@ -594,13 +586,13 @@ h2 {
 /* Inaktivitäts-Hinweis Animation */
 @keyframes resizer-hint {
   0% { opacity: 1; background-color: #000; }
-  25% { opacity: 1; background-color: #f0f; }
+  25% { opacity: 1; background-color: #f0f; box-shadow: 0 0 12px 3px rgba(255, 0, 255, 0.322); }
   100% { opacity: 1; background-color: #000; }
 }
 
 @keyframes resizer-hint-dark {
   0% { opacity: 1; background-color: #fff; }
-  25% { opacity: 1; background-color: #f0f; }
+  25% { opacity: 1; background-color: #f0f; box-shadow: 0 0 12px 3px rgba(255, 0, 255, 0.322); }
   100% { opacity: 1; background-color: #fff; }
 }
 
@@ -622,8 +614,8 @@ h2 {
   position: absolute;
   top: 0;
   bottom: 0;
-  left: -4px;
-  width: 10px;
+  left: -6px;
+  width: 16px;
   cursor: col-resize;
 }
 
