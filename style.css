@@ -1,26 +1,30 @@
 html,
 body {
   margin: 0;
-  height: 100vh;
-  width: 100vw;
-  overflow-x: hidden;
   font-family: Hedvig Letters Sans;
-  color: #000000;
 }
 
 .container {
   display: grid;
-  grid-template-columns: 3fr 2px 0fr 0px 6fr;
+  grid-template-columns: 1fr 2px 0fr 0px 2fr;
   gap: 0;
   height: 100vh;
   width: 100vw;
-  max-width: 100%;
-  transition: grid-template-columns 0.3s ease;
+  transition: grid-template-columns 0.3s ease; /* Smooth transition when resizing columns */
 }
 
-.column-content {
-  padding: 25px; 
-  overflow-y: scroll;
+.column {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  border: none;
+  box-sizing: border-box;
+  scrollbar-width: none; 
+  -ms-overflow-style: none;  
+}
+
+.column::-webkit-scrollbar {
+  display: none;
 }
 
 .column-header {
@@ -32,22 +36,10 @@ body {
   margin: 0;
 }
 
-.resize-divider {
-  width: 1.5px;
-  background-color: #000000;
-  position: relative;
-  z-index: 200;
-  margin: 0;
-  padding: 0;
-  cursor: col-resize;
+.column-content {
+  padding: 25px; 
+  overflow-y: scroll;
 }
-
-
-
-
-
-
-
 
 
 
@@ -58,7 +50,6 @@ body {
 
 /* Schrift */
 h1 {
-  font-family: Hedvig Letters Sans;
   margin: 0;
   font-size: 24px;
   line-height: 24px;
@@ -66,8 +57,7 @@ h1 {
 }
 
 h2 {
-  font-family: Hedvig Letters Sans;
-  margin: 0px;
+  margin: 0;
   font-size: 24px;
   line-height: 44px;
   font-weight: 500;
@@ -78,37 +68,11 @@ h2 {
 }
 
 p {
-  font-family: Hedvig Letters Sans;
   font-size: 22px;
   line-height: 30px;
   margin: 0;
 }
 
-.index-detail a.sm{
-  font-size: 21px;
- } 
-  
-.gap {
-    height: 1em;
-}
-
-.index-detail p {
-  max-width: 70ch;
-}
-
-.index-detail img {
-  margin-top: 0;
-  margin-bottom: 0.5em;
-}
-
-.index-detail figcaption {
-  margin-top: 0;
-  margin-bottom: 4em;
-}
-
-.index-detail p {
-  margin-bottom: 2em;
-}
 
 .index-detail .info-box {
   display: grid;
@@ -137,10 +101,34 @@ p {
   line-height: 31px;
 }
 
-/* Erstes Element nach a.sm: mehr Abstand nach oben */
-.index-detail .top {
-  margin-top: 2em;
+
+/* Anpassungen für korrekte Abstände Detailspalte */
+.index-detail a.sm{
+  font-size: 21px;
+ } 
+  
+.gap {
+    height: 1em;
 }
+
+.index-detail p {
+  max-width: 70ch;
+}
+
+.index-detail img {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+.index-detail figcaption {
+  margin-top: 0;
+  margin-bottom: 4em;
+}
+
+.index-detail p {
+  margin-bottom: 2em;
+}
+
 
 /* Fortsetzungs-Absätze mit Einzug: kein Abstand zum vorherigen p */
 .index-detail p + p.indent {
@@ -166,20 +154,7 @@ figcaption {
 
 
 
-
-
-
-
-
-
-
 /* 1. Spalte */
-#col1 {
-  display: flex;
-  flex-direction: column;
-  height: 100% !important;
-}
-
 #col1 .column-content {
   flex: 1 1 auto;
   overflow-y: auto;
@@ -216,7 +191,7 @@ figcaption {
   font-size: 24px;
   line-height: 30px;
   color: inherit;
-  transition: 0.4s ease;
+  transition: 0.6s ease;
   border: none;
 }
 
@@ -280,13 +255,6 @@ figcaption {
 
 
 
-
-
-
-
-
-
-
 /* 2. Spalte */
 #col2 .column-content {
   padding: 0px !important;
@@ -294,11 +262,7 @@ figcaption {
   grid-template-columns: 1fr 1fr;
   grid-auto-rows: 250px;
   box-sizing: border-box;
-  background-color: #fff;
 }
-
-
-
 
 /* Grid Bilder */
 .dynamic-image {
@@ -306,12 +270,6 @@ figcaption {
   max-width: 100%;
   height: 0;
   display: block;
-}
-
-.dynamic-image.visible {
-  opacity: 1;
-  height: auto;
-  margin-bottom: 10px;
 }
 
 .grid-item {
@@ -325,11 +283,8 @@ figcaption {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center;
   display: block;
-  margin: 0;
-  z-index: 1;
-  transition: opacity 1s;
+  transition: 0.05s;
 }
 
 .grid-item .hover-image {
@@ -339,7 +294,6 @@ figcaption {
   left: 0;
   z-index: 2;
   cursor: crosshair;
-    mix-blend-mode: darken;
 }
 
 .grid-item:hover .dynamic-image:not(.hover-image) {
@@ -368,14 +322,7 @@ figcaption {
 
 
 
-
-
-
-
-
-
-
-/* Header1 flexbox für theme-button Positionierung */
+/* Header1 Flexbox für theme-button Positionierung */
 #header1 {
   display: flex;
   align-items: center;
@@ -415,50 +362,6 @@ figcaption {
 [data-theme="dark"] .column-header * {
   color: inherit;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Underline Klasse (Warum?) */
-.underlined {
-  text-decoration: underline;
-  text-underline-offset: 3px;
-  color: inherit;
-}
-
-
-/* Scrollbar Browser ausblenden */
-.column {
-  display: flex;
-  flex-direction: column;
-  overflow-y: auto;
-  border: none;
-  box-sizing: border-box;
-
-/* Firefox */
-scrollbar-width: none; 
-/* Internet Explorer und Edge */
--ms-overflow-style: none;  
-}
-
-/* Chrome, Safari, Edge (Chromium) */
-.column::-webkit-scrollbar {
-  display: none;
-}
-
 
 
 
@@ -525,24 +428,6 @@ scrollbar-width: none;
 
 
 
-
-
-
-/* Index Sortierfunktion */
-#col1,
-.column-content {
-  --column-padding: 25px;
-}
-
-
-
-
-
-
-
-
-
-
 /* Themes */
 :root[data-theme='light'] {
   --bg-color: #ffffff;
@@ -558,10 +443,6 @@ scrollbar-width: none;
   --highlight-text: #f0f;
 }
 
-
-
-
-/* Anwenden der Variablen */
 body {
   background-color: var(--bg-color);
   color: var(--text-color);
@@ -581,63 +462,3 @@ h2 {
 
 
 
-
-
-/* Inaktivitäts-Hinweis Animation */
-@keyframes resizer-hint {
-  0% { opacity: 1; background-color: #000; }
-  25% { opacity: 1; background-color: #f0f; box-shadow: 0 0 12px 3px rgba(255, 0, 255, 0.322); }
-  100% { opacity: 1; background-color: #000; }
-}
-
-@keyframes resizer-hint-dark {
-  0% { opacity: 1; background-color: #fff; }
-  25% { opacity: 1; background-color: #f0f; box-shadow: 0 0 12px 3px rgba(255, 0, 255, 0.322); }
-  100% { opacity: 1; background-color: #fff; }
-}
-
-.resize-divider.hint-animation {
-  animation: resizer-hint 2s;
-}
-
-[data-theme="dark"] .resize-divider.hint-animation {
-  animation: resizer-hint-dark 2s;
-}
-
-[data-theme="dark"] .resize-divider {
-  background-color: #fff;
-}
-
-/* Erweiterter Klickbereich mit Pseudo-Element */
-.resize-divider::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: -6px;
-  width: 16px;
-  cursor: col-resize;
-}
-
-.resize-divider:hover,
-.resize-divider.active {
-  background-color: #f0f;
-}
-
-[data-theme="dark"] .resize-divider:hover,
-[data-theme="dark"] .resize-divider.active {
-  background-color: #f0f;
-}
-
-/* Verhindert Text-Selektion während des Resizens */
-body.resizing {
-  cursor: col-resize !important;
-  user-select: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-}
-
-body.resizing * {
-  cursor: col-resize !important;
-}

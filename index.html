@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="de">
 <html lang="de" data-theme="light">
-
-
 <head>
   <meta charset="UTF-8">
   <title>Social Media Index</title>  
@@ -10,9 +8,10 @@
   <link rel="stylesheet" href="glossar.html">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="buttons.css">
+  <link rel="stylesheet" href="resizer.css">
   <script src="scripts/detailspalte-inhalte.js" defer></script>
-  <script src="scripts/verstehe-ich-nicht.js" defer></script>
-  <link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif&display=swap" rel="stylesheet">
+  <script src="scripts/index.js" defer></script>
+  <script src="scripts/theme-wechsel.js" defer></script>
   <link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Sans&display=swap" rel="stylesheet">
 </head>
 
@@ -21,6 +20,8 @@
 
 <body>
   <div class="container">
+
+
 
     <!-- Index -->
     <div class="column" id="col1">
@@ -109,10 +110,13 @@
     </div>
     
 
+
     <!-- Resize Divider -->
     <div class="resize-divider" id="resize-divider"></div>
 
-    <!--  ↓ -->
+
+
+    <!--  Plattformen -->
     <div class="column" id="col2">
       <div class="column-header" id="header2">
         <h2> Plattformen </h2>
@@ -323,26 +327,23 @@
 
 
 
-
-
     <!-- Detailspalte -->
     <div class="column detail-column" id="detail">
       <div class="detail-header">
         <button class="close-btn" id="detail-close"> <h1>X</h1></button>
         <h1 id="detail-title">Detail</h1>
       </div>
-      <div class="column-content" id="detail-content">
-      </div>
+      <div class="column-content" id="detail-content"></div>
       <div class="detail-filters">
         <button class="sort-btn filter-btn active" data-filter="all">alles</button>
         <button class="sort-btn filter-btn" data-filter="image">Bild</button>
         <button class="sort-btn filter-btn" data-filter="text">Text</button>
       </div>
     </div>
+
+
+
   </div>
-
-
-
 
 
 
@@ -358,56 +359,6 @@
       <h1>Glossar</h1>
     </a>
   </div>
-
-
-
-
-
-
-
-
-
-  <script>
-    // Theme-Button Text je nach Theme aktualisieren
-    function updateThemeButtonText() {
-      const currentTheme = document.documentElement.getAttribute('data-theme');
-      const themeText = document.getElementById('theme-text');
-      const themeTextCol1 = document.getElementById('theme-text-col1');
-      const newText = currentTheme === 'dark' ? 'light' : 'dark';
-      
-      if (themeText) {
-        themeText.textContent = newText;
-      }
-      if (themeTextCol1) {
-        themeTextCol1.textContent = newText;
-      }
-    }
-    
-    // Theme wechseln Funktion
-    function toggleTheme() {
-      const root = document.documentElement;
-      const currentTheme = root.getAttribute('data-theme');
-      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-      
-      root.setAttribute('data-theme', newTheme);
-      localStorage.setItem('theme', newTheme);
-      updateThemeButtonText();
-    }
-    
-    // Theme wechseln beim Klick auf theme-button (beide Buttons)
-    document.getElementById('theme-button').addEventListener('click', toggleTheme);
-    document.getElementById('theme-button-col1').addEventListener('click', toggleTheme);
-    
-    // Initial setzen
-    updateThemeButtonText();
-
-      // HOF Button: gehe zu hof.html
-      if (hofButton) {
-        hofButton.addEventListener('click', () => {
-          window.location.href = 'hof.html';
-        });
-      }
-      </script>
 
 
 </body>

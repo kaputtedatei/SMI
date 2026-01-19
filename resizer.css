@@ -1,0 +1,65 @@
+.resize-divider {
+  width: 1.5px;
+  background-color: #000000;
+  position: relative;
+  z-index: 200;
+  cursor: col-resize;
+}
+
+[data-theme="dark"] .resize-divider {
+  background-color: #fff;
+}
+
+
+
+
+
+
+
+/* Erweiterter Klickbereich mit Pseudo-Element */
+.resize-divider::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -6px;
+  width: 16px;
+  cursor: col-resize;
+}
+
+.resize-divider:hover,
+.resize-divider.active {
+  background-color: #f0f;
+}
+
+[data-theme="dark"] .resize-divider:hover,
+[data-theme="dark"] .resize-divider.active {
+  background-color: #f0f;
+}
+
+
+
+
+
+
+
+/* Animation Leuchten bei Inaktivität */
+@keyframes resizer-hint {
+  0% { opacity: 1; background-color: #000; }
+  25% { opacity: 1; background-color: #f0f; box-shadow: 0 0 12px 3px rgba(255, 0, 255, 0.322); }
+  100% { opacity: 1; background-color: #000; }
+}
+
+@keyframes resizer-hint-dark {
+  0% { opacity: 1; background-color: #fff; }
+  25% { opacity: 1; background-color: #f0f; box-shadow: 0 0 12px 3px rgba(255, 0, 255, 0.322); }
+  100% { opacity: 1; background-color: #fff; }
+}
+
+.resize-divider.hint-animation {
+  animation: resizer-hint 2s;
+}
+
+[data-theme="dark"] .resize-divider.hint-animation {
+  animation: resizer-hint-dark 2s;
+}

@@ -1,4 +1,3 @@
-// Hall of Fame Daten: Plattformen mit ihren beliebtesten Posts
 const HOF_DATA = [
       { 
     id: 'myspace', 

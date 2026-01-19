@@ -1,4 +1,12 @@
- /* Detailansicht Indexeinträge */   
+// --- Scrollpositionen generell nicht speichern ---
+// Verhindere, dass der Browser die Scrollposition automatisch wiederherstellt
+if ('scrollRestoration' in history) {
+  history.scrollRestoration = 'manual';
+}
+
+/* Detailansicht Indexeinträge 
+fsff
+*/   
     const timeline = document.getElementById('timeline');
     const detail = document.getElementById('detail');
     const detailTitle = document.getElementById('detail-title');
@@ -8,6 +16,11 @@
     const col3 = document.getElementById('col3');
     const dynamicImage = document.getElementById('dynamicImage');
     const gridContainer = document.getElementById('grid-container');
+
+
+
+
+
 
 
 // --- Inaktivitäts-Hinweis für Resizer ---
@@ -42,6 +55,28 @@
   // Timer initial starten
   resetInactivityTimer();
 })();
+
+
+
+
+
+
+    // Wiggle Animation für callme-button jede Minute
+    const hofButtonElement = document.querySelector('.hof-button');
+    if (hofButtonElement) {
+      setInterval(() => {
+        hofButtonElement.classList.add('wiggle');
+        setTimeout(() => {
+          hofButtonElement.classList.remove('wiggle');
+        }, 400);
+      }, 20000); // 60000ms = 1 Minute
+    }
+
+
+
+
+
+
 
 
 // --- Sortierlogik Index-Items ---
@@ -113,23 +148,18 @@ sortButtons.forEach(button => {
     sortButtons.forEach(btn => btn.classList.remove('active'));
     button.classList.add('active');
     sortTimeline(sortBy, yearSortAscending);
-    // Scroll-Reset nach dem DOM-Update asynchron ausführen
-    setTimeout(() => {
-      if (col1) col1.scrollTop = 0;
-      if (col2) col2.scrollTop = 0;
-      const col1Content = col1 && col1.querySelector('.column-content');
-      if (col1Content) col1Content.scrollTop = 0;
-      const col2Content = col2 && col2.querySelector('.column-content');
-      if (col2Content) col2Content.scrollTop = 0;
-      const timeline = document.getElementById('timeline');
-      if (timeline) timeline.scrollTop = 0;
-      if (gridContainer) gridContainer.scrollTop = 0;
-    }, 0);
+
+
+    
+
     // Sortierung im localStorage speichern
     localStorage.setItem('sortBy', sortBy);
     localStorage.setItem('yearSortAscending', yearSortAscending);
   });
 });
+
+
+
 
 
 
@@ -197,6 +227,11 @@ const timelineData = [
     { id: "youtube", year: 2005, users: 2500000000, alphabet: 60, value: 999, continent: "us" },
   ];
 
+
+
+
+
+
   // Setze data-year Attribute auf Timeline-Items für Hover-Anzeige
   timelineData.forEach(item => {
     const btn = document.querySelector(`.timeline-item[data-id="${item.id}"]`);
@@ -204,6 +239,10 @@ const timelineData = [
       btn.setAttribute('data-year', item.year);
     }
   });
+
+
+
+
 
   // Sortierfunktion
   function sortTimeline(criteria, yearAscending = false) {
@@ -276,6 +315,11 @@ const timelineData = [
     sortGridItems(enriched.map(e => e.id));
   }
 
+
+
+
+
+
   // Funktion zum Sortieren der Grid-Items
   function sortGridItems(orderedIds) {
     if (!gridContainer) return;
@@ -335,7 +379,11 @@ const timelineData = [
 
     timeline.addEventListener('click', (e) => {
       const btn = e.target.closest('.timeline-item');
-      if (!btn) return;
+      if (!btn) close;
+      // Scrollposition zurücksetzen bevor ein neuer Eintrag geöffnet wird
+      detail.scrollTop = 0;
+      detailContent.scrollTop = 0;
+      window.scrollTo(0, 0);
       // Entferne .active-detail von allen Timeline-Items
       document.querySelectorAll('.timeline-item.active-detail').forEach(el => el.classList.remove('active-detail'));
       // Füge dem geklickten Button .active-detail hinzu
@@ -349,6 +397,10 @@ const timelineData = [
       gridContainer.addEventListener('click', (e) => {
         const gridItem = e.target.closest('.grid-item');
         if (!gridItem) return;
+        // Scrollposition zurücksetzen bevor ein neuer Eintrag geöffnet wird
+        detail.scrollTop = 0;
+        detailContent.scrollTop = 0;
+        window.scrollTo(0, 0);
         const id = gridItem.getAttribute('data-id');
         // Finde den passenden Timeline-Button für den Fallback-Titel
         const timelineBtn = document.querySelector(`.timeline-item[data-id="${id}"]`);
@@ -357,7 +409,12 @@ const timelineData = [
       });
     }
 
-    detailClose.addEventListener('click', hideDetail);
+    // Stelle sicher, dass sowohl detailClose als auch .close-btn das Detail schließen
+    // Scrollposition wird nur beim Öffnen (showDetail) zurückgesetzt!
+detailClose.addEventListener('click', hideDetail);
+document.querySelectorAll('.close-btn').forEach(btn => {
+  btn.addEventListener('click', hideDetail);
+});
 
     function hideImage() {
       dynamicImage.classList.remove('visible');
@@ -387,31 +444,63 @@ const timelineData = [
       detail.classList.add('active');
       col2.classList.add('col-hide');
       col3.classList.add('col-hide');
+      // Scrollposition nach DOM-Update sicher zurücksetzen
+      requestAnimationFrame(() => {
+        detail.scrollTop = 0;
+        detailContent.scrollTop = 0;
+        window.scrollTo(0, 0);
+      });
       if (!skipScroll) {
         detailClose.focus();
         detail.scrollIntoView({ behavior: 'smooth', block: 'center' });
       }
+    
       
-      // Aktiven Detaileintrag im localStorage speichern
-      localStorage.setItem('activeDetailId', id);
-      localStorage.setItem('activeDetailTitle', fallbackTitle || '');
 
-      // Aktuellen Filter beibehalten (falls einer aktiv ist), sonst "alles" als Default
-      const activeFilterBtn = document.querySelector('.detail-filters .filter-btn.active');
+
+      function resetDetailScroll() {
+  const detailContent = document.getElementById('detail-content');
+  if (!detailContent) return;
+
+  // Scroll-Kontext hart zurücksetzen
+  detailContent.style.overflowY = 'hidden';
+  detailContent.scrollTop = 0;
+
+  requestAnimationFrame(() => {
+    detailContent.scrollTop = 0;
+    detailContent.style.overflowY = 'auto';
+  });
+}
+
+
+
+
+
+
       const currentFilter = activeFilterBtn ? activeFilterBtn.dataset.filter : 'all';
       applyDetailFilter(currentFilter);
     }
 
     function hideDetail() {
-      detail.classList.remove('active');
-      col2.classList.remove('col-hide');
-      col3.classList.remove('col-hide');
-      // Entferne .active-detail von allen Timeline-Items
-      document.querySelectorAll('.timeline-item.active-detail').forEach(el => el.classList.remove('active-detail'));
-      // Detaileintrag aus localStorage entfernen
-      localStorage.removeItem('activeDetailId');
-      localStorage.removeItem('activeDetailTitle');
-    }
+  detail.classList.remove('active');
+  col2.classList.remove('col-hide');
+  col3.classList.remove('col-hide');
+
+  // Entferne .active-detail von allen Timeline-Items
+  document.querySelectorAll('.timeline-item.active-detail')
+    .forEach(el => el.classList.remove('active-detail'));
+
+  // Scrollposition EXPLIZIT zurücksetzen
+  requestAnimationFrame(() => {
+    detail.scrollTop = 0;
+    detailContent.scrollTop = 0;
+  });
+
+  // Detaileintrag aus localStorage entfernen
+  localStorage.removeItem('activeDetailId');
+  localStorage.removeItem('activeDetailTitle');
+}
+
 
     // --- Detail-Header Filter (Bild / Text / alles) ---
     const detailFilterBtns = document.querySelectorAll('.detail-filters .filter-btn');
@@ -498,13 +587,18 @@ const timelineData = [
         detail.classList.add('active');
         col2.classList.add('col-hide');
         col3.classList.add('col-hide');
-        
+
         // Filter nach dem Laden des Details anwenden
         const filterToApply = savedFilter || 'all';
         setTimeout(function() {
           applyDetailFilter(filterToApply);
+          // Scrollposition NACH dem Einblenden und Filtern ganz nach oben setzen
+          detail.scrollTop = 0;
+          detailContent.scrollTop = 0;
+          window.scrollTo(0, 0);
         }, 50);
       }
+      
     })();
 
 
@@ -679,11 +773,13 @@ const timelineData = [
         }
         
         // Jahreszahlen dauerhaft anzeigen wenn col1 >= 800px
-        if (col1Width >= 800) {
+        if (col1Width >= 750) {
           timeline.classList.add('show-years');
         } else {
           timeline.classList.remove('show-years');
         }
         
       }
+
+
     })();
