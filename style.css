@@ -4,9 +4,10 @@ body {
   font-family: Hedvig Letters Sans;
 }
 
+
 .container {
   display: grid;
-  grid-template-columns: 1fr 2px 0fr 0px 2fr;
+  grid-template-columns: 1fr 2px 2fr;
   gap: 0;
   height: 100vh;
   width: 100vw;
@@ -19,12 +20,7 @@ body {
   overflow-y: auto;
   border: none;
   box-sizing: border-box;
-  scrollbar-width: none; 
   -ms-overflow-style: none;  
-}
-
-.column::-webkit-scrollbar {
-  display: none;
 }
 
 .column-header {
@@ -39,6 +35,7 @@ body {
 .column-content {
   padding: 25px; 
   overflow-y: scroll;
+  scrollbar-width: none !important;
 }
 
 
@@ -161,7 +158,6 @@ figcaption {
   overscroll-behavior-y: contain;
   display: flex;
   flex-direction: column;
-  scrollbar-width: none;
 }
 
 /* Index */
@@ -263,6 +259,11 @@ figcaption {
   grid-auto-rows: 250px;
   box-sizing: border-box;
 }
+
+#header2 {
+  padding-left: 40px;
+}
+
 
 /* Grid Bilder */
 .dynamic-image {
@@ -372,12 +373,12 @@ figcaption {
 
 /* Detailspalte */
 .detail-column {
-  /* grid-column: 2 / span 2; */
   display: none;
 }
 
 .detail-column.active {
   display: block;
+  scrollbar-width: none !important;
 }
 
 .col-hide {

@@ -1,19 +1,16 @@
+
 .resize-divider {
-  width: 1.5px;
+  width: 2px;
   background-color: #000000;
   position: relative;
   z-index: 200;
   cursor: col-resize;
+  align-content: center;
 }
 
 [data-theme="dark"] .resize-divider {
   background-color: #fff;
 }
-
-
-
-
-
 
 
 /* Erweiterter Klickbereich mit Pseudo-Element */
@@ -22,8 +19,8 @@
   position: absolute;
   top: 0;
   bottom: 0;
-  left: -6px;
-  width: 16px;
+  left: -10px;
+  width: 22px;
   cursor: col-resize;
 }
 
@@ -37,10 +34,55 @@
   background-color: #f0f;
 }
 
+/* .move-it {
+  opacity: 0;
+  display: flex;
+  position: absolute;
+  left: 50%;
+  top: 43%;
+  transform: translate(-50%, -50%);
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 84px;
+  padding: 0;
+  background: #f0f;
+  border-radius: 8px;
+  color: #000;
+  z-index: 201;
+  text-overflow: clip;
+  writing-mode: vertical-rl;
+}
 
+.resize-divider:hover .move-it,
+.resize-divider.active .move-it {
+  opacity: 1;
+} */
 
+.arrow-down {
+  display: flex;
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+  top: 10px;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border-radius: 8px;
+  color: #f0f !important;
+  z-index: 201;
+  text-overflow: clip;
+}
 
+.resize-divider:hover .arrow-down,
+.resize-divider.active .arrow-down,
+.detail-column.active .arrow-down {
+  opacity: 0;
+} 
 
+body:has(.detail-column.active) .arrow-down {
+  opacity: 0;
+}
 
 
 /* Animation Leuchten bei Inaktivität */
@@ -49,6 +91,8 @@
   25% { opacity: 1; background-color: #f0f; box-shadow: 0 0 12px 3px rgba(255, 0, 255, 0.322); }
   100% { opacity: 1; background-color: #000; }
 }
+
+
 
 @keyframes resizer-hint-dark {
   0% { opacity: 1; background-color: #fff; }

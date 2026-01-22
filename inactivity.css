@@ -1,0 +1,74 @@
+.inactivity-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 255, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 9999;
+  transition: opacity 1s ease, background-color 1s ease;
+}
+
+.inactivity-overlay.active {
+  opacity: 1;
+  background-color: rgba(0, 0, 255, 1);
+  pointer-events: auto;
+}
+
+.inactivity-message {
+  font-size: 150px;
+  line-height: 75vh;
+  font-family: Hedvig Letters Sans, sans-serif;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  opacity: 0;
+  transition: opacity 4s ease 1s, transform 1s ease 1s;
+  letter-spacing: -2px;
+}
+
+.inactivity-overlay.active .inactivity-message {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+
+/* Einzelbuchstaben-Animation */
+.inactivity-message span {
+  opacity: 0;
+  display: inline-block;
+  animation: fadeInLetter 2s forwards;
+}
+
+.inactivity-overlay.fading .inactivity-message span {
+  animation: fadeOutLetter 2s backwards;
+}
+
+@keyframes fadeOutLetter {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(200px);
+  }
+}
+
+@keyframes fadeInLetter {
+  from {
+    opacity: 0;
+    transform: translateY(200px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
