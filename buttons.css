@@ -76,7 +76,7 @@ body:has(.detail-column.active) #theme-button {
 }
 
 .glossar-button:hover {
-  background: rgb(84, 84, 255);
+  background: #55f;
   transition: 0.0s ease;
 }
 
@@ -114,7 +114,7 @@ body:has(.detail-column.active) #theme-button {
 .index-button {
   z-index: 100;
   cursor: pointer;
-  background: rgb(255, 255, 255);
+  background: #faf;
   transition: 0.0s ease;
   border-radius: 8px;
   padding: 4px 10px;
@@ -123,9 +123,8 @@ body:has(.detail-column.active) #theme-button {
 }
 
 .index-button:hover {
-  background: rgb(0, 0, 0);
+  background: #f0f;
   transition: 0.0s ease;
-  color: #fff !important;
 }
 
 
@@ -225,7 +224,7 @@ body:has(.detail-column.active) #theme-button {
   align-items: center; 
   gap: 5px;
   flex-wrap: wrap;
-  padding: 0px 25px 15px 25px;
+  padding: 0px 30px 15px 25px;
   background: #fff;
 }
 

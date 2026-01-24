@@ -570,24 +570,60 @@ detailFilterBtns.forEach(btn => {
   });
 });
 
+
+
+
 function applyDetailFilter(filter) {
   const container = detailContent.querySelector('.index-detail') || detailContent;
   if (!container) return;
-
+  
   const imageEls = container.querySelectorAll('img, picture, svg, iframe, video, figcaption');
-  const textEls = container.querySelectorAll('p, h1, h2, h3, h4, h5, blockquote, ul, ol, li');
-
+  const textEls = container.querySelectorAll('p, h1, h2, h3, h4, h5, blockquote, ul, ol, li, a');
+  
   if (filter === 'all') {
-    container.querySelectorAll('*').forEach(el => el.style.display = '');
+    container.querySelectorAll('*').forEach(el => {
+      el.style.display = '';
+      el.style.border = '';
+      el.style.padding = '';
+      el.style.marginBottom = '';
+      el.style.marginTop = '';
+    });
   } else if (filter === 'image') {
     imageEls.forEach(el => el.style.display = '');
-    textEls.forEach(el => el.style.display = 'none');
+    textEls.forEach(el => {
+      el.style.display = 'none';
+      el.style.margin = '0';
+    });
     container.querySelectorAll('figcaption').forEach(el => el.style.display = '');
+    // <a> innerhalb von figcaption wieder anzeigen
+    container.querySelectorAll('figcaption a').forEach(el => el.style.display = '');
+    // Alle Borders und Abstände einheitlich machen
+    container.querySelectorAll('*').forEach(el => {
+      el.style.border = 'none';
+      el.style.padding = '0';
+      el.style.marginBottom = '0';
+      el.style.marginTop = '0';
+    });
+    // Nur margin-bottom für figcaption neu setzen
+    container.querySelectorAll('figcaption').forEach(el => {
+      el.style.marginBottom = '20px';
+    });
   } else if (filter === 'text') {
     imageEls.forEach(el => el.style.display = 'none');
-    textEls.forEach(el => el.style.display = '');
+    textEls.forEach(el => {
+      el.style.display = '';
+      el.style.margin = '';
+    });
+    container.querySelectorAll('*').forEach(el => {
+      el.style.border = '';
+      el.style.padding = '';
+      el.style.marginBottom = '';
+      el.style.marginTop = '';
+    });
   }
 }
+
+
 
 // --- Gespeicherten Zustand beim Laden wiederherstellen ---
 (function restoreState() {

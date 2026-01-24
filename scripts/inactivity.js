@@ -2,9 +2,11 @@
   const resizer = document.getElementById('resize-divider');
   let inactivityTimer = null;
   let screenDimTimer = null;
+  let animationLoopTimer = null;
   
   const RESIZER_HINT_DELAY = 5000;  // 5 Sekunden
-  const SCREEN_DIM_DELAY = 8000;   // 60 Sekunden (1 Minute)
+  const SCREEN_DIM_DELAY = 30000;   // 30 Sekunden
+  const ANIMATION_LOOP_DELAY = 30000; // 30 Sekunden Pause zwischen Loops
   
   // Resizer Hint Animation (5 Sekunden)
   function showResizerHint() {
@@ -14,12 +16,8 @@
     }
   }
   
-
-
-  
   // Screen Dim Overlay erstellen (wird nur einmal erstellt)
   let dimOverlay = null;
-  
   function createDimOverlay() {
     if (!dimOverlay) {
       dimOverlay = document.createElement('div');
@@ -45,49 +43,76 @@
       });
       dimOverlay.innerHTML = `<div class="inactivity-message">${html}</div>`;
       document.body.appendChild(dimOverlay);
-      // Animation-Delay für jeden Buchstaben setzen
-      const spans = dimOverlay.querySelectorAll('.inactivity-message span');
-      // Längere Verzögerung zwischen Buchstaben (z.B. 0.15s)
-      spans.forEach((span, i) => {
-        span.style.animationDelay = (i * 0.2) + 's';
-      });
     }
   }
   
-  // Screen Dim Animation (60 Sekunden)
+  // Screen Dim Animation
   function showScreenDim() {
     createDimOverlay();
-    // Kurze Verzögerung für smooth transition
+    
+    // Spans zurücksetzen vor dem Anzeigen
+    const spans = dimOverlay.querySelectorAll('.inactivity-message span');
+    spans.forEach((span) => {
+      span.style.opacity = '0';
+      span.style.transform = 'translateY(0)';
+      span.style.animation = 'none';
+    });
+    
+    // Overlay aktivieren (Background faded ein)
+    dimOverlay.classList.add('active');
+    
+    // Warten bis Background vollständig sichtbar ist (1s transition im CSS)
     setTimeout(() => {
-      dimOverlay.classList.add('active');
-      // Nach 10 Sekunden wieder ausfaden mit Rückwärts-Animation
+      // Jetzt Buchstaben nacheinander einblenden
+      spans.forEach((span, i) => {
+        setTimeout(() => {
+          span.style.opacity = '1';
+          span.style.transition = 'opacity 0.05s ease';
+        }, i * 100); // 100ms zwischen jedem Buchstaben
+      });
+      
+      // Nach 10 Sekunden + Zeit für alle Buchstaben wieder ausfaden
+      const totalAppearTime = spans.length * 100;
       setTimeout(() => {
-        // Rückwärts-Animation: .fading-Klasse setzen, Animation-Delay rückwärts
-        const spans = dimOverlay.querySelectorAll('.inactivity-message span');
+        // Rückwärts ausblenden
         const total = spans.length;
         spans.forEach((span, i) => {
-          span.style.animationName = 'fadeOutLetter';
-          span.style.animationDelay = ((total - 1 - i) * 0.15) + 's';
+          setTimeout(() => {
+            span.style.opacity = '0';
+            span.style.transition = 'opacity 0.05s ease';
+          }, (total - 1 - i) * 100);
         });
-        dimOverlay.classList.add('fading');
-        // Nach Animation Overlay ausblenden
+        
+        // Warten bis alle Buchstaben verschwunden sind, dann Background ausblenden
+        const totalDisappearTime = total * 100;
         setTimeout(() => {
           dimOverlay.classList.remove('active');
-          dimOverlay.classList.remove('fading');
-          // Animation zurücksetzen für nächsten Aufruf
-          spans.forEach((span, i) => {
-            span.style.animationName = 'fadeInLetter';
-            span.style.animationDelay = (i * 0.15) + 's';
-          });
-        }, total * 0.15 * 1000 + 2000); // Warte auf alle Buchstaben + Animationsdauer
+          
+          // Animation wieder starten nach Pause (Loop)
+          animationLoopTimer = setTimeout(() => {
+            showScreenDim();
+          }, ANIMATION_LOOP_DELAY);
+          
+        }, totalDisappearTime + 100);
+        
       }, 10000);
-    }, 10);
+    }, 1000); // 1 Sekunde warten (Background transition Zeit)
   }
   
   function hideScreenDim() {
     if (dimOverlay) {
       dimOverlay.classList.remove('active');
+      // Spans komplett zurücksetzen
+      const spans = dimOverlay.querySelectorAll('.inactivity-message span');
+      spans.forEach(span => {
+        span.style.opacity = '0';
+        span.style.transform = 'translateY(0)';
+        span.style.animation = 'none';
+        span.style.transition = '';
+      });
     }
+    // Loop-Timer auch stoppen
+    clearTimeout(animationLoopTimer);
   }
   
   // Timer zurücksetzen
@@ -98,6 +123,7 @@
     
     // Screen Dim Timer
     clearTimeout(screenDimTimer);
+    clearTimeout(animationLoopTimer); // Loop auch stoppen
     hideScreenDim();
     screenDimTimer = setTimeout(showScreenDim, SCREEN_DIM_DELAY);
   }

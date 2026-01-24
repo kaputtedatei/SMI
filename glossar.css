@@ -21,21 +21,34 @@
       z-index: 100;
     }
 
-    .glossar-header h3 {
+    [data-theme="dark"] .glossar-header {
+      background-color: #fff;
+    }
+
+    .glossar-header h2 {
       font-family: Hedvig Letters Sans;
       margin: 0;
       font-size: 24px;
       font-weight: 500;
       text-transform: uppercase;
-      color: rgb(255, 255, 255);
+      color: #fff;
+    }
+
+    [data-theme="dark"] .glossar-header h2 {
+      color: #000 !important;
     }
 
     .glossar-content {
       height: 110% !important;
       padding: 25px;
-      background-color: #000;
+      margin-top: 15px;
+      background-color: #fff;
       flex: 1 1 auto;
       overflow-y: auto;
+    }
+
+    [data-theme="dark"] .glossar-content {
+      background-color: #000 !important;
     }
 
     .glossar-items {
@@ -51,7 +64,7 @@
       font-size: 24px;
       line-height: 32px;
       font-weight: 500;
-      background: rgb(255, 255, 255);
+      background: rgb(232, 232, 232);
       color: #000;
       border: none;
       border-radius: 8px;
@@ -60,8 +73,13 @@
       padding: 0 8px;
     }
 
+    [data-theme="dark"] .glossar-term {
+      color: #fff;
+      background: rgb(40, 40, 40);
+    }    
+
     .glossar-term:hover {
-      background: #000;
+      background: rgb(113, 113, 113);
       transition: 0.0s ease;
       color: #fff;
     }
@@ -71,18 +89,28 @@
       color: #fff;
     }
 
+    [data-theme="dark"] .glossar-term.active {
+      background: #fff;
+      color: #000;
+
+    }   
+
     .glossar-description-inline {
       flex-basis: 100%;
       padding: 15px 0;
     }
 
     .glossar-description-inline p {
-      color: rgb(255, 255, 255);
+      color: #000;
       margin: 0;
       padding: 50px 30px;
       border-radius: 8px;
       width: 40em;
     }
+
+    [data-theme="dark"] .glossar-description-inline p {
+      color: #fff;
+    }   
 
     /* Kategorie-Punkte */
     .glossar-term {
@@ -99,7 +127,7 @@
       width: 8px;
       height: 8px;
       border-radius: 50%;
-      background-color: #f0f;
+      background-color: #00d;
     }
 
 
@@ -112,28 +140,7 @@
       width: 8px;
       height: 8px;
       border-radius: 50%;
-      background-color: #000;
-    }
-
-    .glossar-term[data-category="slang"].active::before {
-      background-color: #fff;
-    }
-
-    .glossar-term[data-category="slang"]::before {
-      content: '';
-      position: absolute;
-      left: 6px;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      background-color: #000;
-    }
-
-    .glossar-term[data-category="slang"]:hover::before,
-    .glossar-term[data-category="slang"].active::before {
-      background-color: #fff;
+      background-color: #bbf;
     }
     
     /* Keine Kategorie - kein extra Padding */
@@ -155,43 +162,38 @@
       gap: 8px;
       z-index: 100;
       padding: 15px 25px 15px 25px;
-      width: 100vw;     
-      background: #000;
     }
+
 
     .filter-btn {
       font-family: 'Hedvig Letters Sans';
       font-size: 16px;
-      color: #fff;
       padding: 3px 10px;
       border-radius: 8px;
       border: 0px;
       cursor: pointer;
-      background-color: #00f;
-      color: #fff;
       transition: all 0.3s ease;
       display: flex;
       align-items: center;
       gap: 10px;
     }
 
-
-    .filter-btn.active {
-      background-color: #fff;
-      color: #000;
+    .filter-btn#slang {
+      background-color: #88f;
+      color: #fff;
     }
 
-    .filter-btn::before {
-      content: '';
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
+    .filter-btn#psychologie {
+      background-color: #00c;
+      color: #fff;
     }
 
-    .filter-btn[data-filter="psychologie"]::before {
-      background-color: #f0f;
-    }
-
-    .filter-btn[data-filter="slang"]::before {
+    .filter-btn#psychologie.active {
       background-color: #000;
+      color: #fff;
+    }
+
+    .filter-btn#slang.active {
+      background-color: #000;
+      color: #fff;
     }

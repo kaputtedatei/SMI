@@ -27,8 +27,6 @@
   text-transform: uppercase;
   color: rgb(255, 255, 255);
   text-align: center;
-  opacity: 0;
-  transition: opacity 4s ease 1s, transform 1s ease 1s;
   letter-spacing: -2px;
 }
 
@@ -44,11 +42,11 @@
 .inactivity-message span {
   opacity: 0;
   display: inline-block;
-  animation: fadeInLetter 2s forwards;
+  animation: fadeInLetter 6s forwards;
 }
 
 .inactivity-overlay.fading .inactivity-message span {
-  animation: fadeOutLetter 2s backwards;
+  animation: fadeOutLetter 6s backwards;
 }
 
 @keyframes fadeOutLetter {

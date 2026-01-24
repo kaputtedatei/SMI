@@ -6,7 +6,9 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="buttons.css">
   <link rel="stylesheet" href="glossar.css">
-  <script src="scripts/glossar.js" defer></script>
+  <link rel="stylesheet" href="inactivity.css">
+  <script src="scripts/theme-wechsel.js" defer></script>
+  <script src="scripts/inactivity.js" defer></script>
   <link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Sans&display=swap" rel="stylesheet">
 </head>
 
@@ -17,6 +19,9 @@
   </div>
 
   <div class="buttons-container">
+    <div class="theme-button" id="theme-button">
+      <h1 id="theme-text">dark</h1>
+    </div>
     <a href="index.html" class="index-button">
       <h1>← Index</h1>
     </a>
@@ -184,8 +189,8 @@
 
   <!-- Filter-Buttons -->
   <div class="glossar-filter">
-    <button class="filter-btn" data-filter="psychologie">Medienpsychologie</button>
-    <button class="filter-btn" data-filter="slang">Slang</button>
+    <button class="filter-btn" id="psychologie" data-filter="psychologie">Medienpsychologie</button>
+    <button class="filter-btn" id="slang" data-filter="slang">Slang</button>
   </div>
 
   <script>

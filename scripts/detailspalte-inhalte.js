@@ -3,7 +3,6 @@ const DETAILS = {
         title: 'Bulletin Board Systems',
         html: `<div class="index-detail">
 
-
               <div class="info-box">
                 <p>Launch:</p><p>?</p>
                 <p>Verfügbarkeit:</p><p>web</p>
@@ -21,8 +20,7 @@ const DETAILS = {
               <a href="https://creativecommons.org/licenses/by-sa/2.0/deed.de" target="_blank" rel="license noopener noreferrer"> CC BY-SA 2.0 </a>
               </figcaption>
 
-
-              <p class="top">
+              <p>
               Ein Bulletin Board System (BBS) war ein digitales „Schwarzes Brett“, das bereits Ende der 1970er- und
               in den 1980er-Jahren entstand und als eine der frühesten Formen computervermittelter sozialer
               Kommunikation gilt. Nutzerinnen und Nutzer wählten sich über einen Telefonanschluss mit einem Modem
@@ -45,9 +43,6 @@ const DETAILS = {
               <a href="https://fidopedia.fido.de/index.php/Bulletin_Board_System"
               target="_blank" rel="noopener noreferrer">🡒FidoPedia</a>
               </p>
-          
-
-
 
               <img src="bilder/bbs1.jpg" style="width: 100%; ">
               <figcaption style="">
@@ -55,8 +50,7 @@ const DETAILS = {
               </a> — <a href="https://en.wikipedia.org/wiki/File:Dynix_ILS_on_Wyse_WY-60_dumb_terminal_-_closeup.jpg" target="_blank" rel="noopener noreferrer"> Quelle </a>,
               <a href="https://creativecommons.org/licenses/by-sa/3.0/deed.de" target="_blank" rel="license noopener noreferrer"> CC BY-SA 3.0 </a>
               </figcaption>
-
-              
+    
               <p>
               Das erste öffentliche Bulletin Board System, CBBS (Computerized Bulletin Board System), wurde am
               16. Februar 1978 in Chicago von Ward Christensen und Randy Suess eingerichtet. Es diente als
@@ -81,7 +75,6 @@ const DETAILS = {
               target="_blank" rel="noopener noreferrer">🡒Geschichte der Computerkunst</a>
               </p>
 
-
               <p>
               Der Niedergang der klassischen BBS begann in den späten 1990er-Jahren, als sich der Internetzugang
               verbreitete und Webbrowser benutzerfreundlichere Alternativen boten. Doch viele der Konzepte, die
@@ -93,8 +86,6 @@ const DETAILS = {
               target="_blank" rel="noopener noreferrer">🡒IT-Administrator Lexikon</a>
               </p>
 
-
-              
               <img src="bilder/bbs5.jpg" style="width: 100%; ">
               <figcaption>
               BBSing on the Tandy 1000HX, 2021 <br>         
@@ -103,16 +94,13 @@ const DETAILS = {
               <a href="https://creativecommons.org/licenses/by/2.0/deed.de" target="_blank" rel="license noopener noreferrer"> CC BY 2.0 </a>
               </figcaption>
 
-
-
               <img src="bilder/bbs4.png" style="width: 100%; ">
               <figcaption>
               Screenshot of the welcome banner of FreePort Software version 2.3 for the Case Western Reserve University bulletin board system, 1994 <br>             
               </a> — <a href="https://commons.wikimedia.org/w/index.php?curid=98903318" target="_blank" rel="noopener noreferrer"> Quelle </a>,
               <a href="https://creativecommons.org/licenses/by-sa/2.0/deed.de" target="_blank" rel="license noopener noreferrer"> CC BY-SA 2.0 </a>
               </figcaption>
-
-              
+ 
               <img src="bilder/bbs6.jpg" style="width: 100%; ">
               <figcaption>
               Digital: A Love Story, 2012 <br>         
@@ -504,6 +492,11 @@ const DETAILS = {
                 <p>Ads:</p><p>ja</p>
               </div>
 
+              <div class="info-box"><p>
+              TripAdvisor im App Store: <br> <br>
+              „One app, so many places to discover. Get guidance from millions of travelers and earn rewards for more trips by doing what you love: planning, booking, and sharing. The best part? It’s free to join. Score last-minute tour tickets in a few quick taps. Book a hotel your entire family will love at a great rate. Create an itinerary in seconds with top recs from travelers like you. All while earning Trip Cash to fuel even more vacays. You bring the fun, the Tripadvisor app brings the rewards. “ 
+              </p></div>
+
               <p class="top">
               TripAdvisor wurde 2000 von Stephen Kaufer und Team gegründet und verwandelte Reiseentscheidungen durch User‑Generated Reviews. Anstelle
               klassischer Redaktionsbewertungen aggregierte TripAdvisor Millionen persönlicher Bewertungen, Fotos und Erfahrungsberichte zu Hotels,
@@ -593,7 +586,7 @@ const DETAILS = {
               </p>  
               
               
-              <p style=""> 
+              <p> 
               Technische Weiterentwicklung und Herausforderungen prägten Habbo: 2010er-Jahre Flash-Abschied führte 
               zu HTML5-Migration (Habbo 2020), neuen Features wie Mobile Apps und VR-Experiments. Sulake diversifizierte mit Hotel Hideaway (2015), 
               habboon.com (Kids-Version) und Partnerschaften (Nintendo, Marvel); 2020er brachten NFT-Versuche und Metaverse-Ambitionen. Kritik kam durch 
@@ -936,11 +929,15 @@ const DETAILS = {
                 <p>Ads:</p><p>ja</p>
               </div>
 
-
               <img class="top" src="bilder/linkedin1.jpg" style="width: 100%; ">
               <figcaption>
               <!-- Bildunterschrift ergänzen -->
               </figcaption>
+
+              <div class="info-box"><p>
+              LinkedIn im App Store: <br> <br>
+              „Welcome professionals! The key to getting in is getting started. Begin your career journey with LinkedIn today. Are you searching for the right job opportunities to advance your career? LinkedIn is one of the largest social networking apps for online job searches that also provides content that can help you grow. Build your resume, nurture your professional relationships, connect with recruiters, and apply for your next job. You can establish job alerts for local or remote positions, expand your network of business contacts, stay informed about the latest industry news, read articles, and stay up-to-date with companies and industry leaders to enhance your workplace and career- builder experience.“ 
+              </p></div>
 
               <p class="top">
               LinkedIn ist das weltweit größte berufliche Netzwerk und wurde am 5. Mai 2003 von Reid Hoffman und einem
@@ -1264,7 +1261,6 @@ const DETAILS = {
               </div>
 
               <img class="top" src="bilder/facebook7.jpg" style="width: 100%; ">
-
               <figcaption>
               Mark Zuckerberg announces the plan to make Facebook more private at Facebook's Developer Conference on April 30, 2019. 
               <br>
@@ -1279,6 +1275,10 @@ const DETAILS = {
               </a>
               </figcaption>
 
+              <div class="info-box"><p>
+              Facebook im App Store: <br> <br>
+              „Where real people propel your curiosity. Whether you’re thrifting gear, showing reels to that group who gets it, or sharing laughs over fun images reimagined by AI, Facebook helps you make things happen like no other social network.“ 
+              </p></div>
 
               <p>
               Facebook wurde am 4. Februar 2004 von Mark Zuckerberg und seinen Harvard-Roommates Eduardo Saverin, Andrew McCollum, 
@@ -1387,6 +1387,11 @@ const DETAILS = {
                 <p>Ads:</p><p>ja</p>
               </div>
               
+              <div class="info-box"><p>
+              Flickr im App Store: <br> <br>
+              „Join the largest, most influential community of photographers in the world. Upload, edit, and share your photos from any device, anytime.“ 
+              </p></div>
+
               </div>`
       },
       
@@ -1481,8 +1486,13 @@ const DETAILS = {
                 <p>Beliebt in:</p><p>USA, Europa</p>
                 <p>Firmensitz:</p><p>New York City, USA</p>
                 <p>Ads:</p><p>ja</p>
-              </div>
+              </div> 
               
+              <div class="info-box"><p>
+              Vimeo im App Store: <br> <br>
+              „Watch videos in 4K Ultra HD with no ads, plus all the video tools you need: upload, record, live stream, collaborate, share, and manage your videos.Upload gorgeous, ad-free videos in 4K Ultra HD with Dolby Vision HDR, follow the world’s best creators, and discover amazing videos each and every day. No time to watch? Save videos for offline viewing. Wanna share on the go? Upload videos in the highest quality possible, right from your iPhone or iPad.“ 
+              </p></div>
+
               </div>`
       },
      
@@ -1516,7 +1526,14 @@ const DETAILS = {
               <a href="https://creativecommons.org/licenses/by-sa/2.0/deed.de" target="_blank" rel="license noopener noreferrer">
               CC BY-SA 2.0
               </a>
-              </figcaption><p>
+              </figcaption>
+              
+              <div class="info-box"><p>
+              WhatsApp im App Store: <br> <br>
+              „WhatsApp from Meta is a free messaging and calling app used by over 2 billion people across 180+ countries. It's super simple, reliable and private, making it perfect for staying in touch with your friends and family worldwide. WhatsApp works across mobile, tablet, and desktop even on slow connections, with no subscription fees.“ 
+              </p></div>
+
+              <p>
               WhatsApp war eine Messaging-Anwendung, die 2008 von Jan Koum und Brian Acton gegründet wurde. Ursprünglich als einfacher SMS-Ersatz konzipiert, ermöglichte WhatsApp es Nutzern, über Internetverbindung kostengünstig oder kostenlos Nachrichten zu versenden – im Gegensatz zu teuren Kurznachrichtendiensten der Mobilfunkanbieter. Das System war zunächst für iPhone verfügbar und expandierte später auf Android und weitere Plattformen. Im Gegensatz zu sozialen Netzwerken wie Facebook basierte WhatsApp auf direkter, privater Kommunikation zwischen Kontakten, nicht auf öffentlichen Profilen oder Feeds.
               </p>
 
@@ -1616,6 +1633,12 @@ const DETAILS = {
                 <p>Firmensitz:</p><p>San Bruno, USA (Google)</p>
                 <p>Ads:</p><p>ja</p>
               </div>
+
+              <div class="info-box"><p>
+              YouTube im App Store: <br> <br>
+              „Get the official YouTube app on iPhones and iPads. See what the world is watching -- from the hottest music videos to what’s popular in gaming, fashion, beauty, news, learning and more. Subscribe to channels you love, create content of your own, share with friends, and watch on any device.“ 
+              </p></div>
+
 
               <figcaption>
               YouTube Headquarters
@@ -1729,6 +1752,11 @@ const DETAILS = {
                 <p>Ads:</p><p>ja</p>
               </div>
               
+              <div class="info-box"><p>
+              Reddit im App Store: <br> <br>
+              „Welcome to Reddit, the heart of the internet. Reddit is a social network with something for everyone: trending topics, diverse discussions, and engaging communities and comment threads. Redditors have authentic and interesting conversations around all sorts of curated content. You’ll find gaming communities, bloggers, meme-makers, fandoms, travel enthusiasts, support groups, AI forums, news junkies, artists, and creators of all types.“ 
+              </p></div>
+
               </div>`
       },
       
@@ -1767,6 +1795,11 @@ const DETAILS = {
                 <p>Ads:</p><p>ja</p>
               </div>
 
+              <div class="info-box"><p>
+              X im App Store: <br> <br>
+              „Welcome to X (formerly known as Twitter), your trusted digital town square where conversations unfold in real time, and the world connects through breaking news, live events, podcasts, and everything in between.“ 
+              </p></div>
+
               </div>`
       },
 
@@ -1786,6 +1819,9 @@ const DETAILS = {
                 <p>Ads:</p><p>ja</p>
               </div>
 
+
+
+
 </div>`
       },
 
@@ -1804,6 +1840,11 @@ const DETAILS = {
                 <p>Firmensitz:</p><p>New York City, USA</p>
                 <p>Ads:</p><p>ja</p>
               </div>
+
+              <div class="info-box"><p>
+              Tumblr im App Store: <br> <br>
+              „Welcome to Tumblr, your ultimate creative space and art social network community for art, memes, and fandoms. Whether you're deep into a niche or just discovering your artistic side, Tumblr welcomes every voice and vision. It’s where creativity, community, and self-expression come together in one powerful social networking platform. Share your work, connect with fans, and explore endless opportunities to post your art in a supportive art community.“ 
+              </p></div>
 
 </div>`
       },
@@ -1825,7 +1866,6 @@ const DETAILS = {
               </div>
 
               <img src="bilder/soundcloud2.png" style="width: 100%; ">
-
               <figcaption style="text-align: left;">
               Screenshot aus Soundcloud Desktop Version, Dezember 2025.
               <br>
@@ -1835,6 +1875,10 @@ const DETAILS = {
               </a>
               </figcaption>
 
+              <div class="info-box"><p>
+              SoundCloud im App Store: <br> <br>
+              „What’s next in music is first on SoundCloud. Be the first to discover, play and share your favorite tracks from emerging artists.“ 
+              </p></div>
 
               <div style="width: 100%; height: 600px; margin-top: 2em; margin-bottom: 1em; overflow: hidden; position: relative;">
               <iframe
@@ -1867,6 +1911,11 @@ const DETAILS = {
                 <p>Firmensitz:</p><p>San Francisco, USA</p>
                 <p>Ads:</p><p>ja</p>
               </div>
+
+              <div class="info-box"><p>
+              Pinterest im App Store: <br> <br>
+              „Create boards, save Pins and make collages of all your inspiration. Unlock billions of ideas, from fashion tips and easy recipes to DIY projects and fresh ways to redo your space. Creating the life you love? It's Possible.“ 
+              </p></div>
 
 </div>`
       },
@@ -1905,6 +1954,11 @@ const DETAILS = {
                 <p>Firmensitz:</p><p>Menlo Park, USA</p>
                 <p>Ads:</p><p>ja</p>
               </div>
+
+              <div class="info-box"><p>
+              Instagram im App Store: <br> <br>
+              „Little moments lead to big friendships. Share yours on Instagram. Connect with friends, find other fans, and see what people around you are up to and into. Explore your interests and post what's going on, from your daily moments to life's highlights.“ 
+              </p></div>
 
               <div style="width: 100%; height: 600px; margin-top: 2em; margin-bottom: 1em; overflow: hidden; position: relative;">
               <iframe
@@ -1957,6 +2011,10 @@ const DETAILS = {
                 <p>Ads:</p><p>ja</p>
               </div>
 
+              <div class="info-box"><p>
+              WeChat im App Store: <br> <br>
+              „WeChat is more than a messaging and social media app – it is a lifestyle for one billion users across the world. Chat and make calls with friends, read news and use local services in Official Accounts and Mini Programs, play games with friends, enjoy mobile payment features with Weixin Pay, and much more.“ 
+              </p></div>
 
               <div style="width: 100%; height: 600px; margin-top: 2em; margin-bottom: 1em; overflow: hidden; position: relative;">
               <iframe
@@ -1989,6 +2047,11 @@ const DETAILS = {
                 <p>Firmensitz:</p><p>Santa Monica, USA</p>
                 <p>Ads:</p><p>ja</p>
               </div>
+
+              <div class="info-box"><p>
+              Snapchat im App Store: <br> <br>
+              „Snapchat is a fast and fun way to share the moment with your friends and family.“ 
+              </p></div>
 
 </div>`
       },
@@ -2054,6 +2117,11 @@ const DETAILS = {
                 <p>Ads:</p><p>ja</p>
               </div>
 
+              <div class="info-box"><p>
+              Line im App Store: <br> <br>
+              „LINE is transforming the way people communicate, closing the distance between family, friends, and loved ones—for free. With voice and video calls, messages, and a limitless variety of exciting stickers, you’ll be able to express yourself in ways that you never thought possible. Available all around the world on mobile, desktop, and Apple Watch, the LINE platform continues to grow, always offering new services and features that make your life more fun and convenient.“ 
+              </p></div>
+
 </div>`
 
       },
@@ -2109,6 +2177,11 @@ const DETAILS = {
                 <p>Ads:</p><p>ja</p>
               </div>
 
+              <div class="info-box"><p>
+              Kik im App Store: <br> <br>
+              „Kik is way more than just messaging. It’s the easiest way to connect with your friends, stay in the loop, and explore – all through chat. No phone numbers, just pick a username.“ 
+              </p></div>
+
               </div>`
       },
 
@@ -2127,6 +2200,11 @@ const DETAILS = {
                 <p>Firmensitz:</p><p>Dubai, VAE</p>
                 <p>Ads:</p><p>ja</p>
               </div>
+
+              <div class="info-box"><p>
+              Telegram im App Store: <br> <br>
+              „Pure instant messaging — simple, fast, secure, and synced across all your devices. One of the top 5 most downloaded apps in the world with over 1 billion active users. For those interested in maximum privacy, Telegram offers Secret Chats. Secret Chat messages can be programmed to self-destruct automatically from both participating devices. This way you can send all types of disappearing content — messages, photos, videos, and even files. Secret Chats use End-to-End Encryption to ensure that a message can only be read by its intended recipient.“ 
+              </p></div>
 
               <div style="width: 100%; height: 600px; margin-top: 2em; margin-bottom: 1em; overflow: hidden; position: relative;">
               <iframe
@@ -2166,6 +2244,11 @@ const DETAILS = {
               </a> — <a href="https://apps.microsoft.com/detail/xpdc2rh70k22mn?hl=de-DE&gl=DE" target="_blank" rel="noopener noreferrer"> Quelle </a>
               </figcaption>
 
+              <div class="info-box"><p>
+              Discord im App Store: <br> <br>
+              „Discord is designed for gaming and great for just chilling with friends or building a community. Customize your own space and gather your friends to talk while playing your favorite games, or just hang out.“ 
+              </p></div>
+
               <img src="bilder/discord3.png" style="width: 100%; ">
               <figcaption>
               Discord im Miscrosoft Store, Januar 2026. <br>
@@ -2195,7 +2278,6 @@ const DETAILS = {
 
 
               <img src="bilder/tiktok1.jpg" style="width: 100%; ">
-
               <figcaption>
               TikTok CEO Shou Zi Chew at European Commission.
               <br>
@@ -2208,6 +2290,11 @@ const DETAILS = {
               CC BY 4.0
               </a>
               </figcaption>
+
+              <div class="info-box"><p>
+              TikTok im App Store: <br> <br>
+              „TikTok is THE destination for mobile videos. On TikTok, short-form videos are exciting, spontaneous, and genuine. Whether you’re a sports fanatic, a pet enthusiast, or just looking for a laugh, there’s something for everyone on TikTok. All you have to do is watch, engage with what you like, skip what you don’t, and you’ll find an endless stream of short videos that feel personalized just for you. From your morning coffee to your afternoon errands, TikTok has the videos that are guaranteed to make your day.“ 
+              </p></div>
 
               </div>`
       },
@@ -2255,6 +2342,11 @@ const DETAILS = {
               </a> — <a href="https://play.google.com/store/apps/details?id=org.joinmastodon.android" target="_blank" rel="noopener noreferrer"> Quelle </a>
               </figcaption>
 
+              <div class="info-box"><p>
+              Mastodon im App Store: <br> <br>
+              „Mastodon is the best way to keep up with what’s happening. Follow anyone across the fediverse and see it all in chronological order. No algorithms, ads, or clickbait in sight.“
+              </p></div>   
+
               <img src="bilder/mastodon3.jpg" style="width: 100%; ">
               <figcaption>
               Mastodon im PLaystore, Januar 2026. <br>
@@ -2284,12 +2376,22 @@ const DETAILS = {
               <img src="bilder/threads5.png" style="width: 100%; ">
               <figcaption>
               Threads bei Playstore, Januar 2026.
-              <br>
-              </a> —
+              <br> —
               <a href="https://tenten.app" target="_blank" rel="noopener noreferrer">
               Quelle
               </a>
               </figcaption>
+
+              <div class="info-box"><p>
+              Threads im App Store: <br> <br>
+              „Threads is where communities come together to discuss everything from the topics you care about today to what’ll be trending tomorrow. Whatever it is you’re interested in, you can follow and connect directly with your favorite creators and others who love the same things — or build a loyal following of your own to share your ideas, opinions and creativity with the world!“ 
+              </p></div>
+
+              <p> Threads ist ein Microblogging-Dienst von Meta, der im Juli 2023 gestartet wurde und funktional stark an Twitter (heute „X“) erinnert: Nutzer:innen posten kurze Textbeiträge (bis 500 Zeichen), Fotos, Links oder Videos, denen andere folgen und darauf reagieren können. Die Plattform nutzt die Meta-Infrastruktur, ist eng mit Instagram verknüpft und erlaubt den Import von Profilen und Followern direkt aus Instagram heraus. <a href="https://www.onlinesicherheit.gv.at/Services/News/Threads-Meta-Social-Media-Ueberblick.html" target="_blank" rel="noopener noreferrer">🡒OnlineSicherheit.gv.at</a> <p> 
+              <p class="indent"> Im Gegensatz zu X ist Threads stärker in Metas Werbe- und Datenökosystem eingebettet und geht mittlerweile den Weg zur Monetarisierung über personalisierte Anzeigen, die seit Januar 2026 weltweit ausgerollt werden – eine Entwicklung, die Threads noch stärker zum wirtschaftlichen Motor für Meta macht. <a href="https://www.fr.de/verbraucher/paukenschlag-bei-social-plattform-meta-tochter-schaltet-werbeanzeigen-im-feed-zr-94136770.html" target="_blank" rel="noopener noreferrer">🡒FR.de</a> </p> 
+              
+              <p> Ein wichtiger Vorteil von Threads ist die einfache Anmeldung via Instagram, die niedrige Eintrittsbarrieren schafft und der Plattform geholfen hat, schnell große Nutzerzahlen zu erreichen – über 400 Millionen monatlich aktive Nutzer sind ein Indiz für Meta’s Marktmacht und Netzwerkvorteil. <a href="https://www.fr.de/verbraucher/paukenschlag-bei-social-plattform-meta-tochter-schaltet-werbeanzeigen-im-feed-zr-94136770.html" target="_blank" rel="noopener noreferrer">🡒FR.de</a> Gegenüber X hebt sich Threads nur bedingt ab: Zwar gibt es chronologische und „For You“-Feeds, doch Meta bleibt zentralisiert, algorithmisch stark gesteuert und auf Werbeziele ausgerichtet – ein deutlicher Unterschied zu dezentraleren Experimenten wie Bluesky.</p> 
+              <p class="indent">Zudem bringt die enge Anbindung an Instagram sowohl Vorteile (gemeinsame Nutzerbasis) als auch Nachteile (Datenschutz-Debatten in der EU) mit sich. <a href="https://www.tagesspiegel.de/gesellschaft/threads-faq-zum-eu-start-das-wichtigste-zu-metaseinem-neuen-twitter-klon-10915249.html" target="_blank" rel="noopener noreferrer">🡒Tagesspiegel</a> Threads verfolgt weniger einen politischen Zweck als X, ist aber Teil des Diskurses über Plattform-Monopolmacht, Datenverarbeitung und algorithmische Steuerung sozialer Kommunikation – Aspekte, die Meta immer wieder in Regulierungsdebatten bringen. <a href="https://www.tagesspiegel.de/gesellschaft/threads-faq-zum-eu-start-das-wichtigste-zu-metaseinem-neuen-twitter-klon-10915249.html" target="_blank" rel="noopener noreferrer">🡒Tagesspiegel</a> </p>
 
               <img src="bilder/threads2.png" style="width: 100%; ">
               <figcaption>
@@ -2329,6 +2431,17 @@ const DETAILS = {
               Quelle
               </a>
               </figcaption>
+
+              <div class="info-box"><p>
+              Clubhouse im App Store: <br> <br>
+              „Join the conversation on Clubhouse. Jump into live audio rooms to find your community and connect with people who share your interests. Whether you’re looking to meet new friends, learn something new or just pass the time, Clubhouse helps you build real connections.“ 
+              </p></div>
+
+              <p> Clubhouse wurde 2020 vom US-Startup Alpha Exploration Co. veröffentlicht und erlangte während der COVID-19-Pandemie enorme Aufmerksamkeit. Die App basiert ausschließlich auf Live-Audio-Räumen, in denen Nutzer:innen Gespräche führen oder zuhören können. Schriftliche Inhalte oder dauerhafte Postings gibt es nicht. <a href="https://en.wikipedia.org/wiki/Clubhouse_(app)" target="_blank" rel="noopener noreferrer">🡒Wikipedia</a> </p> 
+              <p class="indent"> Das ursprüngliche Konzept setzte auf Exklusivität: Clubhouse war anfangs nur per Einladung nutzbar, was künstliche Knappheit erzeugte und zur Popularität beitrug. Besonders Prominente, Tech-Investoren und Journalist:innen nutzten die App für spontane Diskussionsrunden. <a href="https://www.nytimes.com/2021/02/08/style/clubhouse-app.html" target="_blank" rel="noopener noreferrer">🡒New York Times</a> </p> 
+              
+              <p> Kulturell war Clubhouse kurzzeitig ein zentraler Ort für politische Debatten, Start-up-Talks und Live-Diskussionen, verlor jedoch stark an Bedeutung, als andere Plattformen wie Twitter (Spaces) oder Discord ähnliche Audio-Funktionen integrierten. <a href="https://www.theguardian.com/technology/2021/jul/26/clubhouse-app-popularity-falls" target="_blank" rel="noopener noreferrer">🡒The Guardian</a> </p> 
+              <p class="indent"> Ein strukturelles Problem war die fehlende Archivierung: Inhalte verschwanden nach dem Gespräch, was zwar Spontaneität förderte, aber nachhaltige Community-Bindung erschwerte. Zudem fehlte ein klarer Algorithmus zur langfristigen Sichtbarkeit relevanter Inhalte. <a href="https://en.wikipedia.org/wiki/Clubhouse_(app)" target="_blank" rel="noopener noreferrer">🡒Wikipedia</a> Clubhouse zeigt exemplarisch, wie Pandemie-getriebene Social-Media-Formate nach dem Ende sozialer Einschränkungen an Relevanz verlieren können, wenn sie keinen dauerhaften Mehrwert gegenüber etablierten Plattformen bieten. <a href="https://www.vox.com/recode/2021/7/29/22597664/clubhouse-drop-users-pandemic" target="_blank" rel="noopener noreferrer">🡒Vox</a> </p>
 
               <img src="bilder/clubhouse3.jpg" style="width: 100%; ">
               <figcaption>
@@ -2395,6 +2508,11 @@ const DETAILS = {
               </a> — <a href="https://play.google.com/store/search?q=parler&c=apps&hl=de" target="_blank" rel="noopener noreferrer"> Quelle </a>
               </figcaption>
 
+              <div class="info-box"><p>
+              Parler im App Store: <br> <br>
+              „Join Parler, the social media platform designed for authentic conversations, open dialogue, and meaningful connections—without censorship. Whether you're here to share your thoughts, explore diverse perspectives, or engage with a vibrant community, Parler gives you the freedom to express yourself.“
+              </p></div>    
+              
               <img src="bilder/parler4.jpg" style="width: 100%; ">
               <figcaption>
               Parler im Playstore, Januar 2026. <br>
@@ -2443,14 +2561,18 @@ const DETAILS = {
               </a>
               </figcaption>
 
-              <p class="top">
+              <div class="info-box"><p>
+              Bondee im App Store: <br> <br>
+              „On Bondee, you can be seen, understood, and recognized in a more multidimensional, lively, and fun way. This feels like a portable little world: You can dress yourself up, decorate your space, share daily moments, and easily jump into a relaxed social venue to naturally connect with strangers.“ 
+              </p></div>
+
+              <p>
               Bondee wurde von Metadream mit dem Ziel gestartet, soziale Interaktionen in eine verspielte, grafisch liebevoll gestaltete 
               3D‑Umgebung zu verlegen, in der Nutzer ihre Avatare, Outfits und Zimmer detailliert anpassen können. 
               Die App ist im Kern als „virtuelle Nachbarschaft“ gedacht, in der Freundeskreise in einem gemeinsamen Wohnkomplex leben,
               sich über Chat‑Funktionen austauschen und den Status ihres Alltags visuell teilen – vom Dekorieren des Raums bis hin 
               zu animierten Stimmungen.
               <a href="https://bondee.com/main" target="_blank" rel="noopener noreferrer">🡒Bondee (Metadream)</a></p> 
-              
               
               <p class="indent">
               In der praktischen Nutzung zeigt sich Bondee wie eine Mischung aus virtueller Wohngemeinschaft und Messenger‑App:
@@ -2465,44 +2587,36 @@ const DETAILS = {
               Kurz nach dem Launch erlebte Bondee in mehreren asiatischen Märkten einen sprunghaften Popularitätsschub, der sich 
               in viralen Trends rund um Screenshots der Zimmer und Avatare widerspiegelte. Marken‑ und Medienanalysen 
               sehen den Appeal vor allem im „cozy“ Design, der Nostalgie an frühere Avatar‑Welten wie Habbo oder frühe Sims‑Ästhetiken 
-              und der starken Fokussierung auf enge Freundesgruppen statt auf breite öffentliche Reichweite. 
-              
+              und der starken Fokussierung auf enge Freundesgruppen statt auf breite öffentliche Reichweite.              
               <a href="https://www.mindshareworld.com/germany/news/pov-what-is-bondee" target="_blank" rel="noopener noreferrer">🡒Mindshare</a> 
-              <a href="https://www.vice.com/en/article/i-tried-bondee-so-i-can-finally-live-with-my-friends/" target="_blank" rel="noopener noreferrer">🡒VICE</a></p>  
-
-
-              <p class="indent"> 
-              Parallel zur frühen Begeisterung geriet Bondee allerdings auch in Diskussionen: Kommentatoren bezeichnen die App teils 
+              <a href="https://www.vice.com/en/article/i-tried-bondee-so-i-can-finally-live-with-my-friends/" target="_blank" rel="noopener noreferrer">🡒VICE</a> Parallel zur frühen Begeisterung geriet Bondee allerdings auch in Diskussionen: Kommentatoren bezeichnen die App teils 
               als möglichen „kurzlebigen Hype“, der stark von ästhetischer Neuheit und Social‑Media‑Trends lebt, ohne bereits langfristig 
               gefestigte Nutzungsmuster zu besitzen. Kritische Analysen betonen, dass Bondee exemplarisch für eine Generation 
               von Social‑Apps steht, in der Intimität, Ästhetik und Gamification zusammenfließen, zugleich aber die Abhängigkeit von 
               kurzfristiger Aufmerksamkeit und App‑Store‑Dynamiken groß bleibt.               
               <a href="https://medium.com/@utterlymydump/bondee-a-new-social-app-a-passing-fad-controversy-86e38b07251" target="_blank" rel="noopener noreferrer">🡒Medium</a>
               </p>
-  
 
               <img src="bilder/bondee2.png" style="width: 100%; ">
-              <figcaption style="">
+              <figcaption>
               Screenshot der Bondee Website, Dezember 2025. <br>
               </a> — <a href="https://bondee.com/main" target="_blank" rel="noopener noreferrer"> Quelle </a>
               </figcaption>
 
               <img src="bilder/bondee9.png" style="width: 100%; ">
-              <figcaption style="">
+              <figcaption>
               Bondee im Playstore, Januar 2026. <br>
               </a> — <a href="https://bondee.com/main" target="_blank" rel="noopener noreferrer"> Quelle </a>
               </figcaption>
 
               <img src="bilder/bondee10.jpg" style="width: 100%; ">
-              <figcaption style="">
+              <figcaption>
               Bondee im Playstore, Januar 2026. <br>
               </a> — <a href="https://bondee.com/main" target="_blank" rel="noopener noreferrer"> Quelle </a>
               </figcaption>
 
-
-
               <img src="bilder/bondee1.png" style="width: 100%; ">
-              <figcaption style="">
+              <figcaption>
               Screenshot der Bondee Website, Dezember 2025. <br>
               </a> — <a href="https://bondee.com/main" target="_blank" rel="noopener noreferrer"> Quelle </a>
               </figcaption>
@@ -2533,12 +2647,22 @@ const DETAILS = {
               </a> — <a href="https://play.google.com/store/apps/details?id=com.bereal.ft&hl=de" target="_blank" rel="noopener noreferrer"> Quelle </a>
               </figcaption>
 
+              <div class="info-box"><p>
+              BeReal im App Store: <br> <br>
+              „BeReal is the simplest photo-sharing app where you and your friends post once a day to show what you’re really up to. Every day at a random time, everyone gets the same two-minute window to take and share a photo. The camera snaps both the front and back simultaneously, capturing the real moment. No filters — just real life, as it happens.“ 
+              </p></div>
+
+              <p> BeReal wurde 2020 in Frankreich gegründet und positionierte sich als bewusster Gegenentwurf zu stark kuratierten Plattformen wie Instagram. Einmal täglich erhalten Nutzer:innen eine zufällige Benachrichtigung, innerhalb von zwei Minuten ein Foto aufzunehmen – gleichzeitig mit Front- und Rückkamera. <a href="https://en.wikipedia.org/wiki/BeReal" target="_blank" rel="noopener noreferrer">🡒Wikipedia</a> Das Versprechen von BeReal lautete: Authentizität statt Inszenierung. Es gibt keine Filter, keine Bearbeitung und lange Zeit keine Werbung. Dennoch entstand auch hier sozialer Druck – etwa durch „Late“-Markierungen oder Vergleiche im Freundeskreis. <a href="https://www.theguardian.com/technology/2022/aug/22/bereal-app-social-media" target="_blank" rel="noopener noreferrer">🡒The Guardian</a> </p> 
+              
+              <p> Mit der Einführung von Werbung und Marken-Accounts veränderte sich die Wahrnehmung der Plattform. Kritiker:innen sehen darin eine Annäherung an klassische Social-Media-Modelle und einen Bruch mit dem ursprünglichen Anti-Marketing-Ansatz. <a href="https://www.wsj.com/articles/bereal-ads-social-media-11676650247" target="_blank" rel="noopener noreferrer">🡒Wall Street Journal</a> </p>              
+              <p class="indent"> Auch BeReal ist nicht frei von performativen Elementen: Nutzer:innen warteten gezielt auf interessante Momente oder löschten Fotos, um ein „besseres“ Bild zu posten – was zeigt, dass sozialer Vergleich selbst bei reduzierten Funktionen bestehen bleibt. <a href="https://www.npr.org/2022/10/17/1129364225/bereal-social-media-authenticity" target="_blank" rel="noopener noreferrer">🡒NPR</a> BeReal verdeutlicht, dass „Echtheit“ als Designprinzip schwer dauerhaft umzusetzen ist, sobald Plattformen wachsen, monetarisiert werden und soziale Dynamiken greifen. <a href="https://en.wikipedia.org/wiki/BeReal" target="_blank" rel="noopener noreferrer">🡒Wikipedia</a> </p>
+
               <img src="bilder/bereal6.jpg" style="width: 100%; ">
               <figcaption>
               BeReal im Playstore, Januar 2026. <br>
               </a> — <a href="https://play.google.com/store/apps/details?id=com.bereal.ft&hl=de" target="_blank" rel="noopener noreferrer"> Quelle </a>
               </figcaption>
-
+          
               <div style="width: 100%; height: 600px; margin-top: 2em; margin-bottom: 1em; overflow: hidden; position: relative;">
               <iframe
                 src="https://maps.google.com/maps?q=48.8611647,2.3500219&t=k&z=18&output=embed"
@@ -2581,6 +2705,15 @@ const DETAILS = {
               Quelle
               </a>
               </figcaption>
+
+              <div class="info-box"><p>
+              SpaceHey im App Store: <br> <br>
+              „SpaceHey is the retro social network focused on privacy and customizability.It's a friendly place to have fun, meet friends, and be creative - now available on mobile! Discover other people, add friends and design your own unique profile!“ 
+              </p></div>
+
+              <p> SpaceHey ist ein deutsches Social-Network-Projekt, das 2020 als moderne Neuinterpretation von MySpace gestartet wurde. Es erlaubt Nutzer:innen, Profile individuell zu gestalten – inklusive HTML-Anpassungen, Musikplayern und Freundeslisten. <a href="https://en.wikipedia.org/wiki/SpaceHey" target="_blank" rel="noopener noreferrer">🡒Wikipedia</a> </p> <p class="indent"> Die Plattform verzichtet bewusst auf algorithmische Feeds, Tracking und Werbung und finanziert sich über Spenden. Damit positioniert sich SpaceHey als datenschutzfreundliche Retro-Alternative zu kommerziellen Netzwerken. <a href="https://spacehey.com/about" target="_blank" rel="noopener noreferrer">🡒SpaceHey</a> </p> 
+              
+              <p> Kulturell spricht SpaceHey Nostalgiker:innen an, die frühe Social-Media-Ästhetiken schätzen: blinkende Profile, Musik-Hintergründe und persönliche Ausdrucksformen stehen im Vordergrund – ein klarer Kontrast zu standardisierten Instagram-Layouts. <a href="https://www.theverge.com/2021/11/9/22771202/spacehey-myspace-clone-social-network" target="_blank" rel="noopener noreferrer">🡒The Verge</a> SpaceHey wird weniger als Massenplattform genutzt, sondern eher als kulturelles Archiv früher Online-Sozialität und als Kritik an der heutigen Plattformökonomie. <a href="https://en.wikipedia.org/wiki/SpaceHey" target="_blank" rel="noopener noreferrer">🡒Wikipedia</a> </p>
 
               <img src="bilder/spacehey3.png" style="width: 100%; ">
               <figcaption style="text-align: left;">
@@ -2627,6 +2760,17 @@ const DETAILS = {
               </a>
               </figcaption>
 
+              <div class="info-box"><p>
+              Truth Social im App Store: <br> <br>
+              „Follow the Truth! What exactly is Truth Social's "Big Tent" approach? Think of a giant outdoor event tent at your best friend's wedding. Who's there? The combination of multiple families from all over the United States, and the world. Uncle Jim from Atlanta is a proud libertarian. Aunt Kellie from Texas is a staunch conservative. Your cousin John from California is a die-hard liberal. And guess what? They're all together to have an amazing time and share their different viewpoints on the world. Although we don't always agree with each other, we welcome these varied opinions and the robust conversation they bring.“ 
+              </p></div>
+
+              <p> Truth Social wurde 2022 von der Trump Media & Technology Group (TMTG) gegründet, deren bekanntestes Gesicht der ehemalige US-Präsident Donald Trump ist. Die Plattform entstand als direkte Reaktion auf Trumps Sperrung bei Twitter und Facebook nach dem Sturm auf das US-Kapitol im Januar 2021. Truth Social versteht sich als Gegenentwurf zu etablierten Social-Media-Plattformen, denen eine politische Voreingenommenheit gegen konservative Stimmen vorgeworfen wird. <a href="https://en.wikipedia.org/wiki/Truth_Social" target="_blank" rel="noopener noreferrer">🡒Wikipedia</a> </p> 
+              <p class="indent"> Politisch ist Truth Social klar positioniert: Die Plattform dient primär als Sprachrohr für rechtskonservative, populistische und trumpnahe Inhalte. Viele der aktivsten Accounts gehören Politiker:innen, Kommentator:innen oder Influencer:innen aus dem konservativen Spektrum. Der Diskurs ist dadurch deutlich homogener als auf Plattformen wie X oder Facebook. <a href="https://www.bbc.com/news/technology-60709280" target="_blank" rel="noopener noreferrer">🡒BBC</a> </p> 
+              
+              <p> Der Algorithmus von Truth Social ist wenig transparent, folgt jedoch einem klassischen Engagement-Modell: Inhalte mit hoher Interaktion werden stärker ausgespielt. Kritiker bemängeln, dass polarisierende oder emotionalisierende Inhalte dadurch bevorzugt werden, während Moderation vergleichsweise schwach ausgeprägt ist. <a href="https://www.washingtonpost.com/technology/2022/02/21/truth-social-trump/" target="_blank" rel="noopener noreferrer">🡒Washington Post</a> Im Gegensatz zu Plattformen wie Bluesky oder Mastodon ist Truth Social nicht dezentral, sondern stark zentralisiert und eng an die politische Identität seines Gründers gebunden. Dadurch wird die Plattform weniger als neutrales soziales Netzwerk wahrgenommen, sondern als politisches Medium mit klarer Agenda. <a href="https://en.wikipedia.org/wiki/Truth_Social" target="_blank" rel="noopener noreferrer">🡒Wikipedia</a> </p> 
+              <p class="indent"> Obwohl Truth Social mediale Aufmerksamkeit erhält, blieb die tatsächliche Nutzerbasis im Vergleich zu etablierten Netzwerken begrenzt. Die Plattform ist damit weniger ein Massenmedium als ein politisch geschlossener Resonanzraum, der vor allem bestehende Überzeugungen verstärkt. <a href="https://www.reuters.com/technology/truth-social-struggles-grow-despite-trump-return-2024-03-26/" target="_blank" rel="noopener noreferrer">🡒Reuters</a> </p>
+              
               <img src="bilder/truthsocial9.jpg" style="width: 100%; ">
               <figcaption>
               Truth Social im Playstore, Januar 2026. <br>
@@ -2695,14 +2839,16 @@ const DETAILS = {
               </a>
               </figcaption>
 
-                            <p class="top"> 
-              What is Noplace? <br> <br>
-              "Noplace is the place to express urself and connect with others who have similar interests!
-              Gain levels, earn badges, and make friends, all while using ur completely customizable profile to share what u r doing, 
-              watching, listening to, eating, and more. it's whatever u want it to be, go crazy (just don't be a jerk)!"
-              </p>
+              <div class="info-box"><p>
+              Noplace im App Store: <br> <br>
+              „Remember how fun the internet was before all the algos and ads? We do too… so we’re bringing it back. On noplace, you can truly be yourself: No pressure, no judgement, just good times :)“ <br>
+              </p></div>    
 
-
+              <p> Noplace ist eine relativ neue Social-App, die den Geist retro-sozialer Netzwerke wie Myspace aufgreift und für eine Authentizität ohne algorithmische Klüfte wirbt: Nutzer:innen gestalten ihre Profile, zeigen ihren aktuellen „Vibe“, teilen Musik, Interessen und Stimmungen – ähnlich wie früher „Top 8“-Listen oder Profilausdrucke. <a href="https://apps.apple.com/de/app/noplace-make-new-friends/id6478601246" target="_blank" rel="noopener noreferrer">🡒App Store</a> </p> 
+              <p class="indent"> Die Plattform betont echte Selbstdarstellung ohne Clout-Jagd, lädt dazu ein, Freundschaften zu entdecken und mit Gleichgesinnten jenseits von Sichtbarkeitsalgorithmen in Kontakt zu treten. Diese Nostalgie nach frühen Social-Media-Tagen ist bewusst Teil ihres Brandings – etwa durch Profilfarben, Stimmungs-Updates oder Musik-Sharing. <a href="https://apps.apple.com/de/app/noplace-make-new-friends/id6478601246" target="_blank" rel="noopener noreferrer">🡒App Store</a> </p> 
+              
+              <p> Trotz eines Retro-Ansatzes gibt es auch moderne Elemente wie KI-gestützte Moderation, um Sicherheit zu erhöhen und Inhalte kontrollierter zu präsentieren als auf klassischen offenen Netzwerken, was Noplace in der App-Store-Rankings schnell nach oben brachte. <a href="https://www.itopnews.de/2024/07/neue-social-media-app-noplace-ueberraschend-platz-1-im-app-store/" target="_blank" rel="noopener noreferrer">🡒iTopnews.de</a>
+              Noplace ist (Stand 2025/26) bestimmte auf iOS konzentriert und versucht, mit einer Community-orientierten UX dem Druck algorithmischer Reichweite zu entkommen – eine Gegenbewegung zu klassischen Feed-Diensten. <a href="https://apps.apple.com/de/app/noplace-make-new-friends/id6478601246" target="_blank" rel="noopener noreferrer">🡒App Store</a> </p>
 
               <img src="bilder/noplace1.png" style="width: 100%; ">
               <figcaption>
@@ -2713,7 +2859,6 @@ const DETAILS = {
               Quelle
               </a>
               </figcaption>
-
 
               <img src="bilder/noplace3.png" style="width: 100%; ">
               <figcaption>
@@ -2774,15 +2919,15 @@ const DETAILS = {
               </a>
               </figcaption>
 
-              <img src="bilder/bluesky2.png" style="width: 100%; ">
-              <figcaption>
-              Screenshot der BLuesky Website, Dezember 2025.
-              <br>
-              </a> —
-              <a href="https://bsky.app/" target="_blank" rel="noopener noreferrer">
-              Quelle
-              </a>
-              </figcaption>
+              <div class="info-box"><p>
+              Bluesky im App Store: <br> <br>
+              „Bluesky is the social app built for better conversations. Find your people, follow what you care about, and have fun online again — without ads or engagement traps.“ 
+              </p></div>
+
+              <p> Bluesky ist ein dezentral orientiertes Microblogging-Netzwerk, aufgebaut auf dem AT-Protocol, das von Jack Dorsey (Mitgründer von Twitter) initiiert wurde. Dies bedeutet, dass Inhalte und Server nicht zentral von einem einzigen Unternehmen kontrolliert werden, sondern verschiedene Anbieter interoperieren können – ein Ansatz ähnlich dem Fediverse. <a href="https://arxiv.org/abs/2402.03239" target="_blank" rel="noopener noreferrer">🡒ArXiv</a> </p> <p class="indent"> Der Unterschied zu zentralisierten Diensten wie Threads oder X liegt in der Nutzerkontrolle und Offenheit: Anwender:innen können zwischen verschiedenen Anbietern wählen, ihre Daten leichter migrieren und Community-moderation kooperativ gestalten, statt sich ausschließlich auf eine zentrale Moderationsinstanz zu verlassen. <a href="https://arxiv.org/abs/2402.03239" target="_blank" rel="noopener noreferrer">🡒ArXiv</a> </p> 
+              
+              <p> Im Vergleich zu Threads ist Bluesky kleiner, dezentraler und tendenziell weniger werbeorientiert. Threads nutzt algorithmische Feeds und die Meta-Infrastruktur, um Inhalte an breite Nutzergruppen zu bringen, während Bluesky eher chronologische Feeds und Community-basierte Inhalte bietet, was zu einem anderen Nutzungserlebnis führt. <a href="https://de.statista.com/themen/13519/threads-bluesky-und-mastodon/" target="_blank" rel="noopener noreferrer">🡒Statista</a> </p> 
+              <p class="indent"> Bluesky gilt kulturell als Experiment der sozialen Medien nach dem zentralisierten Modell: Es versucht, die Kontrolle über Inhalte und Algorithmen von Konzernen zu lösen und wieder in die Hände der Community zu legen, was besonders im Vergleich zu X oder Threads relevant wird. <a href="https://arxiv.org/abs/2402.03239" target="_blank" rel="noopener noreferrer">🡒ArXiv</a> Da die Plattform weniger Reichweite hat als Meta-Plattformen, ist sie bislang kein Massen-News-Feed wie Twitter oder Threads, aber ein wichtiges Beispiel für alternativen Aufbau sozialer Netzwerke. <a href="https://de.statista.com/themen/13519/threads-bluesky-und-mastodon/" target="_blank" rel="noopener noreferrer">🡒Statista</a> </p>
 
               <img src="bilder/bluesky5.jpg" style="width: 100%; ">
               <figcaption>
@@ -2794,6 +2939,15 @@ const DETAILS = {
               </a>
               </figcaption>
 
+              <img src="bilder/bluesky2.png" style="width: 100%; ">
+              <figcaption>
+              Screenshot der BLuesky Website, Dezember 2025.
+              <br>
+              </a> —
+              <a href="https://bsky.app/" target="_blank" rel="noopener noreferrer">
+              Quelle
+              </a>
+              </figcaption>
 
               <img src="bilder/bluesky3.png" style="width: 100%; ">
               <figcaption>
@@ -2825,7 +2979,6 @@ const DETAILS = {
                 <p>Ads:</p><p>ja</p>
               </div>
 
-
               <img src="bilder/tenten1.png" style="width: 100%; ">
               <figcaption>
               Screenshot der Ten Ten Website, Januar 2026.
@@ -2836,6 +2989,21 @@ const DETAILS = {
               </a>
               </figcaption>
 
+              <div class="info-box"><p>
+              Ten Ten im App Store: <br> <br>
+              „Voice notes, but make it instant. Sing it, shout it or whisper it… Your friends will hear you live on their phone, 
+              even when their screen is locked! Once they join, you can talk like you’re next to each other!“ 
+              </p></div>
+          
+              <p> Ten Ten ist eine Smartphone-App, die als Walkie-Talkie-ähnlicher Social-Messenger konzipiert wurde: Nutzer:innen halten einen Button gedrückt, um Vox-Nachrichten in Echtzeit an Freund:innen zu senden, ähnlich wie ein Funkgerät. Die App wurde 2021 von den französischen Gründern Jule Colmar und Antoine Baché entwickelt und erlebte besonders 2024 einen viralen Boom unter jungen Nutzer:innen, teils ausgelöst durch TikTok-Videos und virale Clips. <a href="https://www.lemonde.fr/pixels/article/2024/06/06/ten-ten-tout-comprendre-a-l-application-au-succes-surprise-qui-inquiete-jusqu-au-ministere-de-l-interieur_6237716_4408996.html" target="_blank" rel="noopener noreferrer">🡒Le Monde</a> Ein zentrales Merkmal von Ten Ten ist der Fokus auf Privatsphäre und unmittelbare Interaktion: Sprachnachrichten werden angeblich nicht auf Servern gespeichert, sind verschlüsselt und „flüchtig“, sodass der Dienst als direkter Austausch zwischen Freund:innen ohne dauerhafte Speicherung beworben wird.</p>
+              
+              <p class="indent"> Diese Betonung unterscheidet Ten Ten von klassischen Social-Media-Feeds mit archivierten Beiträgen. <a href="https://apps.apple.com/de/app/ten-ten-your-friends-on-tap/id1481768339" target="_blank" rel="noopener noreferrer">🡒App Store</a> 
+              Da es keine öffentliche Timeline oder algorithmisch kuratierte Darstellung gibt und die Kommunikation auf enger Freundschaftsgruppe basiert, wird Ten Ten oft als Privat-Messenger mit Social-Media-Elementen beschrieben – eine Mischung aus Walkie-Talkie-Chat und Status-Sharing, ohne klassische News-Feeds oder öffentliche Postings. <a href="https://www.chip.de/news/Ministerium-warnt-vor-Walkie-Talkie-App-Neue-Trend-App-ten-ten-ist-immer-aktiv_185334136.html" target="_blank" rel="noopener noreferrer">🡒CHIP</a> </p> 
+              
+
+              <p> Die App sorgt jedoch für Kritik und Debatten: Behörden wie das französische Innenministerium warnten vor Risiken durch ständige Erreichbarkeit, mangelnde Moderation und möglichen Belästigungen, gerade bei Jugendlichen. Da Gespräche nicht gespeichert werden, gibt es zudem keine Inhaltsmoderation – ein Aspekt, der sowohl als Privatsphäre-Feature als auch als Risiko gesehen wird. <a href="https://www.lemonde.fr/pixels/article/2024/06/06/ten-ten-tout-comprendre-a-l-application-au-succes-surprise-qui-inquiete-jusqu-au-ministere-de-l-interieur_6237716_4408996.html" target="_blank" rel="noopener noreferrer">🡒Le Monde</a> </p> 
+              <p class="indent"> Ten Ten bleibt ständig erreichbar, was sowohl als Vorteil (direkte Kommunikation wie im echten Leben) als auch als Nachteil (Unterbrechungen, Ablenkung) wahrgenommen wird – ein Merkmal, das viele traditionelle Messenger nicht in dieser Form bieten. Viele Nutzer:innen teilen öffentlich ihre PINs auf Plattformen wie TikTok, was die ursprünglich angedachte Nutzung “nur für enge Freund:innen” aufweicht. <a href="https://www.nssmag.com/en/lifestyle/36977/ten-ten-app-france" target="_blank" rel="noopener noreferrer">🡒NSS Magazine</a> </p>
+
               <img src="bilder/tenten5.jpg" style="width: 100%; ">
               <figcaption>
               Collage der Ten Ten Playstore Bilder, Januar 2026.
@@ -2845,12 +3013,6 @@ const DETAILS = {
               Quelle
               </a>
               </figcaption>
-
-              <p>
-              "Ten Ten turns your phone into a live walkie-talkie with your best friends anywhere, anytime.
-              Sing it, shout it or whisper it... Your friends will hear you live on their phone, even when their screen is locked."
-              </p>
-
 
               <div style="width: 100%; height: 600px; margin-top: 2em; margin-bottom: 1em; overflow: hidden; position: relative;">
               <iframe
@@ -2884,7 +3046,6 @@ const DETAILS = {
                 <p>Ads:</p><p>/</p>
               </div>
 
-
               <img src="bilder/lapse1.png" style="width: 100%; ">
               <figcaption>
               Screenshot der Lapse Website, Januar 2026.
@@ -2894,6 +3055,16 @@ const DETAILS = {
               Quelle
               </a>
               </figcaption>
+
+              <div class="info-box"><p>
+              Lapse im App Store: <br> <br>
+              „Disposable camera energy for your everyday: Turn your phone into a disposable camera; shoot first, develop later; capture life, free from the pressure of over-curation; relive your memories as customisable recaps.“ <br>
+              </p></div>    
+              
+              <p> Lapse ist eine britische Social-App, die 2021 gestartet wurde und sich durch ihren analogen Fotografie-Ansatz vom klassischen Social-Media-Feed abhebt: Nutzer:innen können Fotos aufnehmen, die erst nach mehreren Stunden „entwickelt“ werden und nicht bearbeitet werden dürfen, was einen bewussteren und weniger perfektionierten Inhalt fördert. <a href="https://en.wikipedia.org/wiki/Lapse_%28social_network%29" target="_blank" rel="noopener noreferrer">🡒Wikipedia</a> </p> 
+              <p class="indent"> Im Unterschied zu etablierten Plattformen wie Instagram oder TikTok, die auf sofortige Sichtbarkeit und algorithmische Popularität setzen, legt Lapse den Fokus auf authentischen, ungeschönten Ausdruck innerhalb kleinerer Gruppen – ähnlich einer digitalen, analogen Kamera-Erfahrung. <a href="https://en.wikipedia.org/wiki/Lapse_%28social_network%29" target="_blank" rel="noopener noreferrer">🡒Wikipedia</a> Die App wurde bewusst als „Anti-Instagram“ gedacht, mit weniger Likes, keiner Konkurrenz um Sichtbarkeit und einer Einladungspolitik, die Gruppenbildung fördert. Dieser Ansatz reduziert den Druck zur ständigen Leistung oder Perfektion, der bei vielen klassischen Plattformen kritisiert wird. <a href="https://rebelliongroup.com/news-insights/unpacking-lapse-gen-zs-latest-micro-platform" target="_blank" rel="noopener noreferrer">🡒RebellionGroup</a> </p> 
+              
+              <p> Lapse zählt zu Social Media insofern, als dass Nutzer interagieren, Inhalte teilen und kommentieren, doch es ist eher ein Fotojournal oder Freundschafts-Album als ein öffentlicher Feed. Diese andere Wirkung kann eine weniger suchtfördernde Nutzung begünstigen – ohne das typische „Immer mehr-Immer schneller“-Prinzip. <a href="https://en.wikipedia.org/wiki/Lapse_%28social_network%29" target="_blank" rel="noopener noreferrer">🡒Wikipedia</a> Gerade die Verzögerung durch das „Entwickeln“ von Bildern gibt der Plattform ihren Charakter und unterscheidet sie von anderen Foto-Apps oder Filtern – sie greift bewusst auf Nostalgie und analoge Ästhetik zurück. <a href="https://en.wikipedia.org/wiki/Lapse_%28social_network%29" target="_blank" rel="noopener noreferrer">🡒Wikipedia</a> </p>
 
               <img src="bilder/lapse3.jpg" style="width: 100%; ">
               <figcaption style="">
@@ -2934,6 +3105,10 @@ const DETAILS = {
               </a> — <a href="https://play.google.com/store/search?q=tinder&c=apps" target="_blank" rel="noopener noreferrer"> Quelle </a>
               </figcaption>
 
+              <div class="info-box"><p>
+              Tinder im App Store: <br> <br>
+              „Tinder is the place to meet someone new and see where a spark might lead. With millions of people nearby and around the world, Tinder makes dating fun and helps you find someone who matches your vibe, interests, and intentions.“ <br>
+              </p></div>    
               
               <img src="bilder/tinder7.jpg" style="width: 100%; ">
               <figcaption>
@@ -2969,6 +3144,11 @@ const DETAILS = {
               Quelle
               </a>
               </figcaption>
+
+              <div class="info-box"><p>
+              OnlyFans Creator Center: <br> <br>
+              „OnlyFans is revolutionizing the way creators connect with their online communities and earn income. Since 2016, more than three million creators have joined the OnlyFans platform to share their creativity, monetize their content, and engage meaningfully with their fans.“ 
+              </p></div>
 
               </div>`
       },

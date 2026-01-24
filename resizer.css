@@ -1,6 +1,5 @@
 
 .resize-divider {
-  width: 2px;
   background-color: #000000;
   position: relative;
   z-index: 200;
@@ -76,7 +75,8 @@
 
 .resize-divider:hover .arrow-down,
 .resize-divider.active .arrow-down,
-.detail-column.active .arrow-down {
+.detail-column.active .arrow-down,
+.resize-divider.hint-animation .arrow-down {
   opacity: 0;
 } 
 
@@ -88,7 +88,7 @@ body:has(.detail-column.active) .arrow-down {
 /* Animation Leuchten bei Inaktivität */
 @keyframes resizer-hint {
   0% { opacity: 1; background-color: #000; }
-  25% { opacity: 1; background-color: #f0f; box-shadow: 0 0 12px 3px rgba(255, 0, 255, 0.322); }
+  50% { opacity: 1; background-color: #f0f; /* box-shadow: 0 0 12px 3px rgba(255, 0, 255, 0.322); */ }
   100% { opacity: 1; background-color: #000; }
 }
 
@@ -96,7 +96,7 @@ body:has(.detail-column.active) .arrow-down {
 
 @keyframes resizer-hint-dark {
   0% { opacity: 1; background-color: #fff; }
-  25% { opacity: 1; background-color: #f0f; box-shadow: 0 0 12px 3px rgba(255, 0, 255, 0.322); }
+  50% { opacity: 1; background-color: #f0f; /* box-shadow: 0 0 12px 3px rgba(255, 0, 255, 0.322); */}
   100% { opacity: 1; background-color: #fff; }
 }
 
