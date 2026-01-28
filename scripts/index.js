@@ -690,11 +690,6 @@ function applyDetailFilter(filter) {
   
 })();
 
-// Letztes Theme wiederherstellen
-const root = document.documentElement;
-const savedTheme = localStorage.getItem('theme') || 'light';
-root.setAttribute('data-theme', savedTheme);
-
 // --- Session-basiertes Link-Tracking ---
 // Links werden nur innerhalb der aktuellen Session als "besucht" markiert
 // (sessionStorage wird bei Browser-Refresh oder Tab-Schließen gelöscht)

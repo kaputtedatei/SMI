@@ -182,31 +182,11 @@ body:has(.detail-column.active) #theme-button {
 
 /* Farbegbung der Links */
 [data-theme="light"] a {
-    color: #00f;
-}
-
-/* Browser :visited deaktiviert - stattdessen Session-basierte .visited Klasse */
-[data-theme="light"] a:visited {
-    color: #00f;
-}
-
-[data-theme="light"] a.visited:not(.hof-button):not(.glossar-button) {
-    color: rgb(35, 0, 162);
-    text-decoration: underline;
+    color: #66f;
 }
 
 [data-theme="dark"] a {
-    color: #75e8ff;
-}
-
-/* Browser :visited deaktiviert - stattdessen Session-basierte .visited Klasse */
-[data-theme="dark"] a:visited {
-    color: #75e8ff;
-}
-
-[data-theme="dark"] a.visited:not(.hof-button):not(.glossar-button) {
-    color: #22acc8;
-    text-decoration: underline;
+    color: #99f;
 }
 
 

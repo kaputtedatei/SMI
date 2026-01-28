@@ -1,0 +1,19 @@
+.glossar-link {
+  transition: all 0.2s ease;
+  cursor: pointer;
+  color: #000 !important;
+}
+
+[data-theme="dark"] .glossar-link {
+  color: #fff !important;
+}
+
+.glossar-link:hover {
+  text-decoration-color: #66f;
+  color: #66f !important;
+}
+
+[data-theme="dark"] .glossar-link:hover {
+  color: #99f !important;
+  text-decoration-color: #99f;
+}
