@@ -33,12 +33,15 @@ body {
 }
 
 .column-content {
-  padding: 25px; 
+  padding: 1.7vw; 
   overflow-y: scroll;
   scrollbar-width: none !important;
 }
 
-
+/* Chrome, Safari und Opera */
+.column-content::-webkit-scrollbar {
+  display: none;
+}
 
 
 
@@ -386,6 +389,7 @@ figcaption {
 .detail-column {
   display: none;
   overscroll-behavior-y: contain;
+  container-type: inline-size;
 }
 
 .detail-column.active {
@@ -400,6 +404,38 @@ figcaption {
 [data-theme="dark"] .detail-header {
   color: #000000;
 }
+
+
+
+
+.figures-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1vw;
+  margin: 0;
+}
+
+.index-detail figure {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.index-detail figure img {
+  width: 100%;
+  display: block;
+  height: 300px;
+  object-fit: cover;
+}
+
+@container (max-width: 700px) {
+  .figures-wrapper {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+}
+
+
+
 
 .close-btn {
   top: 10px;

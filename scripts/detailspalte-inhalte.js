@@ -42,12 +42,26 @@ const DETAILS = {
               target="_blank" rel="noopener noreferrer">→FidoPedia</a>
               </p>
 
-              <img src="bilder/bbs1.jpg" style="width: 100%; ">
-              <figcaption>
-              Photo I took of my Wyse WY-60 dumb terminal accessing the Dynix Dial-Pac for the Goshen Public Library in Goshen, Indiana, via Telnet, 2013 <br>
-              </a> — <a href="https://en.wikipedia.org/wiki/File:Dynix_ILS_on_Wyse_WY-60_dumb_terminal_-_closeup.jpg" target="_blank" rel="noopener noreferrer"> Quelle </a>,
-              <a href="https://creativecommons.org/licenses/by-sa/3.0/deed.de" target="_blank" rel="license noopener noreferrer"> CC BY-SA 3.0 </a>
-              </figcaption>
+              <div class="figures-wrapper">
+                <figure>
+                  <img src="bilder/bbs6.jpg" style="width: 100%; ">
+                  <figcaption>
+                  Digital: A Love Story, 2012 <br>         
+                  Foto von <a href="https://www.flickr.com/photos/miyaoka/" target="_blank" rel="noopener noreferrer"> Miayoka Hitchcock    
+                  </a> — <a href="https://www.flickr.com/photos/miyaoka/7155118390/in/photostream/" target="_blank" rel="noopener noreferrer"> Quelle </a>,
+                  <a href="https://creativecommons.org/licenses/by-nc/2.0/deed.de" target="_blank" rel="license noopener noreferrer"> CC BY-NC 2.0 </a>
+                  </figcaption>
+                </figure>
+                <figure>
+                  <img src="bilder/bbs4.png" style="width: 100%; ">
+                  <figcaption>
+                  Screenshot of the welcome banner of FreePort Software version 2.3 for the Case Western Reserve University bulletin board system, 1994 <br>             
+                  </a> — <a href="https://commons.wikimedia.org/w/index.php?curid=98903318" target="_blank" rel="noopener noreferrer"> Quelle </a>,
+                  <a href="https://creativecommons.org/licenses/by-sa/2.0/deed.de" target="_blank" rel="license noopener noreferrer"> CC BY-SA 2.0 </a>
+                  </figcaption>
+                </figure>
+              </div>
+            
     
               <p>
               Das erste öffentliche Bulletin Board System, CBBS (Computerized Bulletin Board System), wurde am
@@ -86,6 +100,12 @@ const DETAILS = {
 
               <p class="small"> i. Alle Texte dieser Website wurden mithilfe von KI generiert und können daher fehlerhaft sein. </p>
 
+              <img src="bilder/bbs1.jpg" style="width: 100%; ">
+              <figcaption>
+              Photo I took of my Wyse WY-60 dumb terminal accessing the Dynix Dial-Pac for the Goshen Public Library in Goshen, Indiana, via Telnet, 2013 <br>
+              </a> — <a href="https://en.wikipedia.org/wiki/File:Dynix_ILS_on_Wyse_WY-60_dumb_terminal_-_closeup.jpg" target="_blank" rel="noopener noreferrer"> Quelle </a>,
+              <a href="https://creativecommons.org/licenses/by-sa/3.0/deed.de" target="_blank" rel="license noopener noreferrer"> CC BY-SA 3.0 </a>
+              </figcaption>
 
               <img src="bilder/bbs5.jpg" style="width: 100%; ">
               <figcaption>
@@ -93,21 +113,6 @@ const DETAILS = {
               Foto von <a href="https://www.flickr.com/photos/blakespot/" target="_blank" rel="noopener noreferrer"> Blake Patterson    
               </a> — <a href="https://www.flickr.com/photos/blakespot/51041086363/in/photostream/" target="_blank" rel="noopener noreferrer"> Quelle </a>,
               <a href="https://creativecommons.org/licenses/by/2.0/deed.de" target="_blank" rel="license noopener noreferrer"> CC BY 2.0 </a>
-              </figcaption>
-
-              <img src="bilder/bbs4.png" style="width: 100%; ">
-              <figcaption>
-              Screenshot of the welcome banner of FreePort Software version 2.3 for the Case Western Reserve University bulletin board system, 1994 <br>             
-              </a> — <a href="https://commons.wikimedia.org/w/index.php?curid=98903318" target="_blank" rel="noopener noreferrer"> Quelle </a>,
-              <a href="https://creativecommons.org/licenses/by-sa/2.0/deed.de" target="_blank" rel="license noopener noreferrer"> CC BY-SA 2.0 </a>
-              </figcaption>
- 
-              <img src="bilder/bbs6.jpg" style="width: 100%; ">
-              <figcaption>
-              Digital: A Love Story, 2012 <br>         
-              Foto von <a href="https://www.flickr.com/photos/miyaoka/" target="_blank" rel="noopener noreferrer"> Miayoka Hitchcock    
-              </a> — <a href="https://www.flickr.com/photos/miyaoka/7155118390/in/photostream/" target="_blank" rel="noopener noreferrer"> Quelle </a>,
-              <a href="https://creativecommons.org/licenses/by-nc/2.0/deed.de" target="_blank" rel="license noopener noreferrer"> CC BY-NC 2.0 </a>
               </figcaption>
 
 
@@ -130,7 +135,7 @@ const DETAILS = {
                 <p>Ads:</p><p>ja</p>
               </div>
 
-              <p class="top">
+              <p>
               GeoCities war eine der ersten großen Plattformen, die es Internetnutzerinnen ab Mitte der 1990er-Jahre
               ermöglichte, eigene Webseiten ohne Programmierkenntnisse zu erstellen und zu veröffentlichen. Der Dienst wurde 1994
               von David Bohnett und John Rezner unter dem Namen „Beverly Hills Internet“ gegründet und 1995 in GeoCities umbenannt.
@@ -181,13 +186,23 @@ const DETAILS = {
               <a href="https://www.webdesignmuseum.org/web-design-history/geocities-1994" target="_blank" rel="noopener noreferrer">→Webdesign Museum</a>
               </p>
 
-              <img src="bilder/geocities1.jpg" style="width: 100%; ">
-              <figcaption>
-              xkcd commemorates the end of Geocities, 2009 <br>
-              </a> — <a href="https://www.flickr.com/photos/secretlondon/4046983331" target="_blank" rel="noopener noreferrer"> Quelle </a>,
-              <a href="https://creativecommons.org/licenses/by-sa/2.0/deed.de" target="_blank" rel="license noopener noreferrer"> CC BY-SA 2.0 </a>
-              </figcaption>
-
+              <div class="figures-wrapper">
+                <figure>
+                  <img src="bilder/geocities1.jpg" style="width: 100%; ">
+                  <figcaption>
+                  xkcd commemorates the end of Geocities, 2009 <br>
+                  </a> — <a href="https://www.flickr.com/photos/secretlondon/4046983331" target="_blank" rel="noopener noreferrer"> Quelle </a>,
+                  <a href="https://creativecommons.org/licenses/by-sa/2.0/deed.de" target="_blank" rel="license noopener noreferrer"> CC BY-SA 2.0 </a>
+                  </figcaption>
+                </figure>
+                <figure>
+                  <img src="bilder/geocities4.png" style="width: 100%; ">
+                  <figcaption>
+                  Screenshot NeoCities, Dezember 2025 <br>
+                  </a> — <a href="https://goooby.neocities.org/" target="_blank" rel="noopener noreferrer"> Quelle</a>
+                  </figcaption>
+                </figure>
+              </div>
 
               <p> NeoCities ist eine moderne Webhosting-Plattform, die seit 2013 kostenloses Hosting für statische Webseiten 
               bietet und bewusst als spiritueller Nachfolger von GeoCities positioniert ist. Der Dienst wurde von Kyle Drake am 23. Mai 2013 entwickelt 
@@ -203,13 +218,6 @@ const DETAILS = {
               bewusste Wiederbelebung der GeoCities-Ära im Kontext moderner Webentwicklung. 
               <a href="https://neocities.org/about" target="_blank" rel="noopener noreferrer">→NeoCities About</a> 
               <a href="https://www.reddit.com/r/webdev/comments/msx4hy/about_neocities/" target="_blank" rel="noopener noreferrer">→Reddit Webdev</a> </p>
-
-              <img src="bilder/geocities4.png" style="width: 100%; ">
-              <figcaption>
-              Screenshot NeoCities, Dezember 2025 <br>
-              </a> — <a href="https://goooby.neocities.org/" target="_blank" rel="noopener noreferrer"> Quelle</a>
-              </figcaption>
-                
 
                 
               <p> Kulturell steht NeoCities für die Wiederentdeckung von Web 1.0-Werten: Individuelle Gestaltungsfreiheit, 
@@ -231,13 +239,6 @@ const DETAILS = {
               <figcaption>
               Screenshot NeoCities, Dezember 2025 <br>           
               </a> — <a href="https://fish2fish.neocities.org/mainpage/main" target="_blank" rel="noopener noreferrer"> Quelle</a>
-              </figcaption>
-
-
-              <img src="bilder/geocities2.png" style="width: 100%; ">
-              <figcaption>
-              Screenshot NeoCities, Dezember 2025 <br>           
-              </a> — <a href="https://rtpa.neocities.org/" target="_blank" rel="noopener noreferrer"> Quelle</a>
               </figcaption>
 
 
@@ -263,7 +264,7 @@ const DETAILS = {
               </div>
 
 
-              <p class="top">
+              <p>
               Classmates.com war eine der ersten sozialen Plattformen, die gezielt darauf ausgerichtet war, Menschen aus Schule,
               Studium und Arbeitsleben wieder miteinander in Kontakt zu bringen. Der Dienst wurde 1995 von Randy Conrads in
               Seattle, Washington, gegründet – also noch vor Facebook, MySpace oder Friendster. Das Konzept war einfach:
@@ -356,7 +357,7 @@ const DETAILS = {
                 <p>Ads:</p><p>ja</p>
               </div>
 
-              <p class="top">
+              <p>
               LiveJournal wurde 1999 von Brad Fitzpatrick gestartet (als frühes Blog- und Tagebuchsystem) und verschmolz individuell geführte
               Journale mit sozialen Funktionen: Friends‑Listen, Community‑Gruppen, Kommentar‑Threads und differenzierte Privatsphäre‑Einstellungen.
               Die Plattform förderte ernsthafte persönliche Schreibung ebenso wie Fandom‑Kultur und politische Debatte.
@@ -377,14 +378,29 @@ const DETAILS = {
 
               <p class="small"> i. Alle Texte dieser Website wurden mithilfe von KI generiert und können daher fehlerhaft sein. </p>
 
-              <img src="bilder/livejournal2.jpg" style="width: 100%; ">
-              <figcaption>
-              Today, on LiveJournal <br>
-              This is what I got when I loaded my friends' page earlier, 2005 <br>
-              Foto von <a href="https://www.flickr.com/photos/gwen/" target="_blank" rel="noopener noreferrer"> Gwen
-              </a> — <a href="https://www.flickr.com/photos/gwen/43647459/in/photolist-4RGSp-EseWM-M8QN1T-fek9r-586vX-bvrFY6-bvrFJt-5qipa4-bvrG2v-bvrFTX-4Qteq-H6beK-hnqdS-5p9cTR-3uYdy-4Qg41N-5qnHjm-72hM-5pdJuq-qzdVNP-5wFp2-4EjE2U-qgF4SD-56bXX-56bWK-3CySM-2qvcf-4FxLHv-5PKMVd-56deh-2qvbY-qzoHKK-2WYi-7Br84-pBmy2K-3G9La-2VQ6-Rr8tu-xr4ha-2VPN-2qQuZ-5sYVPT-3G9Sy-XB17-af34N-3G9By-3G9Qz-5vKDhL-ixTZt-3G9Jv" target="_blank" rel="noopener noreferrer"> Quelle </a>,
-              <a href="https://creativecommons.org/licenses/by/2.0/deed.de" target="_blank" rel="license noopener noreferrer"> CC BY 2.0 </a>
-              </figcaption>
+              <div class="figures-wrapper">
+                <figure>
+                  <img src="bilder/livejournal2.jpg" style="width: 100%; ">
+                  <figcaption>
+                  Today, on LiveJournal <br>
+                  This is what I got when I loaded my friends' page earlier, 2005 <br>
+                  Foto von <a href="https://www.flickr.com/photos/gwen/" target="_blank" rel="noopener noreferrer"> Gwen
+                  </a> — <a href="https://www.flickr.com/photos/gwen/43647459/in/photolist-4RGSp-EseWM-M8QN1T-fek9r-586vX-bvrFY6-bvrFJt-5qipa4-bvrG2v-bvrFTX-4Qteq-H6beK-hnqdS-5p9cTR-3uYdy-4Qg41N-5qnHjm-72hM-5pdJuq-qzdVNP-5wFp2-4EjE2U-qgF4SD-56bXX-56bWK-3CySM-2qvcf-4FxLHv-5PKMVd-56deh-2qvbY-qzoHKK-2WYi-7Br84-pBmy2K-3G9La-2VQ6-Rr8tu-xr4ha-2VPN-2qQuZ-5sYVPT-3G9Sy-XB17-af34N-3G9By-3G9Qz-5vKDhL-ixTZt-3G9Jv" target="_blank" rel="noopener noreferrer"> Quelle </a>,
+                  <a href="https://creativecommons.org/licenses/by/2.0/deed.de" target="_blank" rel="license noopener noreferrer"> CC BY 2.0 </a>
+                  </figcaption>
+                </figure>
+                <figure>
+                  <img src="bilder/livejournal1.jpg" style="width: 100%; ">
+                  <figcaption>
+                  Sasha is Administrative Operations Manager at LJ. Based on my experience, she's LJ's problem solver. <br>
+                  Foto von <a href="https://www.flickr.com/photos/laureninspace/" target="_blank" rel="noopener noreferrer"> Lauren orsini
+                  </a> — <a href="https://www.flickr.com/photos/laureninspace/6896758073/in/photolist-bvrG2v-bvrFTX-4Qteq-H6beK-hnqdS-5p9cTR-3uYdy-4Qg41N-5qnHjm-72hM-5pdJuq-qzdVNP-5wFp2-4EjE2U-qgF4SD-56bXX-56bWK-3CySM-2qvcf-4FxLHv-5PKMVd-56deh-2qvbY-qzoHKK-2WYi-7Br84-pBmy2K-3G9La-2VQ6-Rr8tu-xr4ha-2VPN-2qQuZ-5sYVPT-3G9Sy-XB17-af34N-3G9By-3G9Qz-5vKDhL-ixTZt-3G9Jv-byFHH-aFbSWL-mQDGV-EsepZ-xpsFt-2qUnq-3G9UB-af34c/" target="_blank" rel="noopener noreferrer"> Quelle </a>,
+                  <a href="https://creativecommons.org/licenses/by-nc/2.0/deed.de" target="_blank" rel="license noopener noreferrer"> CC BY-NC 2.0 </a>
+                  </figcaption>
+                </figure>
+              </div>
+
+
 
               <img src="bilder/livejournal3.jpg" style="width: 100%; ">
               <figcaption>
@@ -421,27 +437,32 @@ const DETAILS = {
 
               <p class="small"> i. Alle Texte dieser Website wurden mithilfe von KI generiert und können daher fehlerhaft sein. </p>
 
-              <img src="bilder/qq2.jpg" style="width: 100%; ">
-              <figcaption>
-              QQ, 2006 <br>
-              Foto von <a href="https://www.flickr.com/photos/cnxjj/" target="_blank" rel="noopener noreferrer"> Bob Xu      
-              <a href="https://creativecommons.org/licenses/by-sa/2.0/deed.de" target="_blank" rel="license noopener noreferrer"> CC BY-SA 2.0 </a>
-              </figcaption>
-
-              <img src="bilder/qq1.jpg" style="width: 100%; ">
-              <figcaption>
-              QQ, 2009 <br>
-              Foto von <a href="https://www.flickr.com/photos/xgfw/" target="_blank" rel="noopener noreferrer"> Mick Chan        
-              </a> — <a href="https://www.flickr.com/photos/xgfw/3793899119/in/photostream/#" target="_blank" rel="noopener noreferrer"> Quelle </a>,
-              <a href="https://creativecommons.org/licenses/by-sa/2.0/deed.de" target="_blank" rel="license noopener noreferrer"> CC BY-SA 2.0 </a>
-              </figcaption>
-
-
+              
               <img src="bilder/qq4.png" style="width: 100%; ">
               <figcaption>
               Screenshot der QQ Website, Dezember 2025.    
               </a> — <a href="https://www.qq.com/" target="_blank" rel="noopener noreferrer"> Quelle </a>
               </figcaption>
+
+              <div class="figures-wrapper">
+                <figure>
+                  <img src="bilder/qq2.jpg" style="width: 100%; ">
+                  <figcaption>
+                  QQ, 2006 <br>
+                  Foto von <a href="https://www.flickr.com/photos/cnxjj/" target="_blank" rel="noopener noreferrer"> Bob Xu      
+                  <a href="https://creativecommons.org/licenses/by-sa/2.0/deed.de" target="_blank" rel="license noopener noreferrer"> CC BY-SA 2.0 </a>
+                  </figcaption>
+                </figure>
+                <figure>
+                  <img src="bilder/qq1.jpg" style="width: 100%; ">
+                  <figcaption>
+                  QQ, 2009 <br>
+                  Foto von <a href="https://www.flickr.com/photos/xgfw/" target="_blank" rel="noopener noreferrer"> Mick Chan        
+                  </a> — <a href="https://www.flickr.com/photos/xgfw/3793899119/in/photostream/#" target="_blank" rel="noopener noreferrer"> Quelle </a>,
+                  <a href="https://creativecommons.org/licenses/by-sa/2.0/deed.de" target="_blank" rel="license noopener noreferrer"> CC BY-SA 2.0 </a>
+                  </figcaption>
+                </figure>
+              </div>
 
               <img src="bilder/qq5.png" style="width: 100%; ">
               <figcaption>
@@ -477,7 +498,7 @@ const DETAILS = {
               „One app, so many places to discover. Get guidance from millions of travelers and earn rewards for more trips by doing what you love: planning, booking, and sharing. The best part? It’s free to join. Score last-minute tour tickets in a few quick taps. Book a hotel your entire family will love at a great rate. Create an itinerary in seconds with top recs from travelers like you. All while earning Trip Cash to fuel even more vacays. You bring the fun, the Tripadvisor app brings the rewards. “ 
               </p></div>
 
-              <p class="top">
+              <p>
               TripAdvisor wurde 2000 von Stephen Kaufer und Team gegründet und verwandelte Reiseentscheidungen durch User‑Generated Reviews. Anstelle
               klassischer Redaktionsbewertungen aggregierte TripAdvisor Millionen persönlicher Bewertungen, Fotos und Erfahrungsberichte zu Hotels,
               Restaurants und Attraktionen.
@@ -499,14 +520,6 @@ const DETAILS = {
 
               <p class="small"> i. Alle Texte dieser Website wurden mithilfe von KI generiert und können daher fehlerhaft sein. </p>
 
-              <img src="bilder/tripadvisor1.jpg" style="width: 100%; ">
-              <figcaption>
-              TripAdvisor, 2008 <br>
-              Foto von <a href="https://www.flickr.com/photos/stevegarfield/" target="_blank" rel="noopener noreferrer"> Steve Garfield
-              </a> — <a href="https://www.flickr.com/photos/stevegarfield/2451953870/in/photostream/" target="_blank" rel="noopener noreferrer"> Quelle </a>,
-              <a href="https://creativecommons.org/licenses/by/2.0/deed.de" target="_blank" rel="license noopener noreferrer"> CC BY 2.0 </a>
-              </figcaption>
-
               </div>`
       },
 
@@ -527,7 +540,7 @@ const DETAILS = {
                 <p>Ads:</p><p>ja</p>
               </div>
 
-              <p class="top"> 
+              <p> 
               Habbo ist eine virtuelle Online-Community, in der Nutzerinnen seit 2000 als personalisierbare 
               Avatare in einer pixeligen 3D-Welt interagieren, Räume bauen und soziale Events gestalten. Die Plattform wurde ursprünglich 
               als „Habbo Hotel“ von der finnischen Sulake Corporation entwickelt und ging am 30. August 2000 in Helsinki online, zunächst 
@@ -581,20 +594,25 @@ const DETAILS = {
               </p>
 
               <p class="small"> i. Alle Texte dieser Website wurden mithilfe von KI generiert und können daher fehlerhaft sein. </p>
-                            
-              <img src="bilder/habbo1.jpg" style="width: 100%; ">
-              <figcaption>
-              Virtual networking at Habbo Hotel, 2006 <br>         
-              Foto von <a href="https://www.flickr.com/photos/technokitten/" target="_blank" rel="noopener noreferrer"> Helen Keegan   
-              </a> — <a href="https://www.flickr.com/photos/technokitten/284779003/in/photostream/" target="_blank" rel="noopener noreferrer"> Quelle </a>,
-              <a href="https://creativecommons.org/licenses/by-nc-sa/2.0/deed.de" target="_blank" rel="license noopener noreferrer"> CC BY-NC-SA 2.0 </a>
-              </figcaption>
-
-              <img src="bilder/habbo2.png" style="width: 100%; ">
-              <figcaption>
-              Screenshot der Habbo Website, Dezember 2025 <br>          
-              </a> — <a href="https://www.habbo.de/" target="_blank" rel="noopener noreferrer"> Quelle </a>
-              </figcaption>
+                  
+              <div class="figures-wrapper">
+                <figure>
+                  <img src="bilder/habbo1.jpg" style="width: 100%; ">
+                  <figcaption>
+                  Virtual networking at Habbo Hotel, 2006 <br>         
+                  Foto von <a href="https://www.flickr.com/photos/technokitten/" target="_blank" rel="noopener noreferrer"> Helen Keegan   
+                  </a> — <a href="https://www.flickr.com/photos/technokitten/284779003/in/photostream/" target="_blank" rel="noopener noreferrer"> Quelle </a>,
+                  <a href="https://creativecommons.org/licenses/by-nc-sa/2.0/deed.de" target="_blank" rel="license noopener noreferrer"> CC BY-NC-SA 2.0 </a>
+                  </figcaption>
+                </figure>
+                <figure>
+                  <img src="bilder/habbo2.png" style="width: 100%; ">
+                  <figcaption>
+                  Screenshot der Habbo Website, Dezember 2025 <br>          
+                  </a> — <a href="https://www.habbo.de/" target="_blank" rel="noopener noreferrer"> Quelle </a>
+                  </figcaption>
+                </figure>
+              </div>
 
               </div>`
       },
@@ -615,12 +633,34 @@ const DETAILS = {
                 <p>Ads:</p><p>ja</p>
               </div>
 
-              <img class="top" src="bilder/friendster1.jpg" style="width: 100%; ">
-              <figcaption>
-              <!-- Bildunterschrift ergänzen -->
-              </figcaption>
+              <div class="figures-wrapper">
+                <figure>
+                  <img src="bilder/friendster1.jpg" style="width: 100%; ">
+                  <figcaption>
+                  Friendster 2008, untangling the Social Web: Social Network Services Demystified <br>         
+                  Foto von <a href="https://www.flickr.com/photos/500hats/" target="_blank" rel="noopener noreferrer"> Dave McClure 
+                  </a> — <a href="https://www.flickr.com/photos/500hats/1476380120/in/photostream/" target="_blank" rel="noopener noreferrer"> Quelle </a>,
+                  <a href="https://creativecommons.org/licenses/by/2.0/deed.de" target="_blank" rel="license noopener noreferrer"> CC BY 2.0 </a>
+                  </figcaption>
+                </figure>
+                <figure>
+                  <img src="bilder/friendster4.jpg" style="width: 100%; ">
+                  <figcaption>
+                  Friendster <br>
+                  Foto von <a href="https://www.flickr.com/photos/ari/" target="_blank" rel="noopener noreferrer">
+                  Steve Rhodes
+                  </a> —
+                  <a href="https://www.flickr.com/photos/ari/2442662171/in/photostream/" target="_blank" rel="noopener noreferrer">
+                  Quelle
+                  </a>,
+                  <a href="https://creativecommons.org/licenses/by-nc-sa/2.0/deed.de" target="_blank" rel="license noopener noreferrer">
+                  CC BY-NC-SA 2.0
+                  </a>
+                  </figcaption>
+                </figure>
+              </div>
 
-              <p class="top">
+              <p>
               Friendster war eines der ersten großen sozialen Netzwerke und gilt als Wegbereiter für spätere Plattformen
               wie MySpace und Facebook. Die Plattform wurde 2002 von Jonathan Abrams in Mountain View, Kalifornien, gegründet
               und ging im März 2003 offiziell online. Das Konzept basierte auf der Idee der „Circle of Friends" – Nutzerinnen
@@ -637,11 +677,6 @@ const DETAILS = {
               Nutzerzahl nicht gewachsen, was zu langen Ladezeiten und häufigen Ausfällen führte.
               <a href="https://mashable.com/archive/friendster-social-network" target="_blank" rel="noopener noreferrer">→Mashable</a>
               </p>
-
-              <img src="bilder/friendster4.jpg" style="width: 100%; ">
-              <figcaption>
-              <!-- Bildunterschrift ergänzen -->
-              </figcaption>
 
               <p>
               In der Anfangsphase wuchs Friendster explosionsartig: Bereits wenige Monate nach dem Start zählte die Plattform
@@ -661,18 +696,7 @@ const DETAILS = {
               <a href="https://www.theguardian.com/technology/2018/jun/25/social-media-friendster-death-myspace-facebook" target="_blank" rel="noopener noreferrer">→The Guardian</a>
               </p>
 
-              <img src="bilder/friendster3.jpg" style="width: 100%; ">
-              <figcaption>
-              Foto von <a href="https://www.flickr.com/photos/ari/" target="_blank" rel="noopener noreferrer">
-              Steve Rhodes
-              </a> —
-              <a href="https://www.flickr.com/photos/ari/2442662171/in/photostream/" target="_blank" rel="noopener noreferrer">
-              Quelle
-              </a>,
-              <a href="https://creativecommons.org/licenses/by-nc-sa/2.0/deed.de" target="_blank" rel="license noopener noreferrer">
-              CC BY-NC-SA 2.0
-              </a>
-              </figcaption>
+
 
               <p>
               Der Niedergang von Friendster begann Mitte der 2000er-Jahre. Technische Probleme, eine restriktive Moderationspolitik
@@ -693,6 +717,19 @@ const DETAILS = {
               </p>
 
               <p class="small"> i. Alle Texte dieser Website wurden mithilfe von KI generiert und können daher fehlerhaft sein. </p>
+
+              <img src="bilder/friendster3.jpg" style="width: 100%; ">
+              <figcaption>
+              Foto von <a href="https://www.flickr.com/photos/ari/" target="_blank" rel="noopener noreferrer">
+              Steve Rhodes
+              </a> —
+              <a href="https://www.flickr.com/photos/ari/2442662171/in/photostream/" target="_blank" rel="noopener noreferrer">
+              Quelle
+              </a>,
+              <a href="https://creativecommons.org/licenses/by-nc-sa/2.0/deed.de" target="_blank" rel="license noopener noreferrer">
+              CC BY-NC-SA 2.0
+              </a>
+              </figcaption>
 
               <img src="bilder/friendster5.png" style="width: 100%; ">
               <figcaption>
@@ -726,18 +763,20 @@ const DETAILS = {
                 <p>Ads:</p><p>ja</p>
               </div>
 
-              <img class="top" src="bilder/fotolog1.jpg" style="width: 100%; ">
+              <img src="bilder/fotolog1.jpg" style="width: 100%; ">
               <figcaption>
-              <!-- Bildunterschrift ergänzen -->
+              Dale ! <br>         
+              Foto von <a href="https://www.flickr.com/photos/yosoyemii/" target="_blank" rel="noopener noreferrer"> E m i l i a n o ! 
+              </a> — <a href="https://www.flickr.com/photos/yosoyemii/3103987152/in/photolist-5JhKeS-4U4KQZ-e42q-dydwy-4KDYUW-wQ967-aeHrNS-pVYNZU-enii-5Fhoat-GccrX-vuACw-4KiZzu-i9Dz-wQ9jf-wQ95Q-wQ94i-wQ9a5-9MAj-wQ9kr-9C73-afzC-rE4JB-wQ93r-2a7pmT-h252u-wQ9vM-ERZa9n-inMV-nj4R-5EAzs5-wQ97h-iLNc-wQ96A-noYRnh-fKC5HM-wQ92z-afo8-atKT-h252w-aAsJB-nitLr7-cyQF5-wQ9dN-6d694z-fMX9L7-YgKy9F-33CMdB-AdV7gb-4wcd87/" target="_blank" rel="noopener noreferrer"> Quelle </a>,
+              <a href="https://creativecommons.org/licenses/by-nc-nd/2.0/deed.de" target="_blank" rel="license noopener noreferrer"> CC BY-NC-ND 2.0 </a>
               </figcaption>
 
-              <p class="top">
+              <p>
               Fotolog war eine der ersten Plattformen für das Teilen von Fotos im Internet und gilt als wichtiger Vorläufer
               von Instagram und Flickr. Die Plattform wurde im Mai 2002 von Scott Heiferman und Adam Seifer in New York City
               gegründet – ursprünglich als einfaches Werkzeug, um täglich ein Foto mit einer kurzen Beschreibung zu posten.
               Das minimalistische Konzept „Ein Foto pro Tag" unterschied Fotolog von aufwändigeren Fotogalerien und machte
               das Teilen von Bildern niedrigschwellig und alltäglich.
-              <a href="https://www.nytimes.com/2004/11/11/technology/circuits/photoblogs-give-a-personal-view-of-life-sometimes.html" target="_blank" rel="noopener noreferrer">→New York Times</a>
               </p>
 
               <p class="indent">
@@ -745,13 +784,9 @@ const DETAILS = {
               hinzufügen und Kommentare von anderen empfangen. Die kostenlose Version erlaubte nur ein Foto pro Tag und
               begrenzte Speicherkapazität – für mehr Funktionen gab es „Gold Camera"-Accounts. Diese Beschränkung erwies
               sich als Stärke: Sie förderte bewusstes Fotografieren und tägliche Routinen, die später Instagram prägen sollten.
-              <a href="https://mashable.com/archive/fotolog-photo-sharing" target="_blank" rel="noopener noreferrer">→Mashable</a>
-              </p>
+              <a href="https://mashable.com/archive/fotolog-photo-sharing" target="_blank" rel="noopener noreferrer">→Mashable</a>               <a href="https://www.nytimes.com/2004/11/11/technology/circuits/photoblogs-give-a-personal-view-of-life-sometimes.html" target="_blank" rel="noopener noreferrer">→New York Times</a>
 
-              <img src="bilder/fotolog2.jpg" style="width: 100%; ">
-              <figcaption>
-              <!-- Bildunterschrift ergänzen -->
-              </figcaption>
+              </p>
 
               <p>
               Fotolog erlebte seinen größten Erfolg in Lateinamerika, besonders in Argentinien, Brasilien und Chile, wo die
@@ -770,11 +805,6 @@ const DETAILS = {
               Konflikten mit anderen Jugendgruppen.
               <a href="https://www.bbc.com/mundo/cultura_sociedad/2008/12/081205_floggers_cumbieros_jg" target="_blank" rel="noopener noreferrer">→BBC Mundo</a>
               </p>
-
-              <img src="bilder/fotolog3.jpg" style="width: 100%; ">
-              <figcaption>
-              <!-- Bildunterschrift ergänzen -->
-              </figcaption>
 
               <p>
               2007 wurde Fotolog von der französischen Firma Hi-Media für 90 Millionen US-Dollar übernommen. Trotz der hohen
@@ -816,13 +846,7 @@ const DETAILS = {
                 <p>Ads:</p><p>ja</p>
               </div>
 
-
-              <img class="top" src="bilder/last.fm.png" style="width: 100%; ">
-              <figcaption>
-              <!-- Bildunterschrift ergänzen -->
-              </figcaption>
-
-              <p class="top">
+              <p>
               Last.fm ist ein Musik-Streaming-Dienst und soziales Netzwerk, das 2002 in London von Felix Miller, Martin
               Stiksel, Michael Breidenbrücker und Thomas Willomitzer gegründet wurde. Die Plattform revolutionierte die
               Art, wie Menschen Musik entdecken, indem sie das Hörverhalten der Nutzerinnen analysierte und darauf
@@ -839,16 +863,6 @@ const DETAILS = {
               Radiostationen und Empfehlungen – ein Konzept, das später von Spotify und Apple Music übernommen wurde.
               <a href="https://www.wired.com/2006/04/lastfm/" target="_blank" rel="noopener noreferrer">→Wired</a>
               </p>
-
-              <img src="bilder/last.fm1.png" style="width: 100%; ">
-              <figcaption>
-              Screenshot der aktuellen Last.fm Website, Januar 2026.
-              <br>
-              </a> —
-              <a href="https://www.last.fm/de/" target="_blank" rel="noopener noreferrer">
-              Quelle
-              </a>
-              </figcaption>
 
               <p>
               Last.fm wuchs schnell zu einer der wichtigsten Musikplattformen des Web 2.0. 2007 wurde das Unternehmen
@@ -867,16 +881,6 @@ const DETAILS = {
               stolz in ihren Profilen präsentierten.
               <a href="https://www.last.fm/about" target="_blank" rel="noopener noreferrer">→Last.fm About</a>
               </p>
-
-              <img src="bilder/last.fm2.png" style="width: 100%; ">
-              <figcaption>
-              Screenshot der aktuellen Last.fm Website, Januar 2026.
-              <br>
-              </a> —
-              <a href="https://www.last.fm/de/" target="_blank" rel="noopener noreferrer">
-              Quelle
-              </a>
-              </figcaption>
 
               <p>
               Ab 2009 begann der Wandel der Plattform: Der kostenlose Streaming-Dienst wurde in vielen Ländern eingestellt
@@ -898,6 +902,30 @@ const DETAILS = {
 
               <p class="small"> i. Alle Texte dieser Website wurden mithilfe von KI generiert und können daher fehlerhaft sein. </p>
 
+              <div class="figures-wrapper">
+                <figure>
+                  <img src="bilder/last.fm2.png" style="width: 100%; ">
+                  <figcaption>
+                  Screenshot der aktuellen Last.fm Website, Januar 2026.
+                  <br>
+                  </a> —
+                  <a href="https://www.last.fm/de/" target="_blank" rel="noopener noreferrer">
+                  Quelle
+                  </a>
+                  </figcaption>
+                </figure>
+                <figure>
+                  <img src="bilder/last.fm1.png" style="width: 100%; ">
+                  <figcaption>
+                  Screenshot der aktuellen Last.fm Website, Januar 2026.
+                  <br>
+                  </a> —
+                  <a href="https://www.last.fm/de/" target="_blank" rel="noopener noreferrer">
+                  Quelle
+                  </a>
+                  </figcaption>
+                </figure>
+              </div>
 
               </div>`
       },
@@ -917,11 +945,6 @@ const DETAILS = {
                 <p>Firmensitz:</p><p>Sunnyvale, USA</p>
                 <p>Ads:</p><p>ja</p>
               </div>
-
-              <img src="bilder/linkedin1.jpg" style="width: 100%; ">
-              <figcaption>
-              <!-- Bildunterschrift ergänzen -->
-              </figcaption>
 
               <div class="info-box"><p>
               LinkedIn im App Store: <br> <br>
@@ -948,7 +971,9 @@ const DETAILS = {
 
               <img src="bilder/linkedin2.jpg" style="width: 100%; ">
               <figcaption>
-              <!-- Bildunterschrift ergänzen -->
+              LinkedIn Headquarters Mountain View <br>         
+              </a> — <a href="https://commons.wikimedia.org/wiki/File:LinkedIn_Headquarters_Mountain_View.jpg" target="_blank" rel="noopener noreferrer"> Quelle </a>,
+              <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.de" target="_blank" rel="license noopener noreferrer"> CC0 1.0 </a>
               </figcaption>
 
               <p>
@@ -968,11 +993,6 @@ const DETAILS = {
               die Talentsuche, was die Plattform zum unverzichtbaren Bestandteil des modernen Arbeitsmarkts machte.
               <a href="https://www.forbes.com/sites/forbestechcouncil/2021/05/05/how-linkedin-changed-the-job-market/" target="_blank" rel="noopener noreferrer">→Forbes</a>
               </p>
-
-              <img src="bilder/linkedin3.jpg" style="width: 100%; ">
-              <figcaption>
-              <!-- Bildunterschrift ergänzen -->
-              </figcaption>
 
               <p>
               Kulturell hat LinkedIn das Verständnis von beruflicher Identität fundamental verändert. Das digitale
@@ -1027,7 +1047,7 @@ const DETAILS = {
                 <p>Ads:</p><p>ja</p>
               </div>
 
-              <img class="top"src="bilder/myspace3.jpg" style="width: 100%; ">
+              <img src="bilder/myspace3.jpg" style="width: 100%;">
               <figcaption>
               Myspace is for losers. Seen in East London on the weekend of the London Lindy Exchange LLX, 2007 <br>
               Foto von <a href="https://www.flickr.com/people/48001773@N00" target="_blank" rel="noopener noreferrer">
@@ -1102,6 +1122,33 @@ const DETAILS = {
 
               <p class="small"> i. Alle Texte dieser Website wurden mithilfe von KI generiert und können daher fehlerhaft sein. </p>
 
+              <img src="bilder/myspace4.jpg" style="width: 100%;">
+              <figcaption>
+              You looked better on MySpace, 2006 <br>
+              Foto von <a href="https://www.flickr.com/photos/blmurch/" target="_blank" rel="noopener noreferrer">
+              Beatrice Murch
+              </a> —
+              <a href="https://www.flickr.com/photos/82439748@N00/181178654" target="_blank" rel="noopener noreferrer">
+              Quelle
+              </a>,
+              <a href="https://creativecommons.org/licenses/by/2.0/deed.de" target="_blank" rel="license noopener noreferrer">
+              CC BY 2.0
+              </a>
+              </figcaption>
+
+              <img src="bilder/myspace8.png" style="width: 100%;">
+              <figcaption>
+              MySpace in German For Me <br> myspace.com/stephtara, 2007 <br>
+              Foto von <a href="https://www.flickr.com/photos/bunny/" target="_blank" rel="noopener noreferrer">
+              Stephanie Booth
+              </a> —
+              <a href="https://www.flickr.com/photos/bunny/409678094/in/photolist-CcH2q-7ZHJtg-5TDemH-5THwyY-4eC9Qk-5HusM7-6ahEeF-5NuLws-LqjCY-5MuCY-4tpYfN-5r51xj-cTKc2u-2rhFpvc-cggM9C-5THz79-c5b8cE-5TD9mv-nRjef-4tkUVx-dh1FR-4mtzKR-4tpXaw-jRmA7-5NquYr-6amD4G-5TD9iV-uG7uD-cTKbY5-w1hEyx-5NuLH1-ytC5y-4y1ywF-25v77U-jWjGZ-5sB8aK-i7oTc-7KzBUL-4Tm5F3-EJcTx-5mTXSW-5TD9r6-rMZX1-7cFe3x-4jRZQz-7TGdyC-29865W-tCm1s-49JB71-4seBZo" target="_blank" rel="noopener noreferrer">
+              Quelle
+              </a>,
+              <a href="https://creativecommons.org/licenses/by-nc-sa/2.0/deed.de" target="_blank" rel="license noopener noreferrer">
+              CC BY-NC-SA 2.0
+              </a>
+              </figcaption>
 
               <img src="bilder/myspace2.png" style="width: 100%;">
               <figcaption>
@@ -1117,36 +1164,6 @@ const DETAILS = {
               </a>
               </figcaption>
 
-              <img src="bilder/myspace4.jpg" style="width: 100%;">
-              <figcaption>
-              You looked better on MySpace, 2006 <br>
-              Foto von <a href="https://www.flickr.com/photos/blmurch/" target="_blank" rel="noopener noreferrer">
-              Beatrice Murch
-              </a> —
-              <a href="https://www.flickr.com/photos/82439748@N00/181178654" target="_blank" rel="noopener noreferrer">
-              Quelle
-              </a>,
-              <a href="https://creativecommons.org/licenses/by/2.0/deed.de" target="_blank" rel="license noopener noreferrer">
-              CC BY 2.0
-              </a>
-              </figcaption>
-
-              <img src="bilder/myspace5.png" style="width: 100%;">
-              <figcaption>
-              Screenshot der Myspace Website, Januar 2025 <br>
-              <a href="https://myspace.com" target="_blank" rel="noopener noreferrer">
-              Quelle
-              </a>
-              </figcaption>
-
-              <img src="bilder/myspace6.png" style="width: 100%;">
-              <figcaption>
-              Screenshot der Myspace Website, Januar 2025 <br>
-              <a href="https://myspace.com" target="_blank" rel="noopener noreferrer">
-              Quelle
-              </a>
-              </figcaption>
-
               <img src="bilder/myspace7.jpg" style="width: 100%;">
               <figcaption>
               Myspace HAX! <br> Don't leave yourself logged into Myspace on my computer. I will do something (like this) without a doubt, 2008 <br>
@@ -1154,20 +1171,6 @@ const DETAILS = {
               Brandon Chalk
               </a> —
               <a href="https://www.flickr.com/photos/brandonchalk/3106176638/in/photolist-5JtY6C-b6VRY-y2b1D-fMQNd-gj37s-hHR9bo-5cDj27-E4foK-c4NZT-48cVVU-xBJJg-4Bmw46-ccQqX-kRzJx-kCzTM-gM2sX-M9zyt-9ChPq-BfhJF-2Sd9Do-aTvBe-565nhV-sUSn7-4pCDft-uPUhH-nwAey-aFvHo-mmYdr-3pLR5a-5L8muR-4tq1xC-ccQsb-4qu4SM-M9zy8-81axae-4VoNf2-7fsL6g-pG2x6-5EGhg9-5jL21i-581h2L-4tkXgR-bvSA7-5ZjDy-5XfNQt-5YxRwD-4qy9Fu-tXUJY-2tSB6n-6B1SiT" target="_blank" rel="noopener noreferrer">
-              Quelle
-              </a>,
-              <a href="https://creativecommons.org/licenses/by-nc-sa/2.0/deed.de" target="_blank" rel="license noopener noreferrer">
-              CC BY-NC-SA 2.0
-              </a>
-              </figcaption>
-
-              <img src="bilder/myspace8.png" style="width: 100%;">
-              <figcaption>
-              MySpace in German For Me <br> myspace.com/stephtara, 2007 <br>
-              Foto von <a href="https://www.flickr.com/photos/bunny/" target="_blank" rel="noopener noreferrer">
-              Stephanie Booth
-              </a> —
-              <a href="https://www.flickr.com/photos/bunny/409678094/in/photolist-CcH2q-7ZHJtg-5TDemH-5THwyY-4eC9Qk-5HusM7-6ahEeF-5NuLws-LqjCY-5MuCY-4tpYfN-5r51xj-cTKc2u-2rhFpvc-cggM9C-5THz79-c5b8cE-5TD9mv-nRjef-4tkUVx-dh1FR-4mtzKR-4tpXaw-jRmA7-5NquYr-6amD4G-5TD9iV-uG7uD-cTKbY5-w1hEyx-5NuLH1-ytC5y-4y1ywF-25v77U-jWjGZ-5sB8aK-i7oTc-7KzBUL-4Tm5F3-EJcTx-5mTXSW-5TD9r6-rMZX1-7cFe3x-4jRZQz-7TGdyC-29865W-tCm1s-49JB71-4seBZo" target="_blank" rel="noopener noreferrer">
               Quelle
               </a>,
               <a href="https://creativecommons.org/licenses/by-nc-sa/2.0/deed.de" target="_blank" rel="license noopener noreferrer">
@@ -1198,6 +1201,37 @@ const DETAILS = {
 
               <p class="small"> i. Alle Texte dieser Website wurden mithilfe von KI generiert und können daher fehlerhaft sein. </p>
 
+              <div class="figures-wrapper">
+                <figure>
+                    <img src="bilder/skype6.jpg" style="width: 100%; ">
+                    <figcaption>
+                    Skype <br>         
+                    Foto von <a href="https://www.flickr.com/photos/hitzaro/" target="_blank" rel="noopener noreferrer"> Hitzaro Euskara Elkartea    
+                    </a> — <a href="https://www.flickr.com/photos/hitzaro/4010241917/" target="_blank" rel="noopener noreferrer"> Quelle </a>,
+                    <a href="https://creativecommons.org/licenses/by/2.0/deed.de" target="_blank" rel="license noopener noreferrer"> CC BY 2.0 </a>
+                    </figcaption>
+                </figure>
+                <figure>
+                  <img src="bilder/skype5.jpg" style="width: 100%; ">
+                    <figcaption>
+                    Thanks to Skype, people can see what other people are doing. <br>         
+                    Foto von <a href="https://www.flickr.com/photos/88754138@N06/" target="_blank" rel="noopener noreferrer"> Jessmoreno31    
+                    </a> — <a href="https://www.flickr.com/photos/88754138@N06/8132204596/in/photolist-doBF75-dSJcFf-dY8KUx-ajd6u9-7BcraZ-drhyeX-t5o8M-7Gd1HT-2U4CTJ-774bg8-87kKkd-acVt5h-7LxJSH-9BSLT6-5diJkr-4Cw2vi-d7WQ1-9D2cMC-d4WxQq-jCQfW-aq9wPW-5vA552-8mjJ-4M7rfS-4fVV9J-7iu3t2-4iQWym-84Qdz-9nvaaH-6H1pBc-68LHX6-8dPYDg-4NC9mP-7E9Cij-96Ww4X-96WwaD-96ZzvE-96Zzdj-6YHkZP-96Ww8D-8sLpdJ-96Zzxw-dFrdqD-72Cu8w-96ZzeW-8g7VVh-4v9RF2-stJsm-2oaDKbX-34Dh9v" target="_blank" rel="noopener noreferrer"> Quelle </a>,
+                    <a href="https://creativecommons.org/licenses/by/2.0/deed.de" target="_blank" rel="license noopener noreferrer"> CC BY 2.0 </a>
+                    </figcaption>
+                </figure>
+              </div>
+
+              <img src="bilder/skype7.jpg" style="width: 100%; ">
+              <figcaption>
+              NYU film professor Marilyn Horowitz Skyped into our classroom and taught a lesson about storytelling and character development.  <br>         
+              Foto von <a href="https://www.flickr.com/photos/mrmayo/" target="_blank" rel="noopener noreferrer"> mrmayo   
+              </a> — <a href="https://www.flickr.com/photos/mrmayo/4205009438/in/photolist-7pzLNJ-aUzyuz-7Z47X5-gcs6G-4S3TqD-6fb7zd-gcscB-b8sDSp-gcscM-gcsax-gcs7m-gcs93-2JwJi4-5cP3FC-5cP3FL-cgeVTh-8GNGL9-6f6Xm2-9JKLK-2JB3XL-4S84nQ-gcs76-gcsab-gcs8m-gcsdx-gcs5t-8BbhVe-8g9hb-2JB433-3gH7Jq-gcsb8-5qhFxi-gcs3Z-923TZx-8g8DC-4S84E7-gcs9n-gcsd4-gcs6y-gcrYv-gcs7y-3BsrA-gcsc9-gcs8B-5pzo8C-5cP3FY-gcs1k-Ctdbw1-aKeSpP-gcs1S/" target="_blank" rel="noopener noreferrer"> Quelle </a>,
+              <a href="https://creativecommons.org/licenses/by-nc/2.0/deed.de" target="_blank" rel="license noopener noreferrer"> CC BY-NC 2.0 </a>
+              </figcaption>
+
+
+
               </div>`
       },
 
@@ -1219,20 +1253,33 @@ const DETAILS = {
                 <p>Ads:</p><p>ja</p>
               </div>
 
-              <img class="top" src="bilder/facebook7.jpg" style="width: 100%; ">
-              <figcaption>
-              Mark Zuckerberg announces the plan to make Facebook more private at Facebook's Developer Conference on April 30, 2019. 
-              <br>
-              Foto von <a href="https://www.flickr.com/photos/quintanomedia/" target="_blank" rel="noopener noreferrer">
-              Anthony Quintano
-              </a> —
-              <a href="https://www.flickr.com/photos/quintanomedia/46985049144/in/photostream/" target="_blank" rel="noopener noreferrer">
-              Quelle
-              </a>,
-              <a href="https://creativecommons.org/licenses/by/2.0/deed.de" target="_blank" rel="license noopener noreferrer">
-              CC BY-SA 2.0
-              </a>
-              </figcaption>
+               <div class="figures-wrapper">
+                <figure>
+                  <img src="bilder/facebook8.jpg" style="width: 100%; ">
+                  <figcaption>
+                  Mark Zuckerberg F8 2019 Keynote 
+                  <br>
+                  Foto von <a href="https://www.flickr.com/photos/quintanomedia/46985053944/in/photostream/" target="_blank" rel="noopener noreferrer">
+                  Anthony Quintano
+                  </a> —
+                  <a href="https://www.flickr.com/photos/quintanomedia/46985053944/in/photostream/" target="_blank" rel="noopener noreferrer">
+                  Quelle
+                  </a>,
+                  <a href="https://creativecommons.org/licenses/by/2.0/deed.de" target="_blank" rel="license noopener noreferrer">
+                  CC BY-SA 2.0
+                  </a>
+                  </figcaption>
+                </figure>
+                <figure>
+                  <img src="bilder/facebook5.jpg" style="width: 100%; ">
+                  <figcaption>
+                  Facebook engancha <br>
+                  Foto von <a href="https://commons.wikimedia.org/wiki/User:JohnnyMrNinja" target="_blank" rel="noopener noreferrer"> JohnnyMrNinja       
+                  </a> — <a href="https://commons.wikimedia.org/wiki/File:Facebook_engancha.jpg" target="_blank" rel="noopener noreferrer"> Quelle </a>,
+                  <a href="https://creativecommons.org/licenses/by/2.0/deed.de" target="_blank" rel="license noopener noreferrer"> CC BY 2.0 </a>
+                  </figcaption>
+                </figure>
+              </div>
 
               <div class="info-box"><p>
               Facebook im App Store: <br> <br>
@@ -1270,20 +1317,40 @@ const DETAILS = {
               target="_blank" rel="noopener noreferrer">→History of Information</a>
               </p>
 
-              
-              <img src="bilder/facebook1.jpg" style="width: 100%; ">
-              <figcaption style="width: 100%;"> 
-              Facebook on the computer, 2010
-              </a> 
-              <br>—
-              <a href="https://www.flickr.com/photos/english106/4357227835/in/photolist-7D2W2R-487gL6-FRWBUD-b2WKqH-bXmBdx-25TTQYD-c5CL2s-3f6QyW-5aGVEN-2xeVn6-FRWzRR-9hpgTa-dFHSHP-HogVaA-bxhLj1-HohgvA-82cUep-6wvcne-RTzZTu-8DJMYc-dh7x7T-5m9Cb-9ag6UY-6w1U1f-KoFYD-dTqKdS-dTk6Xp-PmGxis-2QK4PZ-aGF2S6-bzK7yp-cs1CnS-9aWaUX-2r9K7Kx-2r9QHzD-2r9QtGK-2r9QHBN-2r9QtEf-2r9PxsE-2r9PxmY-2r9QHyg-2r9Pxrc-2r9Reoi-2r9QtMp-2r9PxrN-FyBMyW-2r9QHD6-2r9Pxrh-2r9QtH1-2r9QHvF/" target="_blank" rel="noopener noreferrer">
-              Quelle
-              </a>,
-              <a href="https://creativecommons.org/licenses/by/2.0/deed.de" target="_blank" rel="license noopener noreferrer">
-              CC BY-SA 2.0
-              </a>
-              </figcaption>
-              
+
+
+
+              <div class="figures-wrapper">
+                <figure>
+                  <img src="bilder/facebook1.jpg" style="width: 100%; ">
+                  <figcaption style="width: 100%;"> 
+                  Facebook on the computer, 2010
+                  </a> 
+                  <br>—
+                  <a href="https://www.flickr.com/photos/english106/4357227835/in/photolist-7D2W2R-487gL6-FRWBUD-b2WKqH-bXmBdx-25TTQYD-c5CL2s-3f6QyW-5aGVEN-2xeVn6-FRWzRR-9hpgTa-dFHSHP-HogVaA-bxhLj1-HohgvA-82cUep-6wvcne-RTzZTu-8DJMYc-dh7x7T-5m9Cb-9ag6UY-6w1U1f-KoFYD-dTqKdS-dTk6Xp-PmGxis-2QK4PZ-aGF2S6-bzK7yp-cs1CnS-9aWaUX-2r9K7Kx-2r9QHzD-2r9QtGK-2r9QHBN-2r9QtEf-2r9PxsE-2r9PxmY-2r9QHyg-2r9Pxrc-2r9Reoi-2r9QtMp-2r9PxrN-FyBMyW-2r9QHD6-2r9Pxrh-2r9QtH1-2r9QHvF/" target="_blank" rel="noopener noreferrer">
+                  Quelle
+                  </a>,
+                  <a href="https://creativecommons.org/licenses/by/2.0/deed.de" target="_blank" rel="license noopener noreferrer">
+                  CC BY-SA 2.0
+                  </a>
+                  </figcaption>
+                </figure>
+                <figure>
+                  <img src="bilder/facebook6.jpg" style="width: 100%; ">
+                  <figcaption>
+                  Mark Zuckerberg F8 2019 Keynote <br>
+                  Foto von <a href="https://www.flickr.com/photos/quintanomedia/" target="_blank" rel="noopener noreferrer">
+                  Anthony Quintano
+                  </a> —
+                  <a href="https://www.flickr.com/photos/quintanomedia/47721886632/in/photostream/" target="_blank" rel="noopener noreferrer">
+                  Quelle
+                  </a>,
+                  <a href="https://creativecommons.org/licenses/by/2.0/deed.de" target="_blank" rel="license noopener noreferrer">
+                  CC BY-SA 2.0
+                  </a>
+                  </figcaption>
+                </figure>
+              </div>
               
               <p>
               Facebook wuchs exponentiell und mit beispiellosen Geschwindigkeiten. Von den ursprünglichen Harvard-Studenten auf über eine Million registrierte Nutzer innerhalb des ersten Jahres. 2005 expandierte die Plattform auf andere Universitäten, 2006 öffnete Facebook seine Türen für alle Nutzer ab 13 Jahren und mit echter oder angenommener Identität – ein massiver Wendepunkt. Dies führte zu einer globalen Expansion: Zuerst in den USA, dann in Europa, Asien und überall sonst. 2012 überbot Facebook die magische Marke von einer Milliarde aktiven Nutzern – ein historischer Meilenstein für soziale Medien und Internetgeschichte überhaupt. Das Unternehmen ging 2012 an die Börse, mit einem Börsenwert von rund 104 Milliarden US-Dollar, was die enorme Bewertung der Plattform als Werbe- und Datensammelmaschine widerspiegelte. Facebook war damit nicht nur eine Plattform, sondern ein globales Phänomen, das die Art und Weise prägte, wie Milliarden von Menschen sich vernetzen, kommunizieren und ihre Identität präsentieren.
@@ -1324,6 +1391,36 @@ const DETAILS = {
               </p>
               
               <p class="small"> i. Alle Texte dieser Website wurden mithilfe von KI generiert und können daher fehlerhaft sein. </p>
+
+
+              <img src="bilder/facebook7.jpg" style="width: 100%; ">
+              <figcaption>
+              Mark Zuckerberg announces the plan to make Facebook more private at Facebook's Developer Conference on April 30, 2019. 
+              <br>
+              Foto von <a href="https://www.flickr.com/photos/quintanomedia/" target="_blank" rel="noopener noreferrer">
+              Anthony Quintano
+              </a> —
+              <a href="https://www.flickr.com/photos/quintanomedia/46985049144/in/photostream/" target="_blank" rel="noopener noreferrer">
+              Quelle
+              </a>,
+              <a href="https://creativecommons.org/licenses/by/2.0/deed.de" target="_blank" rel="license noopener noreferrer">
+              CC BY-SA 2.0
+              </a>
+              </figcaption>
+
+              <img src="bilder/facebook10.jpg" style="width: 100%; ">
+              <figcaption>
+              Facebook Headquarters, Menlo Park <br>
+              Foto von <a href="https://www.flickr.com/photos/jitze1942/" target="_blank" rel="noopener noreferrer">
+              Jitze Couperus
+              </a> —
+              <a href="https://www.flickr.com/photos/jitze1942/7254478874/" target="_blank" rel="noopener noreferrer">
+              Quelle
+              </a>,
+              <a href="https://creativecommons.org/licenses/by/2.0/deed.de" target="_blank" rel="license noopener noreferrer">
+              CC BY 2.0
+              </a>
+              </figcaption>
 
               <div style="width: 100%; height: 600px; margin-top: 2em; margin-bottom: 1em; overflow: hidden; position: relative;">
               <iframe
@@ -1369,6 +1466,38 @@ const DETAILS = {
 
               <p class="small"> i. Alle Texte dieser Website wurden mithilfe von KI generiert und können daher fehlerhaft sein. </p>
 
+               <div class="figures-wrapper">
+                <figure>
+                  <img src="bilder/flickr1.jpg" style="width: 100%; ">
+                  <figcaption>
+                  Flickr Logo        
+                  </figcaption>
+                </figure>
+                <figure>
+                  <img src="bilder/flickr4.jpg" style="width: 100%; ">
+                  <figcaption>
+                  flickr..wRiTteN oN ouR cLa$$ fLooR wiTh sNoW sPraY =P <br>
+                  Foto von <a href="https://www.flickr.com/photos/36011475@N00/" target="_blank" rel="noopener noreferrer">
+                  ♥Ďąłŏō3ăħ♥
+                  </a> —
+                  <a href="https://www.flickr.com/photos/36011475@N00/14467896/in/photolist-2h9Nu-by5g8F-9nNzyF-7Vx1Yn-3fbTMm-7D8Xfc-7C1Fhi-2n34Usi-ccxHd-2ogo5fW-2n2gJai-2maHUiW-2oevDXW-2kpc5Mc-2mMHcZC-2kkFw15-CuhC2C-2kjBm9Q-VhJTC6-2ma31Qm-2ki3DHV-2ktVUgg-2kdFRuo-2kPFtAc-2788LpW-2mppP8m-2kkCxib-H4j4aW-2kAo8tj-2k9ZJhV-2haofiG-22QB3yP-2gha6v3-2mQ3mEk-2khMLu5-2mPw2ca-2kiyLBG-2kj1Ggu-2kNR5qS-2kx2hvD-2n4pmxG-2mT1m4q-bfzXWT-2jWjC31-2mNYC1R-PEpgrH-2nx9cra-2k8VLtd-2mWMRvn-o56VJd/" target="_blank" rel="noopener noreferrer">
+                  Quelle
+                  </a>,
+                  <a href="https://creativecommons.org/licenses/by-nc-sa/2.0/deed.de" target="_blank" rel="license noopener noreferrer">
+                  CC BY-NC-SA 2.0
+                  </a>
+                  </figcaption>
+                </figure>
+              </div>
+
+              <img src="bilder/flickr3.png" style="width: 100%; ">
+              <figcaption>
+              Screenshot der Flickr Website, januar 2026. <br> 
+              — <a href="https://www.flickr.com/" target="_blank" rel="noopener noreferrer">
+              Quelle
+              </a>
+              </figcaption>
+
               </div>`
       },
       
@@ -1387,17 +1516,8 @@ const DETAILS = {
                 <p>Firmensitz:</p><p>Mountain View, USA (Google)</p>
                 <p>Ads:</p><p>ja</p>
               </div>
-              
-              <figcaption style="text-align: right;">
-              <a href="qbUrTQ4ya2bgUghZ9z2ymwZ2nQqOWUVL1T28AksdXnuDUAKNtzKfVuUnvpgEWctFPOv8xrDQQMuGWTQmhwz1NdneYiiIXsZGkzDlErJQUTe0korWdaSsPC84sktzjNqIMBE2WUn1UopHS4y2VG0SiKVkoWl3N0SWgcmA1AI0vBxZxnlwJIhGYYl0i34UVijk4TYI1l" target="_blank" rel="noopener noreferrer">
-              Quelle
-              </a>,
-              <a href="hhttps://creativecommons.org/licenses/by-sa/2.0/deed.de" target="_blank" rel="license noopener noreferrer">
-              CC BY-SA 2.0
-              </a>
-              </figcaption><img src="bilder/orkut2.jpg" style="width: 100%; ">
 
-              <p style="">
+              <p>
               Orkut war eines der ersten sozialen Netzwerke der 2000er-Jahre und wurde im Januar 2004 von Orkut Büyükkökten, einem türkischstämmigen Google-Mitarbeiter, entwickelt. Ziel war es, Menschen über gemeinsame Interessen und Freundschaften zu verbinden – lange bevor Facebook international verbreitet war. Nutzer konnten persönliche Profile anlegen, Freundeslisten aufbauen und sogenannten Communities beitreten, die nach Themen, Hobbys oder Herkunft sortiert waren. 
               <a href="https://www.theverge.com/2014/9/30/6872133/orkut-google-shuts-down-its-first-social-network" target="_blank" rel="noopener noreferrer">→The Verge</a>
               Während Orkut in den USA kaum Beachtung fand, wurde die Plattform in Brasilien und Indien zum Massenphänomen. 
@@ -1415,7 +1535,7 @@ const DETAILS = {
 
               <p class="small"> i. Alle Texte dieser Website wurden mithilfe von KI generiert und können daher fehlerhaft sein. </p>
 
-              <img src="bilder/orkut3.jpg" style="width: 30%; ">
+              <img src="bilder/orkut3.jpg" style="width: 100%;">
               <figcaption style="text-align: left;">
               Boit Tatá, Carnaval 2009, Rio <br>
               Foto von <a href="https://www.flickr.com/photos/urbefotos/" target="_blank" rel="noopener noreferrer">
@@ -1428,6 +1548,21 @@ const DETAILS = {
               CC BY-SA 2.0
               </a>
               </figcaption>
+
+              <img src="bilder/orkut.jpg" style="width: 100%;">
+              <figcaption style="text-align: left;">
+              Demonstration of Google Wave running in Orkut <br>
+              Foto von <a href="https://www.flickr.com/photos/niallkennedy/" target="_blank" rel="noopener noreferrer">
+              NIall Kennedy
+              </a> —
+              <a href="https://www.flickr.com/photos/niallkennedy/3574401004/in/photostream/" target="_blank" rel="noopener noreferrer">
+              Quelle
+              </a>,
+              <a href="https://creativecommons.org/licenses/by-nc/2.0/deed.de" target="_blank" rel="license noopener noreferrer">
+              CC BY-NC 2.0
+              </a>
+              </figcaption>
+
               </div>`
       },
 
@@ -1478,92 +1613,72 @@ const DETAILS = {
                 <p>Ads:</p><p>/</p>
               </div>
 
-              <img src="bilder/whatsapp2.jpg" style="width: 100%; ">
-              <figcaption>
-              WhatsApp Interface
-              <br>
-              Foto von <a href="https://www.flickr.com/photos/" target="_blank" rel="noopener noreferrer">
-              Photographer Name
-              </a> —
-              <a href="https://www.flickr.com/photos/" target="_blank" rel="noopener noreferrer">
-              Quelle
-              </a>,
-              <a href="https://creativecommons.org/licenses/by-sa/2.0/deed.de" target="_blank" rel="license noopener noreferrer">
-              CC BY-SA 2.0
-              </a>
-              </figcaption>
-              
               <div class="info-box"><p>
               WhatsApp im App Store: <br> <br>
               „WhatsApp from Meta is a free messaging and calling app used by over 2 billion people across 180+ countries. It's super simple, reliable and private, making it perfect for staying in touch with your friends and family worldwide. WhatsApp works across mobile, tablet, and desktop even on slow connections, with no subscription fees.“ 
               </p></div>
 
               <p>
-              WhatsApp war eine Messaging-Anwendung, die 2008 von Jan Koum und Brian Acton gegründet wurde. Ursprünglich als einfacher SMS-Ersatz konzipiert, ermöglichte WhatsApp es Nutzern, über Internetverbindung kostengünstig oder kostenlos Nachrichten zu versenden – im Gegensatz zu teuren Kurznachrichtendiensten der Mobilfunkanbieter. Das System war zunächst für iPhone verfügbar und expandierte später auf Android und weitere Plattformen. Im Gegensatz zu sozialen Netzwerken wie Facebook basierte WhatsApp auf direkter, privater Kommunikation zwischen Kontakten, nicht auf öffentlichen Profilen oder Feeds.
+              WhatsApp wurde 2009 von Jan Koum und Brian Acton gegründet, zwei ehemaligen Yahoo-Ingenieuren. 
+              Die ursprüngliche Idee war keine klassische Messenger-App, sondern eine Statusanzeige im Adressbuch, 
+              die signalisierte, ob jemand erreichbar war oder was er gerade tat. Der Name „WhatsApp“ spielt auf 
+              die englische Begrüßung „What’s up?“ an. Erst später wurde die Möglichkeit ergänzt, kurze Textnachrichten 
+              über das Internet zu versenden – als Alternative zu teuren SMS-Diensten. 
               </p>
 
               <p class="indent">
-              Damit war WhatsApp eine revolutionäre Verschiebung: weg von öffentlichen sozialen Medien, hin zu privater, verschlüsselter Kommunikation.
+              Die App traf den Zeitgeist des frühen Smartphone-Zeitalters: Push-Benachrichtigungen, mobile Daten 
+              und ein wachsender Bedarf an sofortiger, persönlicher Kommunikation. WhatsApp setzte bewusst auf 
+              Schlichtheit: keine Profile, keine öffentlichen Feeds, keine Werbung. Die Nutzung war an reale 
+              Telefonnummern gebunden, wodurch Kommunikation persönlicher und privater wirkte als in offenen 
+              sozialen Netzwerken. Bereits 2011 wurden täglich über eine Milliarde Nachrichten verschickt. 
               <a href="https://www.britannica.com/topic/WhatsApp" target="_blank" rel="noopener noreferrer">→Britannica</a>
-              Technisch verlief die Nutzung von WhatsApp typischerweise so: Ein Nutzer installierte die App, registrierte sich mit seiner Telefonnummer und konnte dann Freunde hinzufügen, die ebenfalls WhatsApp nutzten. Die Plattform synchronisierte automatisch die Kontakte aus dem Telefonbuch und ermöglichte so nahtlose Kommunikation. Eine zentrale Innovation war die End-zu-End-Verschlüsselung (eingeführt 2016), die Nachrichten, Anrufe und Medien vor Abhörung schützte. Weitere Funktionen wie Gruppen, Voice Messages, Video Calls und später Statusmeldungen (ähnlich Instagram Stories) wurden später hinzugefügt.
-              <a href="https://www.computerhistory.org/blog/whatsapp-history/"
-              target="_blank" rel="noopener noreferrer">→Computer History</a>
-              <a href="https://www.historyofinformation.com/detail.php?id=5456"
-              target="_blank" rel="noopener noreferrer">→History of Information</a>
-              </p><div style="display: flex; gap: 10px;">
-              <img src="bilder/whatsapp3.png" style="width: 50%;">
-              <img src="bilder/whatsapp4.png" style="width: 50%;">
-              </div><div style="display: flex; gap: 15px;">
-              <figcaption style="width: 50%;"> 
-              Early WhatsApp interface with chat threads and contact lists
-              </a> 
-              <br>—
-              <a href="https://commons.wikimedia.org/" target="_blank" rel="noopener noreferrer">
-              Quelle
-              </a>,
-              <a href="https://creativecommons.org/licenses/by/4.0/deed.de" target="_blank" rel="license noopener noreferrer">
-              CC BY-SA 4.0
-              </a>
-              </figcaption>
+              </p>
 
-              <figcaption style="width: 50%;">  
-               WhatsApp group chat feature evolution
-              </a>  
-              <br> —
-              <a href="https://commons.wikimedia.org/" target="_blank" rel="noopener noreferrer">
-              Quelle
-              </a>,
-              <a href="https://creativecommons.org/licenses/by/4.0/deed.de" target="_blank" rel="license noopener noreferrer">
-              CC BY-SA 4.0
-              </a>
-              </figcaption>
-              </div><p style="">
-              WhatsApp wuchs rasant. Von nur wenigen Millionen Nutzern im Jahr 2010 auf über 900 Millionen im Jahr 2013. Die Plattform wurde zur Standard-Messaging-App in vielen Ländern, insbesondere in Entwicklungsländern, wo sie teuer SMS-Dienste ersetzte. 2014 übernahm Facebook WhatsApp für 19 Milliarden US-Dollar – eine der teuersten Tech-Übernahmen aller Zeiten und ein Zeichen dafür, dass Messaging-Dienste für soziale Kommunikation zentral geworden waren.
-              <a href="https://www.wired.com/2014/02/facebook-whatsapp-19-billion/"
-              target="_blank" rel="noopener noreferrer">→Wired</a>
-              <a href="https://www.computerworld.com/article/2486993/facebook-buys-whatsapp-for-19-billion.html"
-              target="_blank" rel="noopener noreferrer">→Computerworld</a>
+              <p>
+              2014 kaufte Facebook (heute Meta) WhatsApp für rund 19 Milliarden US-Dollar – eine der größten 
+              Übernahmen der Tech-Geschichte. Der Deal sorgte für weltweite Aufmerksamkeit und markierte den 
+              strategischen Ausbau privater Kommunikation innerhalb des Meta-Ökosystems. Obwohl WhatsApp 
+              formell unabhängig blieb, führte die Übernahme zu intensiven Debatten über Datenschutz, 
+              Datenweitergabe und Monopolbildung. 
+              <a href="https://www.nytimes.com/2014/02/20/technology/facebook-to-buy-whatsapp-for-16-billion.html" target="_blank" rel="noopener noreferrer">→New York Times</a>
               </p>
 
               <p class="indent">
-              Gesellschaftlich markierte WhatsApp einen fundamentalen Wandel in sozialer Kommunikation. Während Facebook, Instagram und Twitter öffentliche, algorithmisch kuratierte Räume waren, war WhatsApp privat, vertrauensbasiert und peer-to-peer. Dies führte zu einer Kultur der unmittelbaren, kontinuierlichen Kommunikation in Gruppen (Familie, Freunde, Arbeitskolleginnen) ohne den öffentlichen Druck der Social-Media-Plattformen. Gleichzeitig entstanden neue Phänomene wie WhatsApp-Gruppen mit ihren eigenen Dynamiken, Etiketten und sozialen Normen. Die Plattform wurde auch zum Medium für Fehlinformationen und Desinformation, da Nachrichten schnell viral gingen und schwer zu überprüfen waren.
-              <a href="https://www.pewresearch.org/internet/2017/01/12/messaging-apps-and-the-rise-of-private-social-networks/"
-              target="_blank" rel="noopener noreferrer">→Pew Research</a>
-              </p><p>
-              Die Entwicklung von WhatsApp war geprägt von Spannungen zwischen Datenschutz und Geschäftsinteressen. Nach der Übernahme durch Facebook gab es Bedenken, dass Nutzerdaten für Werbezwecke genutzt werden könnten. WhatsApp betonte seine Unabhängigkeit und Verschlüsselung, doch die Sorgen blieben. 2021 kündigte WhatsApp an, seine Datenschutzrichtlinien zu ändern, was zu massiven Nutzerwanderungen zu konkurrierenden Diensten wie Signal und Telegram führte. Trotzdem blieb WhatsApp die dominanteste Messaging-App weltweit, mit über 2,5 Milliarden Nutzern.
-              <a href="https://www.bbc.com/news/technology-55972617"
-              target="_blank" rel="noopener noreferrer">→BBC</a>
-              <a href="https://www.theguardian.com/technology/2021/jan/13/whatsapp-users-plan-switch-telegram-signal-privacy-row"
-              target="_blank" rel="noopener noreferrer">→The Guardian</a>
-              </p><p>
-              Rückblickend steht WhatsApp für einen neuen Typus sozialer Medien: Private, verschlüsselte, nicht-algorithmische Kommunikation als Gegenpol zu öffentlichen, datengetriebenen Plattformen. Es zeigte, dass das „Soziale" nicht immer öffentlich sein muss – private Gruppen und direkte Kommunikation konnten genauso sozial sein wie Twitter oder Facebook. WhatsApp prägte die Idee, dass Messaging zur Grundinfrastruktur sozialer Verbindung wurde, nicht nur als Zusatzfunktion, sondern als Ersatz für Telefonate und SMS. Dies beeinflusste alle folgenden Plattformen und machte Privacy zum zentralen Verkaufsargument.
-              <a href="https://www.investopedia.com/articles/markets/091115/whatsapp-history-and-impact.asp"
-              target="_blank" rel="noopener noreferrer">→Investopedia</a>
-              <a href="https://www.zdnet.com/article/how-whatsapp-changed-social-messaging/"
-              target="_blank" rel="noopener noreferrer">→ZDNET</a>
+              Technisch entwickelte sich WhatsApp kontinuierlich weiter: Gruppenchats, Sprach- und Videoanrufe, 
+              Sprachnachrichten, Dateiversand und später Statusmeldungen (2017) wurden eingeführt. Ein entscheidender 
+              Schritt war die Einführung der Ende-zu-Ende-Verschlüsselung (2016), die alle Nachrichten standardmäßig 
+              schützt. Damit positionierte sich WhatsApp als besonders sicherer Kommunikationsdienst – auch im 
+              Vergleich zu anderen Messengern. 
+              <a href="https://www.theguardian.com/technology/2016/apr/05/whatsapp-end-to-end-encryption-security" target="_blank" rel="noopener noreferrer">→The Guardian</a>
+              </p>
+
+              <p>
+              Gesellschaftlich veränderte WhatsApp Kommunikationsgewohnheiten massiv. Private und halböffentliche 
+              Gruppen ersetzten E-Mail-Verteiler, Vereinskommunikation und teilweise sogar soziale Netzwerke. 
+              Gleichzeitig wurde WhatsApp zunehmend als politisches Werkzeug genutzt – etwa zur Mobilisierung 
+              von Wähler:innen oder zur Verbreitung von Falschinformationen, insbesondere in Ländern wie Indien 
+              oder Brasilien. Die fehlende öffentliche Sichtbarkeit erschwert dabei Moderation und Kontrolle. 
+              <a href="https://www.bbc.com/news/world-asia-india-44856910" target="_blank" rel="noopener noreferrer">→BBC</a>
+              </p>
+
+              <p class="indent">
+              Heute ist WhatsApp mit über zwei Milliarden aktiven Nutzer:innen einer der wichtigsten digitalen 
+              Kommunikationsdienste weltweit. Trotz Funktionen wie Kanälen und Business-Accounts bleibt der 
+              Kern der Plattform private, direkte Kommunikation. WhatsApp steht exemplarisch für den Übergang 
+              von öffentlichen sozialen Netzwerken hin zu geschlossenen, verschlüsselten Kommunikationsräumen, 
+              die zwar persönlicher wirken, aber gesellschaftlich schwerer zu regulieren sind. 
+              <a href="https://www.statista.com/topics/2018/whatsapp/" target="_blank" rel="noopener noreferrer">→Statista</a>
               </p>
               
               <p class="small"> i. Alle Texte dieser Website wurden mithilfe von KI generiert und können daher fehlerhaft sein. </p>
+
+              <img src="bilder/whatsapp2.jpg" style="width: 100%; ">
+              <figcaption>
+              WhatsApp im App Store <br>
+              — <a href="https://apps.apple.com/de/app/whatsapp-messenger/id310633997" target="_blank" rel="noopener noreferrer">
+              Quelle </a>
+              </figcaption>
               
               <div style="width: 100%; height: 600px; margin-top: 2em; margin-bottom: 1em; overflow: hidden; position: relative;">
               <iframe
@@ -1587,8 +1702,7 @@ const DETAILS = {
         html: `<div class="index-detail">
 
                <a class="sm" href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
-               →https://www.youtube.com
-              </a><img src="bilder/youtube2.jpg" style="width: 100%; ">
+               →https://www.youtube.com </a>
 
               <div class="info-box">
                 <p>Launch:</p><p>2005</p>
@@ -1601,88 +1715,111 @@ const DETAILS = {
 
               <div class="info-box"><p>
               YouTube im App Store: <br> <br>
-              „Get the official YouTube app on iPhones and iPads. See what the world is watching -- from the hottest music videos to what’s popular in gaming, fashion, beauty, news, learning and more. Subscribe to channels you love, create content of your own, share with friends, and watch on any device.“ 
+              „Get the official YouTube app on iPhones and iPads. See what the world is watching — from the hottest music videos to what’s popular in gaming, fashion, beauty, news, learning and more. Subscribe to channels you love, create content of your own, share with friends, and watch on any device.“ 
               </p></div>
 
-
-              <figcaption>
-              YouTube Headquarters
-              <br>
-              Foto von <a href="https://www.flickr.com/photos/" target="_blank" rel="noopener noreferrer">
-              Photographer Name
-              </a> —
-              <a href="https://www.flickr.com/photos/" target="_blank" rel="noopener noreferrer">
-              Quelle
-              </a>,
-              <a href="https://creativecommons.org/licenses/by-sa/2.0/deed.de" target="_blank" rel="license noopener noreferrer">
-              CC BY-SA 2.0
-              </a>
-              </figcaption><p>
-              YouTube war eine Video-Sharing-Plattform, die 2005 von Steve Chen, Chad Hurley und Karim Karim gegründet wurde. Ihre Kernidee war revolutionär: Jeden ließ eine Plattform Videoinhalte hochladen, teilen und kommentieren – ohne technische Kenntnisse oder Zugang zu Rundfunkmedien. Das System war einfach: Eine beliebige Person konnte ein Video aufnehmen, auf YouTube hochladen und es sofort weltweit sichtbar machen. Dies war ein radikaler Bruch mit dem Medienmonopol traditioneller Fernsehsender. Im Gegensatz zu Facebook oder MySpace lag der Fokus nicht auf persönlichen Profilen, sondern auf Videoinhalten als zentrales Medium.
+              <p>
+              YouTube wurde am 14. Februar 2005 von Chad Hurley, Steve Chen und Jawed Karim gegründet – drei ehemaligen PayPal-Mitarbeitern. 
+              Die ursprüngliche Idee war eine einfache Plattform zum Hochladen und Teilen von Videos, nachdem die Gründer Schwierigkeiten hatten, 
+              Videomaterial einer privaten Party per E-Mail zu verschicken. Bereits früh setzte YouTube auf niedrige technische Hürden: Videos konnten 
+              ohne spezielle Software direkt im Browser angesehen werden, was sich deutlich von früheren Videoangeboten abhob. 
+              Die Plattform nutzte Adobe Flash zur Wiedergabe und ermöglichte erstmals massentaugliches Streaming nutzergenerierter Inhalte. 
               </p>
 
               <p class="indent">
-              Damit war YouTube eine demokratisierung des Rundfunks: weg von professionellen Studios, hin zu Laienproduzentinnen.
+              Das erste Video („Me at the zoo“) wurde am 23. April 2005 von Jawed Karim hochgeladen und markiert den Beginn einer neuen Form digitaler 
+              Selbstdarstellung. YouTube wuchs extrem schnell: Bereits im Sommer 2005 wurden täglich Millionen Videos abgerufen. 
+              Der einfache Einbettungscode („Embed“) erlaubte es, YouTube-Videos auf Blogs, Foren und später Social-Media-Plattformen zu integrieren, 
+              was zur rasanten Verbreitung beitrug. Im Gegensatz zu klassischem Fernsehen war YouTube nicht linear, sondern on-demand, partizipativ 
+              und global zugänglich. 
               <a href="https://www.britannica.com/topic/YouTube" target="_blank" rel="noopener noreferrer">→Britannica</a>
-              Technisch verlief die Nutzung von YouTube typischerweise so: Ein Nutzer konnte sich kostenlos registrieren, ein Video in verschiedenen Formaten hochladen, und die Plattform konvertierte es automatisch für Streaming. Videos konnten mit Tags, Beschreibungen und Thumbnails versehen werden. Eine zentrale Innovation war der einfache Embed-Code, der es anderen erlaubte, YouTube-Videos auf beliebigen Websites einzubetten – dies führte zu viraler Verbreitung. Weitere Funktionen wie Kommentare, Ratings, Playlisten und später Abonnements und Benachrichtigungen machten YouTube zu einem sozialen Netzwerk rund um Video-Inhalte.
-              <a href="https://www.computerhistory.org/blog/youtube-history/"
-              target="_blank" rel="noopener noreferrer">→Computer History</a>
-              <a href="https://www.historyofinformation.com/detail.php?id=5234"
-              target="_blank" rel="noopener noreferrer">→History of Information</a>
-              </p><div style="display: flex; gap: 10px;">
-              <img src="bilder/youtube3.png" style="width: 50%;">
-              <img src="bilder/youtube4.png" style="width: 50%;">
-              </div><div style="display: flex; gap: 15px;">
-              <figcaption style="width: 50%;"> 
-              Early YouTube interface with video upload and comment features
-              </a> 
-              <br>—
-              <a href="https://commons.wikimedia.org/" target="_blank" rel="noopener noreferrer">
-              Quelle
-              </a>,
-              <a href="https://creativecommons.org/licenses/by/4.0/deed.de" target="_blank" rel="license noopener noreferrer">
-              CC BY-SA 4.0
-              </a>
-              </figcaption>
+              </p>
 
-              <figcaption style="width: 50%;">  
-               YouTube recommendation algorithm and personalized homepage evolution
-              </a>  
-              <br> —
-              <a href="https://commons.wikimedia.org/" target="_blank" rel="noopener noreferrer">
-              Quelle
-              </a>,
-              <a href="https://creativecommons.org/licenses/by/4.0/deed.de" target="_blank" rel="license noopener noreferrer">
-              CC BY-SA 4.0
-              </a>
-              </figcaption>
-              </div><p style="">
-              YouTube wuchs exponentiell. Innerhalb von Monaten nach Launch zählte die Plattform Millionen Videos und Milliarden Views. Ein virales Video wie „Charlie Bit My Finger" (2007) oder „Gangnam Style" (2012) erreichte Hunderte Millionen Aufrufe. 2006 übernahm Google YouTube für 1,65 Milliarden US-Dollar. Dies war ein Wendepunkt: Google erkannte, dass Video das Zukunftsmedium war und dass das Kontrollieren von Video-Inhalten zentral für die digitale Zukunft sein würde.
-              <a href="https://www.wired.com/2006/10/google-buys-youtube-for-165-billion/"
-              target="_blank" rel="noopener noreferrer">→Wired</a>
-              <a href="https://www.computerworld.com/article/2520932/google-acquires-youtube.html"
-              target="_blank" rel="noopener noreferrer">→Computerworld</a>
+              <p>
+              Im November 2006 wurde YouTube von Google für 1,65 Milliarden US-Dollar übernommen – ein damals viel diskutierter Deal, da YouTube 
+              kaum Einnahmen generierte, aber enorme Nutzerzahlen aufwies. Google integrierte YouTube technisch (Infrastruktur, Suchalgorithmen) 
+              und ökonomisch (Werbesysteme wie Google Ads). Damit begann die Transformation von einer reinen Sharing-Plattform zu einem 
+              kommerzialisierten Medienökosystem. Gleichzeitig wurde das Content-ID-System eingeführt, um Urheberrechtsverletzungen automatisch zu erkennen. 
+              <a href="https://www.nytimes.com/2006/10/10/technology/10google.html" target="_blank" rel="noopener noreferrer">→New York Times</a>
+              </p>
+
+              <p>
+              Ab 2007 konnten Creator erstmals über das YouTube-Partnerprogramm Geld verdienen. Dies führte zur Entstehung einer neuen Berufsgruppe: 
+              der YouTuber:innen. Formate wie Vlogs, Let’s Plays, Tutorials, Comedy-Sketches und später Reaction-Videos etablierten sich als eigene 
+              Genres. YouTube entwickelte sich damit von einer Videoplattform zu einer kulturellen Infrastruktur, in der Karrieren, Fan-Communities 
+              und Influencer-Ökonomien entstanden. Gleichzeitig ersetzte YouTube für viele junge Nutzer klassische Medien wie Musikfernsehen oder DVDs. 
+              <a href="https://www.pewresearch.org/internet/2019/11/07/youtube-factsheet/" target="_blank" rel="noopener noreferrer">→Pew Research</a>
+              </p>
+
+              <p>
+              Technisch veränderte sich die Nutzung stark: Anfangs waren Videos auf 10 Minuten begrenzt, später entfiel diese Grenze für verifizierte Accounts. 
+              Mit der Einführung von HD (2008), 4K, Livestreaming und mobilen Apps passte sich YouTube neuen Sehgewohnheiten an. 
+              Der algorithmische Empfehlungsfeed („Up Next“) wurde zum zentralen Steuerungsinstrument der Plattform und beeinflusste maßgeblich, 
+              welche Inhalte Sichtbarkeit erhielten. Diese algorithmische Logik führte zu Debatten über Filterblasen, Radikalisierung und 
+              Aufmerksamkeitsökonomie. 
+              <a href="https://www.theverge.com/2018/1/11/16879984/youtube-algorithm-change-history" target="_blank" rel="noopener noreferrer">→The Verge</a>
               </p>
 
               <p class="indent">
-              Gesellschaftlich markierte YouTube den Übergang von textbasierter zu videobasierter Kommunikation im Internet. Erstmals konnten Durchschnittsmenschen Medieninhalte produzieren, die die Reichweite professioneller Studios übertreffen. Dies führte zur Entstehung von „YouTubern" – Personen, die zu Berühmtheiten allein durch ihre Video-Inhalte wurden, oft ohne traditionelle Medienausbildung. Gleichzeitig veränderte sich der Konsum: Statt Fernsehen zu schauen, schauten Menschen Videos on-demand, selbstbestimmt, mit Pausen und Wiederholungen. YouTube wurde auch zur Plattform für Bildung, Tutorials, Musik, Comedy und politischen Diskurs – es war nicht nur soziales Medium, sondern auch Archiv und Bibliothek.
-              <a href="https://www.pewresearch.org/internet/2010/03/25/the-youtube-effect/"
-              target="_blank" rel="noopener noreferrer">→Pew Research</a>
-              </p><p>
-              Die Entwicklung von YouTube war geprägt von Spannungen zwischen Creator-Freiheit und Content-Moderation. YouTube nutzte zunehmend Algorithmen, um Videos zu empfehlen – zunächst basierend auf Popularität, später auf KI-gesteuerten Vorhersagen, was Nutzer sehen würden. Dies führte zu enormer Reichweite für manche Videos, zu Radikalisierung in Filter-Blasen für andere. Copyright-Fragen, Desinformation und Hass-Inhalte wurden zu zentralen Herausforderungen. Gleichzeitig wurde die Monetarisierung von Videos zentrales Geschäftsmodell: Creator konnten Einnahmen aus Werbung generieren, was zur Professionalisierung von YouTube-Content führte.
-              <a href="https://www.bbc.com/news/technology-45018432"
-              target="_blank" rel="noopener noreferrer">→BBC</a>
-              <a href="https://www.theguardian.com/technology/2019/feb/28/youtube-algorithm-recommendation-system"
-              target="_blank" rel="noopener noreferrer">→The Guardian</a>
-              </p><p>
-              Rückblickend steht YouTube für einen fundamentalen Shift in der Geschichte sozialer Medien: von Text und Fotos zu Video als Primärmedium. Es zeigte, dass Medienproduktion und Verbreitung demokratisiert werden konnte – dass jede Person ein Sender sein konnte, nicht nur Empfänger. YouTube prägte die Kultur der sozialen Medien fundamental: der Aufstieg der Influencer, die Bedeutung visueller Inhalte, die Macht von Algorithmen und die Frage nach Kontrolle und Zensur. Heute ist YouTube das zweitgrößte soziale Netzwerk der Welt nach Facebook und hat mehr Millionen Stunden an Videoinhalten als jede andere Plattform – ein Archiv menschlicher Kreativität, Trivialität und Wahnsinn.
-              <a href="https://www.investopedia.com/articles/markets/081315/youtube-how-it-works.asp"
-              target="_blank" rel="noopener noreferrer">→Investopedia</a>
-              <a href="https://www.zdnet.com/article/how-youtube-transformed-media-and-society/"
-              target="_blank" rel="noopener noreferrer">→ZDNET</a>
+              Gesellschaftlich wurde YouTube zu einem globalen Archiv zeitgenössischer Kultur: Musikvideos, politische Reden, Tutorials, 
+              Nachrichtenclips und persönliche Alltagsvideos existieren gleichberechtigt nebeneinander. Gleichzeitig geriet die Plattform 
+              zunehmend in Kritik wegen Desinformation, extremistischer Inhalte und der psychologischen Auswirkungen endloser Videofeeds. 
+              Maßnahmen wie Demonitarisierung, Community Guidelines und algorithmische Anpassungen sollten diese Probleme eindämmen, 
+              führten jedoch auch zu Konflikten mit Creator:innen. 
+              <a href="https://www.wired.com/story/youtube-politics-radicalization/" target="_blank" rel="noopener noreferrer">→WIRED</a>
               </p>
 
+              <p>
+              Heute ist YouTube die weltweit größte Videoplattform und eine der zentralen Infrastrukturen digitaler Öffentlichkeit. 
+              Sie fungiert zugleich als Unterhaltungsmedium, Lernplattform, Musikdienst, Nachrichtenquelle und soziales Netzwerk. 
+              Mit Formaten wie YouTube Shorts reagierte die Plattform auf TikTok und den Trend zu Kurzvideos, während lange Videos 
+              und Livestreams weiterhin eine wichtige Rolle spielen. YouTube steht exemplarisch für den Wandel von nutzergenerierten 
+              Experimenten hin zu hochprofessionalisierten, datengetriebenen Medienplattformen. 
+              <a href="https://about.youtube/impact/" target="_blank" rel="noopener noreferrer">→YouTube Impact</a>
+              <a href="https://www.statista.com/topics/2019/youtube/" target="_blank" rel="noopener noreferrer">→Statista</a>
+              </p>
+
+  
               <p class="small"> i. Alle Texte dieser Website wurden mithilfe von KI generiert und können daher fehlerhaft sein. </p>
+
+              <img src="bilder/youtube6.jpg" style="width: 100%; ">
+              <figcaption>
+              my friend chris <br> 
+              <br>
+              Foto von <a href="https://www.flickr.com/photos/dom_2plus1/" target="_blank" rel="noopener noreferrer">
+              dmkphoto
+              </a> —
+              <a href="https://www.flickr.com/photos/dom_2plus1/1464358027/" target="_blank" rel="noopener noreferrer">
+              Quelle
+              </a>,
+              <a href="https://creativecommons.org/licenses/by-nc-nd/2.0/deed.de" target="_blank" rel="license noopener noreferrer">
+              CC BY-NC-ND 2.0
+              </a>
+              </figcaption>
+
+              <img src="bilder/youtube4.jpg" style="width: 100%; ">
+              <figcaption>
+              youtube JPG <br> 
+              <br>
+              Foto von <a href="https://www.flickr.com/photos/renaissancechambara/" target="_blank" rel="noopener noreferrer">
+              Ged Carroll
+              </a> —
+              <a href="https://www.flickr.com/photos/renaissancechambara/5624557482/in/photolist-9z2jZ1-8c7HKG-QpkTe-5Y61V8-5LVuK-fTHKFi-cXmnmy-4EDMaw-qmftLT-7itEWe-59kWsa-asQJSY-doMjE-9hjAzK-dpHLks-cy27Sm-jecBs-a164SU-a1634w-2oaxACd-4o7bKS-4s5PFx-a1634q-a16355-a1634Y-4LCMzm-7JFTqh-tkddV-8Wsp6z-2omJRq1-2omPDqC-qTWmH-3fsQed-5h5so7-5h5tqs-6QejTN-3epdCc-jepc8-3sF3ce-4hfUU3-jMmvR-2YzvRJ-dW8mVh-7tMy7s-CYFkKp-7Tgci1-35Azcn-4DyJHg-k6A9N-bGNsCK" target="_blank" rel="noopener noreferrer">
+              Quelle
+              </a>,
+              <a href="https://creativecommons.org/licenses/by-nc-nd/2.0/deed.de" target="_blank" rel="license noopener noreferrer">
+              CC BY-NC-ND 2.0
+              </a>
+              </figcaption>
+
+              <img src="bilder/youtube6.png" style="width: 100%; ">
+              <figcaption>
+              Acsreenshot des ersten YouTube Videos <br> 
+              <br> —
+              <a href="https://www.youtube.com/watch?v=jNQXAC9IVRw" target="_blank" rel="noopener noreferrer">
+              Quelle
+              </a>
+              </figcaption>
 
               <div style="width: 100%; height: 600px; margin-top: 2em; margin-bottom: 1em; overflow: hidden; position: relative;">
               <iframe
@@ -1708,7 +1845,6 @@ const DETAILS = {
               →https://www.reddit.com/
               </a>
               
-              
               <div class="info-box">
                 <p>Launch:</p><p>2005</p>
                 <p>Verfügbarkeit:</p><p>mobile & web</p>
@@ -1733,6 +1869,26 @@ const DETAILS = {
               Reddit setzt stark auf ehrenamtliche Moderator:innen, was einerseits Community-Autonomie stärkt, andererseits ungleiche Durchsetzung von Regeln begünstigt. <a href="https://www.nytimes.com/2023/06/12/technology/reddit-blackout.html" target="_blank" rel="noopener noreferrer">→New York Times</a> Reddit verkörpert ein alternatives Modell sozialer Medien: weniger Selbstdarstellung, mehr Diskurs, kollektive Bewertung und thematische Tiefe – mit allen Chancen und Risiken einer offenen Diskussionskultur. <a href="https://www.britannica.com/topic/Reddit" target="_blank" rel="noopener noreferrer">→Britannica</a> </p>
 
               <p class="small"> i. Alle Texte dieser Website wurden mithilfe von KI generiert und können daher fehlerhaft sein. </p>
+
+              <div class="figures-wrapper">
+                <figure>
+                  <img src="bilder/reddit1.jpg" style="width: 100%; ">
+                  <figcaption>
+                  Reddit im App Store <br>
+                  <br>
+                  — <a href="https://apps.apple.com/us/app/reddit/id1064216828" target="_blank" rel="noopener noreferrer">
+                  Quelle </a>
+                  </a>
+                  </figcaption>
+                </figure>
+                <figure>
+                  <img src="bilder/reddit2.jpg" style="width: 100%; ">
+                  <figcaption>
+                  Reddit im App Store <br>
+                  <br>
+                   — <a href="https://commons.wikimedia.org/wiki/File:Facebook_engancha.jpghttps://apps.apple.com/us/app/reddit/id1064216828n>
+                </figure>
+              </div>
 
               </div>`
       },
@@ -1779,6 +1935,22 @@ const DETAILS = {
 
               <p class="small"> i. Alle Texte dieser Website wurden mithilfe von KI generiert und können daher fehlerhaft sein. </p>
 
+              <div style="width: 100%; height: 600px; margin-top: 2em; margin-bottom: 1em; overflow: hidden; position: relative;">
+
+              <iframe
+                src="https://maps.google.com/maps?q=37.7766,-122.4167&t=k&z=19&output=embed"
+                style="position: relative; top: -120px; left: 0; width: 100%; height: 800px; border: 0;"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+
+            <figcaption>
+              X, Bastrop, Texas, USA.
+            </figcaption>
+
+
+
               </div>`
       },
 
@@ -1803,6 +1975,22 @@ const DETAILS = {
               <p> 2015 wurde Dailymotion mehrheitlich vom französischen Medienkonzern Vivendi übernommen. Diese enge Verbindung zu traditionellen Medienunternehmen prägte die Ausrichtung der Plattform nachhaltig: Dailymotion entwickelte sich weg vom klassischen Social-Video-Netzwerk hin zu einem professionelleren Videohosting- und Streaming-Dienst. <a href="https://www.vivendi.com/en/press-release/vivendi-acquires-control-of-dailymotion/" target="_blank" rel="noopener noreferrer">→Vivendi</a> Gesellschaftlich spielt Dailymotion eine besondere Rolle, da es als eine der wenigen großen europäischen Videoplattformen versucht, digitale Souveränität gegenüber US-amerikanischen Tech-Konzernen zu behaupten. Dennoch konnte die Plattform nie die kulturelle Dominanz oder Reichweite von YouTube erreichen. <a href="https://www.euractiv.com/section/digital/news/france-dailymotion-youtube-europe/" target="_blank" rel="noopener noreferrer">→Euractiv</a> Heute wird Dailymotion vor allem für Embedded-Videos, journalistische Inhalte und Unternehmenskommunikation genutzt und ist weniger ein Ort viraler Internetkultur als vielmehr ein professioneller Videohub. <a href="https://about.dailymotion.com/" target="_blank" rel="noopener noreferrer">→Dailymotion About</a> </p>
 
               <p class="small"> i. Alle Texte dieser Website wurden mithilfe von KI generiert und können daher fehlerhaft sein. </p>
+
+              <img src="bilder/dailymotion4.jpg" style="width: 100%; ">
+              <figcaption>
+              Dailymotion en partenariat avec Digitick <br>         
+              Foto von <a href="https://www.flickr.com/photos/27048731@N03/" target="_blank" rel="noopener noreferrer"> Caroline et Louis VOLANT    
+              </a> — <a href="https://www.flickr.com/photos/27048731@N03/3487650265/in/photolist-6tHxV5-bSyb5n-r4R1G-5hYaf4-7p7SS2-6rMwM1-7J4Pxg-dz932v-2o25184-6jc7V8-4Extmg-32zcda-EfuqR-nF1CsM-4m2REb-2kahrM1-4m2RMb-4m2RCY-4m2RHh-4kXPH8-4kXPLK-4m2RBs-4kXPMz-4m2RCu-5Adove-5CuoUH-6wkXab-6wh9YX-4uW1xw-JD1uet-8G52un-58ZdeF-ovCyX-7AaQb-8ZKT9L-6MwJqe-G2Wo4c-8ZKSqy-8ZGM5Z-7JsHbD-8ZGMr2-8ZGMeD-245mbfY-28MtZMU-4ktBUi-e21BG2-9EasbU-kLeno-7fN9xh" target="_blank" rel="noopener noreferrer"> Quelle </a>,
+              <a href="https://creativecommons.org/licenses/by-nc-sa/2.0/deed.de" target="_blank" rel="license noopener noreferrer"> CC BY-NC-SA 2.0 </a>
+              </figcaption>
+
+              <img src="bilder/dailymotion5.jpg" style="width: 100%; ">
+              <figcaption>
+              Dailymotion Team - Stuff Magazine <br>         
+              Foto von <a href="https://www.flickr.com/photos/bonnaf/" target="_blank" rel="noopener noreferrer"> Pierre B.   
+              </a> — <a href="https://www.flickr.com/photos/bonnaf/283662612/in/photolist-6tHxV5-bSyb5n-r4R1G-5hYaf4-7p7SS2-6rMwM1-7J4Pxg-dz932v-2o25184-6jc7V8-4Extmg-32zcda-EfuqR-nF1CsM-4m2REb-2kahrM1-4m2RMb-4m2RCY-4m2RHh-4kXPH8-4kXPLK-4m2RBs-4kXPMz-4m2RCu-5Adove-5CuoUH-6wkXab-6wh9YX-4uW1xw-JD1uet-8G52un-58ZdeF-ovCyX-7AaQb-8ZKT9L-6MwJqe-G2Wo4c-8ZKSqy-8ZGM5Z-7JsHbD-8ZGMr2-8ZGMeD-245mbfY-28MtZMU-4ktBUi-e21BG2-9EasbU-kLeno-7fN9xh" target="_blank" rel="noopener noreferrer"> Quelle </a>,
+              <a href="https://creativecommons.org/licenses/by-nc-nd/2.0/deed.de" target="_blank" rel="license noopener noreferrer"> CC BY-NC-ND 2.0 </a>
+              </figcaption>
 
 
 
@@ -1944,6 +2132,20 @@ const DETAILS = {
 
               <p class="small"> i. Alle Texte dieser Website wurden mithilfe von KI generiert und können daher fehlerhaft sein. </p>
 
+              <img src="bilder/pinterest3.png" style="width: 100%; ">
+              <figcaption>
+              Screenshot der Pinterest Website, Januar 2026. <br>
+              — <a href="https://de.pinterest.com/" target="_blank" rel="noopener noreferrer">
+              Quelle </a>
+              </figcaption>
+
+              <img src="bilder/pinterest4.png" style="width: 100%; ">
+              <figcaption>
+              Screenshot der Pinterest Website, Januar 2026. <br>
+              — <a href="https://de.pinterest.com/" target="_blank" rel="noopener noreferrer">
+              Quelle </a>
+              </figcaption>
+
 </div>`
       },
 
@@ -1969,37 +2171,76 @@ const DETAILS = {
               </p></div>
 
               <p>
-              Instagram wurde 2010 von Kevin Systrom und Mike Krieger in San Francisco gegründet und startete als einfache App für quadratische Fotos mit Filtern. Die Gründer, beide aus dem Tech‑Milieu, wollten eine Antwort auf die komplizierten Kamerafunktionen von Hipstamatic bieten. Nach nur zwei Monaten und 100.000 Nutzer:innen wurde Instagram von Facebook für 1 Milliarde Dollar übernommen (2012).
+              Instagram wurde im Oktober 2010 von Kevin Systrom und Mike Krieger gegründet. 
+              Die App startete als reine iPhone-Anwendung zum Teilen quadratischer Fotos, 
+              die mit digitalen Filtern bearbeitet werden konnten. Ziel war es, alltägliche 
+              Momente ästhetisch aufzuwerten und visuell zu erzählen. Die starke Reduktion 
+              auf Bilder unterschied Instagram deutlich von textlastigen Netzwerken wie Facebook oder Twitter. 
+              Innerhalb von nur zwei Monaten erreichte Instagram eine Million Nutzer:innen. 
+              Die einfache Bedienung, der Fokus auf visuelle Identität und die mobile Optimierung 
+              trafen den Nerv einer Generation, die Smartphones als primäres Medium nutzte. 
+              Likes, Kommentare und Hashtags ermöglichten soziale Interaktion, während Profile 
+              als kuratierte Selbstdarstellung fungierten. Instagram etablierte früh eine 
+              Kultur der Inszenierung und visuellen Selbstoptimierung. 
+              <a href="https://www.britannica.com/topic/Instagram" target="_blank" rel="noopener noreferrer">→Britannica</a>
+              </p>
+
+              <p>
+              2012 wurde Instagram von Facebook für rund eine Milliarde US-Dollar übernommen. 
+              Die Plattform blieb zunächst weitgehend eigenständig, wurde jedoch schrittweise 
+              in das Meta-Ökosystem integriert. Funktionen wie algorithmische Feeds, Stories 
+              (2016, nach dem Vorbild von Snapchat) und Shopping-Features veränderten die App 
+              grundlegend. Aus einer Foto-App wurde ein zentraler Bestandteil der Influencer- 
+              und Werbeökonomie. 
+              <a href="https://www.theverge.com/2012/4/9/2934283/facebook-buys-instagram" target="_blank" rel="noopener noreferrer">→The Verge</a>
               </p>
 
               <p class="indent">
-              Das ursprüngliche Konzept – Foto, Filter, Like, Follow – machte Instagram zum Archetyp visueller Social Media.
-              Ab 2012 explodierte Instagram durch Breites Smartphone‑Publikum und neue Features: Videos (2013), Boomerangs (2015), Stories (2016, Snapchat geklaut), IGTV (2018, YouTube‑Konkurrenz) und Reels (2020, TikTok‑Antwort). Jede Erweiterung zielte darauf ab, Zeit in der App zu maximieren: Stories mit 24h‑Ephemerität förderten Authentizität und FOMO, Reels algorithmische Sucht, Carousel‑Posts längere Interaktionen. Gleichzeitig professionalisierte sich Instagram: Hashtags, Location‑Tags, Business‑Tools und Creator‑Fonds schufen ein gig‑economy‑Ökosystem für Influencer:innen.
-              <a href="https://de.wikipedia.org/wiki/Instagram" target="_blank" rel="noopener noreferrer">→Wikipedia (DE)</a>               <a href="https://de.wikipedia.org/wiki/Instagram" target="_blank" rel="noopener noreferrer">→Wikipedia (DE)</a>
-              <a href="https://www.theverge.com/2020/8/5/21355701/instagram‑history‑kevin‑systrom‑mike‑krieger‑facebook‑acquisition‑launch" target="_blank" rel="noopener noreferrer">→The Verge</a>
+              Technisch verlagerte sich Instagram vom chronologischen Feed zu einem 
+              algorithmisch kuratierten System, das Aufmerksamkeit maximiert. Der Algorithmus 
+              bevorzugt Inhalte mit hoher Interaktion, was Creator:innen dazu zwingt, Inhalte 
+              strategisch zu planen. Mit der Einführung von Reels reagierte Instagram direkt auf 
+              TikTok und den Trend zu Kurzvideos. Dies führte zu einer Verschiebung von Fotografie 
+              hin zu Video-Content. 
+              <a href="https://www.wired.com/story/instagram-algorithm-explained/" target="_blank" rel="noopener noreferrer">→WIRED</a>
               </p>
 
               <p>
-              Stories revolutionierten 2016 die Plattform: Ephemere Inhalte ohne Perfektionismusdruck ermöglichten spontane, narrative Kommunikation und machten Instagram zum täglichen Begleiter. Reels (2020) brachten TikTok‑Logik ins System – kurze, vertikale Videos mit Musik‑Overlays und hoher Viralität. Live‑Videos und Shopping‑Tags integrierten E‑Commerce direkt ins Feed, während Guides und Collections die Plattform zu einer visuellen Suchmaschine ausbauten. Algorithmische Feeds priorisierten Watchtime und Engagement statt Chronologie.
-              <a href="https://www.socialmediatoday.com/news/instagram‑features‑timeline‑evolution/571283/" target="_blank" rel="noopener noreferrer">→Social Media Today</a>
+              Gesellschaftlich ist Instagram eng mit Fragen von Selbstbild, Körpernormen und 
+              psychischer Gesundheit verbunden. Studien zeigen Zusammenhänge zwischen intensiver 
+              Instagram-Nutzung und erhöhtem sozialen Vergleichsdruck, insbesondere bei jungen 
+              Nutzer:innen. Gleichzeitig ist die Plattform ein wichtiges Werkzeug für Aktivismus, 
+              künstlerische Sichtbarkeit und Markenkommunikation geworden. 
+              <a href="https://www.wsj.com/articles/facebook-knows-instagram-is-toxic-for-teen-girls-company-documents-show-11631620739" target="_blank" rel="noopener noreferrer">→Wall Street Journal</a>
               </p>
 
               <p>
-              Instagram prägte die Influencer‑Ökonomie nachhaltig: Von Nano‑Influencer:innen bis Megastars basiert das Modell auf Reichweite, Authentizität und Sponsored Posts. Business‑ und Creator‑Accounts bieten Analytics, Swipe‑Up‑Links und Monetarisierung. Hashtag‑Kultur schuf discoverability und Nischen‑Communities, während Location‑Tags lokale Netzwerke und FOMO‑Effekte erzeugten. Die Plattform wurde zum visuellen Lebensstil‑Portfolio für Generationen.
-              <a href="https://de.wikipedia.org/wiki/Instagram" target="_blank" rel="noopener noreferrer">→Wikipedia (DE)</a>
+              Heute zählt Instagram zu den einflussreichsten sozialen Plattformen weltweit. 
+              Es verbindet soziale Interaktion, Unterhaltung, Werbung und Handel in einer 
+              visuellen Oberfläche. Der ursprüngliche Fokus auf spontane Fotografie ist dabei 
+              weitgehend verloren gegangen – stattdessen dominiert professionell produzierter, 
+              monetarisierter Content. Instagram steht exemplarisch für die Transformation 
+              sozialer Medien von persönlichem Austausch hin zu auf Aufmerksamkeit und 
+              Vermarktung optimierten Plattformen. 
+              <a href="https://www.statista.com/topics/1882/instagram/" target="_blank" rel="noopener noreferrer">→Statista</a>
               </p>
 
-              <p class="indent">
-              Krisen und Regulierung: Datenschutzskandale, Suchtprävention („Take a Break"), mentale Gesundheit (Dünnheitsideal‑Debatte) und EU‑Digital Services Act zeigen Instagrams Abhängigkeit von jugendlichem, weiblichem Publikum und die Spannung zwischen Wachstum und Verantwortung. Dennoch bleibt Instagram mit 2+ Milliarden Nutzer:innen das visuelle Zentrum des Social‑Media‑Universums.
-              <a href="https://about.instagram.com/blog/announcements/instagram‑today‑two‑billion‑users" target="_blank" rel="noopener noreferrer">→Instagram</a>
-              </p>
-
-              <p>
-              Instagram demonstriert perfekt, wie Affordanzen (Filter, Stories, Reels) Nutzerverhalten lenken: Visuelle Perfektion → Ephemere Authentizität → Algorithmische Sucht. Die Plattform zeigt auch die Logik von Plattformisierung: Kontinuierliche Feature‑Kopie (Snapchat → Stories, TikTok → Reels) und aggressive Zeit‑in‑App‑Optimierung, die Nutzer:innen in immer mehr Lebensbereiche (Kauf, Arbeit, Dating) integriert.
-              <a href="https://de.wikipedia.org/wiki/Instagram" target="_blank" rel="noopener noreferrer">→Wikipedia (DE)</a>
-              </p>
 
               <p class="small"> i. Alle Texte dieser Website wurden mithilfe von KI generiert und können daher fehlerhaft sein. </p>
+
+              <img src="bilder/instagram2.jpg" style="width: 100%; ">
+              <figcaption>
+              Insatgram im App Store <br>
+              — <a href="https://apps.apple.com/de/app/instagram/id389801252" target="_blank" rel="noopener noreferrer">
+              Quelle </a>
+              </figcaption>
+
+              <img src="bilder/instagram3.jpg" style="width: 100%; ">
+              <figcaption>
+              Insatgram im App Store <br>
+              — <a href="https://apps.apple.com/de/app/instagram/id389801252" target="_blank" rel="noopener noreferrer">
+              Quelle </a>
+              </figcaption>
 
               <div style="width: 100%; height: 600px; margin-top: 2em; margin-bottom: 1em; overflow: hidden; position: relative;">
               <iframe
@@ -2049,6 +2290,27 @@ const DETAILS = {
               </p>
 
               <p class="small"> i. Alle Texte dieser Website wurden mithilfe von KI generiert und können daher fehlerhaft sein. </p>
+
+              <img src="bilder/weibo2.jpg" style="width: 100%; ">
+              <figcaption>
+              Weibo im App Store <br>
+              — <a href="https://apps.apple.com/de/app/%E5%BE%AE%E5%8D%9A/id350962117" target="_blank" rel="noopener noreferrer">
+              Quelle </a>
+              </figcaption>
+
+              <img src="bilder/weibo3.png" style="width: 100%; ">
+              <figcaption>
+              Screenshot der Weibo Website, Januar 2026. <br>
+              — <a href="https://weibo.com/newlogin?tabtype=weibo&gid=102803&openLoginLayer=0&url=https://weibo.com/" target="_blank" rel="noopener noreferrer">
+              Quelle </a>
+              </figcaption>
+
+              <img src="bilder/weibo4.png" style="width: 100%; ">
+              <figcaption>
+              Screenshot der Weibo Website, Januar 2026. <br>
+              — <a href="https://weibo.com/newlogin?tabtype=weibo&gid=102803&openLoginLayer=0&url=https://weibo.com/" target="_blank" rel="noopener noreferrer">
+              Quelle </a>
+              </figcaption>
 
 </div>`
       },
@@ -2165,13 +2427,6 @@ const DETAILS = {
                 <p>Ads:</p><p>ja</p>
               </div>
 
-
-              <img src="bilder/kuaishou2.jpg" style="width: 100%; ">
-              <figcaption>
-              Kuaishou im App Store, Januar 2026. <br>
-              </a> — <a href="https://apps.apple.com/us/app/%E5%BF%AB%E6%89%8B/id440948110" target="_blank" rel="noopener noreferrer"> Quelle </a>
-              </figcaption>
-
               <p> Kuaishou ist eine chinesische Kurzvideo- und soziale Multimedia-Plattform, die 2011 gegründet wurde und sich parallel zu ByteDance-Diensten wie Douyin (TikTok in China) entwickelt hat. Anders als Douyin fokussiert Kuaishou stärker auf authentische Alltagsvideos und Communities in ländlichen Regionen und hat damit ein anderes soziales Ökosystem aufgebaut. <a href="https://en.wikipedia.org/wiki/Kuaishou" target="_blank" rel="noopener noreferrer">→Wikipedia</a> Während Douyin häufig Trends und virale Inhalte betont, zeichnet sich Kuaishou durch engagierte Creator-Communities aus und fördert den direkten Austausch zwischen Nutzer:innen. Der Algorithmus belohnt nicht nur virale Clips, sondern auch Inhalte mit hoher Interaktion innerhalb kleiner, loyaler Gruppen. <a href="https://en.wikipedia.org/wiki/Kuaishou" target="_blank" rel="noopener noreferrer">→Wikipedia</a> </p> 
               
               <p> Kuaishou hat mitunter auch direkte Kopien oder Rivalen hervorgebracht (z. B. Zynn in Nordamerika), die experimentelle Anreizmodelle wie Belohnungen für Views und Einladungen nutzten. <a href="https://en.wikipedia.org/wiki/Zynn" target="_blank" rel="noopener noreferrer">→Wikipedia (Zynn)</a> Im chinesischen Markt bleibt Kuaishou einer der größten Social-Media-Player, insbesondere in Kombination mit Livestreaming, E-Commerce-Funktionen und Content-Entdeckungsmechanismen. Seine Rolle verdeutlicht, wie Kurzvideos als soziale Räume funktionieren können, die über bloße Unterhaltung hinausgehen. <a href="https://en.wikipedia.org/wiki/Kuaishou" target="_blank" rel="noopener noreferrer">→Wikipedia</a> </p>
@@ -2248,14 +2503,6 @@ const DETAILS = {
                 <p>Firmensitz:</p><p>San Francisco, USA</p>
                 <p>Ads:</p><p>/</p>
               </div>
-
-              <img src="bilder/vine2.jpg" style="width: 100%; ">
-              <figcaption>
-              Vine, Twitter <br>
-              Foto von </a><a href="https://www.flickr.com/photos/esthervargasc/"> Esther Vargas </a>
-              </a> — <a href="https://www.flickr.com/photos/esthervargasc/8427904491/in/photostream/"> Quelle </a>,
-              <a href="https://creativecommons.org/licenses/by-sa/2.0/deed.de" target="_blank" rel="license noopener noreferrer"> CC BY-SA 2.0 </a>
-              </figcaption>
 
               <p> Vine war eine Social-Media-Plattform für extrem kurze Video-Clips (maximal sechs Sekunden), die im Januar 2013 von Twitter auf den Markt gebracht wurde. Nutzer:innen konnten direkt in der App Videos aufnehmen, die nur liefen, solange der Nutzer den Bildschirm berührte – ein Mechanismus, der kreative Effekte und spontane Clips förderte. <a href="https://en.wikipedia.org/wiki/Vine_(service)" target="_blank" rel="noopener noreferrer">→Wikipedia</a> </p> 
               <p class="indent"> Vine wurde schnell populär und war eine der ersten Apps, die virale Videoclips massenhaft verbreitete. Die Loop-Funktion und die kurze Dauer führten zu neuartigen kreativen Ausdrucksformen, oft humorvoll, musikalisch oder überraschend. Viele der heute bekannten Social-Media-Influencer:innen begannen ihre Karriere auf Vine. Vine war Vorreiter des mobilen Kurzvideo-Formats, das später von TikTok und anderen Plattformen übernommen wurde. Funktionen wie Loop-Effekte, Remix-Kultur und trendbasierte Kreationen lassen sich direkt auf Vine zurückführen. <a href="https://www.theverge.com/2016/10/27/13434298/twitter-shutting-down-vine" target="_blank" rel="noopener noreferrer">→The Verge</a> </p> 
@@ -2639,7 +2886,7 @@ const DETAILS = {
               </figcaption>
 
 
-              <img class="top" src="bilder/clubhouse2.jpg" style="width: 100%; ">
+              <img src="bilder/clubhouse2.jpg" style="width: 100%; ">
               <figcaption>
               Clubhouse - wildly popular audio chat app, 2021 <br>
               Foto von <a href="https://www.ccnull.de/fotograf/marco-verch/" target="_blank" rel="noopener noreferrer">
@@ -2943,7 +3190,7 @@ const DETAILS = {
 
 
 
-              <p class="top">
+              <p>
               Lol.
               </p>
 
@@ -3380,16 +3627,6 @@ const DETAILS = {
                 <p>Ads:</p><p>/</p>
               </div>
 
-              <img class="top" src="bilder/onlyfans2.jpg" style="width: 100%; ">
-              <figcaption>
-              OnlyFans im Playstore, Januar 2026.
-              <br>
-              </a> —
-              <a href="https://onlyfans.com/" target="_blank" rel="noopener noreferrer">
-              Quelle
-              </a>
-              </figcaption>
-
               <div class="info-box"><p>
               OnlyFans Creator Center: <br> <br>
               „OnlyFans is revolutionizing the way creators connect with their online communities and earn income. Since 2016, more than three million creators have joined the OnlyFans platform to share their creativity, monetize their content, and engage meaningfully with their fans.“ 
@@ -3414,12 +3651,30 @@ const DETAILS = {
               — <a href="https://onlyfans.com/" target="_blank" rel="noopener noreferrer"> Quelle </a>
               </figcaption>
 
-              <img src="bilder/onlyfans5.png" style="width: 100%; ">
-              <figcaption>
-              OnlyFans via Instagram, Januar 2026. <br>
-              <br>
-              — <a href="https://www.instagram.com/onlyfans" target="_blank" rel="noopener noreferrer"> Quelle </a>
-              </figcaption>
+
+
+              
+              <div class="figures-wrapper">
+                <figure>
+                  <img src="bilder/onlyfans5.png" style="width: 100%; ">
+                  <figcaption>
+                  OnlyFans via Instagram, Januar 2026. <br>
+                  <br>
+                  — <a href="https://www.instagram.com/onlyfans" target="_blank" rel="noopener noreferrer"> Quelle </a>
+                  </figcaption>
+                </figure>
+                <figure>
+                  <img src="bilder/onlyfans2.jpg" style="width: 100%; ">
+                  <figcaption>
+                  OnlyFans im Playstore, Januar 2026.
+                  <br>
+                  </a> —
+                  <a href="https://onlyfans.com/" target="_blank" rel="noopener noreferrer">
+                  Quelle
+                  </a>
+                  </figcaption>
+                </figure>
+              </div>
 
               </div>`
       },
